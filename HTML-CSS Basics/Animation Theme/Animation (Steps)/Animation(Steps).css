@@ -1,0 +1,82 @@
+/* PRACTICE 1 */
+
+/* 
+body{
+    background: cyan;
+}
+h1{
+    position: absolute;
+    margin: 250px 500px;
+    border-right: 3px solid red;
+    width: 19ch;
+    animation-name: step;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(19);
+    white-space: nowrap;
+    overflow: hidden;
+}
+@keyframes step{
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 19ch;
+    }
+}
+.a{
+    height: 300px;
+    width: 300px;
+    background-position: -100px 50px;
+    background-image: url("advocate.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+} */
+
+/* PRACTICE 2 */ 
+
+/* h1{
+position: absolute;
+margin: 250px 340px;  */
+
+/* border: 1px solid red; */
+/* border-bottom: 2px solid black; */
+
+/* width: 37ch;
+animation-name: osman;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(37);
+white-space: nowrap;
+overflow: hidden;
+}
+
+@keyframes osman{
+0%{width:0ch;}
+100%{width: 37ch;}
+} */
+
+/* PRACTICE 3 COKE-MAN */
+
+.man{
+position: absolute;
+margin: 18px 500px;
+width: 200px;
+height: 510px;
+border: 1px solid grey;
+background-image: url(coke.png);
+animation-name: cokeman;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(10);
+/* background-repeat: no-repeat; */
+}
+
+@keyframes cokeman{
+0%{
+    background-position: 0px;
+}
+100%{
+    background-position: -2000px;
+}
+}

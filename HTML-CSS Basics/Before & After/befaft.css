@@ -1,0 +1,68 @@
+
+/* BORDER */
+
+/* .main{
+width: 200px;
+height: 200px;
+background-color: yellow;
+position: relative;
+left: 500px;
+top: 200px;
+}
+
+.main::after{
+position: absolute;
+content: '';
+width: 180px;
+height: 180px;
+background-color: red;
+top: 5%;
+left: 5%;
+transform: scale(1);
+transition-duration: 1s;
+}
+
+.main:hover::after{
+content: '';
+position: absolute;
+width: 180px;
+height: 180px;
+background-color: red;
+transform: scale(1.1);
+} */
+
+
+
+/* line - dot - line */
+
+
+ hr{
+position: relative;
+width: 60px;
+height: 3px;
+border: none;
+background-color: black;
+float: left;
+margin-left: 20px;
+ }
+
+.hra{
+
+}
+
+ .dot{
+position: relative;
+top: 7px;
+left: 10px;
+height: 5px;
+width: 5px;
+border-radius: 50%;
+background-color: black;
+/* left: 50px; */
+float: left;
+ }
+
+ .hrb{
+    /* left: 80px;
+    top: -24px; */
+ }

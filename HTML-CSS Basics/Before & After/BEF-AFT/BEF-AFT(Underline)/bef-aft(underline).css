@@ -1,0 +1,38 @@
+.book{
+    position: relative;
+    top: 180px;
+    left: 525px;
+    width: 200px;
+    height: 60px;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    border-radius: 2%;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    transition-duration: 1s;
+    transition-property: button;
+    }
+    
+    .book:hover{
+    background-color: transparent;
+    border: 3px solid orangered;
+    }
+    
+    .book::after{
+     content: '';
+    position: absolute;
+    width: 0;
+    background-color: orangered;
+    bottom: 0;
+    left: 50%;
+    height: 3px;
+    transform: translateX(-50%);
+    transition-duration: .5s;
+    }
+    
+    .book:hover::after{
+     width:100%;
+     }
+        

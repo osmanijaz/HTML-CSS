@@ -1,0 +1,177 @@
+/* PRACTICE 1 */
+
+
+.main{
+width: 300px;
+height: 300px;
+background-color: red;
+position: relative;
+margin: 100px auto;
+overflow: hidden;
+}
+.main::after{
+    content: '';
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: green;
+left: -100%;
+top: -100%;
+transform: scale(0); 
+transition-duration: 1s;
+}
+.main:hover::after{
+    top: 0;
+    left: 0;
+    top: 0;
+    transform: scale(1);}
+
+/* PRACTICE 2 */
+
+/* .main1{
+width: 200px;
+height: 200px;
+background-color: brown;
+position: relative;
+left:500px;
+top: 200px;
+}
+
+.main2{
+position: absolute;
+width: 180px;
+height: 180px;
+left: 5%;
+top: 5%;
+background-color: orangered;
+}
+ */
+
+
+
+
+
+
+ /* PRACTICE 3 */
+
+ /* CENTER BOX */
+
+.main1{
+width: 210px;
+height: 210px;
+background-color: brown;
+position: relative;
+left: 500px;
+top: 200px;
+}
+
+/* TEXT WELCOME  */
+
+h1{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+
+/* RIGHT DOOR */
+
+.main1::after{
+content: '';
+width: 100%;
+height: 100%;
+background-color: hotpink;
+position: absolute;
+border-right: 2px solid red;
+overflow: hidden;
+left: 50%;
+transition-duration: 1s;
+z-index: 2;
+}
+
+.main1:hover:after{
+
+left: 100%;
+}
+
+/* LEFT DOOR */
+
+.main1::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: limegreen;
+    position: absolute;
+    border-right: 2px solid red;
+    left: -50%;
+    transition-duration: 1s;
+    z-index: 1;
+    }
+    
+    .main1:hover::before{
+    left: -100%;
+        }
+
+
+
+
+
+
+
+
+    /* PRACTICE 4 (PRACTICE 3 AGAIN*/
+
+    .box{
+    width: 210px;
+    height: 210px;
+    background-color: orangered;
+    position: relative;
+    top: 200px;
+    left: 500px;
+    background-image: url(./island.jpg);
+    background-size: 100% 100%;
+    z-index: 2;
+    overflow: hidden;
+    }
+
+    h1{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    }
+
+    .box::after{
+    content: '';
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    background-color: limegreen;
+    left: 50%;
+    transition-duration: 2s;
+    border-left: 3px solid purple;
+    z-index: 1;
+    }
+
+    .box:hover::after{
+    left: 100%;
+    }
+
+    .box::before{
+        content: '';
+        position: absolute;
+        width: 210px;
+        height: 210px;
+        background-color: yellow;
+        left: -50%;
+        transition-duration: 2s;
+        z-index: 1;
+        border-right: 3px solid purple;
+        }
+    
+        .box:hover::before{
+        left: -100%;
+        }

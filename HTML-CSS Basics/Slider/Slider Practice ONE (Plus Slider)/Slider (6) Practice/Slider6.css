@@ -1,0 +1,165 @@
+
+*{
+margin: 0;
+padding: 0;
+}
+
+.main-parent-slider{
+width: 80%;
+height: 80vh;
+border: 3px solid red;
+position: relative;
+left: 10%;
+top: 10vh;
+overflow: hidden;
+}
+
+.child-slider{
+position: absolute;
+border: 2px solid hotpink;
+width: 100%;
+height: 100%;
+left: 100%;
+background-size: 100% 100%;
+transition-duration: 2s;
+
+}
+
+.child-slider img{
+width: 100%;
+height: 100%;
+}
+
+input{
+display: none;
+}
+
+.onea{
+position: absolute;
+top: 50px;
+width: 25px;
+height: 25px;
+background-color: black;
+color: white;
+padding: 5px;
+padding-left: 5px;
+display: inline-block;
+border-radius:50%;
+font-size: 20px;
+left: 10px;
+text-align: center;
+z-index: 1;
+}
+
+.twob{
+    position: absolute;
+    top: 100px;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    padding-left: 5px;
+    display: inline-block;
+    border-radius:50%;
+    font-size: 20px;
+    left: 10px;
+    text-align: center;
+    z-index: 1;
+
+    }
+
+    .threec{
+        position: absolute;
+        top: 150px;
+        width: 25px;
+        height: 25px;
+        background-color: black;
+        color: white;
+        padding: 5px;
+        padding-left: 5px;
+        display: inline-block;
+        border-radius:50%;
+        font-size: 20px;
+        left: 10px;
+        text-align: center;
+        z-index: 1;
+        }
+
+        input:checked+label+.child-slider{
+        left: 0;
+        }
+
+        input:checked+label{
+        background-color: yellow;
+        color: black;
+        } */
+
+
+
+
+*{
+padding: 0;
+margin: 0;
+}
+
+.main-parent-slider{
+width: 80vw;
+height: 80vh;
+border: 1px solid red;
+position: relative;
+top: 10vh;
+left: 10%;
+overflow: hidden;
+}
+
+input{
+display: none;
+}
+
+.child-slider{
+position: absolute;
+width: 100%;
+height: 100%;
+left: 100%;
+transition-duration: 1s;
+}
+
+.child-slider img{
+width: 100%;
+height: 100%;
+}
+
+input:checked+label+.child-slider{
+left: 0;
+}
+
+input:checked+label{
+background-color: crimson;
+}
+
+label{
+position: absolute;
+width: 20px;
+height: 20px;
+background-color: blueviolet;
+color: white;
+display: inline-block;
+bottom: 0;
+text-align: center;
+padding-top: 1px;
+z-index: 1;
+}
+
+.l1{
+left: 20px;
+}
+
+.l2{
+left: 50px;
+}
+    
+.l3{
+left: 80px;
+}
+

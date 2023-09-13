@@ -1,0 +1,137 @@
+
+*{
+
+padding: 0px;
+margin: 0;
+list-style: none;
+font-family: 'Open Sans', sans-serif;
+}
+
+/* 1 NAV BAR  */
+
+.navbar{
+width: 100%;
+height: 15vh;
+/* border: 1px solid black; */
+background-image: url(./logo1.PNG);
+background-size: 100% 100%;
+position: relative;
+}
+
+.logo{
+position: absolute;
+/* border: 1px solid red; */
+width: 245px;
+height: 11.5vh;
+background-image: url(./logo.png);
+background-size: 100% 100%;
+left: 80px;
+top: 9px;
+}
+
+.ulnb{
+position: absolute;
+left: 30%;
+top: 35px;
+}
+
+.linb{
+display: inline-block;
+color: white;
+margin-left: 20px;
+position: relative;
+padding-bottom: 15px;
+transition-property: border;
+transition-duration: .5s;
+
+
+}
+
+.linb:after{
+content: '';
+position: absolute;
+border-bottom: 3px solid orangered;
+width: 0px;
+left:0px;
+bottom: 0px;
+}
+
+.linb:hover::after{
+width:100%;
+cursor: pointer;
+transition-duration: .5s;    
+}
+
+/* 2 */
+
+.main-steps{
+position: relative;
+width: 100%;
+height: 600px;
+border: 2px solid limegreen;
+background-image: url(./1.PNG);
+background-size: 100% 100%;
+}
+
+.text-steps{
+position: absolute;
+border: 2px solid hotpink;
+width: 70%;
+height: 100px;
+left: 15%;
+top: 20px;
+overflow: hidden;
+}
+
+.ts-h1{
+position: absolute;
+top: 7px;
+color: white;
+font-size: 75px;
+}
+
+
+.ul-step{
+    position: absolute;
+    top: 7px;
+    color: orangered;
+    font-size: 75px;
+    left: 530px;
+    width: 8ch;
+    /* border: 1px solid red; */
+    white-space: nowrap;
+  overflow: hidden;
+    animation-name: steps;
+    animation-duration: 2s;
+    animation-timing-function: steps(8);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+     }
+    
+    @keyframes steps{
+    0% {width: 0ch;}
+    100% {width: 8ch;}
+    }
+
+    .li-step{
+    position: relative;
+   animation-name: Scroll;
+   animation-duration: 12s;
+   animation-iteration-count: infinite;
+   /* animation-direction: alternate; */
+   white-space: nowrap;
+   overflow: hidden;
+   /* border: 2px solid limegreen; */
+   
+  }
+
+  @keyframes Scroll{
+  0% {top:0}
+  30% {top:0}
+
+  40% {top: -85px}
+  65% {top: -85px}
+
+  70% {top: -170px}
+  100% {top: -170px}
+  }

@@ -1,0 +1,251 @@
+*{
+    padding: 0%;
+    margin:0%;
+}
+.main{
+    position: relative;
+    text-align: center;
+    font-size: 27px;
+    /* top: 50px; */
+    
+}
+.main>h1{
+    transition-duration: 3s;
+}
+.main>h1:hover{
+    transform: translate(30px);
+}
+.main>ul{
+    position: relative;
+    /* border: 1px solid #000; */
+    height: 120px;
+    width: 100%;
+    top: 50px;
+    left: 65px;
+
+}
+
+.main>ul>li{
+    position: relative;
+    list-style: none;
+    float: left;
+    top: 10px;
+    left: 20px;
+    margin-left: 130px;
+    font-size: 20px;
+    color: blue;
+    transition-duration:1s;
+
+}
+.main>ul>li:hover{
+    transform: scale(1.2);
+}
+.page1{
+position: relative;
+    height: 430px;
+    width: 100%;
+    border: 1px solid #000;
+}
+.pic{
+    position: absolute;
+    /* border: 1px solid #000; */
+    height: 320px;
+    width: 550px;
+   top:70px;
+    left: 3%;
+    overflow: hidden;
+
+   
+
+
+}
+
+.pic>img{
+    transition-duration: 1s;
+  
+    height: 100% ;
+    width: 100%;
+    /* background-image: 100% 100%; */
+}
+.pic>img:hover{
+    transform: scale(1.5);
+}
+.div2{
+    position: absolute;
+    right: 400px;
+    width: 600px;
+    transition-duration: 3s;
+    right: 1%;
+    top: 100px;
+}
+.div2:hover{
+    transform:skew(15deg);
+}
+
+.pic>h1{
+    position: absolute;
+    /* text-align: center; */
+    /* width: 100%; */
+    left: 50px;
+    top: 30px;
+    color: rgb(53, 50, 50);
+    font-size: 30px;
+}
+.pic>p{
+        position: absolute;
+        top: 100px;
+}
+.div2>button{
+    position: relative;
+    border-radius: 20px;
+    background-color: blue;
+    height: 40px;
+    width: 120px;
+    left: 210px;
+    top: 15px;
+    border: none;
+    background-image:linear-gradient(to right bottom,rgba(26, 26, 83, 0.9),rgba(92, 5, 255, 0.7));
+}
+.div2:hover>button{
+    background-color:rgb(0, 0, 0);
+    color: white;
+    
+}
+ .page2{
+   position: relative;
+    height: 750px;
+    width: 100%;
+    border: 1px solid #000;
+    /* position: relative; */
+    /* background-color: black; */
+
+}
+.page2>h1{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50px;
+    color: black;
+}
+.p2{
+   position: relative;
+    height: 600px;
+    width: 100%;
+    border: 1px solid #000;
+    top: 110px;
+}
+
+.skew{
+    position: relative;
+    height: 240px;
+    width: 240px;
+    border: 1px solid #000;
+    left: 100px;
+    top: 30px;
+    float: left;
+    margin-left: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: skewy(-10deg);
+    transition-duration: 1.5s;
+    box-shadow: 3px -5px 4px 8px rgb(89, 123, 139);
+}
+.skew:hover{
+    transform: skewy(10deg);
+
+}
+.sk2{
+    transform: skewy(10deg);
+}
+.sk2:hover{
+    transform: skewy(-10deg);
+
+}
+.sk1{
+    position: relative;
+    height: 240px;
+    width: 240px;
+    border: 1px solid #000;
+    left: 100px;
+    top: 80px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+   
+}
+
+.page3{
+    height: 800px;
+    width: 100%;
+    border: 1px solid #000;
+    position: relative;
+}
+.page3>h1{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50px;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+.p3{
+    position: relative;
+    border: 1px solid #000;
+    height: 600px;
+    width: 100%;
+    top: 130px;
+ 
+    
+}
+.cheif{
+    position: relative;
+    border: 1px solid #000;
+    height: 240px;
+    width: 240px;
+    top: 20px;
+    left: 50px;
+    float: left;
+    margin-left: 70px;
+    box-shadow: 3px -5px 4px 8px rgb(0, 148, 216);
+    border-radius: 10px;
+    overflow: hidden;
+    transform: skewx(20deg);
+    /* transition-timing-function: ease-out; */
+    transition-duration: 1.3s;
+
+}
+.cheif:hover{
+    /* transition-duration: 1.3s; */
+    transform: skewx(0deg);
+    /* transition-timing-function: ease-out; */
+}
+.ch1{
+   position: relative;
+    margin-top: 60px;
+}
+.c2{
+    transform: skewy(10deg);
+}
+.c3{
+    transform: skewx(5deg);
+}
+.c4{
+    transform: rotatex(20deg);
+}
+.c4:hover{
+    transform: rotatex(-360deg);
+}
+
+.c5:hover{
+        transform: scale(1.3) skew(20deg);
+}
+.c6:hover{
+    transform: translatex(20px) skew(20deg);
+}
+.c7:hover{
+    transform: rotatey(160deg);
+}
+
+
+ 
+

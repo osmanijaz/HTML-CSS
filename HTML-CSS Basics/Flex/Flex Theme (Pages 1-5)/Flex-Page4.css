@@ -1,0 +1,259 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* CONTAINER */
+    
+    .parent-container{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid rgb(210, 140, 136); */
+    display: flex;
+    }
+    
+    
+    /* LEFT NAV BAR  */
+    
+    .left-sticky-navbar{
+    width: 252px;
+    height: 680px;
+    /* border: 1px solid rgb(210, 140, 136); */
+    background-color: rgb(210, 140, 136);
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+    }
+    .icon{
+        height: 50px;
+        width: 80px;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    .cart{
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    
+    }
+    
+    .logo{
+    width: 90%;
+    height: 130px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .logo img{
+    height: 100px;
+    width: 160px;    
+    }
+    
+    
+    ul{
+    color: white;
+    /* border: 1px solid red; */
+    height: 300px;
+    width: 88%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    }
+    
+    .right{
+    position: relative;
+    left: 77px;
+    font-size: 20px;
+    }
+    
+    .right1{
+    position: relative;
+    left: 69px;
+    }
+    
+    .right2{
+        position: relative;
+        left: 85px;
+    }
+    li{
+        position: relative;
+    }
+    .dropdown{
+        height: 100vh;
+        width: 120%;
+        border: 1px solid #000;
+        position: absolute;
+        left: 100%;
+        top: -215px;
+        background-color: #BEBAA7;
+        overflow-y: scroll;
+        visibility: hidden;
+    }
+    ul>li:hover .dropdown{
+        visibility: visible;
+    }
+    
+    .dropdown2{
+        height: 100vh;
+        width: 120%;
+        border: 1px solid #000;
+        position: absolute;
+        left: 100%;
+        top: -246px;
+        background-color: #EED9B5;
+        overflow-y: scroll;
+        visibility: hidden;
+    }
+    ul>li:hover .dropdown2{
+        visibility: visible;
+    }
+    
+    
+    .dropdown3{
+        height: 100vh;
+        width: 120%;
+        border: 1px solid #000;
+        position: absolute;
+        left: 100%;
+        top: -277px;
+        background-color: #FACDBE;
+        overflow-y: scroll;
+        visibility: hidden;
+    }
+    ul>li:hover .dropdown3{
+        visibility: visible;
+    }
+    
+    
+    
+    .card1{
+        height: 50vh;
+        width: 100%;
+        /* border: 1px solid #000; */
+        display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-evenly;
+        }
+    
+    .adrop{
+    width: 80%;
+    height: 70%;
+    /* border: 1px solid red; */
+    }
+    
+    .dropp{
+        width: 80%;
+        height: 15%;
+        /* border: 1px solid lime; */
+        color: grey;
+        }
+    
+    .leaf{
+    color:white;
+    }
+    
+    .card2{
+        height: 9vh;
+        width: 100%;
+        /* border: 1px solid red; */
+        background-color:#7F7B67;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .icons{
+    /* border: 2px solid red; */
+    width: 90%;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 14px ;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    align-items: center;
+    }
+    
+    
+    .footer{
+    color: white;
+    font-size: 12.5px;
+    line-height: 18.75px;
+    /* border: 1px solid red; */
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 80%;
+    justify-content: center;
+    }
+    
+
+    
+/* CHILD-SCROLL RIGHT-SIDE */
+
+.child-scroll{
+    border: 2px solid green;
+    width: 1011px;
+    height: auto;
+    }
+
+
+
+
+
+
+
+    
+
+/* FOOTER START  */
+
+
+    .bot-logo{
+        width: 100%;
+        height: 200px;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        
+        .logo-bottom{
+        width: 235px;
+        height: 135px;
+        /* border: 1px solid red; */
+        
+        }
+        
+        .text-low{
+        display: flex;
+        justify-content: center;
+        }
+        
+        .text-low p{
+            font-size: 15px;
+            justify-content: center;
+            text-align: center;
+            line-height: 22.5px;
+        }
+        
+        .txt-low2{
+        
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 80px;
+        }
+
+    /* FOOTER END */

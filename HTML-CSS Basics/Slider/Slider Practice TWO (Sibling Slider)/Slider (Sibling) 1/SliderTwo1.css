@@ -1,0 +1,43 @@
+
+.parent-slider{
+width: 80vw;
+height: 80vh;
+border: 3px solid red;
+position: relative;
+top: 10vh;
+left: 10vw;
+overflow: hidden;
+
+}
+.child1{
+    height: 100%;
+    width: 500%;
+    position: relative;
+    border: 1px solid #000;
+    transition-duration: 1s;
+}
+.pic{
+    height: 100%;
+    width:20%;
+    position: relative;
+    background-image: url("./1.jpg");
+    background-size: 100% 100%;
+    float: left;
+}
+
+.inp1:checked+label~.child1{
+    left: 0;
+}
+
+.inp2:checked+label~.child1{
+    left: -100%;
+}
+.inp3:checked+label~.child1{
+    left: -200%;
+}
+.inp4:checked+label~.child1{
+    left: -300%;
+}
+.inp5:checked+label~.child1{
+    left: -400%;
+}

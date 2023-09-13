@@ -1,0 +1,14 @@
+@media screen and (max-width:200px){
+    .main{
+        background-color: blue;
+        height: 300px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
+     
+    }
+}

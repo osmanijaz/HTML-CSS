@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Osman HTML CSS</title>
+
+<style> 
+</style>
+</head>
+<body>
+
+<h1>Osman</h1>
+<h2>Osman</h2>
+<h3>Osman</h3>
+<h4>Osman</h4>
+<h5>Osman</h5>
+<h6>Osman</h6>
+
+<hr> 
+
+<p>JavaScript is the programming language of <i><u><b>HTML</b></u></i> and the Web,<br> JavaScript can change CSS.</p>
+
+<ul>
+<li>Apple</li>
+<li>Banana</li>
+<li>Grape</li>
+<li>Melon</li>
+<li>Peach</li>
+<ul/>
+
+
+<ol>
+<li>Tomato</li>
+<li>Carrot</li>
+<li>Lettuce</li>
+<li>Cucumber</li>
+<li>Ginger</li>
+</ol>
+
+
+<div style ="width:200px; height:200px;border:10px solid red;background-color:yellow"></div>
+
+
+</body>
+</html>
+
+

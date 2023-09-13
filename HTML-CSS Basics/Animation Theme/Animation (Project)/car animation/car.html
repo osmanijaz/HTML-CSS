@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            position: relative;
+            height: 80vh;
+            width: 100%;
+            background-image: url(road.jpg);
+            overflow: hidden;
+
+            background-size: 100% 100%;
+        }
+        .car1{
+            position: absolute;
+            height: 30vh;
+            width: 30%;
+            top: 60%;
+            left: 69%;
+            /* overflow: hidden; */
+            animation-name: move;
+            animation-timing-function: linear;
+            animation-iteration-count:infinite ;
+            animation-fill-mode: forwards;
+            animation-duration: 10s;
+            /* border: 2px solid black; */
+        }
+        @keyframes move{
+            0%{left: 120%;}
+            100%{left: -40%;}
+        }
+        .carone{
+            position: absolute;
+            top: -65%;
+            height: 60vh;
+            width: 95%;
+        }
+        .tyre{
+            position: absolute;
+            top: 40%;
+            left: 16%;
+            height: 80px;
+            width: 80px;
+            animation-name: moveone;
+            animation-timing-function: linear;
+            animation-iteration-count:infinite ;
+            animation-fill-mode: forwards;
+            animation-duration: 4s;
+        }
+        .tyreone{
+            left: 60%;
+        }
+        @keyframes moveone{
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(-360deg);}
+
+        }
+        .cartwo{
+            left: 0%;
+            /* position: absolute; */
+            /* height:30vh ; */
+            /* width: 30%; */
+            animation-name: name;
+            transform: rotateY(180deg);
+            /* background-color: black; */
+            /* border: 5px solid black; */
+        }
+        @keyframes name{
+            0%{left: -40%;}
+            100%{left: 120%;}
+        }
+        .cartwo .carone{
+            top: -45%;
+        }
+        .cartwo .tyre{
+            top: 56%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="car1">
+            <img src="car2.png" class="carone">
+            <img src="tyre.png" class="tyre">
+            <img src="tyre.png" class="tyre tyreone">
+        </div>
+        <div class="car1 cartwo">
+            <img src="car3.png" class="carone">
+            <img src="tyre.png" class="tyre">
+            <img src="tyre.png" class="tyre tyreone">
+        </div>
+    </div>
+</body>
+</html>

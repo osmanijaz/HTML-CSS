@@ -1,0 +1,88 @@
+
+/* PRACTICE 1 */
+
+/* .main{
+width: 100px;
+height: 100px;
+background-color: red;
+transition: all 2s;
+animation-name: osman;
+animation-duration: 2s; */
+/* animation-iteration-count: infinite; */
+/* animation-iteration-count: 4; */
+/* animation-direction: normal; */
+/* animation-direction: reverse; */
+/* animation-direction: alternate; */
+/* animation-fill-mode: forwards; */
+
+/* } */
+
+/* @keyframes osman{
+from{
+margin-left: 300px;
+background-color: blue;
+}
+to{
+margin-top: 300px;
+margin-left: 300px;
+background-color: yellow;
+
+}
+
+} */
+
+
+/* PRACTICE 2 */
+
+/* *{
+    margin: 0;
+    padding: 0;
+}
+.sec{
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    transition: all 2s;
+    animation-name: amir;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes amir{
+    0%{margin-left: 0;background-color: yellow;border-top-left-radius: 30px;}
+    25%{margin-left: 400px;margin-top:0;background-color: teal;border-top-right-radius: 30px;}
+    50%{margin-left: 400px;margin-top: 300px;background-color: tomato;border-bottom-right-radius: 30px;}
+    75%{margin-left: 0px;margin-top: 300px;background-color: violet;border-bottom-left-radius: 30px;}
+    100%{margin-left: 0px;background-color: yellow;border-radius: 50%;}
+} */
+
+/* PRACTICE 3 */
+
+*{
+margin: 0;
+padding: 0;
+}
+
+.abc{
+width: 200px;
+height: 200px;
+background-color: red;
+
+animation-name: abc;
+animation-duration: 10s;
+animation-iteration-count: 1;
+animation-direction: alternate;
+animation-fill-mode: forwards;
+animation-timing-function: linear;
+/* animation-delay: 1s; */
+}
+
+@keyframes abc{
+0%{margin-left: 0px; border-top-left-radius: 30px;}
+25%{margin-left: 1080px; margin-top: 0px; background-color: yellow; border-top-right-radius: 30px;}
+50%{margin-left: 1080px; margin-top: 377px; background-color: limegreen; border-bottom-right-radius: 30px;}
+75%{margin-left: 0px; margin-top: 377px; background-color: hotpink; border-bottom-left-radius: 30px;}
+100%{margin-left: 0px; border-bottom-left-radius: 30px; border-radius: 50%;} 
+
+}

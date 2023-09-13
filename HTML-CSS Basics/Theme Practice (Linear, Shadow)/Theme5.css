@@ -1,0 +1,147 @@
+
+*{
+padding: 0;
+margin: 0;
+list-style: none;
+}
+
+.background1{
+width: 100%;
+height: 600px;
+background-color: green;
+background-image: linear-gradient(to right top, green,white);
+}
+
+.navigator{
+width: 100%;
+height: 140px;
+/* border: 2px solid rgb(255, 4, 4); */
+/* float: left; */
+}
+
+.logo{
+width: 125px;
+height: 80px;
+border: 1px solid purple;
+background-image: url(logo.png);
+background-size: 100% 100%;
+margin-left: 30px;
+margin-top: 30px;
+float: left;
+}
+
+ul{
+margin-top: 100x;
+margin-left: 430px;
+}
+
+li{
+height: 20px;
+width: 100px;
+border: 1px solid white;
+background-color: white;
+float: left;
+text-align: center;
+margin-top: 50px;
+margin-left: 30px;
+border-radius: 25px;
+padding:12px;
+font-size: 18px;
+box-shadow: 8px 8px 12px 8px darkgreen;
+border: none;
+}
+
+li:hover{
+color: white;
+background-color: darkgreen;
+box-shadow: 8px 8px 12px 8px white;
+}
+
+.header1{
+color: white;
+font-size: 50px;
+text-align: center;
+margin-top: 80px;
+}
+
+.para1{
+color: white;
+font-size: 20px;
+text-align: center;
+margin-top: 30px; 
+}
+
+input{
+width: 400px;
+height: 50px;
+border: none;
+border-radius: 25px;
+margin-top: 90px;
+margin-left: 500px;
+}
+
+button{
+height: 50px;
+width: 105px;
+border-radius: 25px;
+font-weight: 900;
+font-family: 'Times New Roman', Times, serif;
+font-size: 17px;
+border: none;
+outline: none;
+margin-left: 20px;
+
+}
+
+button:hover{
+color: white;
+background-color: darkgreen;
+box-shadow: 8px 8px 12px 8px white;
+}
+
+.back2{
+width: 100%;
+height: 500px;
+/* border: 2px solid purple; */
+background-image: linear-gradient( to left top, green, white);
+padding: 1px;
+}
+
+.head2{
+color: white;
+text-align: center;
+font-size: 40px;
+margin-top: 30px;
+}
+
+
+.box123{
+width: 320px;
+height: 240px;
+border: 1px solid black;
+background-color: white;
+float: left;
+margin-top: 30px;
+margin-left: 100px;
+box-shadow: 3px 3px 8px 5px grey;
+}
+
+.box123:hover{
+box-shadow: 3px 3px 8px 5px darkred;
+}
+
+.box1234{
+    margin-left: 40px;
+}
+
+.ps{
+color:darkgreen;
+text-align: center;
+margin-top: 20px;
+}
+
+.ps1{
+margin-top: 30px;
+margin-left: 20px;
+font-size: 16px;
+}

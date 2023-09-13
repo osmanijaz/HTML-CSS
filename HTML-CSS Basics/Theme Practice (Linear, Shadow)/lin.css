@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    height: 700px;
+    width: 99.8%;
+    background-image: linear-gradient(to top right, green, white);
+    padding: 1px;
+}
+.logo{
+    height: 70px;
+    width: 130px;
+    background-image: url(logo.png);
+    background-size: 100% 100%;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+UL{
+    font-size: 20px;
+    margin-left: 400px;
+    margin-top: -70px;
+    padding: 1px;  
+}
+li{
+    list-style: none;
+    float: left;
+    margin-left: 50px;
+    padding-top: 10px;
+    box-shadow: 0 10px 10px 5px green;
+}
+.a{
+    height: 35px;
+    width: 120px;
+    background-color: white;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 70px;
+}
+.a:hover{
+    color: white;
+    background-color: green;
+    cursor: pointer;
+    box-shadow:0 10px 10px 5px white;
+}
+.b{
+    height: 35px;
+    width: 90px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 70px;
+    background-color: white;
+}
+.b:hover{
+    color: white;
+    background-color: green;
+    cursor: pointer;
+    box-shadow:0 10px 10px 5px white;
+
+}
+.para h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    /* margin-left: 400px; */
+    /* float: left; */
+    margin-top: 160PX;
+}
+.para p{
+    /* float: left; */
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    /* margin-left:350px; */
+    margin-top: 30px;
+}
+.text{
+    height: 50px;
+    width: 400px;
+    border-radius: 50px;
+    background-color: white;
+    margin-top: 100px;
+    margin-left:500px;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+.text:hover{
+    box-shadow: 1px 1px 10px 1px black;
+}
+.login{
+    height: 50px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: white;
+    margin-left: 920px;
+    margin-top: -50px;
+    padding: 1px;
+}
+.login:hover{
+    color: white;
+    background-color: green;
+    cursor: pointer;
+    box-shadow:0 10px 10px 5px white;
+}
+.login h3{
+    margin-left: 30px;
+    margin-top: 12px;
+    padding: 1px;
+}
+.login h3:hover{
+    cursor: pointer;
+}
+.head{
+     height: 500px;
+     width: 99.8%;
+     background-image: linear-gradient(to top left, green,white);
+     margin-top: -35px;
+     padding: 1px;
+}
+.head h3{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 30px;
+}
+.head h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 1px;
+}
+.dim{
+    height: 250px;
+    width: 320px;
+    margin-left: 100px;
+    background-color: white;
+    padding: 1px;
+    box-shadow: 5px 5px 5px 5px gray;
+    margin-top: 30px;
+}
+.dim:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 6px 3px red;
+    transition-duration: 1s;
+}
+.dim h1{
+    font-size: 30px;
+    color: green;
+    margin-top: 20px;
+    padding: 1px;
+}
+.dim p{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.dim1{
+    height: 250px;
+    width: 320px;
+    margin: auto;
+    background-color: white;
+    padding: 1px;
+    margin-top: -250px;
+    box-shadow: 5px 5px 5px 5px gray;
+}
+.dim1:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 6px 3px red;
+    transition-duration: 1s;
+}
+.dim1 h1{
+    font-size: 30px;
+    color: green;
+    margin-top: 20px;
+    padding: 1px;
+}
+.dim1 p{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.dim2{
+    height: 250px;
+    width: 320px;
+    margin-left: 1050px;
+    background-color: white;
+    padding: 1px;
+    margin-top: -250px;
+    box-shadow: 5px 5px 5px 5px gray; 
+}
+.dim2:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 6px 3px red;
+    transition-duration: 1s;
+}
+.dim2 h1{
+    font-size: 30px;
+    color: green;
+    margin-top: 20px;
+    padding: 1px;
+}
+.dim2 p{
+    margin-left: 20px;
+    margin-top: 30px;
+}

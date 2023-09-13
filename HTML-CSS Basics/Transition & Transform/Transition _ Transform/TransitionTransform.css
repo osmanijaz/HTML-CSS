@@ -1,0 +1,70 @@
+.main{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    position: relative;
+    left: 400px;
+    top:200px;
+    /* transition-property: color; */
+    /* transition-duration: 2s; */
+    /* transition-delay: 2s; */
+    /* transition-timing-function: ease-out; */
+    /* transition:all 2s 1s ease-in-out; */
+    /* color:hotpink; */
+    /* transform: scale(1);
+    transform: scale(2);
+    transform: scale(5);
+    transform: scale(.5);
+    transform: scale(.3);
+    transform: scale(-1);
+    transform: scale(-2); */
+    /* transform: scaleX(2); */
+    transform: scaleY(2);
+}
+.rotate{
+    width: 100px;
+    height: 50px;
+    background: purple;
+    transform: rotate(270deg);
+}
+.translate{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    /* transform: translateX(300px); */
+    /* transform: translateY(300px); */
+    transform: translate(0px,-50px);
+
+}
+.skew{
+    width: 100px;
+    height: 100px;
+    background-color:cyan;
+    position: relative;
+    top:300px;
+    left: 300px;
+    /* transform: skewX(10deg); */
+    /* transform: skewX(40deg); */
+
+    /* transform: skewY(45deg); */
+    transform: skew(30deg,25deg);
+}
+
+
+/* fun */
+
+.effect{
+    width:100px;
+    height:100px;
+    background-color: cyan;
+    transition: all 2s;
+}
+.effect:hover{
+    transform: scale(.5) translateX(100px) rotate(45deg);
+}
+
+.one{
+width: 200px;
+height: 300px;
+background-color: red;
+}

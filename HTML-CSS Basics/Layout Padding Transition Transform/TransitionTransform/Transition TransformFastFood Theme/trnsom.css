@@ -1,0 +1,347 @@
+/* ===================================main nav bar======================================== */
+.navMain {
+
+    width: 100%;
+    height: 200px;
+    border: 2px solid black;
+    font-size: 25px;
+}
+
+
+.title {
+    text-align: center;
+    margin-top: 5px;
+    transition-duration: 1s;
+}
+
+.title:hover {
+    transform: translate(50px);
+    transition-duration: 1s;
+}
+
+
+.list {
+    border: 1px solid red;
+}
+
+.n1 {
+    position: relative;
+    top: 30px;
+    left: 60px;
+    list-style: none;
+    float: left;
+    margin-left: 87px;
+    color: blue;
+    transition-duration: 5s;
+
+}
+
+.n1:hover {
+    transform: scale(1.5);
+
+
+}
+
+/* ===================================main nav bar finish======================================== */
+.MainpicTxt {
+    width: 100%;
+    height: 360px;
+    border: 2px solid red;
+}
+
+.leftPic {
+    width: 50%;
+    height: 100%;
+    border: 2px solid green;
+    float: left;
+
+}
+
+.lepMain {
+    margin-left: 20px;
+    margin-top: 27px;
+    width: 580px;
+    height: 300px;
+    border: 2px solid red;
+    overflow: hidden;
+}
+
+
+.Lep {
+    width: 100%;
+    height: 100%;
+    transition-duration: 2s;
+}
+
+.Lep:hover {
+    transform: scale(1.25);
+}
+
+.rightPic {
+    width: 47%;
+    height: 100%;
+    border: 2px solid blue;
+    float: left;
+    transition-duration: 2s;
+
+}
+
+.rightPic:hover {
+
+    transform: skewX(15deg);
+
+}
+
+
+.rh {
+    margin-top: 35px;
+    margin-left: 30px;
+
+
+
+}
+
+.rp {
+    margin-top: 5px;
+    margin-left: 30px;
+    font-size: 17px;
+}
+
+.bt1 {
+    width: 120px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-left: 40%;
+    margin-top: 2px;
+
+
+}
+
+/* ==========================================prod========================================== */
+
+.product {
+    width: 100%;
+    height: 80px;
+    border: 5px solid green;
+
+}
+
+.ph {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.prodPicMain {
+    width: 100%;
+    height: 600px;
+    border: 2px solid red;
+}
+
+.pp {
+    float: left;
+    margin-top: 32px;
+    margin-left: 48px;
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 10%;
+
+
+}
+
+.picChange {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    box-shadow: 0px 0px 5px 8px grey;
+}
+
+/* ====================================== */
+.p1 {
+    transition-duration: 1s;
+}
+
+.p1:hover {
+    transform: skew(10deg);
+}
+
+.p2 {
+    transition-duration: 1s;
+}
+
+.p2:hover {
+    transform: scale(1.1);
+    transform: rotateY(30deg);
+}
+
+.p3 {
+    transition-duration: 1s;
+}
+
+.p3:hover {
+    transform: skew(-180deg);
+    transform: rotateY(360deg);
+}
+
+.p4 {
+    transition-duration: 1s;
+}
+
+.p4:hover {
+    transform: skew(-180deg);
+    transform: rotateX(360deg);
+}
+
+.p5 {
+    transition-duration: 1s;
+}
+
+.p5:hover {
+    transform: skew(10deg);
+
+}
+
+
+.p6 {
+    transition-duration: 1s;
+}
+
+.p6:hover {
+    transform: skew(-10deg);
+}
+
+.p7 {
+    transition-duration: 1s;
+}
+
+.p7:hover {
+    transform: skew(-10deg);
+
+}
+
+.p8 {
+    transition-duration: 1s;
+}
+
+.p8:hover {
+    transform: rotateY(30deg);
+}
+
+/* ============================================= */
+
+.c1 {
+    transition-duration: 1s;
+}
+
+.c1:hover {
+    transform: skew(10deg);
+}
+
+.c2 {
+    transition-duration: 1s;
+}
+
+.c2:hover {
+    transform: scale(1.1);
+    transform: rotateY(30deg);
+}
+
+.c3 {
+    transition-duration: 1s;
+}
+
+.c3:hover {
+    transform: skew(-180deg);
+    transform: rotateY(360deg);
+}
+
+.c4 {
+    transition-duration: 1s;
+}
+
+.c4:hover {
+    transform: skew(-180deg);
+    transform: rotateX(360deg);
+}
+
+.c5 {
+    transition-duration: 1s;
+}
+
+.c5:hover {
+    transform: skew(10deg);
+
+}
+
+
+.c6 {
+    transition-duration: 1s;
+}
+
+.c6:hover {
+    transform: skew(-10deg);
+}
+
+.c7 {
+    transition-duration: 1s;
+}
+
+.c7:hover {
+    transform: skew(-10deg);
+
+}
+
+.c8 {
+    transition-duration: 1s;
+}
+
+.c8:hover {
+    transform: rotateY(30deg);
+}
+
+
+/* =========================chef===================================================== */
+
+.product2 {
+    width: 100%;
+    height: 80px;
+    border: 5px solid green;
+
+}
+
+.ph2 {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.prodPicMain2 {
+    width: 100%;
+    height: 600px;
+    border: 2px solid red;
+}
+
+.pp2 {
+    float: left;
+    margin-top: 32px;
+    margin-left: 48px;
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 10%;
+
+
+}
+
+.picChange2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    box-shadow: 0px 0px 5px 8px grey;
+}

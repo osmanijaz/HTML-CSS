@@ -1,0 +1,291 @@
+
+
+*{
+padding: 0;
+margin: 0;
+}
+
+.header{
+width: 100%;
+height: 60px;
+/* border: 1px solid red; */
+}
+
+.headone{
+position: relative;
+text-align: center;
+top: 10px;
+transition-property: transform, color;
+transition-duration: 2s;
+}
+
+.headone:hover{
+color: red;
+transform: scale(1.5);
+transition-duration: 2s;
+}
+
+.list{
+width: 100%;
+height: 80px;
+/* border: 1px solid purple; */
+}
+
+.ul1{
+}
+
+.li1{
+position: relative;    
+float: left;
+list-style: none;
+left: 340px;
+top: 7px;
+margin: 20px;
+/* border: 1px solid red; */
+font-size: 20px;
+transition-duration: 2s;
+transition-property: transform, color;
+
+}
+
+.li1:hover{
+color: red;
+transform: scale(1.5);
+transition-duration: 2s;
+}
+
+.lr{
+/* border: 2px solid greenyellow; */
+width: 100%;
+height: 350px;
+}
+
+.left{
+float: left;
+position: relative;
+left: 20px;
+width: 47%;
+height: 350px;
+border: 5px solid black;
+background-image: url("a.jpg");
+background-size: 100% 100%;
+transition-duration: 2s;
+
+}
+
+.left:hover{
+transform: scale(.5);
+transition-duration: 2s;
+border: 5px solid grey;
+}
+
+.right{
+float: right;
+width: 48%;
+height: 350px;
+/* border: 5px solid hotpink; */
+position: relative;
+}
+
+.headtwo{
+position: absolute; 
+top: 10px;
+left: 10px;
+transition-duration: 2s;
+transition-property: transform,color;
+}
+
+.headtwo:hover{
+color: red;
+transition-duration: 2s;
+transform: translateX(100px);
+}
+
+.parone{
+position: absolute;
+left: 10px;
+top: 60px;
+/* border: 1px solid pink; */
+width: 450px;
+transition-property: transform, color;
+transition-duration: 2s;
+}
+
+.parone:hover{
+color: red;
+transform: translateX(100px);
+transition-duration: 2s;
+}
+
+.btn1{
+background-color: blue;
+position: absolute;
+width: 140px;
+height: 40px;
+color: black;
+font-weight: bold;
+left: 20px;
+top: 280px;
+border-radius: 25px;
+border: 1.5px solid black;
+outline: none;
+background-image:linear-gradient(to right, white,blue);
+transition-duration: 2s;
+transition-property:transform;
+}
+
+.btn1:hover{
+background-image:linear-gradient( to right, white,red);
+/* transition-duration: 2s; */
+transform:scale(1.2);
+}
+
+.products{
+margin-top: 20px;
+width: 100%;
+height: 700px;
+/* border: 3px solid hotpink; */
+}
+
+.headthree{
+position: relative;
+top: 20px;
+width:100%;
+height:40px;
+text-align:center;
+}
+
+/* ROW 1 */
+
+.box{
+position: relative;
+top: 15px;
+float: left;
+border: 2px solid grey;
+width: 260px;
+height: 260px;
+border-radius: 25px;
+margin-left: 40px;
+margin-top: 25px;
+box-shadow: 1px 1px 5px 5px red;
+}
+
+.boxa{
+background-image:url("a1.jpg");
+background-size: 100% 100%;
+transition-property: transform;
+transform: skewX(10deg);
+transition-duration: 2s;
+}
+
+.boxa:hover{
+transform: skewX(-5deg);
+
+}
+
+.box1{
+background-image:url("b1.jpg");
+background-size: 100% 100%;
+transition-property: transform;
+transform: skewY(-5deg);
+transition-duration: 2s;
+}
+
+.box1:hover{
+    transform: skewY(0deg);
+}
+
+
+
+.box2{
+    background-image:url("c1.jpg");
+    background-size: 100% 100%;
+    transition-property: transform;
+    transform: skewX(10deg);
+    transition-duration: 2s;
+    }
+    
+    .box2:hover{
+        transform: skewX(0deg);
+    }
+    
+    
+    .box3{
+        background-image:url("d1.jpg");
+        background-size: 100% 100%;
+        transition-property: transform;
+        transform: skewY(5deg);
+        transition-duration: 2s;
+        }
+        
+        .box3:hover{
+            transform: skewY(0deg);
+        }
+        
+
+
+
+
+
+
+/* ROW 2 */
+        .box4{
+            background-image:url("e1.jpg");
+            background-size: 100% 100%;
+            transition-property: transform;
+            transform: skewX(-8deg);
+            transition-duration: 2s;
+            }
+            
+            .box4:hover{
+                transform: skewX(0deg);
+            }
+            
+            
+
+
+
+
+
+            .box5{
+                background-image:url("f1.jpg");
+                background-size: 100% 100%;
+                transition-property: transform;
+                transform: skewY(-6deg);
+                transition-duration: 2s;
+                }
+                
+                .box5:hover{
+                    transform: skewY(0deg);
+                }
+                
+                
+
+
+
+.box6{
+background-image:url("h1.jpg");
+background-size: 100% 100%;
+transition-property: transform;
+transform: skewY(5deg);
+transition-duration: 2s;
+}
+
+.box6:hover{
+    transform: skewY(0deg);
+}
+
+
+.box7{
+    background-image:url("j1.jpg");
+    background-size: 100% 100%;
+    transition-property: transform;
+transform: skewX(10deg);
+transition-duration: 2s;
+}
+
+.box7:hover{
+    transform: skewX(0deg);
+}
+
+                

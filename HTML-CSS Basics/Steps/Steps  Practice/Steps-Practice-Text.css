@@ -1,0 +1,39 @@
+
+h1{
+position: relative;
+top:20vh;
+left: 340px;
+border: 1px solid red;
+
+
+
+
+
+}
+
+
+@keyframes column{
+0% {width:0ch;}
+100% {width:0ch;}
+ }
+
+
+h2{
+position: relative;
+top: 320px;
+left: 340px;
+border-right: 1px solid black;
+width: 34ch;
+animation-name: osman;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-timing-function: steps(35);
+overflow: hidden;
+white-space: nowrap;
+animation-direction: alternate;
+}
+
+@keyframes osman{
+0% {width:0ch;}
+100% {width:35ch;}
+}

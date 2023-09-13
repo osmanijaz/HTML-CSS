@@ -1,0 +1,107 @@
+*{
+margin: 0px;
+padding: 0;
+}
+
+/* INLINE */
+
+.inline{
+width: 140vw;
+}
+
+.red1{
+height: 250px;
+width: 250px;
+background-color: red;
+float: left;
+}
+    
+.orange1{
+height: 250px;
+width: 250px;
+background-color: orange;
+float: left;
+}
+    
+.yellow1{
+height: 250px;
+width: 250px;
+background-color: yellow;
+float: left;
+}
+    
+.green1{
+height: 250px;
+width: 250px;
+background-color: green;
+float: left;
+}
+    
+.blue1{
+height: 250px;
+width: 250px;
+background-color: blue;
+float: left;
+}
+    
+.indigo1{
+height: 250px;
+width: 250px;
+background-color: indigo;
+float: left;
+}
+    
+.violet1{
+height: 250px;
+width: 250px;
+background-color: violet;
+float: left;
+}
+    
+/* BLOCK */
+
+.violet2{
+height: 250px;
+width: 250px;
+background-color: violet;
+
+}
+    
+.orange2{
+height: 250px;
+width: 250px;
+background-color: orange;
+}
+    
+.yellow2{
+height: 250px;
+width: 250px;
+background-color: yellow;
+}
+    
+.green2{
+height: 250px;
+width: 250px;
+background-color: green;
+}
+    
+.blue2{
+height: 250px;
+width: 250px;
+background-color: blue;
+}
+    
+.indigo2{
+height: 250px;
+width: 250px;
+background-color: indigo;
+
+}
+    
+.red2{
+height: 250px;
+width: 250px;
+background-color: red;
+}
+    
+    

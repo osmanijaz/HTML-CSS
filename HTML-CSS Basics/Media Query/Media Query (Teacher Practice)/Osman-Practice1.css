@@ -1,0 +1,17 @@
+
+.main{
+height: 120px;
+width: 100%;
+background-color: red;
+display: flex;
+align-items: center;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+    font-size: 20px;
+    color: white;
+    border: 1px solid #000;
+}

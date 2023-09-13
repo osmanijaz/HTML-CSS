@@ -1,0 +1,45 @@
+
+@media screen and (max-width:768px){
+    .logo1{
+        width: 200px;
+    }
+    .ul-li-main{
+        width:76% ;
+    }
+    .project{
+        height: auto;
+    }
+    
+.pro-pic{
+    height: auto;
+
+}
+.pic{
+width: 360px;
+height: 250px;
+margin-top: 20px;
+}
+.peep-main{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.peep1{
+width: 350px;
+margin-top: 20px;
+}
+
+
+.sendbtn{
+margin-left: 470px;
+}
+
+.im1{
+    width: 95%;
+    height: auto;
+margin-left: 2.5% ;
+    }
+
+
+}
+

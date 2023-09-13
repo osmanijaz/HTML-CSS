@@ -1,0 +1,497 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    height: 150px;
+    /* border: 1px solid blue; */
+    position: relative;
+}
+.main h1{
+    width: 100%;
+    text-align:center;
+position: relative;
+top: 20px;
+transition-duration:1s;
+transition-property: transform;
+}
+.main>h1:hover{
+    transform: scale(1.2);
+/* transition-duration:1s; */
+
+    color: red;
+    
+}
+.class{
+    left: 400px;
+    position: relative;
+    top: 30px;
+}
+.class>li{
+    position: relative;
+    color: blue;
+    float: left;
+    list-style: none;
+    margin: 30px;
+    transition-property: transform;
+    transition-duration: 1s;
+
+}
+.class>li:hover{
+    transform: scale(1.5);
+    color: rebeccapurple ;
+
+}
+.main1{
+    width: 40%;
+    height: 300px;
+    /* border: 1px solid red; */
+    position: relative;
+    background-image: url(./chipi.jpg);
+    background-size: 100% 100%;
+    transition-property: transform;
+    transition-duration: 3s;
+    float: left;
+}
+.main1:hover{
+    transform: scale(0.7);
+    transition-duration:3s;
+}
+.main2{
+    width: 40%;
+    height: 300px;
+    /* border: 1px solid red; */
+    position: relative;
+    float: left;
+    margin-left: 40px;
+}
+.main2>h1{
+    width: 100%;
+    text-align:center;
+    position: relative;
+    top: 20px;
+    transition-property: transform;
+    transition-duration: 2s;
+}
+.main2>h1:hover{
+    transform:translateX(50px) ;
+    transition-duration: 2s;
+    color: brown;
+
+}
+.main2>p{
+    width: 100%;
+    /* border: 2px solid red; */
+    text-align: center;
+    position: relative;
+    top: 50px;
+    font-size: 18px;
+    transition-property: transform;
+    transition-duration: 2s;
+}
+.main2>p:hover{
+    transform: translate(40px);
+    transition-duration: 2s;
+
+}
+.main2>button{
+    position: relative;
+    top:90px;
+    left:190px;
+    padding:9px 20px;
+    background-image: linear-gradient(to right, white, blue);
+border-radius: 15px;
+outline: none;
+transition-property: transform;
+transition-duration: 2s;
+
+}
+.main2>button:hover{
+    transform: scale(1.15);
+    transition-duration: 2s;
+    background-image: linear-gradient(to right, white,red);
+
+
+}
+.main3{
+    width: 100%;
+    height: 700px;
+    /* border: 1px solid blue; */
+    position: relative;
+
+}
+.main3>h1{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    top: 20px;
+    font-size: 40px;
+}
+.a1{
+    width: 250px;
+    height: 250px;
+    background-image: url("im1.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    top: 50px;
+    float: left;
+    border-radius: 50px;
+    margin-left: 5%;
+    transform: skewX(-10deg);
+    transition-property: transform;
+    transition-duration: 2s;
+    box-shadow: 3px -4px 5px 3px red;
+
+}
+.a1:hover{
+    transform: skewX(0deg);
+    transition-duration: 2s;
+
+
+
+}
+.a2{
+    width: 250px;
+    height: 250px;
+    background-image: url("im2.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    top: 50px;
+    float: left;
+    border-radius: 50px;
+    margin-left: 5%;
+    transform: skewY(10deg);
+    transition-property: transform;
+    transition-duration: 2s;
+    box-shadow: 3px -4px 5px 3px red;
+
+
+}
+.a2:hover{
+    transition-duration: 2s;
+    transform: skewY(0deg);
+
+    
+}
+.a3{
+    width: 250px;
+    height: 250px;
+    background-image: url("im4.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    top: 50px;
+    float: left;
+    border-radius: 50px;
+    margin-left: 5%;
+    transform: skewX(30deg);
+    transition-property: transform;
+    transition-duration: 2s;
+    box-shadow: 3px -4px 5px 3px red;
+
+}
+.a3:hover{
+    transform: skewX(0deg);
+    transition-duration: 2s;
+
+
+}
+.a4{
+    width: 250px;
+    height: 250px;
+    background-image: url("im5.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    top: 50px;
+    float: left;
+    border-radius: 50px;
+    margin-left: 5%;
+    transform: rotate(50deg);
+    transition-property: transform;
+    transition-duration: 2s;
+    box-shadow: 3px -4px 5px 3px red;
+
+
+}
+.a4:hover{
+    transition-duration: 2s;
+    transform: rotate(0deg);
+
+}
+.a5{
+    width: 250px;
+    height: 250px;
+    background-image: url("im5.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    top: 120px;
+    float: left;
+    border-radius: 50px;
+    margin-left: 5%;
+    transform: skewX(-10deg);
+    transition-duration: 2s;
+    transition-property: transform;
+    box-shadow: 3px -4px 5px 3px red;
+
+}
+.a5:hover{
+    transition-duration: 2s;
+    transform: skewX(0deg);
+
+
+}
+.a6{
+    width: 250px;
+    height: 250px;
+    background-image: url("im9.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    top: 120px;
+    float: left;
+    border-radius: 50px;
+    margin-left: 5%;
+    transform: skewY(10deg);
+    transition-duration: 2s;
+    transition-property: transform;
+    box-shadow: 3px -4px 5px 3px red;
+
+
+}
+.a6:hover{
+    transform: skewY(0deg);
+    transition-duration: 2s;
+
+}
+.a7{
+    width: 250px;
+    height: 250px;
+    background-image: url("im8.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    top: 120px;
+    float: left;
+    border-radius: 50px;
+    margin-left: 5%;
+    transform: skewX(30deg);
+    transition-duration: 2s;
+    transition-property: transform;
+    box-shadow: 3px -4px 5px 3px red;
+
+}
+.a7:hover{
+    transition-duration: 2s;
+    transform: skewX(0deg);
+
+}
+.a8{
+    width: 250px;
+    height: 250px;
+    background-image: url("im6.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    top: 120px;
+    float: left;
+    border-radius: 50px;
+    margin-left: 5%;
+    transform: rotate(50deg);
+    transition-property: transform;
+    transition-duration: 2s;
+    box-shadow: 3px -4px 5px 3px red;
+
+
+}
+.a8:hover 
+{
+    transform: rotate(0deg);
+    transition-duration: 2s;  
+}
+.main4{
+    width: 100%;
+    height: 700px;
+    /* border: 1px solid blue; */
+    position: relative;
+
+}
+.main4>h1{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    top: 20px;
+    font-size: 40px;
+}
+.b1{
+    width: 250px;
+    height: 250px;
+    background-image: url("im1.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    top: 50px;
+    float: left;
+    border-radius: 50px;
+    margin-left: 5%;
+    transform: skewX(-10deg);
+    transition-property: transform;
+    transition-duration: 2s;
+    box-shadow: 3px -4px 5px 3px red;
+
+}
+.b1:hover{
+    transform: skewX(0deg);
+    transition-duration: 2s;
+}
+.b2{
+    width: 250px;
+    height: 250px;
+    background-image: url("im2.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    top: 50px;
+    float: left;
+    border-radius: 50px;
+    margin-left: 5%;
+    transform: skewY(10deg);
+    transition-property: transform;
+    transition-duration: 2s;
+    box-shadow: 3px -4px 5px 3px red;
+
+
+}
+.b2:hover{
+    transition-duration: 2s;
+    transform: skewY(0deg);
+}
+.b3{
+    width: 250px;
+    height: 250px;
+    background-image: url("im4.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    top: 50px;
+    float: left;
+    border-radius: 50px;
+    margin-left: 5%;
+    transform: skewX(30deg);
+    transition-property: transform;
+    transition-duration: 2s;
+    box-shadow: 3px -4px 5px 3px red;
+
+}
+.b3:hover{
+    transform: skewX(0deg);
+    transition-duration: 2s;
+}
+.b4{
+    width: 250px;
+    height: 250px;
+    background-image: url("im5.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    top: 50px;
+    float: left;
+    border-radius: 50px;
+    margin-left: 5%;
+    transform: rotate(50deg);
+    transition-property: transform;
+    transition-duration: 2s;
+    box-shadow: 3px -4px 5px 3px red;
+
+
+}
+.b4:hover{
+    transition-duration: 2s;
+    transform: rotate(0deg);
+
+}
+.b5{
+    width: 250px;
+    height: 250px;
+    background-image: url("im5.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    top: 120px;
+    float: left;
+    border-radius: 50px;
+    margin-left: 5%;
+    transform: skewX(-10deg);
+    transition-duration: 2s;
+    transition-property: transform;
+    box-shadow: 3px -4px 5px 3px red;
+
+}
+.b5:hover{
+    transition-duration: 2s;
+    transform: skewX(0deg);
+}
+.b6{
+    width: 250px;
+    height: 250px;
+    background-image: url("im9.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    top: 120px;
+    float: left;
+    border-radius: 50px;
+    margin-left: 5%;
+    transform: skewY(10deg);
+    transition-duration: 2s;
+    transition-property: transform;
+    box-shadow: 3px -4px 5px 3px red;
+
+
+}
+.b6:hover{
+    transform: skewY(0deg);
+    transition-duration: 2s;
+
+}
+.b7{
+    width: 250px;
+    height: 250px;
+    background-image: url("im8.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    top: 120px;
+    float: left;
+    border-radius: 50px;
+    margin-left: 5%;
+    transform: skewX(30deg);
+    transition-duration: 2s;
+    transition-property: transform;
+    box-shadow: 3px -4px 5px 3px red;
+
+}
+.b7:hover{
+    transition-duration: 2s;
+    transform: skewX(0deg);
+
+}
+.b8{
+    width: 250px;
+    height: 250px;
+    background-image: url("im6.jpg");
+    background-size: 100% 100%;
+    position: relative;
+    top: 120px;
+    float: left;
+    border-radius: 50px;
+    margin-left: 5%;
+    transform: rotate(50deg);
+    transition-property: transform;
+    transition-duration: 2s;
+    box-shadow: 3px -4px 5px 3px red;
+
+}
+.b8:hover 
+{
+    transform: rotate(0deg);
+    transition-duration: 2s;  
+}
+
+
+
+    
+
+
+
+

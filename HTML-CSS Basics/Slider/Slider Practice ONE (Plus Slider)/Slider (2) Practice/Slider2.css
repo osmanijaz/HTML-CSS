@@ -1,0 +1,57 @@
+.main{
+    width:70%;
+    height: 80vh;
+    border: 1px solid #000;
+    position: relative;
+    top: 10vh;
+    left: 15%;
+    background-color: grey;
+    overflow: hidden;
+    
+}
+.child{
+    width: 100%;
+    height: 95%;
+    background-color: cyan;
+    border: 3px solid red;
+    position: absolute;
+    left: 100%;
+    transition-duration: .5s;
+}
+
+.slider:checked+label+.child{
+    
+    left: 0%;
+}
+.slider{
+    /* color: red;
+    width: 20px;
+    height: 20px; */
+    display: none;
+}
+label{
+    padding: 7px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+}
+
+.slider:checked+label{
+    background-color: black;
+}
+.l2{
+    left: 47%;
+    
+}
+
+.l3{
+    left: 49%;
+}
+.l4{
+    left: 51%;
+}
+.l5{
+    left: 53%;
+}

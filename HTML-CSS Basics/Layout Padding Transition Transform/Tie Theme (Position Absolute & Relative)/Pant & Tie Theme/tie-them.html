@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* ------------------START NAV ------------------------ */
+
+        .nav {
+            width: 100%;
+            height: 110px;
+            background-color: black;
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            /* border: 2px solid red; */
+            height: 110px;
+            width: 160px;
+            left: 20px;
+        }
+
+        .picLogo {
+            height: 110px;
+            width: 160px;
+        }
+
+        .navText {
+            position: absolute;
+            /* border: 2px solid red; */
+            height: 110px;
+            width: 740px;
+            right: 0px;
+        }
+
+        .navList {
+            color: white;
+            list-style: none;
+            font-size: 25px;
+
+        }
+
+        .list {
+            float: left;
+            /* position: relative; */
+            margin-left: 50px;
+            /* top: 12px; */
+            margin-top: 12px;
+        }
+
+        /* ----------------------END NAV------------------------------ */
+        /* ---------------MAIN PIC START------------------------------------ */
+
+        .mainPicPage {
+            position: relative;
+            width: 100%;
+            height: 400px;
+        }
+
+        .mainImage {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+        .mainLeftTxt {
+            position: absolute;
+            /* border: 2px solid red; */
+            width: 600px;
+            height: 100%;
+        }
+
+        .head {
+            color: white;
+            font-size: 60px;
+            margin-left: 35px;
+        }
+
+        .maintxt {
+            color: white;
+            margin-left: 35px;
+            font-weight: normal;
+            margin-top: -20px;
+        }
+
+        .btn1 {
+            width: 110px;
+            height: 50px;
+            margin-left: 20px;
+
+            position: relative;
+            border: 1px solid white;
+            top: 75%;
+            left: 14px;
+            color: white;
+            background: transparent;
+            padding-top: 5px;
+        }
+
+        /* ---------------MAIN PIC END------------------------------------ */
+
+        .prod {
+            position: relative;
+            /* border: 2px solid red; */
+            width: 100%;
+            height: 135px;
+        }
+
+        .our {
+
+            text-align: center;
+            color: red;
+
+        }
+
+        .parh3 {
+
+            margin-top: -10px;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        /* -----------------END OUR PRODUCT-------------------------- */
+
+        .threemain {
+            position: relative;
+            /* border: 2px solid red; */
+            width: 100%;
+            height: 430px;
+
+        }
+
+        /* ==========================pic 1=============================== */
+        .three1 {
+            position: relative;
+            float: left;
+            width: 300px;
+            height: 400px;
+            /* border: 2px solid green; */
+            margin-left: 84px;
+        }
+
+        .threepic1 {
+            position: absolute;
+            /* border: 2px solid red; */
+            width: 100%;
+            height: 250px;
+
+        }
+
+        .p1 {
+
+            width: 100%;
+            height: 100%;
+        }
+
+        .p1head {
+            position: absolute;
+            top: 250px;
+            /* border: 2px solid blue; */
+            width: 100%;
+            height: 50px;
+            color: turquoise;
+            font-size: 30px;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .b1 {
+            width: 150px;
+            height: 50px;
+            border: 1px solid turquoise;
+            position: absolute;
+            background: transparent;
+            bottom: 0px;
+            color: #40e0d0;
+            font-size: 17px;
+            margin-left: 75px;
+            margin-bottom: 10px;
+        }
+
+        /* =======================pic 2=================================== */
+
+        .three2 {
+            position: relative;
+            float: left;
+            width: 300px;
+            height: 400px;
+            /* border: 2px solid green; */
+            margin-left: 84px;
+        }
+
+        .threepic2 {
+
+            /* border: 2px solid red; */
+            width: 100%;
+            height: 250px;
+
+        }
+
+        .p2 {
+
+            width: 100%;
+            height: 100%;
+        }
+
+        .p2head {
+            position: absolute;
+            top: 250px;
+            /* border: 2px solid blue; */
+            width: 100%;
+            height: 50px;
+            color: turquoise;
+            font-size: 30px;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .b2 {
+            width: 150px;
+            height: 50px;
+            border: 1px solid turquoise;
+            position: absolute;
+            background: transparent;
+            bottom: 0px;
+            color: #40e0d0;
+            font-size: 17px;
+            margin-left: 75px;
+            margin-bottom: 10px;
+        }
+
+
+        /* ========================pic 3=======================================         */
+        .three3 {
+            position: relative;
+            float: left;
+            width: 300px;
+            height: 400px;
+            /* border: 2px solid green; */
+            margin-left: 84px;
+        }
+
+        .threepic3 {
+
+            /* border: 2px solid red; */
+            width: 100%;
+            height: 250px;
+
+        }
+
+        .p3 {
+
+            width: 100%;
+            height: 100%;
+        }
+
+        .p3head {
+            position: absolute;
+            top: 250px;
+            /* border: 2px solid blue; */
+            width: 100%;
+            height: 50px;
+            color: turquoise;
+            font-size: 30px;
+            text-align: center;
+            padding-top: 30px;
+
+        }
+
+        .b3 {
+            width: 150px;
+            height: 50px;
+            border: 1px solid turquoise;
+            position: absolute;
+            background: transparent;
+            bottom: 0px;
+            color: #40e0d0;
+            font-size: 17px;
+            margin-left: 75px;
+            margin-bottom: 10px;
+        }
+
+        /* ==============================pic end====================================== */
+        /* =========================about our comp==================================== */
+        .about {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            /* border: 2px solid red; */
+        }
+
+        .ab1 {
+            position: absolute;
+            top: -40px;
+            left: 30px;
+            color: turquoise;
+            font-size: 50px;
+        }
+
+        .ab2 {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            color: turquoise;
+            font-size: 30px;
+        }
+
+        .foot {
+
+            position: relative;
+            width: 95%;
+            height: 100px;
+            background-color: black;
+            left: 2.5%;
+        }
+
+        .footp {
+            position: absolute;
+            color: white;
+            left: 28%;
+            top: 27px;
+
+
+
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+
+<body>
+
+    <!-- ----------------START NAV---------------------- -->
+
+    <div class="nav">
+
+        <div class="logo">
+            <img class="picLogo" src="logo.png" alt="">
+        </div>
+
+        <div class="navText">
+            <ul class="navList">
+                <li class="list">Home</li>
+                <li class="list">Service</li>
+                <li class="list">About Us</li>
+                <li class="list">Contact</li>
+                <li class="list">More</li>
+            </ul>
+        </div>
+    </div>
+    <!-- ------------------END NAV----------------------- -->
+
+
+    <div class="mainPicPage">
+        <img class="mainImage" src="./header.png" alt="">
+
+        <div class="mainLeftTxt">
+            <h1 class="head">We Deliever Good Products...</h1>
+            <h4 class="maintxt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>Velit ratione cum quod quo
+                eius optio quae quas qui<br>architecto placeat maxime earum, nisi aliquam aperiam<br>odit soluta
+                accusantium
+                harum nihil.</h4>
+        </div>
+
+        <button class="btn1">Product</button>
+        <button class="btn1">Read More</button>
+
+    </div>
+
+    <!-- ---------------MAIN PIC END------------------------------------  -->
+
+    <div class="prod">
+        <h1 class="our">Our Product</h1>
+        <p class="parh3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
+            Laboriosam sequi adipisci qui ipsam quae modi aperiam fuga voluptate! At iusto perspiciatis,<br>
+            minus non sunt modi? Tempora at quisquam ducimus est!
+        </p>
+    </div>
+
+    <!-- -----------------------------END PRODUCT--------------------- -->
+
+    <div class="threemain">
+
+        <!-- =================pic 1========================== -->
+
+        <div class="three1">
+            <div class="threepic1">
+                <img class="p1" src="./shirt.jpg" alt="">
+            </div>
+            <div class="p1head">Get More Shirts</div>
+            <button class="b1">More Options</button>
+
+        </div>
+
+
+
+        <!-- ================pic 2=============================     -->
+
+        <div class="three2">
+            <div class="threepic2">
+                <img class="p2" src="./tie.jpg" alt="">
+            </div>
+            <div class="p2head">Get More Tie</div>
+            <button class="b2">More Options</button>
+
+        </div>
+
+        <!-- ==============pic 3============================ -->
+
+        <div class="three3">
+            <div class="threepic3">
+                <img class="p3" src="./pant.jpg" alt="">
+            </div>
+            <div class="p3head">Get More Pants</div>
+
+            <button class="b3">More Options</button>
+        </div>
+    </div>
+
+    <!-- ======================about our comp============================ -->
+
+    <div class="about">
+        <h1 class="ab1">About Our Company</h1>
+        <p class="ab2"><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis dolorum ipsa odio quis
+            hic
+            aperiam repudiandae quia atque commodi magni quod expedita iusto dolores sapiente numquam, facilis officia
+            consequuntur dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque enim voluptatibus porro
+            magni laboriosam ullam tenetur debitis similique repudiandae maxime, nisi<br> quae quam! Facere consequatur
+            consequuntur illum ad, nihil ex.<br>
+
+
+            <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis dolorum ipsa odio quis hic aperiam
+            repudiandae quia atque commodi magni quod expedita iusto dolores sapiente numquam, facilis officia
+            consequuntur dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque enim voluptatibus porro
+            magni laboriosam ullam tenetur debitis similique repudiandae maxime, nisi quae quam! Facere consequatur
+            consequuntur illum ad, nihil ex.
+        </p>
+    </div>
+
+    <!-- ==============================footer========================================= -->
+
+    <div class="foot">
+        <p class="footp">Copyright © 2020 All rights reserved ! This template made with Position by: OI</p>
+
+    </div>
+
+
+</body>
+
+</html>

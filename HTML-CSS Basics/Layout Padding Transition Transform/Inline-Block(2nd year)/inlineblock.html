@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Inline</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* ==============By Element name================ */
+        div {
+            height: 200px;
+            width: 500px;
+            background-color: rgb(27, 172, 80);
+        }
+
+        /* =============End style with element name */
+
+        .abc {
+            height: 200px;
+            width: 500px;
+            background-color: aqua;
+        }
+
+
+        #xyz {
+            height: 200px;
+            width: 500px;
+            background-color: rgb(32, 101, 101);
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div>tags name style</div>
+
+    <div class="abc">kjhdkhk</div>
+
+    <div id="xyz">osman</div>
+
+
+
+
+    <!--  takes priority -->
+
+    <div style="width:200px; height:200px; background-color:green; display: inline-block;margin-left: 10px;">3</div>
+    <div style="width:200px; height:200px; background-color:red; display:inline-block; margin-left: 10px;">4</div>
+    <div style="width:200px; height:200px; background-color:yellow; display: inline-block;margin-left: 10px;">5</div>
+    <div
+        style="width:200px; height:200px; background-color:green; display: inline-block;margin-left: 10px; margin-top:10px;">
+        6</div>
+
+
+</body>
+
+</html>

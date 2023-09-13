@@ -1,0 +1,310 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    /* font-family: Verdana, sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px; */
+    }
+    
+    /* NAV BAR  */
+    .con{
+        height: 492vh;
+        width: 100%;
+        /* background-color: aquamarine; */
+    }
+    .nav-bar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    /* border: 1px solid red; */
+    
+    background-color: white;
+    
+    }
+    .inp1{
+        display: none;
+    }
+    
+.menu1{
+border: 1px solid red;
+position: relative;
+top: 15px;
+
+/* visibility: hidden; */
+}
+
+.cross{
+position: relative;
+top: 15px;
+
+}
+/* .menu1:checked+ label  */
+    .logo1{
+    margin-top: 3px;
+    margin-left: 10px ;
+    width: 170px;
+    height:40px;
+    /* border: 1px solid red; */
+    background-image: url(./logo.JPG);
+    background-size: 100% 100%;
+    }
+    
+    
+    .ul-li-main{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: flex-end;
+    /* border: 1px solid red; */
+    width: 83%;
+  /* visibility: hidden; */
+    }
+    
+    li{
+    
+    margin-right: 30px;
+    }
+    
+    
+    /* IMG  */
+    
+    .img{
+        height: 500px;
+        width: 100%;
+        background-image: url("./architect.jpg");
+        background-size: 100% 100%;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+       
+    }
+    .img>h1{
+        color: white;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 100;
+        letter-spacing: 2px;
+    }
+    
+    /* PROJECT  */
+    
+    .project{
+    width: 100%;
+    height: 500px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    
+    }
+    
+    .project h1{
+    font-size: 20px;
+    Line-height: 36px;
+    height: 70px;
+    width: 135px;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    }
+    
+    .pro-pic{
+    height: 400px;
+    width: 100%;
+    /* border: 2px solid hotpink; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    }
+    
+    .pic{
+    width: 265px;
+    height: 150px;
+    border: 1px solid black;
+    background-image: url(./house5.jpg);
+    background-size: 100% 100%;
+    }
+    
+    .pic1{
+    background-size: 100% 100%;
+    background-image: url(./house2.jpg);
+    }
+    
+    .pic2{
+    background-size: 100% 100%;
+    background-image: url(./house3.jpg);
+    }
+    
+    .pic3{
+        background-size: 100% 100%;
+        background-image: url(./house4.jpg);
+        }
+    
+    
+    .pic4{
+    background-size: 100% 100%;
+    background-image: url(./house2.jpg);
+    }
+    
+    .pic5{
+        background-size: 100% 100%;
+        background-image: url(./house5.jpg);
+        }
+        
+        .pic6{
+            background-size: 100% 100%;
+            background-image: url(./house4.jpg);
+            }
+            
+    .pic7{
+    background-size: 100% 100%;
+    background-image: url(./house3.jpg);
+    }
+           
+    /* ABOUT  */
+    
+    
+    .about h1{
+    width: 100%;
+    height: 300px;
+    font-size: 20px;
+    Line-height: 36px;
+    height: 70px;
+    width: 110px;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    }
+    
+    .about p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.5px;
+    padding: 15px 3.5%;
+    }
+    
+    .peep-main{
+    width: 100%;
+    height: 450px;
+    /* border: 2px solid lime; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+    
+    .peep1{
+    width: 245px;
+    height: 380px;
+    /* border: 3px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+    
+    .team{
+    width: 100%;
+    height: 180px;
+    opacity: 0.6;
+    }
+    
+    .pe1{
+    font-size: 13.5px;
+    }
+
+    button{
+       
+            width: 100%;
+            height: 35px;
+            background-color: rgb(238, 238, 238);
+            color: black;
+            outline: none;
+            border: none;
+            border-radius: 2px;
+            border: .5px solid black;
+            
+    }
+    
+    .cont{
+    width: 100%;
+    height: 35px;
+    background-color: rgb(238, 238, 238);
+    color: black;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    border: .5px solid black;
+    }
+    
+    .cont:hover{
+    background-color: rgb(218, 218, 218) ;
+    }
+    
+    .contact{
+    width: 100%;
+    height: 400px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    }
+    
+    .contact h1, p{
+    width: 95%;
+    }
+    
+    /* .contact p{
+    margin-right: 900px;
+     } */
+    
+    .sendbtn{
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 40px;
+    outline: none;
+    border: none;
+    margin-right: 1060px;
+    }
+    
+    .sendbtn:hover{
+    background-color: lightgray ;
+    color: black;
+    }
+    
+    .contact >input{
+    width: 95%;
+    height: 40px;
+    padding-left: 5px;
+    }
+    
+    
+    .im1{
+    width: 100%;
+    height: auto;
+    }
+    
+    .black{
+    width: 100%;
+    height: 60px;
+    background-color: black ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+
+
+
+    
+    
+    

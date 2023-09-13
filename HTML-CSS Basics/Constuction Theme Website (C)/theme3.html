@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONSTRUCTION</title>
+    <style>
+        *
+        {
+            margin: 0vh 0vw;
+            padding: 0vh 0vw;
+            list-style: none;
+            text-decoration: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            box-sizing: border-box;
+            outline: none;
+        }
+        body{
+            overflow-x: hidden;
+        }
+        .container
+        {
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,.7) , rgba(0,0,0,0.7)) , url(slider.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        .nave
+        {
+            position: fixed;
+            height: 12vh;
+            width: 100%;
+            z-index: 99999;
+            background-color: rgba(0,0,0,.7);
+        }
+        .nave img
+        {
+            left: 4vw;
+            top: 1.7vh;
+            position: absolute;
+        }
+        .drop
+        {
+            position: relative;
+            top: 4vh;
+            
+        }
+        .drop ul
+        {
+            float: right;
+            /* border:1px solid red; */
+        }       
+        .drop li
+        {
+            color: orange;
+            display: inline-block;
+            position: relative;
+            margin-right: 2vw;
+            cursor: pointer;
+            text-align: center;
+            font-size: 22px;
+            height: 4.5vh;
+            /* border:1px solid red; */
+        }
+        .drop li:hover
+        {
+            color: yellow;
+            transition: 0.5s;
+            border-radius: 5px;
+            /* font-family: italic; */
+        }
+        .text
+        {
+            position: relative;
+           
+        }
+        .text h3
+        {
+            color: papayawhip;
+            position: absolute;
+            font-size: 21px;
+            top: 20vh;
+            left: 37%;
+        }
+        .text h1
+        {
+            color: orange;
+            top: 30vh;
+            position: absolute;
+            left: 26%;
+            font-size: 43px;
+
+        }
+        .text h2
+        {
+            color: rgb(255, 238, 0);
+            font-size: 47px;
+            left: 22.1%;
+            top: 42vh;
+            position: absolute;
+        }
+        .text p
+        {
+            color: whitesmoke;
+            font-size: 14px;
+            position: absolute;
+            top: 60vh;
+            text-align: center;
+            left: 10%;
+            font-family: sans-serif;
+            right: 10%;
+        }
+        .text button
+        {
+            position: relative;
+        }
+        .btn1
+        {
+         background-color: orange;
+        color: white;
+        cursor: pointer;
+        padding: 10px 20px;
+        top: 75vh;
+        left: 30%;
+        border: none;
+        border-radius: 200px;
+        margin: 0 20px;
+        margin-top: 20px;
+        font-size: 24px;
+        }
+
+        .btn1:hover
+        {
+         background-image: linear-gradient(to left bottom, yellow, orange);
+         color: grey;
+         cursor: pointer;
+         transition: 1s;
+        }
+        .body
+        {
+            height: 70vh;
+            width: 100%;
+            position: relative;
+            /* border: 1px solid; */
+        }
+        .left
+        {
+            position: relative;
+            height: 50vh;
+            width: 60%;
+        }
+        .left h2
+        {
+            color: rgb(255, 196, 0);
+            top: 6vh;
+            left: 5vw;  
+            position: absolute;
+            font-size: 38px;
+        }
+        .left p
+        {
+            left: 5vw;
+            top: 16vh;
+            font-size: 28px ;
+            position: absolute;
+            color: grey;
+        }
+        h6
+        {
+            color: rgb(88, 87, 87);
+            top: 27vh;
+            left: 5vw;
+            position: absolute;
+            font-size: 12px;
+        }
+        .right
+        {
+            position: absolute;
+            width: 50%;
+            height: 70vh;
+            right: 0;
+            top: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(about.png);
+        }
+        .man
+        {
+            position: absolute;
+            width: 38.5%;
+            height: 70vh;
+            right: 10vw;
+            background-image: url(man.png);
+        }
+        .text2
+        {
+            width: 100%;
+            height: 86vh;
+            /* border: 1px solid; */
+            position: absolute;
+           
+        }
+        .heading
+        {
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            top: 10vh;
+        }
+        .heading h3
+        {
+            font-size: 30px;
+            color: blue;
+        }
+        .heading p
+        {
+            font-weight: bolder;
+            color: orange;
+        }
+        .images
+        {
+            width: 100%;
+            height: 66vh;
+            /* border: 2px solid; */
+            margin-top: 30vh;
+            float: left;
+        }
+        .cont
+        {
+            float: left;
+            height: 60vh;
+            width: 30vw;
+            /* border: 1px solid blue;   */
+            margin: 19.5px;
+        }
+        .cont img
+        {
+            margin: 1% 15%;
+        }
+        .cont h3
+        {
+            margin: 1% 24%;
+        }
+        .cont p
+        {
+            margin: 3% 10%;
+            font-size: 14px;
+            text-align: center;
+        }
+        .recentpost
+        {
+            /* border: 2px solid; */
+            height: 50vh;
+            width: 100%;
+            position: relative;
+            top: 87vh;
+        }
+        .recent
+        {
+            height: 8vh;
+            width: 100%;
+            /* border: 2px solid blue; */
+            text-align: center;
+        }
+        .recent h2
+        {
+            color: orange;
+            font-size: 32px;
+        }
+        .build
+        {
+            height: 70vh;
+            width: 100%;
+            /* border: 2px solid blue; */
+            position: relative;
+            display: inline-block;
+        }
+        .Lorem
+        {
+            position: absolute;
+        }
+        .Lorem img
+        {
+            height: 68vh;
+        }
+        .service2
+        {
+            position: absolute;
+            left: 35%;
+            width: 100% ;
+        }
+        .service2 h5
+        {
+            color: blue;
+            position: absolute;
+            top: 45vh;
+        }
+        .service2 p
+        {
+            top: 49vh;
+            font-size: 14px;
+            color: blue;
+            position: absolute;
+        }
+        .service2 h4
+        {
+            color: blue;
+            position: absolute;
+            left: 28vw;
+            top: 45vh;
+            font-size: 14px;
+        }
+        .service2 button
+        {
+            background-color: orange;
+            position: absolute;
+            top: 62vh;
+            height: 6vh;
+            width: 10vw;
+            border-radius: 200px;
+            border: none;
+            text-decoration: none;
+            border: 2px solid orange;
+            left: 0;
+        }
+        .service2 button:hover
+        {
+            background-image: linear-gradient(to right bottom, lightgreen, wheat);
+            transition: 1.5s;
+            border: 1px solid khaki;
+            font-weight: bolder;
+        }
+        .service3
+        {
+            position: absolute;
+            display: inline-block;
+            right: 05%;
+            top: 0%;
+        }
+        .service3 h4
+        {
+            color: blue;
+            font-size: 14px;
+            position: absolute;
+            top: 45vh;
+        }
+        .service3 p
+        {
+            top: 49vh;
+            font-size: 14px;
+            color: blue;
+            position: absolute;
+        }
+        .service3 button
+        {
+            background-color: orange;
+            position: absolute;
+            top: 62vh;
+            height: 6vh;
+            width: 10vw;
+            border-radius: 200px;
+            border: none;
+            text-decoration: none;
+            border: 2px solid orange;
+            left: 0;
+        }
+        .service3 button:hover
+        {
+            background-image: linear-gradient(to right bottom, lightgreen, wheat);
+            transition: 1.5s;
+            border: 1px solid khaki;
+            font-weight: bolder;
+        }
+        .gradient
+        {
+            height: 103vh;
+            width: 100%;
+            /* border: 2px solid; */
+            position: relative;
+            background-image: linear-gradient(rgba(255, 166, 1, 0.575),rgba(255, 166, 1, 0.575)),url(portf.jpg);
+            top: 2vh;
+        }
+        .text-gradient
+        {
+            text-align: center;
+            position: absolute;
+            color: whitesmoke;
+            height: 29vh;
+            width: 100%;
+            top: 2vh;
+            /* border: 1px solid; */
+        }
+        .text-gradient p
+        {   
+            font-size: 13px;
+        }
+        .text-gradient button
+        {
+            width: 10vw;
+            background-image: linear-gradient(to right top , rgb(60, 175, 221), rgb(233, 81, 238));
+            color: whitesmoke;
+            border: none;
+            border: 2px solid blue;
+            border-radius: 200px;
+            height: 8vh;
+            margin-top: 25px;
+        }
+        .text-gradient button:hover
+        {
+            width: 10vw;
+            color: white;
+            background-image: linear-gradient(to left bottom, rgb(157, 255, 0),rgb(235, 185, 21));
+            transition: .5s;
+            border: none;
+            height: 8vh;
+            font-size: 14px;
+            border-radius: 200px;
+            border: 2px solid goldenrod;
+            margin-top: 25px;
+         }
+         .leftimage
+         {
+             position: relative;
+             /* border: 2px solid; */
+             top: 34vh;
+         }
+         .images_1
+         {
+             position: absolute;
+             left: 3vw;
+         }
+         .images_4
+         {
+             position: absolute;
+             left: 50vw;
+             display: inline-block;
+         }
+         .reviews
+         {
+             width: 100%;
+             height: 80vh;
+             position: relative;
+             /* border: 2px solid; */
+         }
+         .customer
+         {
+             position: absolute;
+             top: 3vh;
+             text-align: center;
+             height: 16vh;
+             /* border: 1px solid red; */
+             width: 100%;
+         }
+         .customer h1
+         {
+             color: rgba(0,0,0,.7);
+         }
+         .customer p
+         {
+             color: rgba(0,0,0,0.7);
+             font-weight: bolder;
+             font-size: 14px;
+             margin: 10px;
+         }
+         .card
+         {
+             height: 60vh;
+             width: 100%;
+             position: relative;
+             /* border: 2px solid rosybrown */
+             top: 21vh;
+             display: inline-block;
+         }
+         .card1
+         {
+             background-color: silver;
+             height: 42vh;
+             position: absolute;
+             width: 24vw;
+             left: 2vw;
+             display: inline-block;
+             border-radius: 20px;
+         }
+         .card1 h1
+         {
+             font-size: 50px;
+             position: absolute;
+         }
+         .card1 p
+         {
+            color: rgba(12, 11, 11, 0.829);   
+            position: absolute;
+            top: 18%;
+            left: 1.2vw;
+         }
+         .card2
+         {
+             background-color: silver;
+             height: 42vh;
+             position: absolute;
+             width: 24vw;
+             left: 35vw;
+             display: inline-block;
+             border-radius: 20px;
+         }
+         .card2 h1
+         {
+             font-size: 50px;
+             position: absolute;
+         }
+         .card2 p
+         {
+            color: rgba(12, 11, 11, 0.829);   
+            position: absolute;
+            top: 18%;
+            left: 1.2vw;
+         }
+         .card3
+         {
+             background-color: silver;
+             height: 42vh;
+             position: absolute;
+             width: 24vw;
+             left: 70vw;
+             display: inline-block;
+             border-radius: 20px;
+         }
+         .card3 h1
+         {
+             font-size: 50px;
+             position: absolute;
+         }
+         .card3 p
+         {
+            color: rgba(12, 11, 11, 0.829);   
+            position: absolute;
+            top: 18%;
+            left: 1.2vw;
+         }
+         .yellow
+         {
+             height: 30vh;
+             width: 100%;
+             top: 30vh;
+             background-color: rgb(245, 245, 55);
+             position: relative;
+         }
+         .left_side
+         {
+             position: absolute;
+             left: 4vw;
+             top: 11vh;
+         }
+         .left_side h1
+         {
+            font-size: 29px;
+         }
+         .left_side p
+         {
+             font-size: large;
+         }
+         .right_side
+         {
+             position: absolute;
+             right: 4vw;
+             top: 2vh;
+             display: inline-block;
+         }
+         .right_side input
+         {
+            width: 21vw;
+            border: none;
+            border: 2px yellow;
+            border-radius: 30px;
+            height: 8vh;
+            text-align: center;
+         }
+         .right_down
+         {
+             position: absolute;
+             right: 4vw;
+             top: 15vh;
+             display: inline-block;
+         }
+         .right_down input
+         {
+            width: 31vw;
+            border: none;
+            border: 2px yellow;
+            border-radius: 30px;
+            height: 8vh;
+            text-align: center;
+         }
+         .right_down button
+         {
+             width: 11vw;
+             border-radius: 21px;
+             border: none;
+             border: 2px solid blue;
+             background-color: blue;
+             color: whitesmoke;
+             height: 6vh;
+         }
+         .right_down button:hover
+         {
+             background-image: linear-gradient(to left bottom, red, blue);
+             font-size: 15px;
+             transition: 1s;
+         }
+         .footer
+         {
+             position: relative;
+             top: 40vh;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nave">
+            <img src="logo.png">
+            <div class="drop">
+                <ul>
+                    <li>HOME</li>
+                    <li>CONTACT US</li>
+                    <li>PROTFOLIO</li>
+                    <li>ABOUT US</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text">
+            <h3>WE ARE CERTIFIDE ENGINEERS</h3>
+            <h1>CONSTRUCTION SERVICES</h1>
+            <h2>CREATICVE & PROFESSIONAL</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam velit praesentium quibusdam eligendi animi totam inventore quae repudiandae. Ullam repellat earum sed soluta repudiandae accusantium ducimus, error similique officia perspiciatis vel minus quae commodi corrupti consectetur assumenda illo voluptas possimus eum magnam voluptatibus. Possimus ad fugit eius quos blanditiis! Eius accusamus perspiciatis at obcaecati delectus est amet sed quis hic quia qui recusandae dolorum, dolorem odit. Commodi quae explicabo cumque.</p>
+            <button class="btn1">KNOW MORE</button>
+            <button class="btn1">VIEW PROJECTS</button>
+       </div>
+    </div>
+    <div class="body">
+        <div class="left">
+            <h2>WELCOME TO OUR COMPANY</h2> 
+            <p>Lorem Ipsum dolor sit amet.</p>
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam velit praesentium<br>quibusdam eligendi animi totamLorem ipsum dolor sit amet consectetur adipisicing elit.<br> Aliquam velit praesentiumequibusdam eligendi animi totam<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam velit praesentium<br>quibusdam eligendi animi totamLorem ipsum dolor sit amet consectetur adipisicing elit.<br> Aliquam velit praesentiumequibusdam eligendi animi totam  </h6>
+        </div>
+            <div class="right">
+                <div class="man"></div>
+                </div>
+            </div>
+    </div>
+    <div class="text2">
+        <div class="heading">
+            <h3>Why Choose Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam velit praesentium<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam velit praesentium. Lorem Ipsum Dolor Sit<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam velit </p>
+        </div> 
+        <div class="images">
+          <div class="cont">
+            <img src="aaa.png">
+            <h3>We Deliver Quality</h3>
+            <p>Lorem ipsum dolor sit amet consectetur Aliquam velit praesentium</p>
+          </div>
+          <div class="cont">
+            <img src="aaa.png">
+            <h3>Always on Time</h3>
+            <p>Lorem ipsum dolor sit amet consectetur Aliquam velit praesentium</p>
+          </div>
+          <div class="cont">
+            <img src="aaa.png">
+            <h3>Always on Time</h3>
+            <p>Lorem ipsum dolor sit amet consectetur Aliquam velit praesentium</p>
+          </div>
+        </div> 
+    </div>
+    <div class="recentpost">
+        <div class="recent">
+            <h2>RECENT POSTS</h2>
+        </div>
+        <div class="build">
+            <div class="Lorem">
+                <img src="service.jpg">
+            </div>
+            <div class="service2">
+                <img src="service2.jpg">
+                <h5>2 Best sites to build your own sites</h5>
+                <p>Lorem Ipsum dolor sit amet consectetur<br>Lorem Ipsum dolor sit amet consectetur<br>Lorem Ipsum dolor sit amet consectetur<br></p>
+                <button>Learn More</button>
+                
+            </div>
+            <div class="service3">
+                <img src="service3.jpg">
+                <h4>2 Best sites to build your own sites</h4>
+                <p>Lorem Ipsum dolor sit amet consectetur<br>Lorem Ipsum dolor sit amet consectetur<br>Lorem Ipsum dolor sit amet consectetur<br></p>
+                <button>Learn More</button>
+            </div>
+        </div>
+        <div class="gradient">
+            <div class="text-gradient">
+                <h1>MADE WITH LOVE</h1>
+                <p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam velit praesentium quibusdam eligendi<br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <button class="show">SHOW ALL</button>
+                <button>Building</button>
+                <button>Interior Design</button>
+                <button>Isolation</button>
+                <button>Plumbing</button>
+            </div>
+            <div class="leftimage">
+                <div class="images_1">
+                    <img src="highlit.jpg">
+                </div>
+                <div class="images_4">
+                    <img src="im2.jpg" style="height: 30vh; width: 23vw;">
+                </div>
+                    <img src="im3.jpg" style="height: 30vh; width: 23vw; position: absolute; right: 1vw;">
+                    <img src="im4.jpg" style="height: 30vh; width: 23vw; position: absolute; left: 50vw; top: 34vh;">
+                    <img src="im5.jpg" style="height: 30vh; width: 23vw; position: absolute; right: 1vw; top: 34vh;">
+            </div>
+        </div>
+        <div class="reviews">
+           <div class="customer">
+            <h1>CUSTOMER REVIEWS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, voluptatum voluptatem.<br>Lorem ipsum dolor sit amet consectetur.</p>
+           </div>
+           <div class="card">
+               <div class="card1">
+                   <h1>"</h1>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel consequuntur architecto rem!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi id veniam aliquam. Voluptatum voluptatem neque, alias tenetur ex illo inventore qui culpa quidem error, necessitatibus vel quod repudiandae iure vitae.</p>
+                   <img src="c1.png" style="position: absolute; top: 49vh; left: 5vw;">
+                   <h6 style="position: absolute; left: 4vw; top: 62.5vh; font-size: 16px;">Cielien Diyon</h6>
+               </div>
+               <!--  -->
+               <div class="card2">
+                   <h1>"</h1>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel consequuntur architecto rem!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi id veniam aliquam. Voluptatum voluptatem neque, alias tenetur ex illo inventore qui culpa quidem error, necessitatibus vel quod repudiandae iure vitae.</p>
+                   <img src="c2.png" style="position: absolute; top: 49vh; left: 8vw;">
+                   <h6 style="position: absolute; left: 7vw; top: 62.5vh; font-size: 16px;">John Smith</h6>
+              </div>
+               <!--  -->
+               <div class="card3">
+                <h1>"</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel consequuntur architecto rem!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi id veniam aliquam. Voluptatum voluptatem neque, alias tenetur ex illo inventore qui culpa quidem error, necessitatibus vel quod repudiandae iure vitae.</p>
+                <img src="c1.png" style="position: absolute; top: 49vh; left: 9vw;">
+                   <h6 style="position: absolute; left: 8vw; top: 62.5vh; font-size: 16px;">Cielien Diyon</h6>
+            </div>
+        </div>
+           <div class="yellow">
+                <div class="left_side">
+                    <h1>DO YOU HAVE ANY QUESTIONS?</h1>
+                    <p>Feel Free to Contact Us</p>
+                </div>
+                <div class="right_side">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="right_down">
+                    <input type="text" placeholder="Message">
+                    <button>Submit</button>
+                </div>
+           </div>
+        </div>
+        <div class="footer">
+            <div class="footer_image">
+                <img src="adad.png">
+            </div>
+        </div>
+    </div>  
+</body>
+</html>

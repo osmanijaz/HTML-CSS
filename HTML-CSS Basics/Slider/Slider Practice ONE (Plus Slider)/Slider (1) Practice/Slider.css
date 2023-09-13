@@ -1,0 +1,83 @@
+
+/* PRACTICE 2 */
+
+/* *{
+    padding: 0%;
+    margin: 0%;
+}
+
+.sliderMain{
+    width: 80%;
+    height: 70vh;
+    border: 1px solid #000;
+    position: relative;
+    top: 10vh;
+    margin: auto;
+    overflow: hidden;
+}
+
+input{
+    display: none;
+}
+
+.label1{
+    position: absolute;
+    bottom: 0;
+    left: 42%;
+    width: 14px;
+    height: 14px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.label1:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+.label2{
+    left: 48%;
+}
+
+.label3{
+    left: 55%;
+}
+
+.imageDiv{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transition: left 1s;
+}
+
+.bgimage1{
+    background-image: url(./a.jpg);
+    background-size: 100% 100%;
+}
+
+.bgimage2{
+    background-image: url(./b.jpg);
+    background-size: 100% 100%;
+}
+
+.bgimage3{
+    background-image: url(./c.jpg);
+    background-size: 100% 100%;
+}
+
+input:checked+.label1+.imageDiv{
+    left: 0%;
+}
+
+input:checked+.label2+.imageDiv{
+    left: 0%;
+}
+
+input:checked+.label3+.imageDiv{
+    left: 0%;
+} */
+
+
+

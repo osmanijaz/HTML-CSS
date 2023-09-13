@@ -1,0 +1,52 @@
+inline elements
+e.g. 1 2 3 4 5 (rows)
+
+What work's with inline is:
+margin-left +-
+margin-right +-
+padding
+
+e.g.
+<u> </u>
+<i> </i>
+<b> </b>
+<span> </span>
+label
+<del> </del>
+<mark></mark>
+
+
+
+WILL NOT WORK WITH INLINE:
+height or width
+margin top 
+margin bottom
+
+
+block level elements    
+e.g. (column blocks)
+1
+2
+3
+4
+5
+
+height
+width
+margin left +-
+margin right +-
+margin top +- 
+margin bottom +-
+padding
+block shape
+after, before
+
+defaul width 100%
+
+
+e.g.
+div
+p
+ul
+li
+

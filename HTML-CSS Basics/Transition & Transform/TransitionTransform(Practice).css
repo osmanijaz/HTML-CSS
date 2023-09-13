@@ -1,0 +1,205 @@
+
+.mainborder{
+border: 1px solid black;
+width: 100%;
+height: 600px;
+position: relative;
+}
+
+.transitionone{
+float: left;
+position: relative;
+top: .5px;
+left: 7px;
+width: 112px;
+height: 100px;
+background-color:#fb8e7e;
+margin: 10px;
+margin-top: 10px;
+margin-left: 2px;
+/* transition-property: tranform; */
+transition:width 2s ,height 2s, transform 2s;
+
+}
+
+.transitionone:hover{
+background-color: #8ec9bb;
+width: 90px;
+height: 80px;
+transform:rotate(180deg);
+}
+
+
+
+.transitiontwo{
+    float: left;
+    position: relative;
+    top: .5px;
+    left: 7px;
+    width: 112px;
+    height: 100px;
+    background-color:#b2d9ea;
+    margin: 10px;
+    margin-top: 10px;
+    margin-left: 2px;
+       }
+    
+    .transitiontwo:hover{
+    background-color: #a02c2d;
+  
+    }
+
+    .transitionthree{
+        float: left;
+        position: relative;
+        top: .5px;
+        left: 7px;
+        width: 112px;
+        height: 100px;
+        background-color:#d3c0f9;
+        margin: 10px;
+        margin-top: 10px;
+        margin-left: 2px;
+        }
+        
+        .transitionthree:hover{
+        background-color: #8ac0de;
+        }
+    
+        .transitionthree{
+            float: left;
+            position: relative;
+            top: .5px;
+            left: 7px;
+            width: 112px;
+            height: 100px;
+            background-color: #F1F0CF;
+            margin: 10px;
+            margin-top: 10px;
+            margin-left: 2px;
+            }
+            
+            .transitionthree:hover{
+            background-color:  #EBCEED;
+            }
+
+            .transitionfour{
+                float: left;
+                position: relative;
+                top: .5px;
+                left: 7px;
+                width: 112px;
+                height: 100px;
+                background-color:  #FEBCC8;
+                margin: 10px;
+                margin-top: 10px;
+                margin-left: 2px;
+                }
+                
+                .transitionfour:hover{
+                background-color:#EAEBFF;
+                }
+
+                .transitionfive{
+                    float: left;
+                    position: relative;
+                    top: .5px;
+                    left: 7px;
+                    width: 112px;
+                    height: 100px;
+                    background-color:  #BBBAFF;
+                    margin: 10px;
+                    margin-top: 10px;
+                    margin-left: 2px;
+                    }
+                    
+                    .transitionfive:hover{
+                    background-color:#95FFF7;
+                    }
+
+                    .transitionsix{
+                        float: left;
+                        position: relative;
+                        top: .5px;
+                        left: 7px;
+                        width: 112px;
+                        height: 100px;
+                        background-color: #F4FDB1;
+                        margin: 10px;
+                        margin-top: 10px;
+                        margin-left: 2px;
+                        }
+                        
+                        .transitionsix:hover{
+                        background-color:  #FFC2E2;
+                        }
+
+                        .transitionseven{
+                            float: left;
+                            position: relative;
+                            top: .5px;
+                            left: 7px;
+                            width: 112px;
+                            height: 100px;
+                            background-color: #7C8BFF;
+                            margin: 10px;
+                            margin-top: 10px;
+                            margin-left: 2px;
+                            }
+                            
+                            .transitionseven:hover{
+                            background-color: #FEC8D8;
+                            }
+
+
+                            .transitioneight{
+                                float: left;
+                                position: relative;
+                                top: .5px;
+                                left: 7px;
+                                width: 112px;
+                                height: 100px;
+                                background-color: #F9665E;
+                                margin: 10px;
+                                margin-top: 10px;
+                                margin-left: 2px;
+                                }
+                                
+                                .transitioneight:hover{
+                                background-color: #AFC7D0;
+                                }
+
+                                .transitionnine{
+                                    float: left;
+                                    position: relative;
+                                    top: .5px;
+                                    left: 7px;
+                                    width: 112px;
+                                    height: 100px;
+                                    background-color: #A7DB8C;
+                                    margin: 10px;
+                                    margin-top: 10px;
+                                    margin-left: 2px;
+                                    }
+                                    
+                                    .transitionnine:hover{
+                                    background-color: #E5E28B;
+                                    }
+
+
+                                    .transitionten{
+                                        float: left;
+                                        position: relative;
+                                        top: .5px;
+                                        left: 7px;
+                                        width: 112px;
+                                        height: 100px;
+                                        background-color: #C69EBE;
+                                        margin: 10px;
+                                        margin-top: 10px;
+                                        margin-left: 2px;
+                                        }
+                                        
+                                        .transitionten:hover{
+                                        background-color: #D4C6B2;
+                                        }

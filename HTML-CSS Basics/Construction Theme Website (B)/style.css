@@ -1,0 +1,102 @@
+#Nav-Bar{
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+    padding: 1px;
+}
+#ul1{
+
+    margin-left: 48vw;
+    margin-top: 6vh;
+}
+#ul1>li{
+    color: orange;
+    list-style: none;
+    float: left;
+    margin-left: 6vh;
+    font-size: 24px;
+    opacity: .9;
+    cursor: pointer;
+}
+#ul1>li:hover{
+    color: yellow;
+}
+.logo{
+    height:50px;
+    width:200px;
+    background-image: url(logo.png);
+    background-size: 100% 100%;
+    margin-top: -24px;
+}
+.slid{
+    height: 660px;
+    background-image: url(slider.jpg);
+    background-image: 100% 100%;
+    width: 100%;
+    /* margin-top: 30px; */
+}
+.opci{
+    height: 660px;
+    width: 100%;
+    background-color: black;
+    /* margin-top:-660px; */
+    opacity: .7;
+    padding: 1px;
+}
+.para1{
+    color:white;
+    font-size: 16px;
+    margin-top: 45px;
+    text-align: center;
+}
+.lin2{
+    color: orange;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 30px;
+}
+.lin3{
+    color: yellow;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 30px;
+}
+.lin4{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+.btnhed{
+    height: 50px;
+    width: 200px;
+    background-color: orange;
+    border-radius: 50px;
+    outline: none;
+    color: white;
+    font-size: 22px;
+    margin-top: 70px;
+    margin-right: 80px;
+}
+.btnhed:hover{
+    background-color: yellow;
+    color: gray;
+    cursor: pointer;
+}
+#head21{
+    color: orange;
+    margin-top:230px;
+    margin-left: 70px;
+}
+#para21{
+    font-size: 27px;
+    margin-left: 70px;
+    margin-top: 15px;
+}
+#para22{
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.about{
+    
+}

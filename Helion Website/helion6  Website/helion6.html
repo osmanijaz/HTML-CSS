@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helion 6</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main1{
+            height: max-content;
+            width: 100%;
+            /* border: 2px solid; */
+            background-image: url(./decoration.png);
+            /* background-position: c; */
+            background-size: 25% 45%;
+            background-repeat: no-repeat;
+            padding-bottom: 100px;
+        }
+        .navbar{
+            height: 100px;
+            width: 100%;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .navbar>img{
+            height: 25px;
+            /* margin-left: 6%; */
+            
+        }
+        .navbar > ul{
+            /* border: 1px solid red; */
+            width: 50%;
+            height: max-content;
+        }
+        .navbar > ul > li {
+            display: inline-block;
+            position: relative;
+            list-style: none;
+            font-family: HKGrotesk, sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 27px;
+            color: rgb(0, 0, 0);
+            margin-left: 7%;
+            margin-top: 20px;
+            
+            cursor: pointer;
+            transition: .5s all linear;
+          /* border:1px solid blue; */
+          
+          height: 70px;
+        }
+        .navbar > ul > li > a{
+            text-decoration: none;
+            color: black;
+        }
+     
+        .navbar .uls{
+            position: absolute;
+            width: 400px;
+            height: auto;
+            /* border:1px solid red; */
+            background-color: black;
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-around;
+            display: none;
+            opacity: 0;
+            transition: .5s;
+            padding: 20px 0;
+            /* padding-bottom: 20px; */
+
+        }
+        .navbar > ul > li:hover .uls{
+            display: flex;
+            opacity: 1;
+        }
+        
+        .uls ul li{
+            list-style: none;
+            margin-top: 10px;
+            transition: .3s;
+            color: white;
+            width: max-content;
+        }
+        .uls ul li:hover{
+            transform: translateX(1%);
+            color: orangered;
+        }
+        .ulss{
+            position: absolute;
+            width: 200px;
+            height: auto;
+            /* border:1px solid red; */
+            background-color: black;
+            margin-top: 40px;
+            
+            display: none;
+            opacity: 0;
+            transition: .5s;
+            padding: 20px 0;
+        }
+        .ulss > ul > li {
+            list-style: none;
+            margin-top: 10px;
+            margin-left: 5%;
+            transition: .5s;
+        }
+        .ulss > ul > li:hover a {
+            color: orangered;
+            transform: translateX(2%);
+        }
+        .ulss > ul > li > a{
+            list-style: none;
+            color: white;
+            text-decoration: none;
+        }
+        .ulss > ul > li > i{
+            color: white;
+            margin-left: 40%;
+            transition: .5s;
+        }
+        .ulss > ul > li:hover i {
+            color: orangered;
+            transform: translateX(2%);
+        }
+        .navbar > ul > li:hover .ulss{
+            display: block;
+            opacity: 1;
+        }
+        .icons{
+            height: 70px;
+            width: 10%;
+        }
+        #icon1{
+            font-size: 35px;
+            margin-left: 18%;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+        .h1{
+            font-family: LouisGeorgeCafe, sans-serif;
+            font-size: 49.266px;
+            font-weight: 500;
+            line-height: 49.266px;
+            color: rgb(13, 13, 18);
+            text-align: center;
+            margin-top: 80px;
+        }
+        .p1{
+            font-family: HKGrotesk, sans-serif;
+            font-size: 16.266px;
+            font-weight: 700;
+            line-height: 21.266px;
+            color: rgb(13, 13, 18);
+            text-align: center;
+            margin-top: 40px; 
+        }
+        .main2{
+            height: max-content;
+            width: 100%;
+            /* background-color: wheat; */
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 25% 25% 25% 25%;
+            
+        }
+        .box{
+            /* border: 1px solid; */
+            overflow: hidden;
+            
+        }
+        .box:hover #image1{
+            transform: scale(1.2);
+        }
+        .box1{
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            /* background-color: red; */
+            overflow: hidden;
+            /* transition: .5s; */
+        }
+        #image1{
+            height: 100%;
+            width: 100%;
+            transition: .5s;
+        }
+        .box1:hover #image1{
+            transform: scale(1.2);
+        }
+        .box2{
+            /* background-color: blue; */
+            grid-row-start: 3;
+            grid-row-end: 5;
+            overflow: hidden;
+        }
+        #image2{
+            height: 100%;
+            width: 100%;
+
+            transform: scale(1.5);
+            /* margin-left: -50%; */
+            transition: .5s;
+        }
+        .box2:hover #image2{
+            transform: scale(1.7);
+        }
+        .box3{
+            /* background-color: yellow; */
+            grid-row-start: 3;
+            grid-row-end: 5;
+            grid-column-start: 3;
+            grid-column-end: 5;
+            overflow: hidden;
+        }
+        .box3:hover #image1{
+            transform: scale(1.2);
+        }
+        #icon2{
+            display: none;
+        }
+
+
+        .main10{
+        height: max-content;
+        width: 100%;
+        background-color: rgb(26,26,31);
+        padding: 50px;
+    }
+    .child19{
+        height: max-content;
+        width: 90%;
+        margin: auto;
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+    .child20{
+        height: max-content;
+        width: 300px;
+        /* border: 1px solid red; */
+        
+        /* border-bottom: 1px solid gray; */
+        padding: 50px 0;
+    }
+    #image10{
+        height: 25px;
+        /* margin-left: 40px; */
+        
+        
+        
+    }
+    .p26{
+        font-family: LouisGeorgeCafe, sans-serif;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 24px;
+        color: white;
+    }
+    .p27{
+        font-family:HKGrotesk, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 31px;
+        color: rgb(174, 174, 174);
+        margin-top: 30px;
+    }
+
+    .p28{
+        font-family:HKGrotesk, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 39px;
+        color: rgb(174, 174, 174);
+        width: max-content;
+        /* background-color: red; */
+        transition: .5s;
+        cursor: pointer;
+        position: relative;
+        margin-top: 20px;
+    }
+    .p28:hover{
+        color: white;
+    }
+
+    .p28_pd1{
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 154px;
+        background-color: rgb(109, 114, 119);
+        cursor: pointer;
+        transition: .5s;
+
+    }
+    .p28:hover .p28_pd1{
+        width: 0px;
+        background-color: white;
+        /* color: white; */
+    }
+    .p29{
+        font-family:HKGrotesk, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 39px;
+        color: white;
+        margin-top: 30px;
+    }
+    .p30{
+        font-family:HKGrotesk, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(174, 174, 174);
+        margin-top: 25px;
+        transition: .5s;
+        cursor: pointer;
+        width: max-content;
+    }
+    .p30:hover{
+        color: orangered;
+        margin-left: 10px;
+
+    }
+    #icon11{
+        font-size: 20px;
+        color: rgb(109, 114, 119);
+        margin-top: 20px;
+        cursor: pointer;
+        margin-left: 20px;
+        transition: .5s;
+    }
+    #icon11:hover{
+        color: orangered;
+    }
+    .color4{
+        color: gray;
+    }
+    .p31{
+        margin-left: 5%;
+        color: white;
+    }
+
+
+
+        /* ///////////////////// Media Queries //////////////////////////// */
+
+        @media screen and (max-width: 1024px) {
+            .navbar > ul > li > .anker2{
+            display: none;
+            
+        }
+        #icon2{
+            display: block;
+        }
+            
+        }
+        @media screen and (max-width: 768px) {
+            .navbar > ul{
+                display: none;
+            }
+            
+            .child20{
+                border-bottom: 1px solid gray;
+            }
+        }
+        
+
+
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="main1">
+        <div class="navbar">
+            <img src="./logo.png" alt="">
+            <ul>
+                <li><a href="">Home</a>
+                    <div class="uls">
+                    <ul>
+                        <li>Design Agency</li>
+                        <li>Photographer 2</li>
+                        <li>Personal</li>
+                        <li>Graphic Designer</li>
+                        <li>Concept Artist</li>
+                        <li>Motion Graphics</li>
+                        <li>Musician</li>
+                        <li>Copywriter</li>
+                        <li>NFT</li>
+                    </ul>
+                    <ul>
+                        <li>Photographer 1</li>
+                        <li>Photographer 3</li>
+                        <li>3D Artist</li>
+                        <li>Architect</li>
+                        <li>Character Designer</li>
+                        <li>Showcase</li>
+                        <li>Videographer</li>
+                        <li>Brutalism</li>
+                        <li>Home RTL</li>
+                    </ul>
+                </div>
+                </li>
+                <li><a href="">Pages.</a> 
+                    <div class="ulss">
+                        <ul>
+                            <li><a href="">Portfolio </a><i class="fa-solid fa-arrow-right-long"></i></li>
+                            <li><a href="">Tools</a><i class="fa-solid fa-arrow-right-long"></i></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">About Us.</a> </li>
+                <li><a href="">Blog.</a> </li>
+                <li><a class="anker2" href="">Store.</a> <i id="icon2" class="fa-solid fa-ellipsis-vertical"></i> </li>
+                <li><a class="anker2" href="">Contacts.</a> <i id="icon2" class="fa-solid fa-ellipsis-vertical"></i> </li>
+                
+            </ul>
+            <div class="icons">
+                <i id="icon1" class="fa-solid fa-bag-shopping"></i>
+                <i id="icon1" class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <h1 class="h1">Metro Fullwidth – Mouse Info</h1>
+        <p class="p1">Home . Metro Fullwidth – Mouse Info</p>
+    </div>
+    <div class="main2">
+        <div class="box box1">
+            <img id="image1" src="./port-115-copyright.jpg" alt="">
+        </div>
+        <div class="box">
+            <img id="image1" src="./port-114-copyright-480x480.jpg" alt="">
+
+        </div>
+        <div class="box">
+            <img id="image1" src="./port-113-copyright-480x480.jpg" alt="">
+
+        </div>
+        <div class="box">
+            <img id="image1" src="./port-112-copyright-480x480.jpg" alt="">
+
+        </div>
+        <div class="box">
+            <img id="image1" src="./port-111-copyright-480x480.jpg" alt="">
+
+        </div>
+        
+        <div class="box box2">
+            <img id="image2" src="./portf203-copyright.jpg" alt="">
+
+        </div>
+        <div class="box">
+            <img id="image1" src="./port-108-copyright-480x480.jpg" alt="">
+
+        </div>
+        <div class="box box3">
+            <img id="image1" src="./port-110-copyright.jpg" alt="">
+
+        </div>
+        <div class="box">
+            <img id="image1" src="./port-109-copyright-480x480.jpg" alt="">
+
+        </div>
+    </div>
+
+
+    <div class="main10">
+        <div class="child19">
+            <div class="child20">
+                <img  id="image10" src="./logo-inverse.png" alt="">
+            </div>
+            <div class="child20">
+                <p class="p26">Office</p>
+                <p class="p27">2700 Fire Mesa StLas <br> Vegas, NV 89128</p>
+                <p class="p28">info@example.com<span class="p28_pd1"></span></p>
+                <p class="p29">+1 800 123 45 67</p>
+            </div>
+            <div class="child20">
+                <p class="p26">Links</p>
+                <p class="p30">Blog</p>
+                <p class="p30">About Us</p>    
+                <p class="p30"> Shop</p>  
+                <p class="p30">Contacts</p> 
+                    
+
+            </div>
+            <div class="child20">
+                <p class="p26">Socials</p>
+                <i id="icon11" class="fa-brands fa-facebook-f"></i>
+                <i id="icon11" class="fa-brands fa-twitter"></i>
+                <i id="icon11" class="fa-brands fa-dribbble"></i>
+                <i id="icon11" class="fa-brands fa-behance"></i>
+
+            </div>
+        </div>
+        <hr style="border: 1px solid; background-color: gray; height: 1px; width: 90%; margin: auto;">
+
+        <p class="p27 p31"><span class="color4"> Axiom Theme </span> © 2022. All Rights Reserved.</p>
+
+    </div>
+
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

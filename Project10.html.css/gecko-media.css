@@ -1,0 +1,227 @@
+@media screen and (max-width:1064px) {
+
+    .top-black-bar-main {
+        display: none;
+    }
+
+    .ul-navbar {
+        display: none;
+    }
+
+    .nav-input {
+        display: none;
+    }
+
+    .logo-main {
+        /* position: absolute; */
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .bars {
+        visibility: visible;
+    }
+
+    .image-main {
+        width: 150%;
+
+    }
+
+    .main-pic {
+        overflow: hidden;
+    }
+
+    .main-cat-box {
+        margin-top: -5%;
+        margin-left: 5%;
+
+    }
+
+
+    .text-main-pic {
+
+        transform: translate(-60%, -50%);
+        text-align: center;
+        top: 20%;
+    }
+
+    .text-main-h1 {
+        margin-top: 10%;
+        font-size: 3vmax;
+
+    }
+
+    .text-main-p1 {
+        display: none;
+    }
+
+    .text-main-button {
+        width: 80px;
+        height: 30px;
+    }
+
+    .left-sell {
+        width: 100%;
+        padding-top: 0%;
+        padding-bottom: 0%;
+
+    }
+
+    .image-sell {
+        width: 100%;
+    }
+
+    .head-sell {
+        margin-top: 20%;
+
+    }
+
+    .right-sell {
+        width: 100%;
+    }
+
+    .side1-spec {
+        display: none;
+
+    }
+
+    .side2-spec {
+        width: 80%;
+        margin-left: 10%;
+
+    }
+
+    .side3-spec {
+        width: 80%;
+        margin-left: 10%;
+        height: max-content;
+        text-align: center;
+    }
+
+    .special-main {
+        padding-bottom: 20%;
+        /* height: 800px; */
+    }
+
+    .trend-main2 {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .foot-box {
+        width: 45%;
+        margin-top: 8%;
+
+
+    }
+
+    .foot-li {
+        list-style: none;
+        margin-top: 1%;
+        color: grey;
+
+    }
+
+
+
+
+}
+
+
+
+@media screen and (max-width:900px) {
+    .bike-box {
+        width: 46%;
+    }
+
+}
+
+
+
+@media screen and (max-width:768px) {
+    .cat-box {
+        width: 35%;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+
+    .image-cat {
+        height: 130vh;
+    }
+
+    .bike-box {
+        width: 70%;
+
+        margin-left: 16%;
+    }
+
+    .bike-hover {
+        height: 60%;
+    }
+
+    .bar-top {
+        height: 40%;
+
+    }
+
+    .right-sell-product {
+        width: 60%;
+        margin-left: 20%;
+
+    }
+}
+
+
+
+
+@media screen and (max-width:400px) {
+
+    .cat-head {
+
+        top: 5%;
+    }
+
+    .cat-para1 {
+        top: 14%;
+
+    }
+
+    .cat-box {
+        margin-top: 8%;
+    }
+
+    .main-cat-box {
+        top: 19%;
+
+    }
+
+    .cat-para {
+        top: 35%;
+    }
+
+    .image-cat {
+        height: 70vh;
+    }
+
+
+    .bike-box {
+        width: 85%;
+        margin: 10%;
+    }
+
+    .foot-box {
+        width: 95%;
+
+
+    }
+
+    .foot-li {
+        list-style: none;
+        margin-top: 1%;
+        color: grey;
+    }
+
+
+
+
+}

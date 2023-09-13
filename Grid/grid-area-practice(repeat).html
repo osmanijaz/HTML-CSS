@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- article {
+        display: grid;
+        grid-template-columns: 80px 1fr 80px;
+    }
+    
+    
+    ***every article in entire page starts from column 2
+    article > *{
+        grid-column: 2;
+        min-width: 0;
+    } 
+     -->
+
+    <style>
+        .container>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            color: #ffeead;
+        }
+
+        .container>div>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+
+        }
+
+
+        html,
+        body {
+            background-color: #ffeead;
+            margin: 10px;
+        }
+
+        /* *********************************** */
+        /* **if same div class can use nth-child** */
+        /* *********************************** */
+
+
+        /* .container > div:nth-child(1n) {
+  background-color: #96ceb4;	
+}
+
+.container > div:nth-child(3n) {
+  background-color: #88d8b0;
+}
+
+.container > div:nth-child(2n) {
+      background-color: #ff6f69;
+}
+
+.container > div:nth-child(4n) {
+      background-color: #ffcc5c;
+} */
+
+        .container {
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            /* grid-template-columns: repeat(auto-fit, 100px); */
+
+
+            /* grid-template-rows: 100px 100px; */
+            grid-auto-rows: 75px;
+            grid-auto-flow: dense;
+
+        }
+
+
+        .horizontal {
+            /* ********************************* */
+
+            /* ***grid-column: auto / span 2;*** */
+
+            /* to avoid any gaps can remove auto and just use span 2*/
+            /* ********************************* */
+
+
+            grid-column: span 2;
+
+        }
+
+        .vertical {
+            grid-row: span 2;
+        }
+
+        .big {
+            grid-column: span 2;
+            grid-row: span 2;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- ---img 1--- -->
+        <div><img src="./images/1.jpg" /></div>
+
+        <!-- ---img 2 vertical--- -->
+        <div class="vertical"><img src="./images/2.jpg" /></div>
+
+        <!-- ---img 3 horizontal--- -->
+        <div class="horizontal"><img src="./images/3.jpg" /></div>
+
+        <!-- ---img 4--- -->
+        <div><img src="./images/4.jpg" /></div>
+
+        <!-- ---img 5--- -->
+        <div><img src="./images/5.jpg" /></div>
+
+        <!-- ---img 6 big--- -->
+        <div class="big"><img src="./images/6.jpg" /></div>
+
+        <!-- ---img 7--- -->
+        <div><img src="./images/7.jpg" /></div>
+
+        <!-- ---img 8 vertical--- -->
+        <div class="vertical"><img src="./images/8.jpg" /></div>
+
+        <!-- ---img 9--- -->
+        <div><img src="./images/9.jpg" /></div>
+
+        <!-- ---img 10 horizontal--- -->
+        <div class="horizontal"><img src="./images/10.jpg" /></div>
+
+        <!-- ---img 11 --- -->
+        <div><img src="./images/11.jpg" /></div>
+
+        <!-- ---img 12 big--- -->
+        <div class="big"><img src="./images/12.jpg" /></div>
+
+        <!-- ---img 13 --- -->
+        <div><img src="./images/13.jpg" /></div>
+
+        <!-- ---img 14 horizontal--- -->
+        <div class="horizontal"><img src="./images/14.jpg" /></div>
+
+        <!-- ---img 15 --- -->
+        <div><img src="./images/15.jpg" /></div>
+
+        <!-- ---img 16 big--- -->
+        <div class="big"><img src="./images/16.jpg" /></div>
+
+        <!-- ---img 17 --- -->
+        <div><img src="./images/17.jpg" /></div>
+
+        <!-- ---img 18 vertical--- -->
+        <div class="vertical"><img src="./images/18.jpg" /></div>
+
+    </div>
+
+
+
+
+    <!-- <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+        <div>17</div>
+        <div>18</div>
+
+    </div> -->
+
+
+</body>
+
+</html>

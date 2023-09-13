@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+        .main-navbar {
+            width: 100%;
+            height: 60px;
+            background-color: green;
+            padding: 1px;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 25px;
+            margin-top: 14px;
+            margin-left: 2%;
+
+        }
+
+        .icon-bar {
+            position: absolute;
+            right: 2%;
+            font-size: 25px;
+            top: 30%;
+            visibility: hidden;
+        }
+
+        .icon-bar:hover+.dropdown {
+            visibility: visible;
+        }
+
+        .ul-list {
+            position: absolute;
+            right: 8%;
+            top: 25%;
+            list-style: none;
+
+
+        }
+
+        .li-list {
+            font-size: 23px;
+            display: inline-block;
+            margin-left: 30px;
+
+
+        }
+
+        .ul-list a {
+
+            text-decoration: none;
+            color: black;
+        }
+
+        .dropdown {
+            position: absolute;
+            right: 2%;
+            width: 150px;
+            height: 36.7vh;
+            background-color: black;
+            top: 100%;
+
+            visibility: hidden;
+        }
+
+
+        .ul-dropdown {
+            list-style: none;
+
+
+        }
+
+        .li-dropdown {
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            /* margin-top: 2%; */
+            border: 1px solid white;
+        }
+
+
+        @media screen and (max-width: 555px) {
+            .ul-list {
+                visibility: hidden;
+            }
+
+            .logo {
+                text-align: center;
+
+            }
+
+            .icon-bar {
+                visibility: visible;
+
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main-navbar">
+        <div class="logo">LOGO</div>
+
+
+        
+        <i class="icon-bar fa-solid fa-bars"></i>
+        <div class="dropdown">
+            <ul class="ul-dropdown">
+                <li class="li-dropdown"><a href=""></a>Home</li>
+                <li class="li-dropdown"><a href=""></a>Home</li>
+                <li class="li-dropdown"><a href=""></a>Home</li>
+                <li class="li-dropdown"><a href=""></a>Home</li>
+                <li class="li-dropdown"><a href=""></a>Home</li>
+
+            </ul>
+
+
+        </div>
+        <ul class="ul-list">
+            <li class="li-list"><a href=""></a>Home</li>
+            <li class="li-list"><a href=""></a>Home</li>
+            <li class="li-list"><a href=""></a>Home</li>
+            <li class="li-list"><a href=""></a>Home</li>
+            <li class="li-list"><a href=""></a>Home</li>
+        </ul>
+
+    </div>
+
+
+
+</body>
+
+</html>

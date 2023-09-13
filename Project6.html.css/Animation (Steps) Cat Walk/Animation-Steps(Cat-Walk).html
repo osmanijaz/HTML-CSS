@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Walk</title>
+
+    <style>
+        html {
+
+            background: #0c0207;
+        }
+
+        #main {
+            width: 1325px;
+            height: 500px;
+            margin: 2em auto;
+            overflow: hidden;
+            border-radius: 16px;
+
+        }
+
+        #sky {
+            border-radius: 16px;
+            width: 1325px;
+            height: 500px;
+            background: linear-gradient(to bottom, #080808 0%, #04B4AE 50%, #0c0207 100%);
+            position: absolute;
+            z-index: -30;
+            top: 0;
+            margin-top: 2em;
+        }
+
+        #city {
+            background: url('https://res.cloudinary.com/pastelitos/image/upload/v1610526533/eva/edificiosOne_fsg7nx.svg');
+            height: 500px;
+            width: 1325px;
+            z-index: -10;
+            top: 6.5em;
+            background-position: 0px 0px;
+            background-repeat: repeat-x;
+            animation: animar_edificios 120s linear infinite;
+            position: absolute;
+        }
+
+        @keyframes animar_edificios {
+            from {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: 100% 0;
+            }
+        }
+
+        #moon {
+            width: 6em;
+            height: 6em;
+            border-radius: 50%;
+            /* background-color: blueviolet; */
+            box-shadow: 30px 10px 0 #F7F8E0;
+            margin-top: 1em;
+            margin-left: 50%;
+            position: absolute;
+            z-index: -19;
+        }
+
+        #cat {
+            background: url('https://res.cloudinary.com/pastelitos/image/upload/v1610526571/eva/gatito_pushui.svg');
+            height: 297px;
+            /* width: auto; */
+            width: 507px;
+            /* background-color: black; */
+            margin-top: 4.5em;
+            margin-left: 2em;
+            z-index: 10;
+            animation: sprite-animation 1.3s steps(16) infinite;
+        }
+
+        @keyframes sprite-animation {
+            from {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: -8120px 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <div id="main">
+        <div id="sky"></div>
+        <div id="city"></div>
+        <div id="moon"></div>
+        <div id="cat"></div>
+    </div>
+
+
+
+</body>
+
+</html>

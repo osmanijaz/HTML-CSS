@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #343F50;
+        }
+
+        .wrapper {
+            display: inline-flex;
+        }
+
+        .static-txt {
+            color: #fff;
+            font-size: 60px;
+            font-weight: 400;
+
+        }
+
+        .dynamic-txts {
+
+            margin-left: 20px;
+            height: 100px;
+            line-height: 90px;
+            /* background: red; */
+            overflow: hidden;
+            /* max-height: max-content; */
+            max-width: max-content;
+
+        }
+
+        .dynamic-txts li {
+            color: #F26F72;
+            list-style: none;
+            font-size: 60px;
+            font-weight: 500;
+            position: relative;
+            top: 0;
+            animation: slider 6s steps(4) infinite;
+        }
+
+        @keyframes slider {
+            100% {
+                top: -360px;
+
+
+            }
+        }
+
+        .dynamic-txts li span {
+            position: relative;
+
+
+        }
+
+
+        .dynamic-txts li span::after {
+            content: "";
+            position: absolute;
+            background: #343F50;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            border-left: 2px solid #F26F72;
+            animation: typing 1.5s steps(10) infinite;
+        }
+
+        @keyframes typing {
+            100% {
+                left: 100%;
+                margin: 0 -38px 0 38px;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="static-txt">I'm a</div>
+        <ul class="dynamic-txts">
+            <li><span>YouTuber</span></li>
+            <li><span>Designer</span></li>
+            <li><span>Developer</span></li>
+            <li><span>Freelancer</span></li>
+        </ul>
+    </div>
+
+
+
+</body>
+
+</html>

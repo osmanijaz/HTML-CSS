@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .mainMain {
+            width: 100%;
+            height: 100vh;
+            animation-name: main;
+            animation-duration: 7s;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            background-size: cover;
+            /* border: 2px solid red; */
+
+
+
+        }
+
+        @keyframes main {
+            0% {
+
+
+                background-image: linear-gradient(rgba(28, 28, 28, 0.7), rgba(28, 28, 28, 0.7)), url("./Images/header-bg3.jpg");
+                background-size: cover;
+                /* border: 2px solid red; */
+            }
+
+            50% {
+                background-image: linear-gradient(rgba(28, 28, 28, 0.7), rgba(28, 28, 28, 0.7)), url("./Images/header-bg.jpg");
+                background-size: cover;
+                /* border: 2px solid red; */
+            }
+
+            100% {
+                background-image: linear-gradient(rgba(28, 28, 28, 0.7), rgba(28, 28, 28, 0.7)), url("./Images/header-bg2.jpg");
+                background-size: cover;
+                /* border: 2px solid red; */
+            }
+        }
+
+        .navMain {
+            position: relative;
+            width: 100%;
+            height: 75px;
+
+
+
+
+        }
+
+
+        .logoStyle {
+            /* border: 1px solid red; */
+            height: 25px;
+            width: 73px;
+            margin-left: 75px;
+            margin-top: 25px;
+            /* border: 2px solid red; */
+
+
+
+        }
+
+        .navMainList {
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 24px;
+            /* color: rgb(230, 95, 120); */
+            color: white;
+            margin-left: 640px;
+            list-style: none;
+            margin-top: -28px;
+
+            /* border: 2px solid red; */
+        }
+
+        .navList {
+            display: inline-block;
+            margin-left: 30px;
+            /* border: 2px solid red; */
+        }
+
+        .navList1 {
+            display: inline-block;
+            margin-left: 30px;
+            color: rgb(230, 95, 120);
+            /* border: 2px solid red; */
+        }
+
+        .mainParaHead {
+            text-align: center;
+            margin-top: 100px;
+            color: white;
+            font-weight: 400;
+            letter-spacing: 1px;
+            /* border: 2px solid red; */
+        }
+
+        .text-steps {
+            position: relative;
+            height: 70px;
+            width: 570px;
+            /* border: 1px solid white; */
+            margin-left: 29%;
+            margin-top: 30px;
+            /* border: 2px solid red; */
+        }
+
+        .ts-h1 {
+            color: white;
+            position: absolute;
+            top: 5px;
+            font-size: 54px;
+            font-weight: 500;
+            line-height: 64.8px;
+
+            /* border: 2px solid red; */
+
+        }
+
+        .ul-step {
+            position: absolute;
+            list-style: none;
+            top: 5px;
+            left: 85px;
+            font-size: 54px;
+            font-weight: 500;
+            line-height: 64.8px;
+            color: white;
+            /* border: 2px solid red; */
+        }
+
+        .mainPara {
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 28.8px;
+            letter-spacing: 1px;
+
+            /* border: 2px solid red; */
+
+        }
+
+        .mainButton {
+            width: 185px;
+            height: 50px;
+            border: 2px solid white;
+            border-radius: 30px;
+            background-color: transparent;
+            color: white;
+            font-weight: 700;
+            margin-left: 550px;
+            margin-top: 30px;
+            /* border: 2px solid red; */
+
+        }
+
+        .mouseMain {
+            height: 45px;
+            width: 25px;
+            border: 2px solid white;
+            border-radius: 30px;
+            margin-left: 630px;
+            margin-top: 70px;
+            /* border: 2px solid red; */
+
+        }
+
+        .aboutMain {
+            position: relative;
+            width: 100%;
+            height: 570px;
+            /* border: 1px solid red; */
+            padding: 1px;
+            box-sizing: border-box;
+
+
+        }
+
+
+
+        .abLeft {
+            width: 550px;
+            height: 410px;
+            /* border: 2px solid grey; */
+            display: inline-block;
+            margin-top: 80px;
+            margin-left: 70px;
+
+
+
+        }
+
+        .abPic {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .abRight {
+            position: absolute;
+            top: 80px;
+            left: 640px;
+            width: 550px;
+            height: 410px;
+            /* border: 1px solid red; */
+            display: inline-block;
+        }
+
+
+        .abHead1 {
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 38.4px;
+            color: rgb(33, 37, 41);
+            letter-spacing: 2px;
+
+
+        }
+
+
+        .abHead2 {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 28.8px;
+            color: rgb(33, 37, 41);
+            letter-spacing: 2px;
+
+
+        }
+
+        .abHead3 {
+
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28.8px;
+            color: rgb(230, 95, 120);
+            letter-spacing: 2px;
+
+
+        }
+
+
+        .abPara1 {
+
+            margin-top: 20px;
+            font-size: 14.5px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgb(108, 117, 125);
+        }
+
+        .abicon {
+            position: relative;
+            left: -5px;
+            top: 5px;
+            margin-top: 6px;
+            width: 45px;
+            height: 45px;
+            border-radius: 50px;
+            border: 2px solid rgb(183, 183, 183);
+            margin-left: 5px;
+            display: inline-block;
+        }
+
+        /* ===services=== */
+
+
+
+        .servMain {
+            width: 100%;
+            height: 170px;
+            /* border: 2px solid red; */
+
+
+        }
+
+        .servHead {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: 400;
+            word-spacing: 2px;
+            letter-spacing: 2px;
+            margin-top: 30px;
+        }
+
+        .servPara {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgb(108, 117, 125);
+            margin-top: 20px;
+        }
+
+
+        .servBoxes {
+            width: 100%;
+            height: 600px;
+            /* border: 1px solid red; */
+
+
+        }
+
+
+
+        .servChildBox {
+
+            width: 355px;
+            height: 265px;
+            border: 1px solid rgb(207, 207, 207);
+            float: left;
+            margin-top: 23px;
+            margin-left: 50px;
+
+
+
+        }
+
+        .servChildIcon {
+            width: 60px;
+            height: 60px;
+            border: 1px solid black;
+            margin-left: 42%;
+            margin-top: 20px;
+
+        }
+
+        .servChildHead {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+            color: rgb(33, 37, 41);
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .servChildLine {
+            height: 3px;
+            width: 50px;
+            background-color: rgb(230, 95, 120);
+            margin-top: 20px;
+            margin-left: 152px;
+
+        }
+
+        .servChildPara {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgb(108, 117, 125);
+            margin-top: 20px;
+
+        }
+
+        /* ===freelance=== */
+
+        .free {
+            width: 100%;
+            height: 180px;
+            /* border: 1px solid red; */
+
+        }
+
+        .freeh {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 38.4px;
+            color: rgb(33, 37, 41);
+            margin-top: 105px;
+
+        }
+
+        .freebutton {
+            width: 130px;
+            height: 50px;
+            background-color: #E45E77;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 14px;
+            word-spacing: 2px;
+            margin-left: 560px;
+            margin-top: 20px;
+
+
+        }
+
+        /* ===Client=== */
+        .clientMain {
+            width: 100%;
+            height: 500px;
+            /* border: 1px solid red; */
+
+
+
+
+        }
+
+        .clientHead {
+            text-align: center;
+            margin-top: 80px;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 38.4px;
+            color: rgb(33, 37, 41);
+            letter-spacing: 2px;
+
+
+
+        }
+
+        .clientCircle {
+            width: 100px;
+            height: 100px;
+            border: 2px solid rgb(194, 193, 193);
+            border-radius: 50px;
+            margin-left: 580px;
+            margin-top: 90px;
+
+        }
+
+        .clientImage {
+            width: 100%;
+            height: 100%;
+            border-radius: 50px;
+
+        }
+
+
+        .clientPara {
+            text-align: center;
+            font-size: 14.5px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgb(108, 117, 125);
+            margin-top: 20px;
+
+        }
+
+        .clientPara1 {
+            text-align: center;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 30px;
+            color: rgb(108, 117, 125);
+            margin-top: 40px;
+            font-style: italic;
+            letter-spacing: 1px;
+
+        }
+
+        .clientName {
+            text-align: center;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 30px;
+
+            margin-top: 20px;
+            letter-spacing: 1px;
+
+        }
+
+        /* ===work=== */
+
+        .workMain {
+            width: 100%;
+            height: 150px;
+            /* border: 1px solid red; */
+
+
+        }
+
+        .workHead {
+            text-align: center;
+            margin-top: 80px;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 38.4px;
+            color: rgb(33, 37, 41);
+            letter-spacing: 2px;
+
+
+
+        }
+
+
+        .workPara {
+            text-align: center;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 30px;
+            color: rgb(108, 117, 125);
+            margin-top: 20px;
+
+            letter-spacing: 1px;
+
+        }
+
+        .workBoxMain {
+            width: 100%;
+            height: 680px;
+            /* border: 1px solid red; */
+
+        }
+
+        .workNav {
+            width: 100%;
+            height: 70px;
+            /* border: 1px solid red; */
+
+
+
+
+        }
+
+        .workli {
+            position: relative;
+            left: 320px;
+            top: 27px;
+            float: left;
+            list-style: none;
+            margin-left: 50px;
+
+        }
+
+        .workli1 {
+            width: 60px;
+            height: 30px;
+            border-radius: 30px;
+            padding: 1px;
+            padding-top: 4px;
+            padding-left: 15px;
+            box-sizing: border-box;
+            border: 1px solid #E45E77;
+            background-color: #E45E77;
+            color: white;
+            position: relative;
+            left: 320px;
+            top: 27px;
+            float: left;
+            list-style: none;
+            margin-left: 50px;
+            margin-top: -6px;
+
+        }
+
+
+        .workBoxChild {
+            width: 100%;
+            height: 550px;
+            /* border: 2px solid blue; */
+            margin-top: 40px;
+
+
+
+        }
+
+
+        .workBox1 {
+            width: 350px;
+            height: 235px;
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            float: left;
+            margin-left: 50px;
+            margin-top: 25px;
+
+        }
+
+        .workStylePic {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+
+
+
+        }
+
+        /* ===Blog=== */
+        .BlogMain {
+            width: 100%;
+            height: 170px;
+            /* border: 1px solid red; */
+
+
+        }
+
+        .BlogHead {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 38.4px;
+            color: rgb(33, 37, 41);
+            letter-spacing: 2px;
+
+
+
+        }
+
+
+        .BlogPara {
+            text-align: center;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 30px;
+            color: rgb(108, 117, 125);
+            margin-top: 20px;
+
+            letter-spacing: 1px;
+
+        }
+
+        .blogbox {
+            width: 100%;
+            height: 500px;
+            /* border: 1px solid blue; */
+
+        }
+
+        .blogboxChild {
+            width: 350px;
+            height: 450px;
+            /* border: 1px solid black; */
+            float: left;
+            margin-left: 50px;
+            margin-top: 25px;
+            border-radius: 10px;
+
+        }
+
+        .blogPic {
+            width: 350px;
+            height: 225px;
+            /* border: 1px solid yellowgreen; */
+            border-radius: 10px;
+        }
+
+        .blogPicStyle {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+
+        }
+
+        .bloghead {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+            color: rgb(33, 37, 41);
+            margin-left: 20px;
+            margin-top: 15px;
+
+        }
+
+        .blogdate {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19.2px;
+            color: rgb(108, 117, 125);
+            letter-spacing: 1px;
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+
+        .blogdatepink {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 19.2px;
+            color: #E45E77;
+            letter-spacing: 2px;
+
+
+        }
+
+        .blogPara2 {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgb(108, 117, 125);
+            margin-top: 15px;
+            margin-left: 20px;
+
+
+        }
+
+        .readBlog {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            color: rgb(108, 117, 125);
+            margin-left: 20px;
+            margin-top: 15px;
+
+        }
+
+        /* ===contact=== */
+
+        .contactMain {
+            width: 100%;
+            height: 800px;
+            /* border: 1px solid red; */
+
+        }
+
+
+
+
+
+
+        .contHead {
+            text-align: center;
+            margin-top: 80px;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 38.4px;
+            color: rgb(33, 37, 41);
+            letter-spacing: 2px;
+
+
+
+        }
+
+
+        .contPara {
+            text-align: center;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 30px;
+            color: rgb(108, 117, 125);
+            margin-top: 20px;
+
+            letter-spacing: 1px;
+
+        }
+
+        .contBox {
+            width: 175px;
+            height: 175px;
+            /* border: 1px solid red; */
+            float: left;
+            margin-left: 180px;
+            margin-top: 60px;
+
+
+        }
+
+        .conticon {
+            width: 40px;
+            height: 40px;
+            border: 1px solid red;
+            margin-left: 65px;
+            margin-top: 20px;
+
+        }
+
+        .contHe {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 21.6px;
+            color: rgb(33, 37, 41);
+            text-align: center;
+            margin-top: 20px;
+            letter-spacing: 1px;
+
+
+        }
+
+
+        .contp {
+
+            font-weight: 200;
+            line-height: 21.6px;
+            color: grey;
+            text-align: center;
+            margin-top: 5px;
+            letter-spacing: 1px;
+
+
+        }
+
+        .name {
+            width: 544px;
+            height: 46px;
+            border: 1px solid grey;
+
+            margin-top: 250px;
+            margin-left: 80px;
+            color: grey;
+            padding-top: 12px;
+            padding-left: 8px;
+            box-sizing: border-box;
+
+
+        }
+
+        .name1 {
+            width: 544px;
+            height: 46px;
+            border: 1px solid grey;
+
+            margin-top: -45px;
+            margin-left: 650px;
+            color: grey;
+            padding-top: 12px;
+            padding-left: 8px;
+            box-sizing: border-box;
+
+
+        }
+
+
+        .name2 {
+            width: 1114px;
+            height: 46px;
+            border: 1px solid grey;
+
+            margin-top: 30px;
+            margin-left: 80px;
+            color: grey;
+            padding-top: 12px;
+            padding-left: 8px;
+            box-sizing: border-box;
+
+
+        }
+
+
+        .name3 {
+            width: 1114px;
+            height: 100px;
+            border: 1px solid grey;
+
+            margin-top: 30px;
+            margin-left: 80px;
+            color: grey;
+            padding-top: 12px;
+            padding-left: 8px;
+            box-sizing: border-box;
+
+
+        }
+
+        .contBut {
+            width: 185px;
+            height: 50px;
+            background-color: #E45E77;
+            color: white;
+            text-align: center;
+            padding-top: 15px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            margin-top: 28px;
+            margin-left: 1010px;
+            font-weight: 700;
+
+        }
+
+        .foot {
+            padding: 1px;
+            box-sizing: border-box;
+            width: 100%;
+            height: 200px;
+            background-color: #212121;
+            margin-top: -60px;
+
+        }
+
+        .footcir {
+            position: relative;
+            left: 500px;
+            top: 80px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: rgb(63, 63, 63);
+            float: left;
+            margin-left: 10px;
+
+
+
+
+        }
+
+        .footp {
+
+            margin-left: 470px;
+            margin-top: 150px;
+            color: aliceblue;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="mainMain">
+        <div class="navMain">
+
+
+            <img class="logoStyle" src="./Images/logo.png" alt="" srcset="">
+
+            <ul class="navMainList">
+                <li class="navList1">Home
+                </li>
+                <li class="navList">About</li>
+                <li class="navList">Services</li>
+                <li class="navList">Client</li>
+                <li class="navList">Portfolio</li>
+                <li class="navList">Blog</li>
+                <li class="navList"> Contact</li>
+            </ul>
+
+
+        </div>
+
+        <h2 class="mainParaHead">Welcome</h2>
+
+        <div class="text-steps">
+            <h1 class="ts-h1">I'M</h1>
+            <ul class="ul-step">
+                <!-- <li class="li-step">Kerri Deo.</li> -->
+                <li class="li-step">A Graphic Designer.</li>
+                <!-- <li class="li-step">A Photographer.</li> -->
+            </ul>
+
+
+
+        </div>
+
+        <p class="mainPara">It is a long established fact that a reader will be of a page when<br> established fact
+            looking at its layout.</p>
+
+        <button class="mainButton">DOWNLOAD CV</button>
+
+        <div class="mouseMain"></div>
+    </div>
+
+    <!-- ===about=== -->
+
+    <div class="aboutMain">
+        <div class="abLeft">
+            <img class="abPic" src="./Images/about.jpg" alt="">
+        </div>
+        <div class="abRight">
+            <h1 class="abHead1">About Me</h1>
+            <h2 class="abHead2">Hello! <span class="abHead3">I'M Kerri Deo.</span> </h2>
+            <p class="abPara1">It is a long established fact that a reader will be distracted by the readable content of
+                a page when looking at its layout.<br><br>
+
+                The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+                to using 'Content here, content here', making it look like readable English.<br><br>
+
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration in some form, by injected humour, or randomised words which don't look even slightly
+                believable.</p>
+
+            <div class="abicon"></div>
+            <div class="abicon"></div>
+            <div class="abicon"></div>
+            <div class="abicon"></div>
+        </div>
+
+    </div>
+
+    <!-- ===services=== -->
+
+
+
+    <div class="servMain">
+        <h1 class="servHead">Our Services</h1>
+        <p class="servPara">It is a long established fact that a reader will be of a page when<br> established fact
+            looking
+            at its layout.</p>
+
+    </div>
+
+    <div class="servBoxes">
+        <div class="servChildBox">
+            <div class="servChildIcon"></div>
+            <h1 class="servChildHead">Graphic Design</h1>
+            <div class="servChildLine"></div>
+            <p class="servChildPara">There are many variations of passages of<br> but the majority have suffered
+                alteration
+                in<br> some form.</p>
+
+
+
+
+        </div>
+        <div class="servChildBox">
+            <div class="servChildIcon"></div>
+            <h1 class="servChildHead">Unlimited Color</h1>
+            <div class="servChildLine"></div>
+            <p class="servChildPara">There are many variations of passages of<br> but the majority have suffered
+                alteration
+                in<br> some form.</p>
+
+
+        </div>
+        <div class="servChildBox">
+            <div class="servChildIcon"></div>
+            <h1 class="servChildHead">Media Marketing</h1>
+            <div class="servChildLine"></div>
+            <p class="servChildPara">There are many variations of passages of<br> but the majority have suffered
+                alteration
+                in<br> some form.</p>
+
+        </div>
+        <div class="servChildBox">
+            <div class="servChildIcon"></div>
+            <h1 class="servChildHead">Unlimited Wifi</h1>
+            <div class="servChildLine"></div>
+            <p class="servChildPara">There are many variations of passages of<br> but the majority have suffered
+                alteration
+                in<br> some form.</p>
+        </div>
+        <div class="servChildBox">
+            <div class="servChildIcon"></div>
+            <h1 class="servChildHead">Responsive Design</h1>
+            <div class="servChildLine"></div>
+            <p class="servChildPara">There are many variations of passages of<br> but the majority have suffered
+                alteration
+                in<br> some form.</p>
+        </div>
+        <div class="servChildBox">
+            <div class="servChildIcon"></div>
+            <h1 class="servChildHead">Easy to customize</h1>
+            <div class="servChildLine"></div>
+            <p class="servChildPara">There are many variations of passages of<br> but the majority have suffered
+                alteration
+                in<br> some form.</p>
+        </div>
+
+    </div>
+
+
+    <!-- ===freelance=== -->
+
+    <div class="free">
+        <h1 class="freeh">I Am Available For Freelancer.</h1>
+        <button class="freebutton">HIRE ME!</button>
+
+    </div>
+
+
+
+    <!-- ===Client=== -->
+    <div class="clientMain">
+        <h1 class="clientHead">Our Client</h1>
+        <p class="clientPara">It is a long established fact that a reader will be of a page when<br> established fact
+            looking at its layout.</p>
+        <div class="clientCircle">
+            <img class="clientImage" src="./Images/testi-1.jpg" alt="">
+
+
+        </div>
+        <p class="clientPara1">There are many variations of passages of but the
+            in. There are many variations of passages of but the majority<br> have suffered alteration in
+            some form.</p>
+        <p class="clientName">Ebony verty, Envato</p>
+
+    </div>
+    <!-- ===work=== -->
+    <div class="workMain">
+        <h1 class="workHead">Our Works</h1>
+        <p class="workPara">It is a long established fact that a reader will be of a page when<br> established fact
+            looking
+            at its layout.</p>
+
+    </div>
+
+    <div class="workBoxMain">
+        <ul class="workNav">
+            <li class="workli1">ALL</li>
+            <li class="workli">SEO
+            </li>
+            <li class="workli">WEBDESIGN
+            </li>
+            <li class="workli">WORK
+            </li>
+            <li class="workli">WORDPRESS</li>
+
+        </ul>
+
+        <div class="workBoxChild">
+            <div class="workBox1">
+                <img class="workStylePic" src="./Images/1.jpg" alt="">
+
+
+            </div>
+            <div class="workBox1">
+                <img class="workStylePic" src="./Images/2.jpg" alt="">
+            </div>
+            <div class="workBox1">
+                <img class="workStylePic" src="./Images/3.jpg" alt="">
+            </div>
+            <div class="workBox1">
+                <img class="workStylePic" src="./Images/4.jpg" alt="">
+            </div>
+            <div class="workBox1">
+                <img class="workStylePic" src="./Images/5.jpg" alt="">
+            </div>
+            <div class="workBox1">
+                <img class="workStylePic" src="./Images/6.jpg" alt="">
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- ===Blog=== -->
+
+    <div class="BlogMain">
+        <h1 class="BlogHead">Our Blog</h1>
+        <p class="BlogPara">It is a long established fact that a reader will be of a page when<br> established fact
+            looking at its layout.</p>
+
+    </div>
+
+    <div class="blogbox">
+        <div class="blogboxChild">
+            <div class="blogPic">
+                <img class="blogPicStyle" src="./Images/blog-1.jpg" alt="">
+                <h2 class="bloghead">There are many variations</h2>
+                <p class="blogdate">11 March 2018 <span class="blogdatepink">By Kerri</span></p>
+
+                <p class="blogPara2">Sit sagittis vulputate laoreet sodales tortor<br> nulla lobortis bibendum netus
+                    primis<br>
+                    fames. Lobortis ultricies.</p>
+
+                <p class="readBlog">Read More...</p>
+
+            </div>
+
+        </div>
+        <div class="blogboxChild">
+            <div class="blogPic">
+                <img class="blogPicStyle" src="./Images/blog-2.jpg" alt="">
+                <h2 class="bloghead">Contrary to popular belief</h2>
+                <p class="blogdate">18 March 2018 <span class="blogdatepink">By Kerri</span></p>
+                <p class="blogPara2">Sit sagittis vulputate laoreet sodales tortor<br> nulla lobortis bibendum netus
+                    primis<br>
+                    fames. Lobortis ultricies.</p>
+
+                <p class="readBlog">Read More...</p>
+            </div>
+        </div>
+        <div class="blogboxChild">
+            <div class="blogPic">
+                <img class="blogPicStyle" src="./Images/blog-3.jpg" alt="">
+                <h2 class="bloghead">Lorem Ipsum is not simply</h2>
+                <p class="blogdate">22 March 2018 <span class="blogdatepink">By Kerri</span></p>
+                <p class="blogPara2">Sit sagittis vulputate laoreet sodales tortor<br> nulla lobortis bibendum netus
+                    primis<br>
+                    fames. Lobortis ultricies.</p>
+
+                <p class="readBlog">Read More...</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ===contact=== -->
+
+
+    <div class="contactMain">
+        <h1 class="contHead">Our Works</h1>
+        <p class="contPara">It is a long established fact that a reader will be of a page when<br> established fact
+            looking
+            at its layout.</p>
+
+        <div class="contBox">
+            <div class="conticon"></div>
+            <h1 class="contHe">Call Us On</h1>
+            <p class="contp">+985 123 7856</p>
+
+        </div>
+        <div class="contBox">
+            <div class="conticon"></div>
+            <h1 class="contHe">Email Us At</h1>
+            <p class="contp">Kerri@gmail.com</p>
+        </div>
+        <div class="contBox">
+            <div class="conticon"></div>
+            <h1 class="contHe">Visit Office</h1>
+            <p class="contp">202, Grasselli Street , Conway.</p>
+
+        </div>
+        <div class="name">Your Name</div>
+        <div class="name1">Your Email</div>
+        <div class="name2">Subject</div>
+        <div class="name3">Your Message...</div>
+
+        <div class="contBut">SEND MESSAGE</div>
+    </div>
+
+
+    <div class="foot">
+        <div class="footcir"></div>
+        <div class="footcir"></div>
+        <div class="footcir"></div>
+        <div class="footcir"></div>
+
+        <p class="footp">2018-2023 © Kerri. Design by SRBThemes.</p>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

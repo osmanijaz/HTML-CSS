@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target Slider</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            list-style: none;
+        }
+        body{
+            background: linear-gradient( gray, pink);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .main1{
+            height: 70vh;
+            width: 100%;
+            margin: auto;
+            background-color: skyblue;
+            padding: 1px;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+            padding-bottom: 30px;
+        }
+        .ul-box{
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+        }
+        .ul-box img{
+            margin-left: 20px;
+            /* display: inline; */
+            border: 4px solid red;
+            /* height: 50px;
+            width: 100px; */
+        }
+       
+        .ul-box a span{
+            display: none;
+        }
+        .slider{
+            width: 705px;
+            height: 350px;
+            border: 3px solid white;
+            /* display: inline-block; */
+            overflow: hidden;
+            position: relative;
+            margin:20px auto;
+        }
+        .slider li{
+            position: relative;
+            width: 705px;
+            height: 350px;
+        
+        }
+        .slider li{
+         position: absolute;
+         z-index: 50;
+      }
+        .slider img{
+            width: 705px;
+         height: 350px;
+         position: relative;
+        }
+
+
+
+        .slider li:target {
+         z-index: 100;
+         animation: slide1 1s;
+      }
+      @keyframes slide1 {
+         0%{
+            left: -500px;
+        }
+        100%{
+            left: 0;
+        }
+      }
+      .slider li:not(:target){
+         animation: notarget 1s ;
+      }
+      @keyframes notarget {
+         0%{z-index: 75;}
+         100%{z-index: 75;}
+      }
+    </style>    
+</head>
+<body>
+    <div class="main1">
+        <h1>CSS Target Slider</h1>
+        <ul class="ul-box">
+            <li><a href="#sld1"><img src="./slider project  img/img/thumb1.jpg" alt=""><span>Click Image-1</span></a></li>
+            <li><a href="#sld2"><img src="./slider project  img/img/thumb2.jpg" alt=""><span>Click Image-1</span></a></li>
+            <li><a href="#sld3"><img src="./slider project  img/img/thumb3.jpg" alt=""><span>Click Image-1</span></a></li>
+            <li><a href="#sld4"><img src="./slider project  img/img/thumb4.jpg" alt=""><span>Click Image-1</span></a></li>
+            <li><a href="#sld5"><img src="./slider project  img/img/thumb5.jpg" alt=""><span>Click Image-1</span></a></li>
+            <li><a href="#sld6"><img src="./slider project  img/img/thumb6.jpg" alt=""><span>Click Image-1</span></a></li>
+            <li><a href="#sld7"><img src="./slider project  img/img/thumb7.jpg" alt=""><span>Click Image-7</span></a></li>
+        </ul>
+        <ul class="slider">
+            <li id="sld1"><img src="./slider project  img/img/slide1.jpg" alt=""></li>
+            <li id="sld2"><img src="./slider project  img/img/slide2.jpg" alt=""></li>
+            <li id="sld3"><img src="./slider project  img/img/slide3.jpg" alt=""></li>
+            <li id="sld4"><img src="./slider project  img/img/slide4.jpg" alt=""></li>
+            <li id="sld5"><img src="./slider project  img/img/slide5.jpg" alt=""></li>
+            <li id="sld6"><img src="./slider project  img/img/slide6.jpg" alt=""></li>
+            <li id="sld7"><img src="./slider project  img/img/slide7.jpg" alt=""></li>
+        </ul>
+       
+    </div>
+</body>
+</html>

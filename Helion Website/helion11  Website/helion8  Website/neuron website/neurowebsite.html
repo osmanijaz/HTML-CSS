@@ -1,0 +1,3666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .main1 {
+        height: 120vh;
+        width: 100%;
+        background-image: url(./h1-s1.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+
+    .address {
+        height: 50px;
+        width: 90%;
+        position: relative;
+        left: 5%;
+        /* border: 1px solid; */
+    }
+
+    .p1 {
+        font-family: Poppins, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 37.5px;
+        color: white;
+        position: absolute;
+        left: 32px;
+        top: 8px;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .p1:hover {
+        color: cornsilk;
+
+    }
+
+    .p2 {
+        font-family: Poppins, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 37.5px;
+        color: white;
+        position: absolute;
+        left: 240px;
+        top: 8px;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .p2:hover {
+        color: cornsilk;
+    }
+
+    .fa-faceboook-f:hover {
+        color: silver;
+    }
+
+    .menubar {
+        height: 100px;
+        width: 100%;
+        /* border: 1px solid purple; */
+        position: relative;
+    }
+
+    #image1 {
+        height: 28px;
+        width: 160px;
+        position: absolute;
+        left: 5%;
+        top: 35px;
+    }
+
+    .menu_elements {
+        height: 64px;
+        width: 48%;
+        position: relative;
+        left: 46%;
+        top: 35px;
+        /* border: 1px solid green; */
+    }
+
+    .li_elements {
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        /* line-height: 37.5px; */
+        color: white;
+        transition: .5s;
+        cursor: pointer;
+        margin: 14px;
+        list-style: none;
+        display: inline-block;
+        position: relative;
+        /* background-color: red; */
+        height: 50px;
+    }
+
+    .li_elements:hover {
+        color: silver;
+    }
+
+    .fa-bag-shopping {
+        color: white;
+        position: relative;
+        cursor: pointer;
+        /* z-index: 1; */
+    }
+
+    .fa-magnifying-glass {
+        color: white;
+        position: absolute;
+        left: 70px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .drop {
+        height: 0px;
+        width: 200px;
+        background-color: white;
+        position: absolute;
+        transition: ease 0.36s;
+        margin-top: 30px;
+        overflow: hidden;
+    }
+
+    .li_elements:hover .drop {
+        height: 200px;
+    }
+
+    .drop_ul {
+        position: relative;
+        left: 20px;
+        top: 20px;
+    }
+
+    .dropli {
+        list-style: none;
+        transition: none;
+        margin: 25px;
+        color: black;
+    }
+
+    .dropli:hover {
+        color: blue;
+    }
+
+    .drop1 {
+        height: 0px;
+        width: 200px;
+        background-color: white;
+        position: absolute;
+        transition: all ease 0.36s;
+        margin-top: 30px;
+        overflow: hidden;
+    }
+
+    .li_elements:hover .drop1 {
+        height: 200px;
+        width: 310px;
+    }
+
+    .drop_ul1 {
+        position: relative;
+        /* left: 0px; */
+        top: 20px;
+    }
+
+    .dropli1 {
+        transition: none;
+        list-style: none;
+        margin: 19px;
+        color: black;
+    }
+
+    .dropli1:hover {
+        color: blue;
+    }
+
+    /* .drop_ul2{
+        position: relative;
+        left: 20px;
+        top: 20px;
+    }
+    .dropli2{
+        transition: none;
+        list-style: none;
+        margin: 8px;
+        color: black;
+        display: inline-flex;
+    }
+    .dropli2:hover{
+        color: blue;
+    } */
+    .p3 {
+        font-family: Poppins, sans-serif;
+        font-size: 55px;
+        font-weight: 700;
+        line-height: 59.5px;
+        color: white;
+        position: absolute;
+        left: 40px;
+        top: 320px;
+    }
+
+    .p4 {
+        font-family: Poppins, sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 25.5px;
+        color: white;
+        position: absolute;
+        left: 40px;
+        top: 510px;
+        /* letter-spacing: 1px; */
+    }
+
+    .btn1 {
+        height: 50px;
+        width: 160px;
+        background-color: white;
+        color: rgb(46, 46, 247);
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        border: 1px solid white;
+        border-radius: 50px;
+        position: absolute;
+        left: 40px;
+        top: 600px;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .btn1:hover {
+        background-color: transparent;
+    }
+
+    .btn2 {
+        height: 50px;
+        width: 160px;
+        background-color: transparent;
+        color: rgb(46, 46, 247);
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        border: 2px solid white;
+        border-radius: 50px;
+        position: absolute;
+        left: 220px;
+        top: 600px;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .btn2:hover {
+        background-color: white;
+    }
+
+    #image2 {
+        height: 550px;
+        width: 350px;
+        position: absolute;
+        left: 700px;
+        top: 250px;
+        animation: 2s image2 alternate linear infinite;
+    }
+
+    @keyframes image2 {
+        from {
+            margin-top: 10px;
+        }
+
+        to {
+            margin-top: -50px;
+        }
+    }
+
+    #image3 {
+        height: 450px;
+        width: 350px;
+        position: absolute;
+        left: 1100px;
+        top: 330px;
+    }
+
+    .main2 {
+        height: 200vh;
+        width: 100%;
+        background-color: white;
+        position: relative;
+    }
+
+    .child1 {
+        height: 250px;
+        width: 350px;
+        position: relative;
+        left: 100px;
+        top: 100px;
+        background-color: white;
+        box-shadow: 2px 4px 30px silver;
+        transition: all .9s;
+        border-radius: 10px;
+    }
+
+    .child1:hover {
+        background: linear-gradient(120deg, rgb(1, 161, 242), rgb(9, 198, 125));
+    }
+
+    .fa-brain {
+        font-size: 50px;
+        position: absolute;
+        left: 140px;
+        top: 30px;
+        color: rgb(5, 175, 200);
+    }
+
+    .child1:hover .fa-brain {
+        color: white;
+    }
+
+    .p5 {
+        font-family: Poppins, sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28.6px;
+        color: black;
+        position: absolute;
+        left: 50px;
+        top: 100px;
+    }
+
+    .child1:hover .p5 {
+        color: white;
+    }
+
+    .p6 {
+        font-family: Poppins, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+        color: silver;
+        position: absolute;
+        left: 50px;
+        top: 140px;
+        text-align: center;
+    }
+
+    .child1:hover .p6 {
+        color: white;
+    }
+
+    .child2 {
+        height: 250px;
+        width: 350px;
+        position: relative;
+        left: 100px;
+        top: 150px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 2px 4px 30px silver;
+    }
+
+    .child2:hover {
+        background: linear-gradient(120deg, rgb(1, 161, 242), rgb(9, 198, 125));
+    }
+
+    .fa-solid {
+        font-size: 50px;
+        position: absolute;
+        left: 140px;
+        top: 30px;
+        color: rgb(5, 175, 200);
+    }
+
+    .child2:hover .fa-solid {
+        color: white;
+    }
+
+    .p7 {
+        font-family: Poppins, sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28.6px;
+        color: black;
+        position: absolute;
+        left: 100px;
+        top: 100px;
+    }
+
+    .child2:hover .p7 {
+        color: white;
+    }
+
+    .p8 {
+        font-family: Poppins, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+        color: silver;
+        position: absolute;
+        left: 50px;
+        top: 140px;
+        text-align: center;
+    }
+
+    .child2:hover .p8 {
+        color: white;
+    }
+
+    .child3 {
+        height: 250px;
+        width: 350px;
+        position: relative;
+        left: 500px;
+        top: -300px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 2px 4px 30px silver;
+    }
+
+    .child3:hover {
+        background: linear-gradient(120deg, rgb(1, 161, 242), rgb(9, 198, 125));
+    }
+
+    .fa-bread-slice {
+        font-size: 50px;
+        position: absolute;
+        left: 140px;
+        top: 30px;
+        color: rgb(5, 175, 200);
+    }
+
+    .child3:hover .fa-bread-slice {
+        color: white;
+    }
+
+    .p9 {
+        font-family: Poppins, sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28.6px;
+        color: black;
+        position: absolute;
+        left: 75px;
+        top: 100px;
+    }
+
+    .child3:hover .p9 {
+        color: white;
+    }
+
+    .p10 {
+        font-family: Poppins, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+        color: silver;
+        position: absolute;
+        left: 50px;
+        top: 140px;
+        text-align: center;
+    }
+
+    .child3:hover .p10 {
+        color: white;
+    }
+
+    .child4 {
+        height: 250px;
+        width: 350px;
+        position: relative;
+        left: 500px;
+        top: -250px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 2px 4px 30px silver;
+        transition: all 1s linear;
+        background: linear-gradient(120deg, rgb(255, 255, 255), rgb(255, 255, 255));
+    }
+
+    .child4:hover {
+        background: linear-gradient(120deg, rgb(1, 161, 242), rgb(9, 198, 125));
+    }
+
+    .fa-robot {
+        font-size: 50px;
+        position: absolute;
+        left: 140px;
+        top: 30px;
+        color: rgb(5, 175, 200);
+    }
+
+    .child4:hover .fa-robot {
+        color: white;
+    }
+
+    .p11 {
+        font-family: Poppins, sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28.6px;
+        color: black;
+        position: absolute;
+        left: 110px;
+        top: 100px;
+    }
+
+    .child4:hover .p11 {
+        color: white;
+    }
+
+    .p12 {
+        font-family: Poppins, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+        color: silver;
+        position: absolute;
+        left: 50px;
+        top: 140px;
+        text-align: center;
+    }
+
+    .child4:hover .p12 {
+        color: white;
+    }
+
+    .text1 {
+        height: 500px;
+        width: 600px;
+        position: relative;
+        left: 900px;
+        top: -790px;
+        /* border: 1px solid; */
+    }
+
+    .p13 {
+        font-family: Poppins, sans-serif;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 54.6px;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        z-index: 1;
+    }
+
+    .line1 {
+        height: 10px;
+        width: 146px;
+        background: linear-gradient(90deg, rgb(1, 162, 242), rgb(8, 197, 126));
+        position: relative;
+        left: 22px;
+        top: 55px;
+    }
+
+    .p14 {
+        font-family: Poppins, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(102, 102, 102);
+        position: absolute;
+        left: 20px;
+        top: 150px;
+    }
+
+    .p15 {
+        font-family: Poppins, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(102, 102, 102);
+        position: absolute;
+        left: 20px;
+        top: 250px;
+    }
+
+    .btn3 {
+        height: 45px;
+        width: 160px;
+        background-color: transparent;
+        background: linear-gradient(90deg, rgb(1, 162, 242), rgb(8, 197, 126));
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        border: 2px solid white;
+        border-radius: 50px;
+        position: absolute;
+        left: 20px;
+        top: 400px;
+        cursor: pointer;
+        transition: all 0.5s;
+        color: white;
+    }
+
+    .btn3:hover {
+        background: linear-gradient(120deg, rgb(8, 197, 126), rgb(1, 162, 242));
+
+    }
+
+    .text2 {
+        height: 500px;
+        width: 630px;
+        position: relative;
+        left: 100px;
+        top: -650px;
+        /* border: 1px solid; */
+    }
+
+    .p16 {
+        font-family: Poppins, sans-serif;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 54.6px;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        z-index: 1;
+    }
+
+    .line2 {
+        height: 10px;
+        width: 142px;
+        background: linear-gradient(90deg, rgb(1, 162, 242), rgb(8, 197, 126));
+        position: relative;
+        left: 22px;
+        top: 55px;
+    }
+
+    .p17 {
+        font-family: Poppins, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(102, 102, 102);
+        position: absolute;
+        left: 20px;
+        top: 150px;
+    }
+
+    .p18 {
+        font-family: Poppins, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(102, 102, 102);
+        position: absolute;
+        left: 20px;
+        top: 250px;
+    }
+
+    .btn4 {
+        height: 45px;
+        width: 160px;
+        background-color: transparent;
+        background: linear-gradient(90deg, rgb(1, 162, 242), rgb(8, 197, 126));
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        border: 2px solid white;
+        border-radius: 50px;
+        position: absolute;
+        left: 20px;
+        top: 400px;
+        cursor: pointer;
+        transition: all 0.5s;
+        color: white;
+    }
+
+    .btn4:hover {
+        background: linear-gradient(120deg, rgb(8, 197, 126), rgb(1, 162, 242));
+
+    }
+
+    .fa-square-caret-right {
+        font-size: 40px;
+        position: absolute;
+        left: 210px;
+        top: 400px;
+        color: rgb(1, 161, 242);
+        cursor: pointer;
+
+    }
+
+    /* .fa-square-caret-right:hover{
+        background: linear-gradient(120deg, rgb(8,197,126), rgb(1,162,242));
+    } */
+    #image5 {
+        height: 600px;
+        width: 600px;
+        position: absolute;
+        left: 800px;
+        top: 800px;
+
+    }
+
+    .main3 {
+        height: 40vh;
+        width: 100%;
+        background: linear-gradient(180deg, rgb(8, 197, 126), rgb(1, 162, 242));
+        position: relative;
+
+    }
+
+    .child5 {
+        height: 20vh;
+        width: 13%;
+        /* border: 1px solid; */
+        position: relative;
+        left: 10%;
+        top: 11vh;
+    }
+
+    .p19 {
+        font-family: Poppins, sans-serif;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 26px;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        left: 35px;
+        top: 15px;
+    }
+
+    .p20 {
+        font-family: Poppins, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        left: 15px;
+        top: 70px;
+
+    }
+
+    .child6 {
+        height: 20vh;
+        width: 10%;
+        /* border: 1px solid; */
+        position: absolute;
+        left: 33%;
+        top: 11vh;
+    }
+
+    .p21 {
+        font-family: Poppins, sans-serif;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 26px;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        left: 35px;
+        top: 15px;
+    }
+
+    .p22 {
+        font-family: Poppins, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        left: 15px;
+        top: 70px;
+
+    }
+
+    .child7 {
+        height: 20vh;
+        width: 12%;
+        /* border: 1px solid; */
+        position: absolute;
+        left: 57%;
+        top: 11vh;
+    }
+
+    .p23 {
+        font-family: Poppins, sans-serif;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 26px;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        left: 35px;
+        top: 15px;
+    }
+
+    .p24 {
+        font-family: Poppins, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        left: 15px;
+        top: 70px;
+    }
+
+    .child8 {
+        height: 20vh;
+        width: 13%;
+        /* border: 1px solid; */
+        position: absolute;
+        left: 80%;
+        top: 11vh;
+    }
+
+    .p25 {
+        font-family: Poppins, sans-serif;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 26px;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        left: 38px;
+        top: 15px;
+    }
+
+    .p26 {
+        font-family: Poppins, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        left: 15px;
+        top: 70px;
+
+    }
+
+    .main4 {
+        height: 130vh;
+        width: 100%;
+        background-color: rgb(239, 241, 247);
+        position: relative;
+    }
+
+    .p27 {
+        font-family: Poppins, sans-serif;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 26px;
+        color: black;
+        position: absolute;
+        left: 600px;
+        top: 65px;
+        z-index: 1;
+    }
+
+    .line3 {
+        height: 10px;
+        width: 145px;
+        background: linear-gradient(90deg, rgb(1, 162, 242), rgb(8, 197, 126));
+        position: absolute;
+        left: 710px;
+        top: 85px;
+    }
+
+    .child9 {
+        height: 350px;
+        width: 450px;
+        position: relative;
+        left: 50px;
+        top: 150px;
+        background-color: white;
+        box-shadow: 2px 4px 30px silver;
+        transition: all .9s;
+        border-radius: 10px;
+    }
+
+    .child9:hover {
+        background: linear-gradient(120deg, rgb(1, 161, 242), rgb(9, 198, 125));
+    }
+
+    .fa-head-side-virus {
+        font-size: 80px;
+        position: absolute;
+        left: 190px;
+        top: 30px;
+        color: linear-gradient(90deg, rgb(1, 161, 242), rgb(9, 198, 125));
+
+    }
+
+    .child9:hover .fa-head-side-virus {
+        color: white;
+    }
+
+    .p28 {
+        font-family: Poppins, sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28.6px;
+        color: black;
+        position: absolute;
+        left: 70px;
+        top: 150px;
+    }
+
+    .child9:hover .p28 {
+        color: white;
+    }
+
+    .p29 {
+        font-family: Poppins, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+        color: gray;
+        position: absolute;
+        left: 60px;
+        top: 200px;
+        text-align: center;
+    }
+
+    .child9:hover .p29 {
+        color: white;
+    }
+
+    .child10 {
+        height: 350px;
+        width: 450px;
+        position: relative;
+        left: 550px;
+        top: -200px;
+        background-color: white;
+        box-shadow: 2px 4px 30px silver;
+        transition: all .9s;
+        border-radius: 10px;
+    }
+
+    .child10:hover {
+        background: linear-gradient(120deg, rgb(1, 161, 242), rgb(9, 198, 125));
+    }
+
+    .fa-head-side-mask {
+        font-size: 80px;
+        position: absolute;
+        left: 190px;
+        top: 30px;
+        color: rgb(1, 161, 242);
+
+    }
+
+    .child10:hover .fa-head-side-mask {
+        color: white;
+    }
+
+    .p30 {
+        font-family: Poppins, sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28.6px;
+        color: black;
+        position: absolute;
+        left: 117px;
+        top: 150px;
+    }
+
+    .child10:hover .p30 {
+        color: white;
+    }
+
+    .p31 {
+        font-family: Poppins, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+        color: gray;
+        position: absolute;
+        left: 65px;
+        top: 200px;
+        text-align: center;
+    }
+
+    .child10:hover .p31 {
+        color: white;
+    }
+
+    .child11 {
+        height: 350px;
+        width: 450px;
+        position: relative;
+        left: 1050px;
+        top: -550px;
+        background-color: white;
+        box-shadow: 2px 4px 30px silver;
+        transition: all .9s;
+        border-radius: 10px;
+    }
+
+    .child11:hover {
+        background: linear-gradient(120deg, rgb(1, 161, 242), rgb(9, 198, 125));
+    }
+
+    .fa-head-side-mask {
+        font-size: 80px;
+        position: absolute;
+        left: 190px;
+        top: 30px;
+        color: rgb(1, 161, 242);
+
+    }
+
+    .child11:hover .fa-head-side-mask {
+        color: white;
+    }
+
+    .p32 {
+        font-family: Poppins, sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28.6px;
+        color: black;
+        position: absolute;
+        left: 107px;
+        top: 150px;
+    }
+
+    .child11:hover .p32 {
+        color: white;
+    }
+
+    .p33 {
+        font-family: Poppins, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+        color: gray;
+        position: absolute;
+        left: 65px;
+        top: 200px;
+        text-align: center;
+    }
+
+    .child11:hover .p33 {
+        color: white;
+    }
+
+    .child12 {
+        height: 350px;
+        width: 450px;
+        position: relative;
+        left: 50px;
+        top: -500px;
+        background-color: white;
+        box-shadow: 2px 4px 30px silver;
+        transition: all .9s;
+        border-radius: 10px;
+    }
+
+    .child12:hover {
+        background: linear-gradient(120deg, rgb(1, 161, 242), rgb(9, 198, 125));
+    }
+
+    .fa-head-side-mask {
+        font-size: 80px;
+        position: absolute;
+        left: 190px;
+        top: 30px;
+        color: rgb(1, 161, 242);
+
+    }
+
+    .child12:hover .fa-head-side-mask {
+        color: white;
+    }
+
+    .p34 {
+        font-family: Poppins, sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28.6px;
+        color: black;
+        position: absolute;
+        left: 90px;
+        top: 150px;
+    }
+
+    .child12:hover .p34 {
+        color: white;
+    }
+
+    .p35 {
+        font-family: Poppins, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+        color: gray;
+        position: absolute;
+        left: 65px;
+        top: 200px;
+        text-align: center;
+    }
+
+    .child12:hover .p35 {
+        color: white;
+    }
+
+    .child13 {
+        height: 350px;
+        width: 450px;
+        position: relative;
+        left: 550px;
+        top: -850px;
+        background-color: white;
+        box-shadow: 2px 4px 30px silver;
+        transition: all .9s;
+        border-radius: 10px;
+    }
+
+    .child13:hover {
+        background: linear-gradient(120deg, rgb(1, 161, 242), rgb(9, 198, 125));
+    }
+
+    .fa-head-side-mask {
+        font-size: 80px;
+        position: absolute;
+        left: 190px;
+        top: 30px;
+        color: rgb(1, 161, 242);
+
+    }
+
+    .child13:hover .fa-head-side-mask {
+        color: white;
+    }
+
+    .p36 {
+        font-family: Poppins, sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28.6px;
+        color: black;
+        position: absolute;
+        left: 60px;
+        top: 150px;
+    }
+
+    .child13:hover .p36 {
+        color: white;
+    }
+
+    .p37 {
+        font-family: Poppins, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+        color: gray;
+        position: absolute;
+        left: 65px;
+        top: 200px;
+        text-align: center;
+    }
+
+    .child13:hover .p37 {
+        color: white;
+    }
+
+    .child14 {
+        height: 350px;
+        width: 450px;
+        position: relative;
+        left: 1050px;
+        top: -1200px;
+        background-color: white;
+        box-shadow: 2px 4px 30px silver;
+        transition: .5s;
+        border-radius: 10px;
+    }
+
+    .child14:hover {
+        background: linear-gradient(120deg, rgb(1, 161, 242), rgb(9, 198, 125));
+    }
+
+    .fa-head-side-mask {
+        font-size: 80px;
+        position: absolute;
+        left: 190px;
+        top: 30px;
+        color: rgb(1, 161, 242);
+
+    }
+
+    .child14:hover .fa-head-side-mask {
+        color: white;
+    }
+
+    .p38 {
+        font-family: Poppins, sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28.6px;
+        color: black;
+        position: absolute;
+        left: 60px;
+        top: 150px;
+    }
+
+    .child14:hover .p38 {
+        color: white;
+    }
+
+    .p39 {
+        font-family: Poppins, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+        color: gray;
+        position: absolute;
+        left: 65px;
+        top: 200px;
+        text-align: center;
+    }
+
+    .child14:hover .p39 {
+        color: white;
+    }
+
+    .main5 {
+        height: 120vh;
+        width: 100%;
+        /* border: 1px solid; */
+        position: relative;
+    }
+
+    .p40 {
+        font-family: Poppins, sans-serif;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 26px;
+        color: black;
+        position: absolute;
+        left: 600px;
+        top: 65px;
+        z-index: 1;
+    }
+
+    .line4 {
+        height: 10px;
+        width: 145px;
+        background: linear-gradient(90deg, rgb(1, 162, 242), rgb(8, 197, 126));
+        position: absolute;
+        left: 710px;
+        top: 85px;
+    }
+
+    .child15 {
+        height: 500px;
+        width: 200%;
+        /* border: 1px solid; */
+        position: relative;
+        /* left: 5%; */
+        top: 20vh;
+        /* overflow: hidden; */
+    }
+    .image_pack{
+        height: 500px;
+        width: 400px;
+        /* border: 3px solid green; */
+        display: inline-block;
+        margin-left: 90px;
+        overflow: hidden;
+    }
+
+    .images {
+        height: 500px;
+        width: 100%;
+        /* border: 2px solid red; */
+        position: relative;
+        animation: aa1 12s infinite linear ;
+        /* overflow: hidden; */
+    }
+    @keyframes aa1 {
+        0%{
+            margin-left: 0;
+        }
+        15%{
+            margin-left: 0;
+        }
+        30%{
+            margin-left: -500px;
+        }
+        45%{
+            margin-left: -500px;
+        }
+        60%{
+            margin-left: -1000px;
+        }
+        75%{
+            margin-left: -1000px;
+        }
+        85%{
+            margin-left: -1500px;
+        }
+        100%{
+
+            margin-left: -1500px;
+        }
+
+        
+    }
+
+    #image6 {
+        height: 500px;
+        width: 400px;
+        /* position: absolute; */
+    }
+
+    .child16 {
+        height: 500px;
+        width: 400px;
+        /* position: relative; */
+        background: linear-gradient(120deg, rgba(1, 162, 242, 0.525), rgba(9, 198, 125, 0.429));
+        opacity: 0;
+        overflow: hidden;
+        transition: .5s;
+    }
+
+    .child16:hover {
+        opacity: 1;
+        background: linear-gradient(120deg, rgba(1, 162, 242, 0.735), rgba(9, 198, 125, 0.658));
+    }
+
+    .div1 {
+        height: 40px;
+        width: 180px;
+        /* position: relative; */
+        /* left: 50px; */
+        /* top: 530px; */
+        background-color: transparent;
+        /* border: 1px solid white; */
+        transition: .5s;
+    }
+
+    .child16:hover .div1 {
+        margin-top: -100px;
+    }
+
+    .p41 {
+        font-family: Poppins, sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28px;
+        color: white;
+        /* position: absolute; */
+        /* left: 600px ; */
+        margin-top: 5px;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .div1:hover .p41 {
+        color: black;
+    }
+
+    #image7 {
+        height: 500px;
+        width: 400px;
+        /* position: relative; */
+        /* left: 577px; */
+        /* top: -496px; */
+    }
+
+    .child17 {
+        height: 500px;
+        width: 400px;
+        position: relative;
+        left: 477px;
+        top: -1000px;
+        background: linear-gradient(120deg, rgba(1, 162, 242, 0.525), rgba(9, 198, 125, 0.429));
+        opacity: 0;
+        overflow: hidden;
+        transition: .5s;
+    }
+
+    .child17:hover {
+        opacity: 1;
+        background: linear-gradient(120deg, rgba(1, 162, 242, 0.735), rgba(9, 198, 125, 0.658));
+    }
+
+    .div2 {
+        height: 40px;
+        width: 180px;
+        position: relative;
+        left: 50px;
+        top: 530px;
+        background-color: transparent;
+        /* border: 1px solid white; */
+        transition: .5s;
+    }
+
+    .child17:hover .div2 {
+        margin-top: -100px;
+    }
+
+    .p42 {
+        font-family: Poppins, sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28px;
+        color: white;
+        position: absolute;
+        /* left: 600px ; */
+        top: 5px;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .div2:hover .p42 {
+        color: black;
+    }
+
+    #image8 {
+        height: 500px;
+        width: 400px;
+        /* margin-left: 1500px; */
+        /* position: relative; */
+        /* left: 958px; */
+        /* top: -1500px; */
+    }
+    #image99{
+        height: 500px;
+        width: 400px;
+        /* margin-left: 20px; */
+        /* margin-left: 1500px; */
+    }
+
+    .child18 {
+        height: 500px;
+        width: 400px;
+        position: relative;
+        left: 958px;
+        top: -2004px;
+        background: linear-gradient(120deg, rgba(1, 162, 242, 0.525), rgba(9, 198, 125, 0.429));
+        opacity: 0;
+        overflow: hidden;
+        transition: .5s;
+    }
+
+    .child18:hover {
+        opacity: 1;
+        background: linear-gradient(120deg, rgba(1, 162, 242, 0.735), rgba(9, 198, 125, 0.658));
+    }
+
+    .div3 {
+        height: 40px;
+        width: 180px;
+        position: relative;
+        left: 50px;
+        top: 530px;
+        background-color: transparent;
+        /* border: 1px solid white; */
+        transition: .5s;
+    }
+
+    .child18:hover .div3 {
+        margin-top: -100px;
+    }
+
+    .p43 {
+        font-family: Poppins, sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28px;
+        color: white;
+        position: absolute;
+        /* left: 600px ; */
+        top: 5px;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .div3:hover .p43 {
+        color: black;
+    }
+
+    .longdiv {
+        height: 50vh;
+        width: 80%;
+        background-color: white;
+        /* border: 1px solid; */
+        position: relative;
+        left: 10%;
+        top: -150px;
+        /* z-index: 1; */
+        border-radius: 15px;
+        box-shadow: 0 4px 20px gray;
+    }
+
+    .main6 {
+        height: 80vh;
+        width: 100%;
+        background-image: url(./partner-bg.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+
+    .fa-envelope-open {
+        font-size: 250px;
+        position: absolute;
+        left: 80px;
+        top: 60px;
+        background: -webkit-linear-gradient(rgb(1, 162, 242), rgb(8, 197, 126));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .p44 {
+        font-family: Poppins, sans-serif;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 54.6px;
+        color: rgb(51, 51, 51);
+        position: absolute;
+        left: 400px;
+        top: 50px;
+        z-index: 1;
+    }
+
+    .line5 {
+        height: 10px;
+        width: 145px;
+        background: linear-gradient(90deg, rgb(1, 162, 242), rgb(8, 197, 126));
+        position: absolute;
+        left: 400px;
+        top: 85px;
+    }
+
+    .input1 {
+        height: 50px;
+        width: 500px;
+        font-size: larger;
+        border-bottom: 1px solid rgb(1, 161, 242);
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        position: absolute;
+        left: 370px;
+        top: 250px;
+        padding-left: 10px;
+        outline: none;
+    }
+
+    /* .input1:focus{
+        outline: none;
+    } */
+    .fa-square-arrow-up-right {
+        font-size: 35px;
+        position: absolute;
+        left: 867px;
+        top: 268px;
+        cursor: pointer;
+        background: -webkit-linear-gradient(rgb(1, 162, 242), rgb(8, 197, 126));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .fa-square-arrow-up-right:hover {
+        background: -webkit-linear-gradient(rgb(8, 197, 126), rgb(1, 162, 242));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .img_div {
+        height: 200px;
+        width: 80%;
+        position: relative;
+        left: 10%;
+        top: -50px;
+        /* border: 1px solid; */
+
+    }
+
+    #image9 {
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        cursor: pointer;
+    }
+
+    #image10 {
+        position: absolute;
+        left: 250px;
+        top: 5px;
+        cursor: pointer;
+    }
+
+    #image11 {
+        position: absolute;
+        left: 520px;
+        top: 5px;
+        cursor: pointer;
+    }
+
+    #image12 {
+        position: absolute;
+        left: 780px;
+        top: 5px;
+        cursor: pointer;
+    }
+
+    #image13 {
+        position: absolute;
+        left: 1040px;
+        top: 5px;
+        cursor: pointer;
+    }
+
+    #image14 {
+        position: absolute;
+        left: 120px;
+        top: 100px;
+        cursor: pointer;
+    }
+
+    #image15 {
+        position: absolute;
+        left: 380px;
+        top: 100px;
+        cursor: pointer;
+    }
+
+    #image16 {
+        position: absolute;
+        left: 650px;
+        top: 100px;
+        cursor: pointer;
+    }
+
+    #image17 {
+        position: absolute;
+        left: 910px;
+        top: 100px;
+        cursor: pointer;
+    }
+
+    .main7 {
+        height: 100vh;
+        width: 100%;
+        /* border: 1px solid; */
+        position: relative;
+    }
+
+    .p45 {
+        font-family: Poppins, sans-serif;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 26px;
+        color: black;
+        position: absolute;
+        left: 600px;
+        top: 65px;
+        z-index: 1;
+    }
+
+    .line6 {
+        height: 10px;
+        width: 138px;
+        background: linear-gradient(90deg, rgb(1, 162, 242), rgb(8, 197, 126));
+        position: absolute;
+        left: 683px;
+        top: 85px;
+    }
+
+    .circle1 {
+        height: 280px;
+        width: 280px;
+        position: relative;
+        left: 50px;
+        top: 150px;
+        border: 2px dotted rgb(25, 108, 150);
+        border-radius: 50%;
+
+    }
+
+    .circle2 {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 40px;
+        top: 40px;
+        border-radius: 50%;
+        background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 126));
+    }
+
+    .circle1:hover .circle2 {
+        background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 126));
+        animation: a2 1.5s infinite linear;
+    }
+
+    @keyframes a2 {
+        0% {
+            transform: scale(100%);
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(170%);
+            opacity: 0;
+        }
+
+    }
+
+    .circle3 {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 40px;
+        top: 40px;
+        border-radius: 50%;
+        background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 126));
+    }
+
+    .fa-adn {
+
+        color: white;
+        font-size: 140px;
+        position: absolute;
+        left: 32px;
+        top: 29px;
+    }
+
+    .p46 {
+        font-family: Poppins, sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 28px;
+        color: black;
+        position: absolute;
+        left: 100px;
+        top: 470px;
+    }
+
+    .circle4 {
+        height: 280px;
+        width: 280px;
+        position: relative;
+        left: 440px;
+        top: -130px;
+        border: 2px dotted rgb(25, 108, 150);
+        border-radius: 50%;
+
+    }
+
+    .circle5 {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 40px;
+        top: 40px;
+        border-radius: 50%;
+        background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 126));
+    }
+
+    .circle4:hover .circle5 {
+        background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 126));
+        animation: a3 1.5s infinite linear;
+    }
+
+    @keyframes a3 {
+        0% {
+            transform: scale(100%);
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(170%);
+            opacity: 0;
+        }
+
+    }
+
+    .circle6 {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 40px;
+        top: 40px;
+        border-radius: 50%;
+        background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 126));
+    }
+
+    .fa-adn {
+
+        color: white;
+        font-size: 140px;
+        position: absolute;
+        left: 32px;
+        top: 29px;
+    }
+
+    .p47 {
+        font-family: Poppins, sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 28px;
+        color: black;
+        position: absolute;
+        left: 510px;
+        top: 470px;
+    }
+
+
+    .circle7 {
+        height: 280px;
+        width: 280px;
+        position: relative;
+        left: 820px;
+        top: -410px;
+        border: 2px dotted rgb(25, 108, 150);
+        border-radius: 50%;
+
+    }
+
+    .circle8 {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 40px;
+        top: 40px;
+        border-radius: 50%;
+        background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 126));
+    }
+
+    .circle7:hover .circle8 {
+        background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 126));
+        animation: a4 1.5s infinite linear;
+    }
+
+    @keyframes a4 {
+        0% {
+            transform: scale(100%);
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(170%);
+            opacity: 0;
+        }
+
+    }
+
+    .circle9 {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 40px;
+        top: 40px;
+        border-radius: 50%;
+        background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 126));
+    }
+
+    .fa-adn {
+
+        color: white;
+        font-size: 140px;
+        position: absolute;
+        left: 32px;
+        top: 29px;
+    }
+
+    .p48 {
+        font-family: Poppins, sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 28px;
+        color: black;
+        position: absolute;
+        left: 870px;
+        top: 470px;
+    }
+
+    .circle10 {
+        height: 280px;
+        width: 280px;
+        position: relative;
+        left: 1200px;
+        top: -680px;
+        border: 2px dotted rgb(25, 108, 150);
+        border-radius: 50%;
+
+    }
+
+    .circle11 {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 40px;
+        top: 40px;
+        border-radius: 50%;
+        background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 126));
+    }
+
+    .circle10:hover .circle11 {
+        background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 126));
+        animation: a5 1.5s infinite linear;
+    }
+
+    @keyframes a5 {
+        0% {
+            transform: scale(100%);
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(170%);
+            opacity: 0;
+        }
+
+    }
+
+    .circle12 {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 40px;
+        top: 40px;
+        border-radius: 50%;
+        background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 126));
+    }
+
+    .fa-adn {
+
+        color: white;
+        font-size: 140px;
+        position: absolute;
+        left: 32px;
+        top: 29px;
+    }
+
+    .p49 {
+        font-family: Poppins, sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 28px;
+        color: black;
+        position: absolute;
+        left: 1250px;
+        top: 470px;
+    }
+
+    .scircle1 {
+        height: 60px;
+        width: 60px;
+        border: 2px dotted rgb(12, 109, 158);
+        border-radius: 50%;
+        position: relative;
+        left: 130px;
+        top: -550px;
+
+
+
+    }
+
+    .scircle2 {
+        height: 45px;
+        width: 45px;
+        /* border: 2px dotted rgb(12, 109, 158); */
+        border-radius: 50%;
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 126));
+
+    }
+
+    .fa-arrow-right {
+        font-size: 40px;
+        color: rgb(1, 161, 242);
+        position: absolute;
+        left: 200px;
+        top: 585px;
+    }
+
+    .p50 {
+        color: rgb(1, 162, 242);
+        position: absolute;
+        left: 245px;
+        top: 595px;
+        letter-spacing: 1px;
+    }
+
+    .scircle3 {
+        height: 60px;
+        width: 60px;
+        border: 2px dotted rgb(12, 109, 158);
+        border-radius: 50%;
+        position: relative;
+        left: 545px;
+        top: -605px;
+    }
+
+    .scircle4 {
+        height: 45px;
+        width: 45px;
+        /* border: 2px dotted rgb(12, 109, 158); */
+        border-radius: 50%;
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 126));
+
+    }
+
+    .fa-circle-arrow-right {
+        font-size: 40px;
+        color: rgb(1, 161, 242);
+        position: absolute;
+        left: 625px;
+        top: 585px;
+    }
+
+    .p51 {
+        color: rgb(1, 162, 242);
+        position: absolute;
+        left: 695px;
+        top: 595px;
+        letter-spacing: 1px;
+    }
+
+    .scircle5 {
+        height: 60px;
+        width: 60px;
+        border: 2px dotted rgb(12, 109, 158);
+        border-radius: 50%;
+        position: relative;
+        left: 900px;
+        top: -665px;
+    }
+
+    .scircle6 {
+        height: 45px;
+        width: 45px;
+        /* border: 2px dotted rgb(12, 109, 158); */
+        border-radius: 50%;
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 126));
+
+    }
+
+    .fa-arrow-right-long {
+        font-size: 40px;
+        color: rgb(1, 161, 242);
+        position: absolute;
+        left: 975px;
+        top: 585px;
+    }
+
+    .p52 {
+        color: rgb(1, 162, 242);
+        position: absolute;
+        left: 1035px;
+        top: 595px;
+        letter-spacing: 1px;
+    }
+
+    .scircle7 {
+        height: 60px;
+        width: 60px;
+        border: 2px dotted rgb(12, 109, 158);
+        border-radius: 50%;
+        position: relative;
+        left: 1360px;
+        top: -725px;
+    }
+
+    .scircle8 {
+        height: 45px;
+        width: 45px;
+        /* border: 2px dotted rgb(12, 109, 158); */
+        border-radius: 50%;
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 126));
+
+    }
+
+    .main8 {
+        height: 100vh;
+        width: 100%;
+        background-color: rgb(239, 241, 247);
+        position: relative;
+
+    }
+
+    .p53 {
+        font-family: Poppins, sans-serif;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 26px;
+        color: black;
+        position: absolute;
+        left: 600px;
+        top: 65px;
+        z-index: 1;
+    }
+
+    .line7 {
+        height: 10px;
+        width: 147px;
+        background: linear-gradient(90deg, rgb(1, 162, 242), rgb(8, 197, 126));
+        position: absolute;
+        left: 700px;
+        top: 85px;
+    }
+
+    .images1 {
+        height: 450px;
+        width: 80%;
+        position: relative;
+        left: 10%;
+        top: 150px;
+        /* border: 1px solid; */
+    }
+
+    .child19 {
+        height: 450px;
+        width: 100%;
+        position: relative;
+        /* left: 10%; */
+        /* top: 150px; */
+        /* border: 1px solid red; */
+        animation: aa2 12s infinite linear ;
+    }
+    @keyframes aa2 {
+        0%{
+            margin-left: 0;
+        }
+        15%{
+            margin-left: 0;
+        }
+        30%{
+            margin-left: -500px;
+        }
+        45%{
+            margin-left: -500px;
+        }
+        60%{
+            margin-left: -1000px;
+        }
+        75%{
+            margin-left: -1000px;
+        }
+        85%{
+            margin-left: -1500px;
+        }
+        100%{
+
+            margin-left: -1500px;
+        }
+
+        
+    }
+
+
+    .child20 {
+        height: 450px;
+        width: 28%;
+        position: relative;
+        /* border: 1px solid tomato; */
+    }
+
+    #image18 {
+        height: 250px;
+        width: 100%;
+        position: absolute;
+
+    }
+
+    .child21 {
+        height: 200px;
+        width: 100%;
+        position: absolute;
+        top: 250px;
+        background-color: white;
+        /* border: 1px solid green; */
+    }
+
+    .fa-calendar-check {
+        font-size: 20px;
+        color: rgb(1, 162, 242);
+        position: absolute;
+        left: 20px;
+        top: 10px;
+    }
+
+    .p54 {
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: rgb(61, 57, 57);
+        position: absolute;
+        left: 45px;
+        top: 13px;
+    }
+
+    .fa-user {
+        font-size: 20px;
+        color: rgb(1, 162, 242);
+        position: absolute;
+        left: 145px;
+        top: 10px;
+    }
+
+    .p55 {
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: rgb(61, 57, 57);
+        position: absolute;
+        left: 170px;
+        top: 13px;
+    }
+
+    .color1 {
+        color: rgb(1, 162, 242);
+        font-weight: 600;
+    }
+
+    .p56 {
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: rgb(61, 57, 57);
+        position: absolute;
+        left: 225px;
+        top: 13px;
+    }
+
+    .p57 {
+        font-family: Poppins, sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28px;
+        color: rgb(38, 33, 33);
+        position: absolute;
+        left: 10px;
+        top: 40px;
+    }
+
+    .p58 {
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: rgb(61, 57, 57);
+        position: absolute;
+        left: 10px;
+        top: 100px;
+    }
+
+    .btn5 {
+        height: 40px;
+        width: 140px;
+        position: absolute;
+        left: 20px;
+        top: 145px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        background: linear-gradient(90deg, rgb(1, 162, 242), rgb(8, 197, 126));
+        transition: .5s;
+    }
+
+    .btn5:hover {
+        background: linear-gradient(90deg, rgb(8, 197, 126), rgb(1, 162, 242));
+    }
+
+
+    .child22 {
+        height: 450px;
+        width: 28%;
+        position: relative;
+        left: 450px;
+        top: -450px;
+        /* border: 1px solid tomato; */
+    }
+
+    #image19 {
+        height: 250px;
+        width: 100%;
+        position: absolute;
+
+    }
+
+    .child23 {
+        height: 200px;
+        width: 100%;
+        position: absolute;
+        top: 250px;
+        background-color: white;
+        /* border: 1px solid green; */
+    }
+
+    .fa-calendar-check {
+        font-size: 20px;
+        color: rgb(1, 162, 242);
+        position: absolute;
+        left: 20px;
+        top: 10px;
+    }
+
+    .p59 {
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: rgb(61, 57, 57);
+        position: absolute;
+        left: 45px;
+        top: 13px;
+    }
+
+    .fa-user {
+        font-size: 20px;
+        color: rgb(1, 162, 242);
+        position: absolute;
+        left: 145px;
+        top: 10px;
+    }
+
+    .p60 {
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: rgb(61, 57, 57);
+        position: absolute;
+        left: 170px;
+        top: 13px;
+    }
+
+    .color2 {
+        color: rgb(1, 162, 242);
+        font-weight: 600;
+    }
+
+    .p61 {
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: rgb(61, 57, 57);
+        position: absolute;
+        left: 225px;
+        top: 13px;
+    }
+
+    .p62 {
+        font-family: Poppins, sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28px;
+        color: rgb(38, 33, 33);
+        position: absolute;
+        left: 10px;
+        top: 40px;
+    }
+
+    .p63 {
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: rgb(61, 57, 57);
+        position: absolute;
+        left: 10px;
+        top: 100px;
+    }
+
+    .btn6 {
+        height: 40px;
+        width: 140px;
+        position: absolute;
+        left: 20px;
+        top: 145px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        background: linear-gradient(90deg, rgb(1, 162, 242), rgb(8, 197, 126));
+        transition: .5s;
+    }
+
+    .btn6:hover {
+        background: linear-gradient(90deg, rgb(8, 197, 126), rgb(1, 162, 242));
+    }
+
+
+    .child24 {
+        height: 450px;
+        width: 28%;
+        position: relative;
+        left: 875px;
+        top: -900px;
+        /* border: 1px solid tomato; */
+    }
+
+    #image20 {
+        height: 250px;
+        width: 100%;
+        position: absolute;
+
+    }
+
+    .child25 {
+        height: 200px;
+        width: 100%;
+        position: absolute;
+        top: 250px;
+        background-color: white;
+        /* border: 1px solid green; */
+    }
+
+    .fa-calendar-check {
+        font-size: 20px;
+        color: rgb(1, 162, 242);
+        position: absolute;
+        left: 20px;
+        top: 10px;
+    }
+
+    .p64 {
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: rgb(61, 57, 57);
+        position: absolute;
+        left: 45px;
+        top: 13px;
+    }
+
+    .fa-user {
+        font-size: 20px;
+        color: rgb(1, 162, 242);
+        position: absolute;
+        left: 145px;
+        top: 10px;
+    }
+
+    .p65 {
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: rgb(61, 57, 57);
+        position: absolute;
+        left: 170px;
+        top: 13px;
+    }
+
+    .color3 {
+        color: rgb(1, 162, 242);
+        font-weight: 600;
+    }
+
+    .p66 {
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: rgb(61, 57, 57);
+        position: absolute;
+        left: 225px;
+        top: 13px;
+    }
+
+    .p67 {
+        font-family: Poppins, sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 28px;
+        color: rgb(38, 33, 33);
+        position: absolute;
+        left: 10px;
+        top: 40px;
+    }
+
+    .p68 {
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: rgb(61, 57, 57);
+        position: absolute;
+        left: 10px;
+        top: 100px;
+    }
+
+    .btn7 {
+        height: 40px;
+        width: 140px;
+        position: absolute;
+        left: 20px;
+        top: 145px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        background: linear-gradient(90deg, rgb(1, 162, 242), rgb(8, 197, 126));
+        transition: .5s;
+    }
+
+    .btn7:hover {
+        background: linear-gradient(90deg, rgb(8, 197, 126), rgb(1, 162, 242));
+    }
+
+    .main9 {
+        height: 80vh;
+        width: 100%;
+        background-image: url(./contact-bg.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+
+    }
+
+    .text3 {
+        height: 80vh;
+        width: 35%;
+        position: absolute;
+        left: 5%;
+        top: -10vh;
+        background-color: white;
+        border-radius: 5px;
+
+    }
+
+    .fa-earth-asia {
+        font-size: 170px;
+        position: absolute;
+        left: 50px;
+        top: 30px;
+        background: -webkit-linear-gradient(rgb(1, 162, 242), rgb(8, 197, 126));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .p69 {
+        font-family: Poppins, sans-serif;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 26px;
+        color: black;
+        position: absolute;
+        left: 50px;
+        top: 235px;
+        z-index: 1;
+    }
+
+    .line8 {
+        height: 10px;
+        width: 143px;
+        background: linear-gradient(90deg, rgb(1, 162, 242), rgb(8, 197, 126));
+        position: absolute;
+        left: 50px;
+        top: 255px;
+    }
+
+    .fa-location-dot {
+        font-size: 24px;
+        position: absolute;
+        left: 50px;
+        top: 300px;
+
+
+    }
+
+    .p70 {
+        font-family: Poppins, sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 20px;
+        color: rgb(61, 57, 57);
+        position: absolute;
+        left: 80px;
+        top: 300px;
+    }
+
+    .p71 {
+        font-family: Poppins, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+        color: rgb(61, 57, 57);
+        position: absolute;
+        left: 80px;
+        top: 330px;
+    }
+
+    .fa-location-crosshairs {
+        font-size: 24px;
+        position: absolute;
+        left: 50px;
+        top: 400px;
+        color: rgb(1, 162, 242);
+        /* background-color: aqua; */
+    }
+
+    .p72 {
+        font-family: Poppins, sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 20px;
+        color: rgb(61, 57, 57);
+        position: absolute;
+        left: 80px;
+        top: 400px;
+    }
+
+    .p73 {
+        font-family: Poppins, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+        color: rgb(61, 57, 57);
+        position: absolute;
+        left: 80px;
+        top: 430px;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .p73:hover {
+        color: rgb(1, 162, 242);
+
+    }
+
+    .p74 {
+        font-family: Poppins, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+        color: rgb(61, 57, 57);
+        position: absolute;
+        left: 80px;
+        top: 455px;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .p74:hover {
+        color: rgb(1, 162, 242);
+
+    }
+
+    .fa-envelope-open-text {
+        font-size: 24px;
+        position: absolute;
+        left: 50px;
+        top: 500px;
+
+
+    }
+
+    .p75 {
+        font-family: Poppins, sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 20px;
+        color: rgb(61, 57, 57);
+        position: absolute;
+        left: 80px;
+        top: 500px;
+
+    }
+
+    .p76 {
+        font-family: Poppins, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+        color: rgb(61, 57, 57);
+        position: absolute;
+        left: 80px;
+        top: 530px;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .p76:hover {
+        color: rgb(1, 162, 242);
+
+    }
+
+    .p77 {
+        font-family: Poppins, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+        color: rgb(61, 57, 57);
+        position: absolute;
+        left: 80px;
+        top: 555px;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .p77:hover {
+        color: rgb(1, 162, 242);
+
+    }
+
+    .input2 {
+        height: 50px;
+        width: 400px;
+        outline: none;
+        background-color: rgb(83, 207, 189);
+        border-radius: 5px;
+        position: absolute;
+        left: 650px;
+        top: 150px;
+        border: none;
+        font-size: 16px;
+        padding-left: 15px;
+        color: white;
+    }
+
+    #i1::placeholder {
+        color: white;
+    }
+
+    .input3 {
+        height: 50px;
+        width: 400px;
+        outline: none;
+        background-color: rgb(83, 207, 189);
+        border-radius: 5px;
+        position: absolute;
+        left: 1100px;
+        top: 150px;
+        border: none;
+        font-size: 16px;
+        padding-left: 15px;
+        color: white;
+    }
+
+    #i2::placeholder {
+        color: white;
+    }
+
+    .input4 {
+        height: 50px;
+        width: 400px;
+        outline: none;
+        background-color: rgb(83, 207, 189);
+        border-radius: 5px;
+        position: absolute;
+        left: 650px;
+        top: 220px;
+        border: none;
+        font-size: 16px;
+        padding-left: 15px;
+        color: white;
+    }
+
+    #i3::placeholder {
+        color: white;
+    }
+
+    .input5 {
+        height: 50px;
+        width: 400px;
+        outline: none;
+        background-color: rgb(83, 207, 189);
+        border-radius: 5px;
+        position: absolute;
+        left: 1100px;
+        top: 220px;
+        border: none;
+        font-size: 16px;
+        padding-left: 15px;
+        color: white;
+    }
+
+    #i4::placeholder {
+        color: white;
+    }
+
+    .input6 {
+        height: 150px;
+        width: 850px;
+        outline: none;
+        background-color: rgb(83, 207, 189);
+        border-radius: 5px;
+        position: absolute;
+        left: 650px;
+        top: 290px;
+        border: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+        padding-left: 15px;
+        padding-top: 10px;
+        color: white;
+    }
+
+    #i5::placeholder {
+        color: white;
+    }
+
+    .btn8 {
+        height: 60px;
+        width: 850px;
+        background-color: white;
+        position: absolute;
+        left: 650px;
+        top: 465px;
+        border-radius: 5px;
+        border: none;
+        font-size: 18px;
+        transition: .5s;
+    }
+
+    .btn8:hover {
+        color: rgb(8, 197, 126);
+    }
+
+    .main10 {
+        height: 75vh;
+        width: 100%;
+        background-image: url(./footer-bg.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+
+    }
+
+    #image21 {
+        position: absolute;
+        left: 100px;
+        top: 150px;
+
+    }
+
+    .p78 {
+        font-family: Poppins, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(102, 102, 102);
+        position: absolute;
+        left: 100px;
+        top: 200px;
+    }
+
+    .fa-facebook {
+        font-size: 40px;
+        position: absolute;
+        left: 100px;
+        z-index: 1;
+        top: 300px;
+        background: -webkit-linear-gradient(rgb(1, 162, 242), rgb(8, 197, 126));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+    }
+
+    .fa-facebook:hover {
+        background: -webkit-linear-gradient(rgb(8, 197, 126), rgb(1, 162, 242));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .fa-instagram-square {
+        font-size: 40px;
+        position: absolute;
+        left: 160px;
+        top: 300px;
+        background: -webkit-linear-gradient(rgb(1, 162, 242), rgb(8, 197, 126));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+    }
+
+    .fa-instagram-square:hover {
+        background: -webkit-linear-gradient(rgb(8, 197, 126), rgb(1, 162, 242));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .fa-twitter-square {
+        font-size: 40px;
+        position: absolute;
+        left: 215px;
+        top: 300px;
+        background: -webkit-linear-gradient(rgb(1, 162, 242), rgb(8, 197, 126));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+    }
+
+    .fa-twitter-square:hover {
+        background: -webkit-linear-gradient(rgb(8, 197, 126), rgb(1, 162, 242));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .child26 {
+        height: 250px;
+        width: 350px;
+        /* border: 1px solid; */
+        position: relative;
+        left: 450px;
+        top: 150px;
+    }
+
+    .p79 {
+        font-family: Poppins, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+        color: black;
+        position: absolute;
+        z-index: 1;
+        /* left: 10px; */
+        /* top: px; */
+    }
+
+    .p80 {
+        font-family: Poppins, sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(102, 102, 102);
+        position: absolute;
+        top: 60px;
+        /* z-index: ; */
+
+    }
+
+    .line9 {
+        height: 6px;
+        width: 71px;
+        background: linear-gradient(90deg, rgb(1, 162, 242), rgb(8, 197, 126));
+        position: absolute;
+        top: 15px;
+    }
+
+    .p81 {
+        font-family: Poppins, sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(102, 102, 102);
+        position: absolute;
+        top: 110px;
+    }
+
+    .child27 {
+        height: 350px;
+        width: 255px;
+        /* border: 1px solid; */
+        position: relative;
+        left: 830px;
+        top: -100px;
+    }
+
+    .p82 {
+        font-family: Poppins, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+        color: black;
+        position: absolute;
+        z-index: 1;
+        /* left: 10px; */
+        /* top: px; */
+    }
+
+    .line10 {
+        height: 6px;
+        width: 71px;
+        background: linear-gradient(90deg, rgb(1, 162, 242), rgb(8, 197, 126));
+        position: absolute;
+        top: 15px;
+    }
+
+    .p83 {
+        font-family: Poppins, sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(102, 102, 102);
+        position: absolute;
+        top: 60px;
+        cursor: pointer;
+        transition: .5s;
+        /* z-index: ; */
+    }
+
+    .p83:hover {
+        color: rgb(1, 162, 242);
+    }
+
+    .p84 {
+        font-family: Poppins, sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(102, 102, 102);
+        position: absolute;
+        top: 95px;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .p84:hover {
+        color: rgb(1, 162, 242);
+
+    }
+
+    .p85 {
+        font-family: Poppins, sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(102, 102, 102);
+        position: absolute;
+        top: 130px;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .p85:hover {
+        color: rgb(1, 162, 242);
+    }
+
+    .p86 {
+        font-family: Poppins, sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(102, 102, 102);
+        position: absolute;
+        top: 165px;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .p86:hover {
+        color: rgb(1, 162, 242);
+    }
+
+    .p87 {
+        font-family: Poppins, sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(102, 102, 102);
+        position: absolute;
+        top: 200px;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .p87:hover {
+        color: rgb(1, 162, 242);
+
+    }
+
+    .p88 {
+        font-family: Poppins, sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(102, 102, 102);
+        position: absolute;
+        left: 190px;
+        top: 60px;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .p88:hover {
+        color: rgb(1, 161, 242);
+    }
+
+    .p89 {
+        font-family: Poppins, sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(102, 102, 102);
+        position: absolute;
+        left: 190px;
+        top: 95px;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .p89:hover {
+        color: rgb(1, 161, 242);
+    }
+
+    .p90 {
+        font-family: Poppins, sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(102, 102, 102);
+        position: absolute;
+        left: 190px;
+        top: 130px;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .p90:hover {
+        color: rgb(1, 161, 242);
+    }
+
+
+
+    .child28 {
+        height: 350px;
+        width: 350px;
+        /* border: 1px solid; */
+        position: relative;
+        left: 1130px;
+        top: -450px;
+    }
+
+    .p91 {
+        font-family: Poppins, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+        color: black;
+        position: absolute;
+        z-index: 1;
+        /* left: 10px; */
+        /* top: px; */
+    }
+
+    .line11 {
+        height: 6px;
+        width: 71px;
+        background: linear-gradient(90deg, rgb(1, 162, 242), rgb(8, 197, 126));
+        position: absolute;
+        top: 15px;
+    }
+
+    .p92 {
+        font-family: Poppins, sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(102, 102, 102);
+        position: absolute;
+        top: 60px;
+        cursor: pointer;
+        transition: .5s;
+        /* z-index: ; */
+    }
+
+    .p92:hover {
+        color: rgb(1, 162, 242);
+    }
+
+    .p93 {
+        font-family: Poppins, sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(102, 102, 102);
+        position: absolute;
+        top: 95px;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .p93:hover {
+        color: rgb(1, 162, 242);
+
+    }
+
+    .p94 {
+        font-family: Poppins, sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(102, 102, 102);
+        position: absolute;
+        top: 130px;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .p94:hover {
+        color: rgb(1, 162, 242);
+    }
+
+    .p95 {
+        font-family: Poppins, sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(102, 102, 102);
+        position: absolute;
+        top: 165px;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .p95:hover {
+        color: rgb(1, 162, 242);
+    }
+
+    .p96 {
+        font-family: Poppins, sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(102, 102, 102);
+        position: absolute;
+        left: 600px;
+        top: 500px;
+    }
+</style>
+
+<body>
+    <div class="main1">
+        <div class="address">
+            <i class="fa-solid fa-envelope"
+                style="font-size: 15px; left: 5px; top: 18px; position: absolute; color: white;"></i>
+            <i class="fa-solid fa-phone"
+                style="font-size: 15px; left: 215px; top: 18px; position: absolute; color: white;"></i>
+            <p class="p1">info@yourwebsite.com</p>
+            <p class="p2">(+123) 456789</p>
+            <i class="fa-brands fa-facebook-f"
+                style="font-size: 15px; left: 1234px; top: 18px; position: absolute; color: white; cursor: pointer; transition: .5s;"></i>
+            <i class="fa-brands fa-google-plus-g"
+                style="font-size: 15px; left: 1265px; top: 18px; position: absolute; color: white; cursor: pointer;"></i>
+            <i class="fa-brands fa-linkedin-in"
+                style="font-size: 15px; left: 1305px; top: 18px; position: absolute; color: white; cursor: pointer;"></i>
+            <i class="fa-brands fa-twitter"
+                style="font-size: 15px; left: 1340px; top: 18px; position: absolute; color: white; cursor: pointer;"></i>
+        </div>
+        <div class="menubar">
+            <img src="./logo-white.png" alt="" id="image1">
+            <ul class="menu_elements">
+                <li class="li_elements">HOME
+
+                    <div class="drop">
+
+                        <ul class="drop_ul">
+                            <li class="dropli">Home One</li>
+                            <li class="dropli">Home Two</li>
+                            <li class="dropli">Home Three</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="li_elements">ABOUT </li>
+                <li class="li_elements">FEATURES </li>
+                <li class="li_elements">PAGES
+                    <div class="drop1">
+                        <ul class="drop_ul1">
+                            <li class="dropli1">One</li>
+                            <li class="dropli1">Two</li>
+                            <li class="dropli1">Three</li>
+                            <li class="dropli1">Four</li>
+                        </ul>
+                        <!-- <ul class="drop_ul2">    
+                            <li class="dropli2">Five</li>
+                            <li class="dropli2">Six</li>
+                            <li class="dropli2">Seven</li>
+                            <li class="dropli2">Eight</li>
+                        </ul> -->
+                        <!-- <li class="dropli1">Nine</li> -->
+                        <!-- <li class="dropli1">Ten</li> -->
+                        <!-- <li class="dropli1">Eleven</li> -->
+
+                        <!-- </ul> -->
+                    </div>
+                <li class="li_elements">SHOP </li>
+                <li class="li_elements">BLOG </li>
+                <li class="li_elements">CONTACT </li>
+            </ul>
+        </div>
+        <!-- <i class="fa-solid fa-bag-shopping"></i> -->
+        <!-- <i class="fa-solid fa-magnifying-glass"></i>  -->
+        <p class="p3">Al & Machine <br> Learning Products <br> Creators</p>
+        <p class="p4">Innovative machine learning products and services <br> on a trusted platform.</p>
+        <button class="btn1">LEARN MORE</button>
+        <button class="btn2">JOIN NOW</button>
+        <img src="./sl1-ly1.png" alt="" id="image2">
+        <img src="./sl1-ly2.png" alt="" id="image3">
+    </div>
+    <div class="main2">
+        <div class="child1">
+            <i class="fa-solid fa-brain"></i>
+            <p class="p5">Advanced Programming</p>
+            <p class="p6">Find out what's working and what's not <br> Dig your data to find</p>
+        </div>
+        <div class="child2">
+            <i class="fa-solid fa-camera"></i>
+            <p class="p7">Al Chippest</p>
+            <p class="p8">Find out what's working and what's not <br> Dig your data to find</p>
+        </div>
+        <div class="child3">
+            <i class="fa-solid fa-bread-slice"></i>
+            <p class="p9">Cloud Al Integration</p>
+            <p class="p10">Find out what's working and what's not <br> Dig your data to find</p>
+        </div>
+        <div class="child4">
+            <i class="fa-solid fa-robot"></i>
+            <p class="p11">Robotic Arm</p>
+            <p class="p12">Find out what's working and what's not <br> Dig your data to find</p>
+        </div>
+        <div class="text1">
+            <p class="p13">Power Your Creativity With <br> Artificial Intelligence</p>
+            <div class="line1"></div>
+            <p class="p14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, <br> non
+                suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc <br> scelerisque in.</p>
+            <p class="p15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molesti <br> ae facere,
+                natus reprehenderit eaque eum, autem ipsam. Magni, error. Tem <br> pora odit laborum iure inventore
+                possimus laboriosam qui nam. Fugit!</p>
+            <button class="btn3">LEARN MORE</button>
+        </div>
+        <div class="text2">
+            <p class="p16">We Create The Most Realistic <br> Artificial Intelligence</p>
+            <div class="line2"></div>
+            <p class="p17">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, <br> non
+                suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc <br> scelerisque in.</p>
+            <p class="p18">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molesti <br> ae facere,
+                natus reprehenderit eaque eum, autem ipsam. Magni, error. Tem <br> pora odit laborum iure inventore
+                possimus laboriosam qui nam. Fugit!</p>
+            <button class="btn4">LEARN MORE</button>
+            <!-- <i class="fa-solid fa-square-caret-right"></i> -->
+
+        </div>
+        <img src="./about-video-part.png" alt="" id="image5">
+    </div>
+    <div class="main3">
+        <div class="child5">
+            <p class="p19">6000+</p>
+            <p class="p20">Complete Project</p>
+        </div>
+        <div class="child6">
+            <p class="p21">400+</p>
+            <p class="p22">NLP Experts</p>
+        </div>
+        <div class="child7">
+            <p class="p23">3500+</p>
+            <p class="p24">Satisfied Clients</p>
+        </div>
+        <div class="child8">
+            <p class="p25">8000+</p>
+            <p class="p26">Industries Served</p>
+        </div>
+
+    </div>
+    <div class="main4">
+        <p class="p27">Our Core Services</p>
+        <div class="line3"></div>
+        <div class="child9">
+            <i class="fa-solid fa-head-side-virus"></i>
+            <p class="p28">Virtual Personal Assistants</p>
+            <p class="p29">Capitalize on low hanging fruit to identify a ball <br> park value added activity to beta
+                test. Override <br> the digital divide with additional</p>
+        </div>
+        <div class="child10">
+            <i class="fa-solid fa-head-side-mask"></i>
+            <p class="p30">Videos Surveillance</p>
+            <p class="p31">Capitalize on low hanging fruit to identify a ball <br> park value added activity to beta
+                test. Override <br> the digital divide with additional</p>
+        </div>
+        <div class="child11">
+            <i class="fa-solid fa-head-side-mask"></i>
+            <p class="p32">Social Media Services</p>
+            <p class="p33">Capitalize on low hanging fruit to identify a ball <br> park value added activity to beta
+                test. Override <br> the digital divide with additional</p>
+        </div>
+        <div class="child12">
+            <i class="fa-solid fa-head-side-mask"></i>
+            <p class="p34">Online Customer Support</p>
+            <p class="p35">Capitalize on low hanging fruit to identify a ball <br> park value added activity to beta
+                test. Override <br> the digital divide with additional</p>
+        </div>
+        <div class="child13">
+            <i class="fa-solid fa-head-side-mask"></i>
+            <p class="p36">Search Engine Result Refining</p>
+            <p class="p37">Capitalize on low hanging fruit to identify a ball <br> park value added activity to beta
+                test. Override <br> the digital divide with additional</p>
+        </div>
+        <div class="child14">
+            <i class="fa-solid fa-head-side-mask"></i>
+            <p class="p38">Search Engine Result Refining</p>
+            <p class="p39">Capitalize on low hanging fruit to identify a ball <br> park value added activity to beta
+                test. Override <br> the digital divide with additional</p>
+        </div>
+    </div>
+    <div class="main5">
+        <p class="p40">Our Latest Project</p>
+        <div class="line4"></div>
+        <div class="child15">
+            <div class="images">
+                <div class="image_pack">
+                <img src="./1.jpg" alt="" id="image6">
+                    <!-- <div class="child16"> -->
+                        <!-- <div class="div1"> -->
+                            <!-- <p class="p41">Vocal Avator API</p> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                </div>
+                <div class="image_pack">
+                <img src="./1.jpg" alt="" id="image7">
+
+                </div>
+                <div class="image_pack">
+                <img src="./1.jpg" alt="" id="image8">
+                    
+                </div>
+                <div class="image_pack">
+                <img src="./1.jpg" alt="" id="image99">
+                    
+                </div>
+                <div class="image_pack">
+                <img src="./1.jpg" alt="" id="image99">
+                    
+                </div>
+                <div class="image_pack">
+                <img src="./1.jpg" alt="" id="image99">
+                    
+                </div>
+            </div>
+        
+        
+        </div>
+
+
+
+    </div>
+    <div class="main6">
+        <div class="longdiv">
+            <i class="fa-solid fa-envelope-open-text"></i>
+            <p class="p44">Don’t Miss Our News <br> And Updates!</p>
+            <div class="line5"></div>
+            <input class="input1" type="text" placeholder="Enter Your Email">
+            <i class="fa-solid fa-envelope-open"></i>
+
+        </div>
+        <div class="img_div">
+            <img src="./1.png" alt="" id="image9">
+            <img src="./2.png" alt="" id="image10">
+            <img src="./3.png" alt="" id="image11">
+            <img src="./4.png" alt="" id="image12">
+            <img src="./5.png" alt="" id="image13">
+            <img src="./1.png" alt="" id="image14">
+            <img src="./2.png" alt="" id="image15">
+            <img src="./3.png" alt="" id="image16">
+            <img src="./4.png" alt="" id="image17">
+
+        </div>
+    </div>
+    <div class="main7">
+        <p class="p45">How We Works</p>
+        <div class="line6"></div>
+        <div class="circle1">
+            <div class="circle2"></div>
+            <div class="circle3">
+                <i class="fa-brands fa-adn"></i>
+            </div>
+        </div>
+        <p class="p46">Data Generated</p>
+
+
+        <div class="circle4">
+            <div class="circle5"></div>
+            <div class="circle6">
+                <i class="fa-brands fa-adn"></i>
+            </div>
+        </div>
+        <p class="p47">Data Stored</p>
+
+
+        <div class="circle7">
+            <div class="circle8"></div>
+            <div class="circle9">
+                <i class="fa-brands fa-adn"></i>
+            </div>
+        </div>
+        <p class="p48">Data Processing</p>
+
+        <div class="circle10">
+            <div class="circle11"></div>
+            <div class="circle12">
+                <i class="fa-brands fa-adn"></i>
+            </div>
+        </div>
+        <p class="p49">Actionable Insights</p>
+
+        <div class="scircle1">
+            <div class="scircle2"></div>
+        </div>
+        <i class="fa-solid fa-arrow-right"></i>
+        <div class="p50">--------------------------------------------</div>
+
+
+        <div class="scircle3">
+            <div class="scircle4"></div>
+        </div>
+        <i class="fa-solid fa-circle-arrow-right"></i>
+        <div class="p51">------------------------------</div>
+
+        <div class="scircle5">
+            <div class="scircle6"></div>
+        </div>
+        <i class="fa-solid fa-arrow-right-long"></i>
+        <div class="p52">------------------------------------------------</div>
+        <div class="scircle7">
+            <div class="scircle8"></div>
+        </div>
+    </div>
+
+    <div class="main8">
+        <p class="p53">Recent Blog Post</p>
+        <div class="line7"></div>
+        <div class="images1">
+            <div class="child19">
+                <div class="child20">
+                    <img src="./1 (1).jpg" alt="" id="image18">
+                    <div class="child21">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <p class="p54">Nov 18,2019</p>
+                        <i class="fa-solid fa-user"></i>
+                        <p class="p55">Admin</p>
+                        <p class="p56"><span class="color1">10</span> Comments</p>
+                        <p class="p57">Man In Red Plaid Shirt Talking <br> On Phone Terrace</p>
+                        <p class="p58">The tutorial covers examples of identification <br> And Rew Garfield and verifies
+                            <br> if a picture</p>
+                        <button class="btn5">READ MORE</button>
+                    </div>
+                </div>
+
+                <div class="child22">
+                    <img src="./2 (1).jpg" alt="" id="image19">
+                    <div class="child23">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <p class="p59">Nov 18,2019</p>
+                        <i class="fa-solid fa-user"></i>
+                        <p class="p60">Admin</p>
+                        <p class="p61"><span class="color2">10</span> Comments</p>
+                        <p class="p62">Man In Red Plaid Shirt Talking <br> On Phone Terrace</p>
+                        <p class="p63">The tutorial covers examples of identification <br> And Rew Garfield and verifies
+                            if a picture</p>
+                        <button class="btn6">READ MORE</button>
+                    </div>
+                </div>
+
+                <div class="child24">
+                    <img src="./3 (1).jpg" alt="" id="image20">
+                    <div class="child25">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <p class="p64">Nov 18,2019</p>
+                        <i class="fa-solid fa-user"></i>
+                        <p class="p65">Admin</p>
+                        <p class="p66"><span class="color2">10</span> Comments</p>
+                        <p class="p67">Man In Red Plaid Shirt Talking <br> On Phone Terrace</p>
+                        <p class="p68">The tutorial covers examples of identification <br> And Rew Garfield and verifies
+                            if a picture</p>
+                        <button class="btn7">READ MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main9">
+        <div class="text3">
+            <i class="fa-solid fa-earth-asia"></i>
+            <p class="p69">Contact With Us</p>
+            <div class="line8"></div>
+
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="p70">Visit Us</p>
+            <p class="p71">530 Old BUffalo Street <br> Northwest #205, New York - 3087</p>
+
+            <i class="fa-solid fa-location-crosshairs"></i>
+            <p class="p72">Visit Us</p>
+            <p class="p73"> +1 (123) -456-7890</p>
+            <p class="p74">+1 (123) -456-7890</p>
+
+            <i class="fa-solid fa-envelope-open-text"></i>
+            <p class="p75">Email Us</p>
+            <p class="p76">infoname@gmail.com</p>
+            <p class="p77">www.yourname.com</p>
+
+        </div>
+
+        <input class="input2" id="i1" type="text" placeholder="Name">
+        <input class="input3" id="i2" type="text" placeholder="Email">
+        <input class="input4" id="i3" type="text" placeholder="Phone Number">
+        <input class="input5" id="i4" type="text" placeholder="Subject">
+
+        <textarea name="" class="input6" id="i5" cols="40" rows="10" placeholder="Your Message Here"></textarea>
+        <button class="btn8">SUBMIT NOW!</button>
+    </div>
+    <div class="main10">
+        <img src="./logo.png" alt="" id="image21">
+        <p class="p78">Lorem ipsum dolor sit amet, conse turini <br> adipiscing elit, sed do eiusmod tempor <br> in
+            cididunt ut labore.</p>
+
+        <i class="fa-brands fa-facebook"></i>
+
+        <i class="fa-brands fa-instagram-square"></i>
+
+        <i class="fa-brands fa-twitter-square"></i>
+        <div class="child26">
+            <p class="p79">WORK HOURS</p>
+            <div class="line9"></div>
+            <p class="p80">10.00 AM - 6.00 PM , Monday - Saturday</p>
+            <p class="p81">Our Support and Sales team is available <br> 24 * 7 to answer your queries</p>
+        </div>
+        <div class="child27">
+            <p class="p82">NAVIGATE</p>
+            <div class="line10"></div>
+            <p class="p83">About Us</p>
+            <p class="p84">Features</p>
+            <p class="p85">Mobile App</p>
+            <p class="p86">Software Demo</p>
+            <p class="p87">Software Download</p>
+            <p class="p88">Blog</p>
+            <p class="p89">Team</p>
+            <p class="p90">ChatBot</p>
+        </div>
+        <div class="child28">
+            <p class="p91">PRIVACY & TOS</p>
+            <div class="line11"></div>
+            <p class="p92">Privacy</p>
+            <p class="p93">Contact</p>
+            <p class="p94">Login</p>
+            <p class="p95">Register</p>
+        </div>
+        <p class="p96">© Copyrights 2019 AuburnForest</p>
+    </div>
+
+</body>
+
+</html>

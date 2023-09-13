@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 10vh;
+            width: 700px;
+            border-right: 10px solid;
+            margin: auto;
+            margin-top: 50vh;
+            position: relative;
+            animation: move 5s infinite;
+            overflow: hidden;
+        }
+        .child{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            /* border: 10px solid red; */
+        }
+        .child h1{
+            text-align: center;
+        }
+        @keyframes move{
+            0%{
+                width:700px;
+            }
+            50%{
+                width: 0px;
+            }
+            100%{
+                width: 700px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="child">
+            <h1>sagheer</h1>
+        </div>
+        <div class="child">
+            <!-- <h1>ahmad</h1> -->
+
+        </div>
+        <div class="child">
+            <!-- <h1>khokhar</h1> -->
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.main1 {
+    width: 100%;
+    /* height: max-content; */
+    height: 100vh;
+    border: 5px solid limegreen;
+
+    background-image: url(./Images/M3-Homepage-Desktop-LHD.jfif);
+    background-position: center;
+    background-size: cover;
+}
+
+.main2 {
+    width: 100%;
+    /* height: max-content; */
+    height: 100vh;
+    border: 5px solid rgb(4, 0, 255);
+
+    background-image: url(./Images/Desktop-ModelY.jfif);
+    background-position: center;
+    background-size: cover;
+}
+
+.main3 {
+    width: 100%;
+    /* height: max-content; */
+    height: 100vh;
+    border: 5px solid rgb(0, 183, 255);
+
+    background-image: url(./Images/Homepage-Model-S-Desktop-LHD.jfif);
+    background-position: center;
+    background-size: cover;
+}
+
+.main4 {
+    width: 100%;
+    /* height: max-content; */
+    height: 100vh;
+    border: 5px solid rgb(255, 0, 179);
+
+    background-image: url(./Images/Homepage-Model-X-Desktop-LHD.jfif);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.main5 {
+    width: 100%;
+    /* height: max-content; */
+    height: 100vh;
+    border: 5px solid rgb(0, 0, 0);
+
+    background-image: url(./Images/_25-HP-SolarPanels-D.jfif);
+    background-position: center;
+    background-size: cover;
+}
+
+.main6 {
+    width: 100%;
+    /* height: max-content; */
+    height: 100vh;
+    border: 5px solid rgb(255, 4, 4);
+
+    background-image: url(./Images/Homepage-SolarRoof-Desktop-Global.jfif);
+    background-position: center;
+    background-size: cover;
+}
+
+.main7 {
+    width: 100%;
+    /* height: max-content; */
+    height: 100vh;
+    border: 5px solid rgb(0, 255, 255);
+
+    background-image: url(./Images/dd-desktop-739764-bcaa-4263-9488-8c73bc9fb046.jfif);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar {
+    height: 50px;
+    width: 100%;
+    border: 3px solid lime;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.list-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+
+}
+
+.list-li {
+    list-style: none;
+    /* margin-left: 30px; */
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.list-li a{
+color: black;
+    text-decoration: none;
+}
+
+
+.logo {
+    width: 130px;
+    height: 20px;
+    border: 1px solid red;
+    margin-left: 30px;
+
+}
+
+.logo-style {
+    height: 16px;
+
+}
+
+.center-bar {
+    width: 580px;
+    height: 20px;
+    border: 2px solid rgb(0, 106, 255);
+}
+
+.right-bar{
+width: 210px;
+height: 20px;
+border: 2px solid yellow;
+margin-right: 25px;
+
+
+}
+
+.list-ul-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+
+}
+
+
+/* ***media Query*** */
+
+@media screen and (max-width: 424px) {
+
+
+    .main1 {
+        background-image: url(./Images/M3-Homepage-Mobile-LHD.jfif);
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    .main2 {
+        background-image: url(./Images/modelY-phone.jfif);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .main3 {
+        background-image: url(./Images/Homepage-Model-S-Mobile-LHD.jfif);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .main4 {
+        background-image: url(./Images/Homepage-Model-X-Mobile-LHD.jfif);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .main5 {
+        background-image: url(./Images/_25-HP-SolarPanels-M.jfif);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .main6 {
+        background-image: url(./Images/Homepage-SolarRoof-Mobile-Global.jfif);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .main7 {
+        background-image: url(./Images/dd-mob-69095129-86c5-4f6c-a77a-740ceac04e82.jfif);
+        background-position: center;
+        background-size: cover;
+    }
+}

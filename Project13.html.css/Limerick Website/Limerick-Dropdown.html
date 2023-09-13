@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+
+* {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .nav-main {
+            width: 100%;
+            height: 80px;
+            border: 0.5px solid black;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 1%;
+            padding-left: 1%;
+            position: sticky;
+            top: 0px;
+            z-index: 100;
+        }
+
+        .left-picz-rotate {
+            background: url(./Limerick-images/1-2.jpg);
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all ease 0.4s;
+        }
+
+        .left-picz1:hover .left-picz-rotate {
+            transform: rotate(10deg) scale(130%);
+        }
+
+        .nav-icons-main {
+            /* border: 1px solid black; */
+            width: 230px;
+            height: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 2s;
+        }
+
+        .icon-nav:hover {
+            color: #FF427C;
+            cursor: pointer;
+        }
+
+        .title-nav {
+            width: 752px;
+            height: 82px;
+            /* border: 2px solid yellowgreen; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .title-style {
+            height: 40px;
+        }
+
+
+        .navlist-main {
+
+            width: 500px;
+            height: max-content;
+
+        }
+
+        .nav-ul {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-li {
+            list-style: none;
+            margin-left: 4%;
+
+        }
+
+        .bars-style {
+            font-size: 25px;
+        }
+
+
+        .nav-li a {
+            list-style: none;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            display: inline-block;
+
+            color: black;
+        }
+
+        .nav-li a:hover {
+            cursor: pointer;
+            color: #FF427C;
+            outline: none;
+
+
+        }
+
+        /* --dropdown-- */
+
+        /* ---bars start--- */
+
+        .home-drop-main1 {
+            position: relative;
+            z-index: 100;
+            cursor: pointer;
+
+        }
+
+
+        .drop-bars-list {
+            position: absolute;
+            background-color: white;
+            right: 0%;
+            top: 46.5px;
+            visibility: hidden;
+            width: 310px;
+            height: 200px;
+
+
+            border-top: 3px solid #FF427C;
+            transition: all 0.15s;
+
+
+        }
+
+        .home-drop-main1:hover .drop-bars-list {
+            top: 35px;
+            visibility: visible;
+
+        }
+
+        .home-drop-main1:hover {
+            visibility: visible;
+        }
+
+        /* ---bars end--- */
+
+
+        .drop-list2 {
+            position: absolute;
+            top: 73px;
+            right: 325px;
+            width: 200px;
+            visibility: hidden;
+            /* background-color: white; */
+            border-top: 3px solid #FF427C;
+            background-color: rgb(255, 255, 255);
+            transition: all 0.15s;
+        }
+
+        .drop-list2-margin1 {
+            right: 253px;
+        }
+
+        .drop-list2-margin2 {
+            right: 133px;
+            width: 240px;
+        }
+
+        .drop-list2-margin3 {
+            right: 56px;
+            width: 200px;
+        }
+
+        .home-drop1 {
+            position: relative;
+            z-index: 3;
+
+
+        }
+
+        .home-drop1:hover+.drop-list2 {
+            visibility: visible;
+        }
+
+        .drop-list2:hover {
+            visibility: visible;
+            top: 60px;
+        }
+
+        .dropul {
+            list-style: none;
+            width: 100%;
+
+
+        }
+
+        .dropli {
+            width: 100%;
+            height: 40px;
+            border: 0.5px solid grey;
+            margin-top: 0.7px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding-left: 2%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pink-move {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to right, #ff427bbf, #ff427b);
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            opacity: 0;
+
+        }
+
+
+
+        @keyframes move {
+            0% {
+                left: -100%;
+                opacity: 0.2;
+            }
+
+            100% {
+                left: 200%;
+                opacity: 0.5;
+            }
+        }
+
+        .dropli:hover a {
+            color: #FF427C;
+
+        }
+
+        .dropli:hover .pink-move {
+            animation: 0.55s move linear forwards;
+
+        }
+
+        .dropli:active {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .dropli:active a {
+            font-weight: 600;
+            font: 16px;
+
+        }
+
+        .dropli a {
+            width: 100%;
+            text-decoration: none;
+            color: grey;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .icon-circle {
+            width: 40px;
+            height: 40px;
+            border: 1px solid black;
+            border-radius: 50%;
+            /* padding-top: 4.5%;
+            padding-left: 8%; */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .icon-circle:hover .icon-nav {
+            color: #ff427b;
+
+        }
+
+        .icon-circle:hover {
+            border: 1px solid #ff427b;
+
+        }
+
+
+
+        /* -----dropdown end------ */
+
+
+
+        /*********************/
+        /* media query start */
+        /*********************/
+
+        @media screen and (max-width:1000px) {
+            .nav-icons-main {
+                display: none;
+            }
+
+            .navlist-main {
+                display: none;
+            }
+
+            .title-nav {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            
+            }
+
+        
+
+        @media screen and (max-width:667px) {}
+
+
+
+
+        /* ************** */
+        /* media query end*/
+        /* ************** */
+    </style>
+
+</head>
+
+<body>
+  <!-- ---navbar--- -->
+
+  <div class="nav-main">
+
+    <div class="nav-icons-main">
+
+        <div class="icon-circle">
+            <i class=" icon-nav fa-brands fa-facebook-f"></i>
+        </div>
+
+        <div class="icon-circle">
+            <i class=" icon-nav ic1 fa-brands fa-twitter"></i>
+        </div>
+
+        <div class="icon-circle">
+            <i class=" icon-nav fa-brands fa-google-plus-g"></i>
+        </div>
+
+        <div class="icon-circle">
+            <i class=" icon-nav fa-brands fa-pinterest-p"></i>
+        </div>
+
+        <div class="icon-circle">
+            <i class=" icon-nav fa-brands fa-instagram"></i>
+        </div>
+    </div>
+
+    <!-- ---title navbar--- -->
+
+    <div class="title-nav">
+        <img class="title-style" src="./Blog-with-slidebar-image/logo.png" alt="" srcset="">
+
+
+        <div class="navlist-main">
+            <ul class="nav-ul">
+
+
+
+                <!-- ---dropdown 1 start--- -->
+                <li class="nav-li home-drop1"><a href="">HOME</a></li>
+
+                <div class="drop-list2">
+
+                    <ul class="dropul">
+
+                        <li class="dropli"><a href="">Creative Home</a>
+                            <div class="pink-move"></div>
+                        </li>
+
+
+
+                        <li class="dropli"><a href="">Designer Home</a>
+                            <div class="pink-move"></div>
+                        </li>
+                        <li class="dropli"><a href="">Portfolio Home</a>
+                            <div class="pink-move"></div>
+                        </li>
+                        <li class="dropli"><a href="">Parallax Home</a>
+                            <div class="pink-move"></div>
+                        </li>
+                        <li class="dropli"><a href="">Carousel Home</a>
+                            <div class="pink-move"></div>
+                        </li>
+                        <li class="dropli"><a href="">Header Styles</a>
+                            <div class="pink-move"></div>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- ---dropdown 1 end--- -->
+
+                <!-- ---dropdown 2 start--- -->
+                <li class="nav-li home-drop1"><a href="">ABOUT</a></li>
+
+                <div class="drop-list2 drop-list2-margin1">
+
+                    <ul class="dropul">
+
+                        <li class="dropli"><a href="">About Us</a>
+                            <div class="pink-move"></div>
+                        </li>
+
+
+
+                        <li class="dropli"><a href="">Error Page</a>
+                            <div class="pink-move"></div>
+                        </li>
+
+
+                </div>
+
+
+                <!-- ---dropdown 2 end--- -->
+
+                <!-- ---dropdown 3 start--- -->
+                <li class="nav-li home-drop1"><a href="">PORTFOLIO</a></li>
+
+                <div class="drop-list2 drop-list2-margin2">
+
+                    <ul class="dropul">
+
+                        <li class="dropli"><a href="">Portfolio Left Sidebar</a>
+                            <div class="pink-move"></div>
+                        </li>
+
+
+
+                        <li class="dropli"><a href="">Portfolio Right Sidebar</a>
+                            <div class="pink-move"></div>
+                        </li>
+                        <li class="dropli"><a href="">Portfolio Centered</a>
+                            <div class="pink-move"></div>
+                        </li>
+                        <li class="dropli"><a href="">Portfolio Slide</a>
+                            <div class="pink-move"></div>
+                        </li>
+                        <li class="dropli"><a href="">Portfolio Masonry</a>
+                            <div class="pink-move"></div>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- ---dropdown 3 end--- -->
+
+                <!-- ---dropdown 3 start--- -->
+                <li class="nav-li home-drop1"><a href="">BLOG</a></li>
+
+                <div class="drop-list2 drop-list2-margin3">
+
+                    <ul class="dropul">
+
+                        <li class="dropli"><a href="">Blog With Sidebar</a>
+                            <div class="pink-move"></div>
+                        </li>
+
+
+
+                        <li class="dropli"><a href="">Blog Grid</a>
+                            <div class="pink-move"></div>
+                        </li>
+                        <li class="dropli"><a href="">Blog List</a>
+                            <div class="pink-move"></div>
+                        </li>
+                        <li class="dropli"><a href="">Blog Masonry</a>
+                            <div class="pink-move"></div>
+                        </li>
+                        <li class="dropli"><a href="">Blog Single</a>
+                            <div class="pink-move"></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ---dropdown 3 end--- -->
+
+                <li class="nav-li"><a href="">CONTACT US</a></li>
+            </ul>
+        </div>
+
+
+        <!-- -----bars drop down start---- -->
+
+        <i class="bars-style fa-solid fa-bars home-drop-main1">
+
+
+
+            <div class="drop-bars-list">
+
+                <ul class="dropul">
+
+                    <li class="dropli"><a href="">Home</a>
+                        <div class="pink-move"></div>
+                    </li>
+
+
+
+                    <li class="dropli"><a href="">About Us</a>
+                        <div class="pink-move"></div>
+                    </li>
+
+                    <li class="dropli"><a href="">Portfolio</a>
+                        <div class="pink-move"></div>
+                    </li>
+                    <li class="dropli"><a href="">Blog</a>
+                        <div class="pink-move"></div>
+                    </li>
+
+                    <li class="dropli"><a href="">Contact Us</a>
+                        <div class="pink-move"></div>
+                    </li>
+            </div>
+
+            <!-- ----bars drop down end---- -->
+            <!-- ---dropdown 2 end--- -->
+        </i>
+    </div>
+</div>
+
+
+
+</body>
+
+</html>

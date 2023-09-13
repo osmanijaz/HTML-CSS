@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main {
+            width: 160px;
+            height: 60px;
+            margin: auto;
+            margin-top: 150px;
+            border-right: 4px solid red;
+            position: relative;
+            animation: main 1s linear alternate infinite;
+            overflow: hidden;
+
+        }
+
+        @keyframes main {
+            0% {
+                width: 0px;
+
+            }
+
+            100% {
+                width: 160px;
+            }
+        }
+
+
+
+
+
+
+
+
+
+        .text {
+            position: absolute;
+            font-size: 60px;
+            top: -47px;
+            
+        }
+
+        .t1 {
+            animation: t1 6s linear infinite;
+            /* background-color: yellow; */
+
+
+        }
+
+        @keyframes t1 {
+            0% {
+                visibility: visible;
+            }
+
+            33.33% {
+                visibility: visible;
+            }
+
+            33.34% {
+                visibility: hidden;
+
+            }
+
+            66.66% {
+                visibility: hidden;
+
+            }
+
+            100% {
+                visibility: hidden;
+            }
+
+        }
+
+
+        .t2 {
+            animation: t2 6s linear infinite;
+            /* background-color: limegreen; */
+
+
+        }
+
+        @keyframes t2 {
+            0% {
+                visibility: hidden;
+            }
+
+            33.33% {
+                visibility: hidden;
+            }
+
+            33.34% {
+                visibility: visible;
+
+            }
+
+            66.66% {
+                visibility: visible;
+
+            }
+
+            66.67% {
+                visibility: hidden;
+
+            }
+
+            100% {
+                visibility: hidden;
+            }
+
+        }
+
+        .t3 {
+            animation: t3 6s linear infinite;
+            /* background-color: red; */
+
+
+        }
+
+        @keyframes t3 {
+            0% {
+                visibility: hidden;
+            }
+
+            33.33% {
+                visibility: hidden;
+            }
+
+            33.34% {
+                visibility: hidden;
+
+            }
+
+            66.66% {
+                visibility: hidden;
+
+            }
+
+            66.67% {
+                visibility: visible;
+
+            }
+
+            100% {
+                visibility: visible;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1 class="text t1">one</h1>
+        <h1 class="text t2">two</h1>
+        <h1 class="text t3">three</h1>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

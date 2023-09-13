@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .main{
+        height: 100vh;
+        width: 100%;
+        background-color: skyblue;
+        padding: 1px;
+    }
+    .child{
+        height: 70vh;
+        width: 90%;
+        margin: 65px;
+        border: 1px solid;
+        overflow: hidden;
+        
+    }
+    .child1{
+        height: 70vh;
+        width: 200%;
+        border: 1px solid;
+        animation: a1 12s linear infinite;
+        /* animation-timing-function: steps(6); */
+
+    }
+    @keyframes a1 {
+        0%{
+            margin-left: 0;
+        }
+        33%{
+            margin-left: -33%;
+        }
+        66%{
+            margin-left: -66%;
+        }
+        100%{
+            margin-left: -99%;
+        }
+        /* 100%{
+            margin-left: -100%;
+        } */
+        /* from{
+            margin-left: 0;
+        }
+        to{
+            margin-left: -198%;
+        } */
+         /* 0%{
+            margin-left: 0;
+        }
+        16%{
+            margin-left: -465px;
+        }
+        20%{
+            margin-left: -465px;
+        }
+        32%{
+            margin-left: -920px;
+        }
+        36%{
+            margin-left: -920px;
+        }
+        48%{
+            margin-left: -1365px;
+        }
+        52%{
+            margin-left: -1365px;
+        }
+        64%{
+            margin-left: -1810px;
+        }
+        68%{
+            margin-left: -1810px;
+        }
+        84%{
+            margin-left: -2250px;
+        }
+        88%{
+            margin-left: -2250px;
+        }
+        100%{
+            margin-left: -2560px;
+        } */
+        
+    } 
+    .box{
+        height: 70vh;
+        width: 410px;
+        background-color: wheat;
+        border: 1px solid red;
+        display: inline-block;
+        margin-left: 40px;
+    }
+    .box1{
+        background-color: aliceblue;
+    }
+    .box2{
+        background-color: aqua;
+    }
+    .box3{
+        background-color: blue;
+    }
+    .box4{
+        background-color: darkblue;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="child">
+            <div class="child1">
+                <div class="box box1"></div>
+                <div class="box"></div>
+                <div class="box box2"></div>
+
+                <div class="box"></div>
+                <div class="box box3"></div>
+                <div class="box"></div>
+
+                <div class="box box4"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

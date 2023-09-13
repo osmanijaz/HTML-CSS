@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+
+
+        .main-navbar {
+            width: 100%;
+            height: 60px;
+            background-color: green;
+            position: relative;
+            padding: 1px;
+        }
+
+        .logo {
+
+            margin: auto;
+            margin-top: 10px;
+            margin-left: 2%;
+        }
+
+
+        .ul-list {
+            position: absolute;
+            top: 30%;
+            right: 5%;
+            /* margin-top: 1.6%; */
+
+
+        }
+
+        .li-list {
+
+            display: inline-block;
+            margin-left: 30px;
+
+
+
+
+
+        }
+
+        .li-list a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+
+        }
+
+        .menu {
+            position: absolute;
+            right: 2%;
+            font-size: 30px;
+            top: 24%;
+            visibility: hidden;
+        }
+
+        .menu-dropbox {
+            position: absolute;
+            right: 0;
+            width: 150px;
+            height: 30vh;
+            background-color: black;
+            top: 100%;
+            visibility: hidden;
+
+
+
+        }
+
+        .menu:hover+.menu-dropbox {
+
+            visibility: visible;
+
+        }
+
+
+        .ul-drop {
+            text-align: center;
+
+
+        }
+
+        .li-drop {
+
+            font-size: 24px;
+            border: 1px solid white;
+
+
+
+
+        }
+
+        .li-drop a {
+            color: white;
+
+
+
+        }
+
+        @media screen and (max-width:540px) {
+            .ul-list {
+
+                display: none;
+
+            }
+
+            .menu {
+                visibility: visible;
+
+            }
+
+            .logo {
+                text-align: center;
+            }
+
+
+
+        }
+    </style>
+
+</head>
+
+<div class="main-navbar">
+    <h1 class="logo">LOGO</h1>
+    <i class="menu fa-solid fa-bars"></i>
+    <div class="menu-dropbox">
+        <ul class="ul-drop">
+            <li class="li-drop"><a href="">Home</a></li>
+            <li class="li-drop"><a href="">Home</a></li>
+            <li class="li-drop"><a href="">Home</a></li>
+            <li class="li-drop"><a href="">Home</a></li>
+            <li class="li-drop"><a href="">Home</a></li>
+
+
+        </ul>
+
+
+
+
+    </div>
+
+    <ul class="ul-list">
+        <li class="li-list"><a href="">Home</a></li>
+        <li class="li-list"><a href="">Home</a></li>
+        <li class="li-list"><a href="">Home</a></li>
+        <li class="li-list"><a href="">Home</a></li>
+        <li class="li-list"><a href="">Home</a></li>
+
+    </ul>
+
+</div>
+
+<body>
+
+</body>
+
+</html>

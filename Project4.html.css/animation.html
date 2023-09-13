@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: absolute;
+            width: 800px;
+            height: 400px;
+            background-color: red;
+            animation-name: boxmove;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            /* (constant same speed) */
+            /* animation-delay: 1s; */
+            /* animation-fill-mode: backwards; (default) */
+            animation-fill-mode: forwards;
+            /* (stops at end point not going back to original start) */
+            animation-iteration-count: infinite;
+            /* animation-direction: reverse; */
+            /* animation-play-state: paused; */
+            background-size: cover;
+        }
+
+
+        @keyframes boxmove {
+
+            0% {
+                background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg);
+                background-size: cover;
+            }
+
+            50% {
+                background-image: url(https://thumbs.dreamstime.com/b/rainbow-love-heart-background-red-wood-60045149.jpg);
+                background-size: cover;
+            }
+
+            100% {
+
+                background-image: url(https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+                background-size: cover;
+            }
+
+
+
+
+            /* from {
+                margin-left: 0px;
+                background-color: aqua;
+
+            }
+
+            to {
+                margin-left: 600px;
+                background-color: blue;
+            } */
+
+            /* 0% {
+
+                left: 0px;
+                top: 0px;
+                /* margin-left: 0px;
+                margin-top: 0px; */
+            /* background-color: aqua; */
+
+
+            /* } */
+            /* 
+            50% {
+                background-color: yellow;
+
+            }
+
+            100% {
+                left: 600px;
+                top: 400px;
+                /* margin-left: 600px;
+                margin-top: 400px; */
+            /* background-color: blue; */
+
+
+        }
+
+        */ */
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="box"></div>
+
+
+</body>
+
+</html>

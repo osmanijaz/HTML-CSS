@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container {
+            width: 100%;
+            height: max-content;
+            background-color: yellow;
+        }
+
+        .left {
+            width: 48%;
+            height: max-content;
+            display: inline-block;
+            border: 2px solid red;
+            position: relative;
+            vertical-align: top;
+
+        }
+
+        h1 {
+            margin-top: 5%;
+
+        }
+
+        .right {
+            width: 400px;
+            height: 460px;
+            display: inline-block;
+            border: 2px solid red;
+            position: relative;
+        }
+
+        .right img {
+            position: absolute;
+            right: 3%;
+            width: 100%;
+            height: 85%;
+
+        }
+
+
+        @media screen and (max-width: 1262px) {}
+    </style>
+
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="left">
+            <h1>Responsive web design</h1>
+            <p>Responsive Web design is the approach that suggests that design and development should respond to the
+                user's behavior and environment based on screen size, platform and orientation. The practice consists of
+                a mix of flexible grids and layouts, images and an intelligent use of CSS media queries</p>
+
+        </div>
+        <div class="right">
+
+            <img src="./pic-laptop.png" alt="">
+        </div>
+
+    </div>
+
+</body>
+
+</html>

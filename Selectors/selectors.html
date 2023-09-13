@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* tag selector  id selector class . combinator selectors   space   sibling genral sibling selector child selector */
+        /*    + ~ > */
+        div #p {
+            color: red;
+        }
+
+        #main>p {
+            font-size: 100px;
+        }
+
+        #p+p {
+            color: green;
+        }
+
+        #p~p {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+
+        <p id="p">hello i am para</p>
+        <div id="main">
+
+            <p>hello i am para</p>
+            <p>hello i am para</p>
+        </div>
+
+        <p>hello i am para</p>
+        <p>hello i am para</p>
+        <p>hello i am para</p>
+        <p>hello i am para</p>
+        <p>hello i am para</p>
+        <p>hello i am para</p>
+        <p>hello i am para</p>
+        <p>hello i am para</p>
+
+    </div>
+
+</body>
+
+</html>

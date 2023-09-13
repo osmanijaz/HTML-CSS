@@ -1,0 +1,3565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Document</title>
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+
+        /* ===nav bar=== */
+
+        .nav-main {
+            width: 100%;
+            height: 92px;
+            /* border: 1px solid black; */
+        }
+
+        .nav-logo {
+            width: 185px;
+            height: 32px;
+            /* border: 1px solid red; */
+            margin-top: 45px;
+            margin-left: 50px;
+            background-image: url(./Images/logo.svg);
+            background-repeat: no-repeat;
+        }
+
+        .nav-ul {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 27px;
+            color: rgb(0, 0, 0);
+            margin-left: 360px;
+            list-style: none;
+            margin-top: -33px;
+            cursor: pointer;
+
+        }
+
+        .nav-li {
+            display: inline-block;
+            margin-left: 40px;
+        }
+
+        .login {
+            margin-left: 140px;
+
+
+        }
+
+        .login:hover {
+            color: #00B49D;
+
+            font-weight: 500;
+            cursor: pointer;
+
+        }
+
+        .line123 {
+            position: absolute;
+            width: 60px;
+            height: 20px;
+        }
+
+        .line-under {
+            position: absolute;
+            width: 0px;
+            height: 20px;
+            overflow: hidden;
+            transition: all 0.20s;
+
+        }
+
+        .nav-li:hover .line-under {
+            width: 60px;
+            height: 20px;
+
+
+
+        }
+
+        .nav-button {
+            position: relative;
+            width: 136px;
+            height: 46px;
+            border-radius: 10px;
+            background-color: #00B49D;
+            color: white;
+            border: none;
+            margin-left: 1090px;
+            top: -38.5px;
+            font-weight: 500;
+            letter-spacing: 1.6px;
+            padding-left: 2px;
+            transition: all 1s;
+        }
+
+        .nav-button:hover {
+            background-color: black;
+            color: #00B49D;
+            transition: all 1s;
+        }
+
+
+        .nav-img {
+            position: absolute;
+            z-index: -2;
+            width: 146px;
+            height: 50px;
+            /* border: 2px solid red; */
+            margin-left: 1090px;
+            margin-top: -75px;
+
+        }
+
+        .dropdown-main {
+            position: relative;
+            z-index: 3;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            width: 750px;
+            height: 400px;
+            left: -150px;
+            top: 50px;
+            background-color: white;
+
+            box-shadow: 0.2px 0.2px 4px .8px rgb(229, 229, 229);
+            visibility: hidden;
+            transition: all 0.20s;
+        }
+
+        .dropdown-main:hover .dropdown-menu {
+
+            visibility: visible;
+            top: 35px;
+
+
+        }
+
+        .drop-icon {
+            width: 60px;
+            height: 45px;
+            margin-left: 45px;
+            margin-top: 53px;
+            /* border: 1px solid red; */
+            transition: all 0.20s;
+            background-repeat: no-repeat;
+            top: 0;
+            animation: moveup 2s linear;
+
+        }
+
+
+
+        .drop-icon1 {
+
+            width: 60px;
+            height: 45px;
+            margin-left: 45px;
+            margin-top: 53px;
+            /* border: 1px solid red; */
+            transition: all 0.20s;
+            background-repeat: no-repeat;
+
+
+        }
+
+        .box1:hover .drop-icon1 {
+
+            transform: translateY(-10px);
+
+        }
+
+        .box2:hover .drop-icon {
+
+            transform: translateY(-10px);
+
+        }
+
+        .box3:hover .drop-icon {
+
+            transform: translateY(-10px);
+
+        }
+
+        .box4:hover .drop-icon-row2 {
+
+            transform: translateY(-10px);
+
+        }
+
+        .box5:hover .drop-icon-row3 {
+
+            transform: translateY(-10px);
+
+        }
+
+
+
+        .box6:hover .drop-icon-row3 {
+
+            transform: translateY(-10px);
+
+
+        }
+
+        /* @keyframes moveup {
+            100% {
+                margin-top: -10px;
+
+            }
+
+        } */
+
+
+
+
+
+        .drop-header {
+            font-weight: 700;
+            font-size: 13px;
+            margin-left: 130px;
+            margin-top: -50px;
+        }
+
+
+
+        .drop-header1 {
+            font-weight: 700;
+            font-size: 13px;
+            margin-left: 130px;
+            margin-top: -50px;
+            transition: all 0.30s;
+
+        }
+
+
+        .drop-header1:hover {
+            color: #00B49D;
+            transition: all 0.30s;
+
+
+
+        }
+
+
+        .drop-header2 {
+            font-weight: 700;
+            font-size: 13px;
+            margin-left: 130px;
+            margin-top: -50px;
+            transition: all 0.30s;
+
+        }
+
+
+        .drop-header2:hover {
+            color: #00B49D;
+            transition: all 0.30s;
+
+
+
+        }
+
+        .drop-header3 {
+            font-weight: 700;
+            font-size: 13px;
+            margin-left: 130px;
+            margin-top: -50px;
+            transition: all 0.30s;
+
+        }
+
+
+        .drop-header3:hover {
+            color: #00B49D;
+            transition: all 0.30s;
+
+
+
+        }
+
+        .drop-header3 {
+            font-weight: 700;
+            font-size: 13px;
+            margin-left: 130px;
+            margin-top: -50px;
+            transition: all 0.30s;
+
+        }
+
+
+        .drop-header3:hover {
+            color: #00B49D;
+            transition: all 0.30s;
+
+
+
+        }
+
+        .drop-text {
+            line-height: 22px;
+            margin-left: 130px;
+
+        }
+
+
+        .drop-icon-row2 {
+
+            width: 60px;
+            height: 45px;
+            margin-left: 404px;
+            margin-top: -310px;
+            /* border: 1px solid red; */
+            transition: all 0.20s;
+
+        }
+
+
+        .drop-head-row2 {
+
+
+            font-weight: 700;
+            font-size: 13px;
+            margin-left: 460px;
+            margin-top: -50px;
+            transition: all 0.30s;
+        }
+
+        .drop-head-row2:hover {
+            color: #00B49D;
+            transition: all 0.20s;
+
+        }
+
+        .drop-para-row2 {
+            line-height: 22px;
+            margin-left: 460px;
+
+        }
+
+        .drop-icon-row3 {
+
+            width: 60px;
+            height: 45px;
+            margin-left: 405px;
+            margin-top: 56px;
+            /* border: 1px solid red; */
+
+            transition: all 0.20s;
+        }
+
+        .api {
+            margin-left: -15px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .drop-head-row3 {
+
+
+            font-weight: 700;
+            font-size: 13px;
+            margin-left: 460px;
+            margin-top: -50px;
+            transition: all 0.30s;
+        }
+
+        .drop-head-row3:hover {
+            color: #00B49D;
+            transition: all 0.30s;
+
+        }
+
+        .drop-para-row3 {
+            line-height: 22px;
+            margin-left: 460px;
+
+        }
+
+
+
+        /* ====resources dropdown==== */
+        .dropdownparent-resources {
+            position: relative;
+            z-index: 3;
+        }
+
+        .dropdownchild-resources {
+            position: absolute;
+            width: 750px;
+            height: 400px;
+            left: -565px;
+            /* border: 2px solid red; */
+            top: 50px;
+            background-color: white;
+
+            box-shadow: 0.2px 0.2px 4px .8px rgb(229, 229, 229);
+            visibility: hidden;
+            transition: all 0.20s;
+        }
+
+        .dropdownparent-resources:hover .dropdownchild-resources {
+
+            visibility: visible;
+            top: 35px;
+
+
+        }
+
+        .drop-icon {
+            width: 60px;
+            height: 45px;
+            margin-left: 45px;
+            margin-top: 53px;
+            /* border: 1px solid red; */
+            transition: all 0.20s;
+            background-repeat: no-repeat;
+            top: 0;
+            animation: moveup 2s linear;
+        }
+
+        .drop-res-main {
+            list-style: none;
+            margin-left: 60px;
+            margin-top: 50px;
+            font-weight: bold;
+
+        }
+
+
+
+        .Blog:hover {
+            color: #00B49D;
+
+
+
+        }
+
+
+        .blog1 {
+            font-weight: 400;
+
+        }
+
+        .Top-List {
+            margin-top: 30px;
+
+        }
+
+        .Top-List:hover {
+            color: #00B49D;
+
+
+
+        }
+
+        .toplist1 {
+            font-weight: 400;
+
+
+        }
+
+        .spenders {
+            margin-top: 30px;
+
+        }
+
+        .spenders:hover {
+            color: #00B49D;
+
+
+
+        }
+
+        .spenders1 {
+            font-weight: 400;
+
+
+        }
+
+
+        .reports {
+            margin-left: 380px;
+            margin-top: -303px;
+
+        }
+
+        .reports:hover {
+            color: #00B49D;
+
+
+
+        }
+
+        .reports1 {
+            font-weight: 400;
+            margin-left: 380px;
+
+
+        }
+
+        .Verified {
+            margin-left: 380px;
+            margin-top: 30px;
+
+        }
+
+        .Verified:hover {
+            color: #00B49D;
+
+
+
+        }
+
+        .Verified1 {
+            font-weight: 400;
+            margin-left: 380px;
+
+
+        }
+
+        /* ====resources dropdwon end=== */
+        /* ================RUN WORLD================================================== */
+
+        .run-main {
+            width: 100%;
+            height: 560px;
+            margin-top: 60px;
+            /* border: 2px solid hotpink; */
+        }
+
+        .run-leftbox {
+            width: 475px;
+            height: 560px;
+            /* border: 2px solid limegreen; */
+            float: left;
+
+        }
+
+        .run-header {
+            font-size: 38px;
+            font-weight: 700;
+            line-height: 54px;
+            margin-left: 42px;
+            margin-top: 60px;
+
+
+        }
+
+        .run-para {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 36px;
+            color: rgb(72, 71, 71);
+            margin-left: 42px;
+            margin-top: 30px;
+        }
+
+        .run-button {
+            position: relative;
+            width: 196px;
+            height: 63px;
+            background-color: #00B49D;
+            color: white;
+            border: none;
+            font-size: 17px;
+            letter-spacing: 2px;
+            font-weight: 500;
+            border-radius: 10px;
+            margin-left: 42px;
+            margin-top: 40px;
+            transition: all 1s;
+        }
+
+        .run-button:hover {
+            background-color: black;
+            color: #00B49D;
+            transition: all 1s;
+        }
+
+
+
+        .run-img {
+            z-index: -2;
+            margin-top: -55px;
+            margin-left: 60px;
+            width: 196px;
+            height: 63px;
+
+
+        }
+
+        /* =====right box animation====== */
+
+        .run-rightbox {
+            width: 784px;
+            height: 560px;
+            /* border: 2px solid purple; */
+            float: left;
+            overflow: hidden;
+
+        }
+
+        /* ===start circle 1 here-=== */
+        .circle1 {
+            width: 475px;
+            height: 490px;
+            margin-top: 20px;
+            margin-left: 10px;
+            /* border: 2px solid red; */
+            background-image: url(./Images/4mainleftcircle.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            float: left;
+            position: relative;
+            /* overflow: hidden; */
+
+
+
+        }
+
+        .transferFile {
+            position: absolute;
+            /* border: 2px solid yellowgreen; */
+            top: 245px;
+            left: 70px;
+            height: 135px;
+            width: 500px;
+            z-index: -1;
+
+        }
+
+
+
+
+        .boy {
+            /* border: 1px solid hotpink; */
+            background-image: url(./Images/13pageboy.png);
+            background-size: cover;
+            width: 104px;
+            height: 135px;
+            float: left;
+            position: absolute;
+            left: 0;
+            opacity: 0;
+            animation-name: tranfer;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            /* animation-direction: alternate; */
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+        }
+
+        @keyframes tranfer {
+            0% {
+                left: 0px;
+            }
+
+            100% {
+                left: 600px;
+
+            }
+
+
+
+
+        }
+
+
+        .girl {
+
+            /* border: 1px solid hotpink; */
+            background-image: url(./Images/14pagegirl.png);
+            background-size: cover;
+            width: 104px;
+            height: 135px;
+            float: left;
+            position: absolute;
+            left: 0;
+            margin-left: 40px;
+            animation-name: tranfer;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            /* animation-direction: alternate; */
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+        }
+
+        .person2 {
+            animation-delay: 1s;
+        }
+
+
+        .person3 {
+            animation-delay: 2s;
+        }
+
+        .person4 {
+            animation-delay: 3s;
+        }
+
+        .person5 {
+            animation-delay: 4s;
+        }
+
+        .person6 {
+            animation-delay: 5s;
+        }
+
+        .boy2 {
+            /* border: 1px solid hotpink; */
+            background-image: url(./Images/13pageboy.png);
+            background-size: cover;
+            width: 104px;
+            height: 135px;
+            float: left;
+            position: absolute;
+            left: 0;
+            margin-left: 40px;
+            animation-name: tranfer;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            /* animation-direction: alternate; */
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+        }
+
+
+        .commentbox1 {
+            position: absolute;
+            width: 200px;
+            height: 52px;
+            /* border: 2px solid red; */
+            margin-top: 80px;
+            left: 300px;
+            background-image: url(./Images/7talktext.png);
+            background-size: cover;
+            background-position: center;
+            animation-name: com1;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes com1 {
+            0% {
+                top: 0px;
+            }
+
+            100% {
+                top: -10px;
+
+
+            }
+
+
+        }
+
+        .commentbox2 {
+            position: absolute;
+            width: 200px;
+            height: 52px;
+            /* border: 2px solid red; */
+            margin-top: 385px;
+
+            margin-left: 20px;
+            background-image: url(./Images/7talktext.png);
+            background-size: cover;
+            background-position: center;
+            animation-name: com2;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes com2 {
+            0% {
+                top: 0px;
+            }
+
+            100% {
+                top: -10px;
+
+
+            }
+        }
+
+
+
+
+        .microfone {
+            position: absolute;
+            width: 70px;
+            height: 55px;
+            /* border: 2px solid yellowgreen; */
+            left: 285px;
+            top: 360px;
+            background-image: url(./Images/10horn.png);
+            background-size: cover;
+            background-position: center;
+
+
+        }
+
+        .microlinesImage {
+            position: absolute;
+            left: 52px;
+            top: -8px;
+            width: 80%;
+            height: 80%;
+            transform: rotate(-25deg);
+            animation-name: lines;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes lines {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+
+            }
+
+
+        }
+
+
+
+        /* ===circle2=== */
+
+
+        .circle2 {
+            position: relative;
+            width: 290px;
+            height: 477px;
+            /* border: 2px solid green; */
+            left: 490px;
+            margin-top: 20px;
+            background-image: url(./Images/6leftcirlcemain.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-x: 30px;
+
+
+        }
+
+        .graphlines {
+            position: absolute;
+            margin-left: 110px;
+            margin-top: 112px;
+            width: 87px;
+            height: 50px;
+            /* border: 2px solid rgb(112, 255, 11); */
+            animation-name: graph;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            overflow: hidden;
+            /* animation-direction: alternate; */
+        }
+
+        /* use the div width to go left to right not the img line graph */
+
+        @keyframes graph {
+
+            0% {
+                width: 0px;
+                opacity: 1;
+            }
+
+            50% {
+                width: 87px;
+                opacity: 1;
+            }
+
+
+            100% {
+                width: 87px;
+                opacity: 0;
+            }
+
+        }
+
+        .glineimg {
+            position: absolute;
+            width: 83px;
+            height: 50px;
+            /* border: 2px solid red; */
+            background-repeat: no-repeat;
+        }
+
+        .dot-line {
+            width: 5px;
+            height: 5px;
+
+            border: 2px solid rgb(255, 255, 255);
+            background-color: white;
+
+            border-radius: 50%;
+            margin-left: 78px;
+            animation-name: dot;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: ;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes dot {
+            0% {
+                opacity: 0;
+
+
+
+            }
+
+            100% {
+                opacity: 1;
+            }
+
+        }
+
+
+        .circle2boxline {
+            position: absolute;
+            width: 198px;
+            height: 28px;
+            border: 1px solid black;
+            background-color: #c7effa;
+            border-radius: 25px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            top: 205px;
+            left: 90px;
+            background-size: cover;
+            background-position: center top;
+        }
+
+        .circleboxinside {
+            position: absolute;
+            width: 150px;
+            height: 32px;
+            /* border: 1px solid hotpink; */
+            background-image: url(./Images/2searchbar@2x.png);
+            background-position: center;
+            background-size: cover;
+            z-index: 3;
+
+
+
+        }
+
+        .line-withdots {
+            position: absolute;
+            /* border: 2px solid purple; */
+            /* margin-left: 100px; */
+            width: 240px;
+            height: 28px;
+            overflow: hidden;
+
+        }
+
+
+        .dotty {
+            position: absolute;
+            width: 240px;
+            height: 28px;
+            background-repeat: no-repeat;
+            background-position: center;
+            animation-name: move;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+            anim z-index: 1;
+
+
+        }
+
+
+        @keyframes move {
+            0% {
+                left: 0px;
+
+            }
+
+
+
+
+            100% {
+                left: 190px;
+
+
+            }
+
+        }
+
+        .line {
+            width: 210px;
+            height: 0.5px;
+            background-color: black;
+            margin-top: 13px;
+            z-index: -2;
+            overflow: hidden;
+
+        }
+
+        .graph {
+            position: absolute;
+            width: 95%;
+            height: 10vh;
+            top: 62%;
+            left: 42%;
+            overflow: hidden;
+
+        }
+
+        .g-1 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            animation: graph1 2s linear infinite;
+        }
+
+        @keyframes graph1 {
+            0% {
+                transform: translatex(-50%);
+            }
+
+            100% {
+                transform: translatex(0%);
+            }
+        }
+
+        .g-2 {
+            position: absolute;
+            top: 0;
+            left: 97%;
+            width: 100%;
+            height: 100%;
+            animation: graph2 2s linear infinite;
+        }
+
+        @keyframes graph2 {
+            0% {
+                transform: translatex(-50%);
+            }
+
+            100% {
+                transform: translatex(0%);
+            }
+        }
+
+        /* ============airbnb============= */
+        .airbnb {
+            width: 100%;
+            height: 340px;
+            /* border: 2px solid red; */
+
+
+        }
+
+        .airimg {
+            width: 130px;
+            height: 80px;
+            /* border: 2px solid yellowgreen; */
+            float: left;
+            margin-left: 70px;
+            margin-top: 120px;
+        }
+
+        img {
+            width: 100%;
+            height: 92%;
+
+
+        }
+
+        /* ====leading==== */
+
+        .leadmain {
+            width: 100%;
+            height: 60vh;
+            /* border: 2px solid hotpink; */
+
+        }
+
+        .leadh1 {
+            text-align: center;
+            font-size: 37px;
+            font-weight: 700;
+            line-height: 54px;
+            margin-top: 50px;
+        }
+
+        .leadh2 {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 36px;
+            margin-top: 50px;
+        }
+
+        .leadbutton {
+            width: 132px;
+            height: 50px;
+            background-color: #0cc6ad;
+            color: white;
+            letter-spacing: 1px;
+            font-weight: 700;
+            border: none;
+            border-radius: 10px;
+            margin-left: 555px;
+            margin-top: 45px;
+            transition: all 1s;
+        }
+
+        .leadbutton:hover {
+            background-color: black;
+            color: #00B49D;
+            transition: all 1s;
+
+        }
+
+        .leadline {
+            position: relative;
+            width: 162px;
+            height: 60px;
+            left: -145px;
+            top: 35px;
+            z-index: -1;
+        }
+
+        /* =====connect network============= */
+
+        .conetmain {
+            width: 100%;
+            height: 80vh;
+            /* border: 2px solid hotpink; */
+        }
+
+
+        .conetleftbox {
+            width: 565px;
+            height: 70vh;
+            /* border: 2px solid blue; */
+            float: left;
+
+        }
+
+        .conp1 {
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 13px;
+            letter-spacing: 2px;
+            margin-left: 70px;
+            margin-top: 10px;
+
+        }
+
+        .conh1 {
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 43.5px;
+            letter-spacing: 0.5px;
+            margin-left: 70px;
+            margin-top: 30px;
+
+        }
+
+        .conp2 {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 28.8px;
+
+            margin-left: 70px;
+            margin-top: 20px;
+
+        }
+
+        .conetbutton {
+            width: 132px;
+            height: 50px;
+            background-color: #0cc6ad;
+            color: white;
+            letter-spacing: 1px;
+            font-weight: 700;
+            border: none;
+            border-radius: 10px;
+            margin-left: 70px;
+            margin-top: 45px;
+            transition: all 1s;
+
+        }
+
+        .conetbutton:hover {
+            background-color: black;
+            color: #00B49D;
+            transition: all 1s;
+
+        }
+
+        .conetline {
+
+            position: relative;
+            width: 162px;
+            height: 60px;
+            left: -135px;
+            top: 35px;
+            z-index: -1;
+        }
+
+        .conetrightbox {
+            width: 650px;
+            height: 70vh;
+            /* border: 2px solid rgb(255, 0, 0); */
+            float: left;
+            margin-left: 20px;
+            background-image: url(./Images/work-illus1@2x\ \(1\).png);
+            background-size: 98%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+
+
+        .conimgboy {
+            width: 200px;
+            height: 270px;
+            /* border: 2px solid rgb(0, 255, 13); */
+            margin-left: 90px;
+            margin-top: 82px;
+            float: left;
+            background-image: url(./Images/girl.png);
+            background-size: 96%;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .conimggirl {
+            width: 200px;
+            height: 270px;
+            /* border: 2px solid purple; */
+            margin-left: 50px;
+            margin-top: 52px;
+            float: left;
+            background-image: url(./Images/boy.png);
+            background-size: 80%;
+            background-position: center;
+            background-repeat: no-repeat;
+            transform: rotate(-10deg);
+
+        }
+
+        /* =======creative===== */
+
+        .createmain {
+
+            width: 100%;
+            height: 475px;
+            /* border: 2px solid purple; */
+        }
+
+
+        .createboxleft {
+            width: 680px;
+            height: 405px;
+            /* border: 2px solid yellowgreen; */
+            float: left;
+            margin-left: 35px;
+            background-image: url(./Images/work-123illus2@2x\ \(1\).png);
+            background-position: center;
+            background-size: 98%;
+            background-repeat: no-repeat;
+
+
+        }
+
+        .picaos {
+            width: 125px;
+            height: 180px;
+            /* border: 2px solid red; */
+            margin-left: 91px;
+            margin-top: 110px;
+            background-image: url(./Images/boy.png);
+            background-size: 95%;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: -4;
+        }
+
+        .createtxtbox {
+            position: relative;
+            width: 180px;
+            height: 100px;
+            /* border: 2px solid red; */
+            z-index: 2;
+
+            top: -300px;
+            left: 20px;
+        }
+
+        .createboxright {
+            width: 490px;
+            height: 405px;
+            /* border: 2px solid rgb(13, 2, 236); */
+            float: left;
+            margin-left: 45px;
+
+
+
+        }
+
+        .createp1 {
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 13px;
+            letter-spacing: 2px;
+            margin-left: 30px;
+            margin-top: 10px;
+
+        }
+
+        .createh1 {
+            font-size: 26px;
+            font-weight: 500;
+            line-height: 43.5px;
+            margin-left: 30px;
+            margin-top: 20px;
+
+
+        }
+
+        .createp2 {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 28.8px;
+            margin-left: 30px;
+            margin-top: 20px;
+
+
+        }
+
+
+        .createbutton {
+            width: 132px;
+            height: 50px;
+            background-color: #0cc6ad;
+            color: white;
+            letter-spacing: 1px;
+            font-weight: 700;
+            border: none;
+            border-radius: 10px;
+            margin-left: 30px;
+            margin-top: 35px;
+            transition: all 1s;
+
+        }
+
+        .createbutton:hover {
+            background-color: black;
+            color: #00B49D;
+            transition: all 1s;
+
+        }
+
+        .createline {
+
+            position: relative;
+            width: 162px;
+            height: 60px;
+            left: -145px;
+            top: 30px;
+            z-index: -1;
+        }
+
+        /* ===========contracting managing========= */
+
+        .contractmain {
+            width: 100%;
+            height: 495px;
+            /* border: 2px solid black; */
+
+
+        }
+
+
+
+        .contractleftbox {
+            width: 565px;
+            height: 70vh;
+            /* border: 2px solid blue; */
+            float: left;
+
+        }
+
+        .contractp1 {
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 13px;
+            letter-spacing: 2px;
+            margin-left: 70px;
+            margin-top: 10px;
+
+        }
+
+        .contracth1 {
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 43.5px;
+            letter-spacing: 0.5px;
+            margin-left: 70px;
+            margin-top: 30px;
+
+        }
+
+        .contractp2 {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 28.8px;
+
+            margin-left: 70px;
+            margin-top: 20px;
+
+        }
+
+        .conttbutton {
+            width: 132px;
+            height: 50px;
+            background-color: #0cc6ad;
+            color: white;
+            letter-spacing: 1px;
+            font-weight: 700;
+            border: none;
+            border-radius: 10px;
+            margin-left: 70px;
+            margin-top: 45px;
+            transition: all 1s;
+
+        }
+
+        .conttbutton:hover {
+            background-color: black;
+            color: #00B49D;
+            transition: all 1s;
+
+        }
+
+        .conttline {
+
+            position: relative;
+            width: 162px;
+            height: 60px;
+            left: -135px;
+            top: 35px;
+            z-index: -1;
+        }
+
+        .contrightbox {
+            width: 650px;
+            height: 70vh;
+            /* border: 2px solid rgb(255, 0, 0); */
+            float: left;
+            margin-left: 20px;
+            background-image: url(./Images/back122334.png);
+            background-size: 98%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+
+
+
+        .contyimggirl {
+            width: 200px;
+            height: 270px;
+            /* border: 2px solid purple; */
+            margin-left: 420px;
+            margin-top: 112px;
+            float: left;
+            background-image: url(./Images/gril222.png);
+            background-size: 80%;
+            background-position: center;
+            background-repeat: no-repeat;
+            transform: rotate(-10deg);
+
+        }
+
+        /* =======paid media =============== */
+        .paidmain {
+
+            width: 100%;
+            height: 475px;
+            /* border: 2px solid purple; */
+        }
+
+
+        .paidboxleft {
+            width: 680px;
+            height: 405px;
+            /* border: 2px solid yellowgreen; */
+            float: left;
+            margin-left: 35px;
+            background-image: url(./Images/backgroundpaid\ \(1\).png);
+            background-position: center;
+            background-size: 95%;
+            background-repeat: no-repeat;
+
+
+        }
+
+        .paidpicaos {
+            width: 220px;
+            height: 255px;
+            /* border: 2px solid red; */
+            margin-left: 420px;
+            margin-top: 30px;
+            background-image: url(./Images/backgroundpaid\ \(2\).png);
+            background-size: 90%;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: -4;
+        }
+
+        .paidtxtbox {
+            position: relative;
+            width: 180px;
+            height: 100px;
+            /* border: 2px solid red; */
+            z-index: 2;
+
+            top: -270px;
+            left: 20px;
+        }
+
+        .paidboxright {
+            width: 490px;
+            height: 405px;
+            /* border: 2px solid rgb(13, 2, 236); */
+            float: left;
+            margin-left: 45px;
+
+
+
+        }
+
+        .paidp1 {
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 13px;
+            letter-spacing: 2px;
+            margin-left: 30px;
+            margin-top: 10px;
+
+        }
+
+        .paidh1 {
+            font-size: 26px;
+            font-weight: 500;
+            line-height: 43.5px;
+            margin-left: 30px;
+            margin-top: 20px;
+
+
+        }
+
+        .paidp2 {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 28.8px;
+            margin-left: 30px;
+            margin-top: 20px;
+
+
+        }
+
+
+        .paidbutton {
+            width: 132px;
+            height: 50px;
+            background-color: #0cc6ad;
+            color: white;
+            letter-spacing: 1px;
+            font-weight: 700;
+            border: none;
+            border-radius: 10px;
+            margin-left: 30px;
+            margin-top: 35px;
+            transition: all 1s;
+
+        }
+
+        .paidbutton:hover {
+            background-color: black;
+            color: #00B49D;
+            transition: all 1s;
+
+        }
+
+        .paidline {
+
+            position: relative;
+            width: 162px;
+            height: 60px;
+            left: -145px;
+            top: 30px;
+            z-index: -1;
+        }
+
+
+        /* =======self service======== */
+
+        .selfmain {
+            width: 100%;
+            height: 495px;
+            /* border: 2px solid black; */
+
+
+        }
+
+
+
+        .selfleftbox {
+            width: 565px;
+            height: 70vh;
+            /* border: 2px solid blue; */
+            float: left;
+
+        }
+
+        .selfp1 {
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 13px;
+            letter-spacing: 2px;
+            margin-left: 70px;
+            margin-top: 10px;
+
+        }
+
+        .selfh1 {
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 43.5px;
+            letter-spacing: 0.5px;
+            margin-left: 70px;
+            margin-top: 30px;
+
+        }
+
+        .selfp2 {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 28.8px;
+
+            margin-left: 70px;
+            margin-top: 20px;
+
+        }
+
+        .selfbutton {
+            width: 132px;
+            height: 50px;
+            background-color: #0cc6ad;
+            color: white;
+            letter-spacing: 1px;
+            font-weight: 700;
+            border: none;
+            border-radius: 10px;
+            margin-left: 70px;
+            margin-top: 45px;
+            transition: all 1s;
+
+        }
+
+        .selfbutton:hover {
+            background-color: black;
+            color: #00B49D;
+            transition: all 1s;
+
+        }
+
+        .selfline {
+
+            position: relative;
+            width: 162px;
+            height: 60px;
+            left: -135px;
+            top: 35px;
+            z-index: -1;
+        }
+
+        .selfrightbox {
+            width: 680px;
+            height: 70vh;
+            /* border: 2px solid rgb(255, 0, 0); */
+            float: left;
+            /* margin-left: 10px; */
+            background-image: url(./Images/selfbackground\ \(1\).png);
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+
+        .selfpeepsimg {
+            background-image: url(./Images/selfpeeps.png);
+            z-index: 2;
+            /* border: 2px solid yellowgreen; */
+            width: 670px;
+            height: 395px;
+            margin-left: 5px;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .arrowmove {
+            position: relative;
+            width: 130px;
+            height: 30px;
+            /* border: 2px solid yellowgreen; */
+            left: 537px;
+            top: 135px;
+            transition: 1s;
+
+        }
+
+        .arrow111 {
+            position: absolute;
+            top: 10px;
+            width: 40%;
+            height: 40%;
+            animation-name: arrow;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes arrow {
+            0% {
+                opacity: 0;
+                transform: translatex(150%);
+
+
+            }
+
+            20% {
+                opacity: 1;
+                transform: translatex(0%);
+                margin-top: 0px;
+
+
+            }
+
+
+
+            74% {
+                margin-top: 0px;
+                opacity: 1;
+                transform: rotate(0deg);
+
+            }
+
+
+
+            100% {
+                margin-top: 100px;
+                opacity: 0;
+                transform: rotate(180deg);
+            }
+        }
+
+
+        .arrowlines {
+            position: absolute;
+            width: 80%;
+            height: 80%;
+            top: -25px;
+            left: -50px;
+            animation-name: arrowline;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes arrowline {
+            0% {
+                opacity: 0;
+            }
+
+            15% {
+                opacity: 0;
+
+            }
+
+            100% {
+                opacity: 1;
+
+            }
+
+
+        }
+
+        .selfimggirl {
+            width: 200px;
+            height: 270px;
+            /* border: 2px solid purple; */
+            margin-left: 420px;
+            margin-top: 112px;
+            float: left;
+            background-image: url(./Images/gril222.png);
+            background-size: 80%;
+            background-position: center;
+            background-repeat: no-repeat;
+            transform: rotate(-10deg);
+
+        }
+
+        /* ======one package======= */
+
+        .onemain {
+            width: 100%;
+            height: 60vh;
+            /* border: 2px solid hotpink; */
+
+        }
+
+        .oneh1 {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 43.5px;
+            margin-top: 50px;
+        }
+
+        .oneh2 {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 36px;
+            margin-top: 50px;
+            color: rgb(48, 48, 48);
+        }
+
+        .onebutton {
+            width: 280px;
+            height: 62px;
+            background-color: #0cc6ad;
+            color: white;
+            letter-spacing: 1px;
+            font-weight: 500;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            margin-left: 490px;
+            margin-top: 45px;
+            transition: all 1s;
+        }
+
+        .onebutton:hover {
+            background-color: black;
+            color: #00B49D;
+            transition: all 1s;
+
+        }
+
+        .oneline {
+            position: relative;
+            width: 352px;
+            height: 60px;
+            left: -300px;
+            top: 35px;
+            z-index: -1;
+        }
+
+
+        /* =====pics pop up============== */
+
+
+        .picmain {
+            width: 100%;
+            height: 450px;
+            /* border: 2px solid red; */
+
+        }
+
+        .picmoon {
+            margin-top: 50px;
+            width: 150px;
+            height: 155px;
+            /* border: 1px solid red; */
+            background-image: url(./Images/pic1.png);
+            background-size: 100%;
+            background-position: cover;
+            background-repeat: no-repeat;
+            transform: translateX(-50%);
+
+
+        }
+
+        .picvid {
+            position: relative;
+            margin-top: -40px;
+            margin-left: 50px;
+            width: 300px;
+            height: 270px;
+            /* border: 2px solid red; */
+            background-image: url(./Images/pic3.png);
+            background-position: center;
+            background-size: 98%;
+            background-repeat: no-repeat;
+            z-index: 1;
+
+        }
+
+        .picgir1 {
+
+            width: 180px;
+            height: 180px;
+            /* border: 2px solid rgb(39, 41, 34); */
+            margin-left: 320px;
+            margin-top: -330px;
+            background-image: url(./Images/pic6.png);
+            background-size: 93%;
+            background-size: center;
+            background-repeat: no-repeat;
+            z-index: -2;
+
+
+        }
+
+        .picicon {
+            position: relative;
+            top: 100px;
+            width: 270px;
+            height: 270px;
+            /* border: 2px solid rgb(39, 41, 34); */
+            margin-left: 280px;
+            margin-top: -330px;
+            background-image: url(./Images/pic2.png);
+            background-size: 93%;
+            background-size: center;
+            background-repeat: no-repeat;
+        }
+
+        .picmicro {
+            position: relative;
+            top: 450px;
+            width: 270px;
+            height: 100px;
+            /* border: 2px solid rgb(39, 41, 34); */
+            margin-left: 280px;
+            margin-top: -330px;
+            background-image: url(./Images/pic4.png);
+            background-size: 93%;
+            background-size: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .picdots {
+            position: relative;
+            top: 700px;
+            left: 260px;
+            width: 80px;
+            height: 80px;
+            /* border: 2px solid rgb(39, 41, 34); */
+            margin-left: 280px;
+            margin-top: -330px;
+            background-image: url(./Images/pic13.JPG);
+            background-size: 93%;
+            background-size: center;
+            background-repeat: no-repeat;
+
+        }
+
+
+        .picman {
+            position: relative;
+            top: 680px;
+            left: 255px;
+            width: 220px;
+            /* margin-left: 10px; */
+            height: 315px;
+            /* border: 2px solid rgb(39, 41, 34); */
+            margin-left: 280px;
+            margin-top: -330px;
+            background-image: url(./Images/pic5.png);
+            background-size: cover;
+            background-size: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .picman2 {
+            position: relative;
+            top: 680px;
+            left: 470px;
+            width: 160px;
+
+            height: 160px;
+            /* border: 2px solid rgb(39, 41, 34); */
+            margin-left: 330px;
+            margin-top: -250px;
+            background-image: url(./Images/pic8.png);
+            background-size: 95%;
+            background-size: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .picman3 {
+            position: relative;
+            top: 680px;
+            left: 470px;
+            width: 160px;
+
+            height: 160px;
+            /* border: 2px solid rgb(39, 41, 34); */
+            margin-left: 420px;
+            margin-top: -110px;
+            background-image: url(./Images/pic9.png);
+            background-size: 95%;
+            background-size: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .picmicro2 {
+            position: relative;
+            top: 680px;
+            left: 470px;
+            width: 90px;
+
+            height: 90px;
+            /* border: 2px solid rgb(39, 41, 34); */
+            margin-left: 320px;
+            margin-top: -320px;
+            background-image: url(./Images/pic7.png);
+            background-size: 95%;
+            background-size: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .picletter {
+            position: relative;
+            top: 680px;
+            left: 470px;
+            width: 95px;
+
+            height: 100px;
+            /* border: 2px solid rgb(39, 41, 34); */
+            margin-left: 510px;
+            margin-top: 180px;
+            background-image: url(./Images/pic10.png);
+            background-size: 95%;
+            background-size: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .picmoon2 {
+            position: absolute;
+            margin-left: 1020px;
+            margin-top: -50px;
+            width: 150px;
+            height: 155px;
+            /* border: 1px solid red; */
+            background-image: url(./Images/pic1.png);
+            background-size: 100%;
+            background-position: cover;
+            background-repeat: no-repeat;
+            transform: translateX(50%);
+            z-index: -1;
+
+
+        }
+
+        .picgirl2 {
+            position: relative;
+            top: 320px;
+            left: 1050px;
+            width: 200px;
+
+            height: 250px;
+            /* border: 2px solid rgb(39, 41, 34); */
+
+
+            background-image: url(./Images/pic11.png);
+            background-size: cover;
+            background-size: center;
+            background-repeat: no-repeat;
+
+        }
+
+
+        /* ======saying======= */
+
+        .saymain {
+            width: 100%;
+            height: 230px;
+            /* border: 2px solid red; */
+
+
+        }
+
+        .sayleft {
+            width: 900px;
+            height: 230px;
+            /* border: 2px solid yellowgreen; */
+            float: left;
+
+        }
+
+        .sayh1 {
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 43.5px;
+            margin-left: 50px;
+            margin-top: 30px;
+
+        }
+
+
+        .sayp {
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 36px;
+            margin-left: 50px;
+            margin-top: 30px;
+
+        }
+
+        .sayright {
+            float: left;
+            width: 350px;
+            height: 230px;
+            /* border: 2px solid rgb(247, 15, 239); */
+
+        }
+
+        .saybutton {
+            width: 210px;
+            height: 45px;
+            background-color: #0cc6ad;
+            color: white;
+            letter-spacing: 1.5px;
+            font-weight: 500;
+            font-size: 14px;
+            border: none;
+            border-radius: 10px;
+            margin-left: 110px;
+            margin-top: 50px;
+            transition: all 1s;
+        }
+
+        .saybutton:hover {
+            background-color: black;
+            color: #00B49D;
+            transition: all 1s;
+
+        }
+
+        .sayline {
+            position: relative;
+            width: 210px;
+            height: 50px;
+            top: -40px;
+            left: 130px;
+
+            z-index: -1;
+        }
+
+
+        /* ====3 box slider===== */
+
+
+        .main3box {
+
+            width: 100%;
+            height: 760px;
+            /* border: 2px solid yellowgreen; */
+            /* float: left; */
+        }
+
+        .box {
+            position: relative;
+            float: left;
+            width: 390px;
+            height: 660px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-left: 20px;
+            padding: 2px;
+            box-sizing: border-box;
+        }
+
+        .boxlogo {
+            position: absolute;
+            width: 205px;
+            height: 90px;
+            /* border: 1px solid black; */
+            left: 90px;
+            top: 30px;
+            background-image: url(./Images/box3.png);
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .boxlogo1 {
+            position: absolute;
+            width: 205px;
+            height: 90px;
+            /* border: 1px solid black; */
+            left: 90px;
+            top: 30px;
+            background-image: url(./Images/box2.png);
+            background-size: 95%;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .boxlogo2 {
+            position: absolute;
+            width: 205px;
+            height: 90px;
+            /* border: 1px solid black; */
+            left: 90px;
+            top: 30px;
+            background-image: url(./Images/box1.png);
+            background-size: 95%;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+
+        .boxp {
+            position: absolute;
+            width: 390px;
+            height: 100px;
+            /* border: 1px solid black; */
+            top: 120px;
+            left: -90px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28.8px;
+
+        }
+
+        .iconmain {
+            position: absolute;
+            width: 390px;
+            height: 190px;
+            /* border: 1px solid black; */
+            top: 300px;
+            left: -90px;
+
+
+        }
+
+        .boxi1 {
+            width: 45%;
+            height: 180px;
+            border-top: 1px solid rgb(185, 185, 185);
+            border-bottom: 1px solid rgb(185, 185, 185);
+            border-right: 1px solid rgb(185, 185, 185);
+            ;
+            margin-top: -40px;
+            float: left;
+            margin-left: 5%;
+
+        }
+
+        .imgbox1 {
+            width: 80px;
+            height: 70px;
+            /* border: 1px solid red; */
+            margin-left: 55px;
+            margin-top: 20px;
+
+        }
+
+
+        .boxpicon {
+
+            width: 80px;
+            height: 70px;
+
+            /* border: 1px solid rgb(81, 0, 255); */
+            margin-left: 55px;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 32px;
+
+        }
+
+        .boxi2 {
+            width: 45%;
+            height: 180px;
+            border-top: 1px solid rgb(185, 185, 185);
+            border-bottom: 1px solid rgb(185, 185, 185);
+            float: left;
+            margin-top: -40px;
+
+
+        }
+
+        .mainboxtxt {
+            width: 390px;
+            height: 100px;
+
+            margin-top: 142px;
+
+
+        }
+
+        .boxtxt {
+            margin-left: 5%;
+
+            width: 45%;
+            height: 65px;
+            border-bottom: 1px solid rgb(185, 185, 185);
+            border-right: 1px solid rgb(185, 185, 185);
+            float: left;
+
+
+        }
+
+        .boxplet {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 18.9px;
+            text-align: center;
+            margin-top: 25px;
+
+
+        }
+
+        .boxtxt2 {
+
+
+            width: 45%;
+            height: 65px;
+            border-bottom: 1px solid rgb(185, 185, 185);
+            float: left;
+
+
+
+        }
+
+
+        .boxbutton {
+            width: 135px;
+            height: 50px;
+            background-color: #0cc6ad;
+            color: white;
+            letter-spacing: 1px;
+            font-weight: 500;
+            font-size: 14px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 570px;
+            margin-left: 125px;
+            transition: all 1s;
+        }
+
+        .boxbutton:hover {
+            background-color: black;
+            color: #00B49D;
+            transition: all 1s;
+
+        }
+
+        .boxline {
+            position: relative;
+            width: 150px;
+            height: 60px;
+            left: 120px;
+            top: -60px;
+            z-index: -1;
+        }
+
+
+        /* ============campaign===== */
+
+        .campmain {
+            width: 1166px;
+            height: 1000px;
+            border: 2px solid #CFE4DF;
+            background-color: #CFE4DF;
+            margin-left: 45px;
+
+
+
+        }
+
+        .camph1 {
+            text-align: center;
+            margin-top: 50px;
+
+        }
+
+
+        .campp1 {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 36px;
+            text-align: center;
+            margin-top: 40px;
+
+
+        }
+
+        .campcol {
+            color: #00B49D;
+            font-weight: 700;
+
+        }
+
+        .inp {
+            width: 360px;
+            height: 45px;
+            border-radius: 10px;
+            border: 0.5px solid black;
+            margin-left: 210px;
+            margin-top: 30px;
+
+
+        }
+
+
+        .inp2 {
+            width: 360px;
+            height: 45px;
+            border-radius: 10px;
+            border: 0.5px solid black;
+            margin-left: 50px;
+
+
+        }
+
+
+        .inp3 {
+            width: 360px;
+            height: 45px;
+            border-radius: 10px;
+            border: 0.5px solid black;
+            margin-left: 210px;
+            margin-top: 30px;
+
+
+        }
+
+
+        .inp4 {
+            width: 360px;
+            height: 45px;
+            border-radius: 10px;
+            border: 0.5px solid black;
+            margin-left: 50px;
+
+
+        }
+
+        .inp5 {
+            width: 360px;
+            height: 45px;
+            border-radius: 10px;
+            border: 0.5px solid black;
+            margin-left: 210px;
+            margin-top: 30px;
+
+
+        }
+
+
+        .inp6 {
+            width: 360px;
+            height: 45px;
+            border-radius: 10px;
+            border: 0.5px solid black;
+            margin-left: 50px;
+
+
+        }
+
+        .inp7 {
+            width: 360px;
+            height: 45px;
+            border-radius: 10px;
+            border: 0.5px solid black;
+            margin-left: 210px;
+            margin-top: 30px;
+
+
+        }
+
+
+        .inp8 {
+            width: 360px;
+            height: 45px;
+            border-radius: 10px;
+            border: 0.5px solid black;
+            margin-left: 50px;
+
+
+        }
+
+        .inp9 {
+            width: 777px;
+            height: 225px;
+            border-radius: 10px;
+            border: 0.5px solid black;
+            margin-left: 210px;
+            padding-top: 10px;
+            padding-left: 2px;
+            margin-top: 30px;
+
+        }
+
+        .endbutton {
+            width: 290px;
+            height: 65px;
+            background-color: #0cc6ad;
+            color: white;
+            letter-spacing: 1px;
+            font-weight: 500;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 65px;
+            margin-left: 450px;
+            transition: all 1s;
+        }
+
+        .endbutton:hover {
+            background-color: black;
+            color: #00B49D;
+            transition: all 1s;
+
+        }
+
+        .endline {
+            position: relative;
+            width: 150px;
+            height: 60px;
+            left: 120px;
+            top: -60px;
+            z-index: -1;
+        }
+
+        /* ==========footer====== */
+
+        .footermain {
+            width: 100%;
+            height: 710px;
+            /* border: 2px solid red; */
+
+        }
+
+        .logfoot {
+            width: 185px;
+            height: 32px;
+            /* border: 1px solid red; */
+            margin-left: 540px;
+            margin-top: 100px;
+
+        }
+
+        .logoseal {
+            width: 155px;
+            height: 150px;
+            /* border: 1px solid black; */
+            background-image: url(./Images/footseel.JPG);
+            background-position: center;
+            background-size: cover;
+            margin-left: 70px;
+            margin-top: -160px;
+
+
+        }
+
+        .girlfoot {
+            position: relative;
+            left: 1020px;
+            top: -440px;
+            width: 185px;
+            height: 230px;
+            /* border: 1px solid black; */
+            background-image: url(./Images/backgroundpaid\ \(2\).png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 96%;
+            margin-left: 30px;
+            margin-top: 30px;
+            transform: rotate(15deg);
+
+
+        }
+
+        .footh1 {
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 36px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .foottwit {
+            width: 305px;
+            height: 70px;
+            /* border: 1px solid black; */
+            margin-top: -230px;
+            margin-left: 475px;
+
+
+
+        }
+
+        .footbox {
+            width: 60px;
+            height: 60px;
+            border: 1px solid black;
+            border-radius: 10px;
+            float: left;
+            margin-top: 3.5px;
+            margin-left: 11px;
+            box-shadow: 4px 4px 0.5px 0.5px #a5f3e9;
+        }
+
+        .listfootmain {
+            width: 100%;
+            height: 260px;
+            /* border: 2px solid purple; */
+            margin-top: 70px;
+
+
+        }
+
+        .adver {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18.9px;
+            margin-left: 50px;
+            list-style: none;
+            margin-top: 50px;
+        }
+
+        .ad {
+            margin-top: 10px;
+
+        }
+
+        .ad1 {
+            margin-top: 10px;
+
+        }
+
+        .adver1 {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18.9px;
+            margin-left: 300px;
+            margin-top: -118px;
+            list-style: none;
+        }
+
+        .ad2 {
+            margin-top: 10px;
+
+        }
+
+        .adver2 {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18.9px;
+            margin-left: 560px;
+            margin-top: -164px;
+            list-style: none;
+        }
+
+        .ad3 {
+            margin-top: 10px;
+
+        }
+
+        .adver3 {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18.9px;
+            margin-left: 800px;
+            margin-top: -145px;
+            list-style: none;
+        }
+
+        .ad4 {
+            margin-top: 10px;
+
+        }
+
+        .adver4 {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18.9px;
+            margin-left: 1000px;
+            margin-top: -173px;
+            list-style: none;
+        }
+
+        .pfoot {
+            font-size: 13px;
+            margin-left: 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ===nav bar=== -->
+
+    <div class="nav-main">
+        <div class="nav-logo"></div>
+
+
+        <ul class="nav-ul">
+
+            <li class="nav-li dropdown-main">Solutions
+                <div class="line-under">
+                    <img class="line123" src="./Images/underline@2x.png" alt="">
+
+                </div>
+
+
+                <div class="dropdown-menu">
+
+
+
+                    <div class="box1">
+
+                        <div class="drop-icon1">
+                            <img src="./Images/menuicon-services.svg" alt="">
+
+                        </div>
+
+
+                        <p class="drop-header1">Tech-Enabled Services</p>
+                        <p class="drop-text">Full service influencer marketing<br>campaigns</p>
+
+
+
+                    </div>
+
+                    <div class="box2">
+
+                        <div class="drop-icon">
+                            <img src="./Images/menuicon-software.svg" alt="">
+
+                        </div>
+                        <p class="drop-header2">Software</p>
+
+                        <p class="drop-text">Seamlessley search, manage<br> and track influencer campaigns</p>
+
+                    </div>
+
+
+                    <div class="box3">
+                        <div class="drop-icon">
+                            <img src="./Images/menuicon-paid.svg" alt="">
+                        </div>
+                        <p class="drop-header3">Paid Media</p>
+                        <p class="drop-text">Develop and execute influencer<br> driven marketing campaigns</p>
+
+
+                    </div>
+
+
+
+                    <div class="box4">
+
+                        <div class="drop-icon-row2">
+                            <img src="./Images/menuicon-fraud.svg" alt="">
+                        </div>
+                        <p class="drop-head-row2">Fraud Detection</p>
+                        <p class="drop-para-row2">Develop execute influencer driven performance marketing campaigns
+                        </p>
+
+
+                    </div>
+
+
+                    <div class="box5">
+
+                        <div class="drop-icon-row3">
+                            <img class="api" src="./Images/menuicon-api.svg" alt="">
+                        </div>
+                        <p class="drop-head-row3">API</p>
+                        <p class="drop-para-row3">Integrate over 400+ custome data points<br> into in-house tools and
+                            technologies
+                        </p>
+
+                    </div>
+
+                    <div class="box6">
+
+
+                        <div class="drop-icon-row3">
+                            <img class="api" src="./Images/menuicon-crypto.svg" alt="">
+                        </div>
+                        <p class="drop-head-row3">Crypto and NFT Marketing</p>
+                        <p class="drop-para-row3">Promote your Blockchain venture with a highly targeted crypto
+                            marketinf
+                            strategy</p>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+            </li>
+
+            <li class="nav-li">Services
+                <div class="line-under">
+                    <img class="line123" src="./Images/underline@2x.png" alt="">
+
+                </div>
+
+            </li>
+
+            <li class="nav-li">Case Studies
+                <div class="line-under">
+                    <img class="line123" src="./Images/underline@2x.png" alt="">
+
+                </div>
+            </li>
+            <li class="nav-li">Pricing
+                <div class="line-under">
+                    <img class="line123" src="./Images/underline@2x.png" alt="">
+
+                </div>
+            </li>
+            <li class="nav-li dropdownparent-resources">Resources
+                <div class="line-under">
+                    <img class="line123" src="./Images/underline@2x.png" alt="">
+
+                </div>
+                <div class="dropdownchild-resources">
+
+
+                    <ul class="drop-res-main">
+                        <li class="Blog">Blog</li>
+                        <p class="blog1">Stay updated with the latest influencer<br> marketing trends, tips and
+                            topics
+                        </p>
+
+                        <li class="Top-List">Top List</li>
+                        <p class="toplist1">Discover the most definitive list of influencers<br> across a range of
+                            categories
+                        </p>
+
+                        <li class="spenders">Top Spenders</li>
+                        <p class="spenders1">See the top brand spenders in influencer<br> marketing this week
+                        </p>
+
+                        <li class="reports">Industry Reports
+                        </li>
+                        <p class="reports1">Explore leading influencer marketing<br> industry reports
+                        </p>
+                        <li class="Verified">Verified
+                        </li>
+                        <p class="Verified1">A video series for the Creator Economy
+                        </p>
+
+
+                    </ul>
+
+
+
+                </div>
+
+
+
+
+
+
+            </li>
+            <li class="nav-li login">Login</li>
+        </ul>
+
+        <button class="nav-button">GET STARTED</button>
+        <div class="navbutimg">
+            <img class="nav-img" src="./Images/underline@2x.png" alt="" srcset="">
+
+        </div>
+    </div>
+
+    <!-- ====================================================================================================================Run world======================== -->
+
+    <div class="run-main">
+        <div class="run-leftbox">
+            <h1 class="run-header">Run World Class<br> Influencer Marketing<br> Campaigns.</h1>
+            <h2 class="run-para">NeoReach enables world class original<br>
+                influencer campaigns for leading brands<br>
+                and Global Fortune 500s.</h2>
+
+            <button class="run-button">LEARN MORE
+            </button>
+            <div class="runbackimg">
+                <img class="run-img" src="./Images/underline@2x.png" alt="" srcset="">
+
+            </div>
+
+        </div>
+
+        <!-- ========== right box animation============ -->
+
+
+        <div class="run-rightbox">
+
+            <!-- ===start circle1 here=== -->
+
+            <div class="circle1">
+                <div class="transferFile">
+                    <div class="person1 boy"></div>
+                    <div class="person2 girl"></div>
+                    <div class="person3 boy2"></div>
+                    <div class="person4 girl"></div>
+                    <div class="person5 boy2"></div>
+                    <div class="person6 girl"></div>
+
+                </div>
+
+                <div class="commentbox1"></div>
+                <div class="commentbox2"></div>
+
+
+                <div class="microfone">
+                    <img class="microlinesImage" src="./Images/9hornlines .svg" alt="" srcset="">
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <!-- ====circle2==== -->
+
+            <div class="circle2">
+
+                <div class="graphlines">
+                    <img class="glineimg" src="./Images/8graph.svg" alt="" srcset="">
+                    <div class="dot-line"></div>
+                </div>
+
+
+                <div class="circle2boxline">
+                    <div class="line-withdots">
+                        <img class="dotty" src="./Images/5dots.svg" alt="">
+                        <div class="line"></div>
+
+                    </div>
+                    <div class="circleboxinside"></div>
+
+
+                </div>
+
+
+                <div class="graph">
+                    <img class="g-1" src="./Images/3graphwave@2x.png" alt="">
+                    <img class="g-2" src="./Images/3graphwave@2x.png" alt="">
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </div>
+    <!-- ========airbnb============= -->
+
+
+    <div class="airbnb">
+        <div class="airimg">
+            <img src="./Images/logo-airbnb@2x (1).png" alt="" srcset="">
+
+        </div>
+        <div class="airimg">
+            <img src="./Images/logo-amazon@2x (1).png" alt="" srcset="">
+
+
+        </div>
+        <div class="airimg">
+            <img src="./Images/logo-nyt@2x (1).png" alt="" srcset="">
+
+        </div>
+        <div class="airimg">
+            <img src="./Images/logo-honda@2x (1).png" alt="" srcset="">
+
+        </div>
+        <div class="airimg">
+            <img src="./Images/logo-walmart@2x (1).png" alt="" srcset="">
+
+        </div>
+        <div class="airimg">
+            <img src="./Images/logo-bet@2x (1).png" alt="" srcset="">
+
+        </div>
+
+
+    </div>
+
+    <!-- ====leading===== -->
+
+    <div class="leadmain">
+        <h1 class="leadh1">Leading Global Influencer Platform</h1>
+
+        <h2 class="leadh2">Our team integrates with yours to ensure proactive, real-time communication, while
+            creating<br>
+            authentic, data-driven campaigns that get to the heart and soul of your brand story.</h2>
+
+        <button class="leadbutton">LEARN MORE</button>
+
+        <img class="leadline" src="./Images/underline@2x.png" alt="" srcset="">
+
+
+    </div>
+
+    <!-- ====connect network======= -->
+    <div class="conetmain">
+        <div class="conetleftbox">
+            <p class="conp1">ACCESS</p>
+            <h1 class="conh1">Connected Network<br>Of Influencers</h1>
+            <p class="conp2">Years of executing campaigns have helped us shape<br>strong direct relationships with
+                influencers, bloggers, and<br> other creators. Coupled with our data-backed insights into<br> key
+                demographics
+                and KPI’s, we not only ensure the<br> perfect fit but the perfect relationship.</p>
+
+            <button class="conetbutton">LEARN MORE</button>
+
+            <img class="conetline" src="./Images/underline@2x.png" alt="" srcset="">
+
+        </div>
+
+        <div class="conetrightbox">
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="conimgboy"></div>
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="conimggirl"></div>
+
+        </div>
+    </div>
+
+    <!-- =====creative=========== -->
+
+    <div class="createmain">
+        <div class="createboxleft">
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="picaos"></div>
+
+            <img class="createtxtbox" src="./Images/work2-bubble@2x (1).png" alt="" srcset="">
+        </div>
+
+
+
+
+        <div class="createboxright">
+            <p class="createp1">CREATE</p>
+            <h1 class="createh1">Creative Strategy & Direction</h1>
+            <p class="createp2">We infuse your brand’s core messaging into everything we<br> produce by working
+                alongside
+                the talent to create<br> authentic, story-driven content that lives beyond the<br> campaign. We create
+                key
+                strategy points, geared toward<br> distribution and promotion, optimized for brand<br> recognition and
+                conversion.</p>
+
+            <button class="createbutton">LEARN MORE</button>
+
+            <img class="createline" src="./Images/underline@2x.png" alt="" srcset="">
+
+        </div>
+
+    </div>
+
+    <!-- ====contracting manage======== -->
+
+    <div class="contractmain">
+
+
+
+
+        <div class="contractleftbox">
+            <p class="contractp1">MANAGE</p>
+            <h1 class="contracth1">Contracting & Activation</h1>
+            <p class="contractp2">Talent acquisition and management are key to a<br> successful campaign. We manage the
+                entire contracting<br> and negotiating process - including pricing strategy, legal<br> contracts,
+                compliance,
+                and everything in between. From<br> campaign deliverables to final payment, we’ve got it<br> covered.
+            </p>
+
+            <button class="conttbutton">LEARN MORE</button>
+
+            <img class="conttline" src="./Images/underline@2x.png" alt="" srcset="">
+
+        </div>
+
+        <div class="contrightbox">
+
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="contyimggirl"></div>
+
+        </div>
+    </div>
+
+    <!-- =========paid media======================== -->
+
+    <div class="paidmain">
+        <div class="paidboxleft">
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="paidpicaos"></div>
+
+        </div>
+
+
+        <div class="paidboxright">
+            <p class="paidp1">AMPLIFY</p>
+            <h1 class="paidh1">Paid Media</h1>
+            <p class="paidp2">Syndicate influencer content with an experienced<br> approach to user acquisition and paid
+                media. Our team<br> will define ad auctions, budget allocations, offers, copy,<br> creative and more,
+                all on
+                the
+                basis of ROI-across all major<br> ad auctions and channels including Facebook®,<br> Instagram®, Google®,
+                TikTok®, Snapchat® and more.</p>
+
+            <button class="paidbutton">LEARN MORE</button>
+
+            <img class="paidline" src="./Images/underline@2x.png" alt="" srcset="">
+
+        </div>
+
+    </div>
+
+
+    <!-- ======self service======== -->
+
+    <div class="selfmain">
+
+
+
+
+        <div class="selfleftbox">
+            <p class="selfp1">INTEGRATE</p>
+            <h1 class="selfh1">Self-Service<br>
+                Software & APIs</h1>
+            <p class="selfp2">Our best-in-class self-service software and APIs allow<br> for seamless Influencer
+                campaign
+                search, management, and<br> tracking backed by analytics. Access a dedicated<br> dashboard or integrate
+                over
+                400+ custom data points into<br> in-house tools and technologies.
+            </p>
+
+            <button class="selfbutton">LEARN MORE</button>
+
+            <img class="selfline" src="./Images/underline@2x.png" alt="" srcset="">
+
+        </div>
+
+        <div class="selfrightbox">
+            <div class="selfpeepsimg">
+
+                <div class="arrowmove">
+                    <img class="arrow111" src="./Images/ARROW123.svg" alt="">
+
+                    <img class="arrowlines" src="./Images/arrowlines.svg" alt="" srcset="">
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- ========one package============= -->
+
+    <div class="onemain">
+        <h1 class="oneh1">Everything your team needs in one package.</h1>
+
+        <h2 class="oneh2">Whether you are looking for a YouTube superstar or an Instagram micro-influencer,<br> you’re
+            in
+            good company. Sign up today and see why NeoReach has managed over<br> $250 million worth of influencer
+            marketing
+            campaigns to date.</h2>
+
+        <button class="onebutton">GET STARTED TODAY!</button>
+
+        <img class="oneline" src="./Images/underline@2x.png" alt="" srcset="">
+
+
+    </div>
+
+
+    <!-- =======pics pop up========== -->
+
+    <div class="picmain">
+
+        <div class="picmoon"></div>
+        <div data-aos="zoom-out-up" class="picvid"></div>
+        <div data-aos="zoom-out-up" class="picgir1"></div>
+        <div data-aos="zoom-out-up" class="picicon"></div>
+        <div data-aos="zoom-out-up" class="picmicro"></div>
+        <div data-aos="zoom-out-up" class="picdots"></div>
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="picman"></div>
+        <div data-aos="zoom-out-up" class="picman2"></div>
+        <div data-aos="zoom-out-up" class="picman3"></div>
+        <div data-aos="zoom-out-up" class="picmicro2"></div>
+        <div data-aos="zoom-out-up" class="picletter"></div>
+        <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="picgirl2"></div>
+
+        <div class="picmoon2"></div>
+    </div>
+
+
+    <!-- =====saying======= -->
+
+
+    <div class="saymain">
+        <div class="sayleft">
+            <h1 class="sayh1">
+                See what our clients are saying.
+
+            </h1>
+            <p class="sayp">See how top brands are successfully using NeoReach to activate,<br> manage, and track
+                influencer
+                marketing campaigns at scale.</p>
+        </div>
+
+        <div class="sayright">
+            <button class="saybutton">SEE ALL CASE STUDIES</button>
+
+            <img class="sayline" src="./Images/underline@2x.png" alt="" srcset="">
+
+
+
+        </div>
+
+    </div>
+
+    <!-- =====3 box slider============= -->
+
+    <div class="main3box">
+        <div class="box">
+            <div class="boxlogo">
+                <p class="boxp">
+                    How NeoReach helped The HISTORY<br> Channel connect with a whole new<br> audience on TikTok.
+                </p>
+
+                <div class="iconmain">
+                    <div class="boxi1">
+                        <div class="imgbox1">
+                            <img class="imgicon111" src="./Images/boxgraph.svg" alt="" srcset="">
+
+                        </div>
+                        <p class="boxpicon">21M</p>
+
+
+
+
+                    </div>
+                    <div class="boxi2">
+                        <div class="imgbox1">
+                            <img class="imgicon111" src="./Images/boxeye.svg" alt="" srcset="">
+
+                        </div>
+                        <p class="boxpicon">12.2M</p>
+                    </div>
+                    <div class="mainboxtxt">
+
+                        <div class="boxtxt">
+                            <p class="boxplet">Reach</p>
+
+                        </div>
+                        <div class="boxtxt2">
+                            <p class="boxplet">Views</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="boxbutton">LEARN MORE</button>
+
+            <img class="boxline" src="./Images/underline@2x.png" alt="" srcset="">
+
+        </div>
+
+
+
+        <div class="box">
+            <div class="boxlogo2">
+                <p class="boxp">
+                    Robinhood achieved over 3.5 million<br> reach with NeoReach and a cast of<br> diverse influencers.
+                </p>
+
+                <div class="iconmain">
+                    <div class="boxi1">
+                        <div class="imgbox1">
+                            <img class="imgicon111" src="./Images/boxvidioicon.svg" alt="" srcset="">
+
+                        </div>
+                        <p class="boxpicon">1.5M</p>
+
+
+
+
+                    </div>
+
+
+
+                    <div class="boxi2">
+                        <div class="imgbox1">
+                            <img class="imgicon111" src="./Images/boxtalk.svg" alt="" srcset="">
+
+                        </div>
+                        <p class="boxpicon">250K</p>
+                    </div>
+                    <div class="mainboxtxt">
+
+                        <div class="boxtxt">
+                            <p class="boxplet">Views</p>
+
+                        </div>
+                        <div class="boxtxt2">
+                            <p class="boxplet">Engagement</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="boxbutton">LEARN MORE</button>
+
+            <img class="boxline" src="./Images/underline@2x.png" alt="" srcset="">
+        </div>
+
+
+        <div class="box">
+            <div class="boxlogo1">
+                <p class="boxp">
+                    How NeoReach helped Clash App go<br> viral
+                </p>
+
+                <div class="iconmain">
+                    <div class="boxi1">
+                        <div class="imgbox1">
+                            <img class="imgicon111" src="./Images/boxmouse.svg" alt="" srcset="">
+
+                        </div>
+                        <p class="boxpicon">20M</p>
+
+
+
+
+                    </div>
+                    <div class="boxi2">
+                        <div class="imgbox1">
+                            <img class="imgicon111" src="./Images/boxeye.svg" alt="" srcset="">
+
+                        </div>
+                        <p class="boxpicon">250K</p>
+                    </div>
+                    <div class="mainboxtxt">
+
+                        <div class="boxtxt">
+                            <p class="boxplet">Impressions</p>
+
+                        </div>
+                        <div class="boxtxt2">
+                            <p class="boxplet">Downloads</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="boxbutton">LEARN MORE</button>
+
+            <img class="boxline" src="./Images/underline@2x.png" alt="" srcset="">
+        </div>
+
+
+    </div>
+
+    <!-- ================campaign -->
+
+
+    <div class="campmain">
+        <h1 class="camph1">Start a campaign with us!</h1>
+        <p class="campp1">Submit the form below, tell us a bit more about<br>
+            your business, and we’ll be in touch shortly.<br>
+            Are you an Influencer? Sign up
+            <span class="campcol">here</span>
+
+        </p>
+        <input type="text" class="inp" placeholder="&nbsp;&nbsp;*First Name">
+
+        <input type="text" class="inp2" placeholder="&nbsp;&nbsp;*Last Name">
+
+        <input type="text" class="inp3" placeholder="&nbsp;&nbsp;*Business Email">
+
+        <input type="text" class="inp4" placeholder="&nbsp;&nbsp;*Contact Phone Number">
+
+        <input type="text" class="inp5" placeholder="&nbsp;&nbsp;*Company Name">
+
+        <input type="text" class="inp6" placeholder="&nbsp;&nbsp;*Company Website">
+
+        <input type="text" class="inp7" placeholder="&nbsp;&nbsp;*Budget">
+
+        <input type="text" class="inp8" placeholder="&nbsp;&nbsp;*Company Size">
+
+        <textarea type="message" class="inp9" placeholder="&nbsp;&nbsp;*Message"></textarea>
+
+        <button class="endbutton">LET'S CHAT!</button>
+
+        <img class="endline" src="./Images/underline@2x.png" alt="" srcset="">
+
+    </div>
+
+    <!-- ========footer========= -->
+
+    <div class="footermain">
+        <img class="logfoot" src="./Images/logo.svg" alt="" srcset="">
+
+        <h1 class="footh1">Seamlessly search, manage, and track<br>
+            user-generated content campaigns.</h1>
+
+        <div class="logoseal"></div>
+
+        <div class="girlfoot"></div>
+
+        <div class="foottwit">
+            <div class="footbox"></div>
+            <div class="footbox"></div>
+            <div class="footbox"></div>
+            <div class="footbox"></div>
+
+
+        </div>
+
+        <div class="listfootmain">
+
+
+            <ul class="adver">
+                <li class="ad"><b>Advertisers</b></li>
+                <li class="ad">Pricing</li>
+                <li class="ad">Case Studies</li>
+                <li class="ad">Advertiser FAQ</li>
+            </ul>
+
+
+            <ul class="adver1">
+                <li class="ad1"><b>Influencers</b></li>
+                <li class="ad1">Community</li>
+                <li class="ad1">Influencer FAQ</li>
+                <li class="ad1">Influencer<br> Guidelines</li>
+                <li class="ad1">Influencer Sign Up</li>
+            </ul>
+
+
+            <ul class="adver2">
+                <li class="ad2"><b>Solutions</b></li>
+                <li class="ad2">Services</li>
+                <li class="ad2">Software</li>
+                <li class="ad2">API</li>
+                <li class="ad2">Fraud Detection</li>
+            </ul>
+
+            <ul class="adver3">
+                <li class="ad3"><b>Resources</b></li>
+                <li class="ad3">Meet The Team</li>
+                <li class="ad3">The Org</li>
+                <li class="ad3">Press</li>
+                <li class="ad3">Privacy</li>
+                <li class="ad3">Customer Support</li>
+            </ul>
+
+            <ul class="adver4">
+                <li class="ad4"><b>Contact</b></li>
+
+                <li class="ad4">Email: team@neoreach.com</li>
+                <li class="ad4">Careers</li>
+            </ul>
+
+        </div>
+
+        <p class="pfoot">© 2022. All Rights Reserved.</p>
+
+
+
+    </div>
+
+    <!-- =============================== -->
+    <script src=" https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

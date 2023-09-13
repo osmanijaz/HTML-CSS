@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helion 5</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main0{
+    height: 110vh;
+    width: 100%;
+    background-color: white;
+    padding: 1px;
+}
+.main00{
+    height: 110vh;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+
+}
+.main1{
+    height: auto;
+    width: 50%;
+    /* border: 3px solid; */
+    padding-bottom: 50px;
+}
+.logo{
+    height: 60vh;
+    width: 45%;
+    background-image: url(./decoration-shape.png);
+    background-position: center;
+    background-size: cover;
+    /* border: 1px solid; */
+}
+#image1{
+    height: 35px;
+    margin: 35px 30%;
+}
+.child1{
+    height: max-content;
+    width: 80%;
+    /* border: 1px solid; */
+    /* position: relative; */
+    margin-top: -200px;
+    margin-left: 7%;
+    padding: 1px;
+}
+.div1{
+    height: 2px;
+    width: 12%;
+    background-color: black;
+    /* margin-left: 5%; */
+    margin-top: 20px;
+}
+.p1{
+    font-family: LouisGeorgeCafe, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    color: rgb(13, 13, 18);
+    margin: 30px 0%;
+}
+/* .main1{
+    height: 100px;
+    width: 100%;
+    background-color: slateblue;
+    padding: 1px;
+    margin-top: 300px;
+    z-index: 10;
+    overflow-wrap: hidden;
+    /* margin-left: 200px; */
+    /* transform-origin: right; */
+    /* transform: rotate(30deg); */
+    /* animation: aa 2s linear infinite; */
+
+
+/* @keyframes aa {
+    0%{
+        transform: rotate(360deg);
+        transform-origin: left;
+    }
+    100%{
+        transform-origin: right;
+        transform: rotate(-360deg);
+    }
+} 
+.child1{
+    height: 300px;
+    width: 4%;
+    background-color: rgba(255, 0, 0, 0.412);
+    box-shadow: 0px 0px 30px 20px pink;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 20px;
+    animation: aa 1s linear infinite alternate;
+}
+@keyframes aa {
+    0%{
+        transform-origin: top;
+        transform: rotate(0deg);
+    }
+    50%{
+        transform-origin: left;
+        transform: rotate(270deg) scaleY(2);
+
+    }
+    100%{
+        transform-origin: right;
+        transform: rotate(180deg);
+    }
+    
+} */
+.p2{
+    font-family: LouisGeorgeCafe, sans-serif;
+    font-size: 86px;
+    font-weight: 700;
+    line-height: 86px;
+    color: rgb(13, 13, 18);
+    display: inline-block;
+    /* transform: rotateX(180deg); */
+    /* text-shadow: 1px 1px 30px 30px red; */
+    transition: 1s;
+    /* background-color: rgba(255, 255, 255, 0.448); */
+    opacity: 1;
+    animation: a1 1s linear ;
+
+}
+
+@keyframes a1 {
+    0%{
+        transform: rotateX(90deg);
+        opacity: 0;
+        
+        
+    }
+    100%{
+        transform: rotateX(0deg);
+        opacity: 1;
+
+    }
+    
+}
+.p41{
+    animation-name: a1;
+    animation-delay: 0.1s;
+}
+.p42{
+    animation-name: a1;
+    animation-delay: 0.2s;
+}
+.p43{
+    animation-name: a1;
+    animation-delay: 0.3s;
+}
+.p44{
+    animation-name: a1;
+    animation-delay: 0.4s;
+}
+.p45{
+    animation-name: a1;
+    animation-delay: 0.5s;
+}
+.p46{
+    animation-name: a1;
+    animation-delay: 0.6s;
+}
+.p47{
+    animation-name: a1;
+    animation-delay: 0.7s;
+}
+.p48{
+    animation-name: a1;
+    animation-delay: 0.8s;
+}
+
+.p50{
+    animation-name: a1;
+    animation-delay: 0.9s;
+}
+.p51{
+    animation-name: a1;
+    animation-delay: 1s;
+}
+.p52{
+    animation-name: a1;
+    animation-delay: 1.1s;
+}
+.p53{
+    animation-name: a1;
+    animation-delay: 1.2s;
+}
+.p54{
+    animation-name: a1;
+    animation-delay: 1.3s;
+}
+.p55{
+    animation-name: a1;
+    animation-delay: 1.4s;
+}
+
+.p57{
+    animation-name: a1;
+    animation-delay: 1.5s;
+}
+.p58{
+    animation-name: a1;
+    animation-delay: 1.6s;
+}
+.p59{
+    animation-name: a1;
+    animation-delay: 1.7s;
+}
+.p60{
+    animation-name: a1;
+    animation-delay: 1.8s;
+}
+.p61{
+    animation-name: a1;
+    animation-delay: 1.9s;
+}
+
+.p63{
+    animation-name: a1;
+    animation-delay: 2s;
+}
+.p64{
+    animation-name: a1;
+    animation-delay: 2.1s;
+}
+.p65{
+    animation-name: a1;
+    animation-delay: 2.2s;
+}
+.p66{
+    animation-name: a1;
+    animation-delay: 2.3s;
+}
+.p67{
+    animation-name: a1;
+    animation-delay: 2.4s;
+}
+.p68{
+    animation-name: a1;
+    animation-delay: 2.5s;
+}
+.p69{
+    animation-name: a1;
+    animation-delay: 2.6s;
+}
+#image2{
+    height: 30px;
+    position: absolute;
+    top: 630px;
+    left: 4%;
+    /* margin: 40px 7%; */
+    animation: a2 1s linear infinite alternate;
+}
+@keyframes a2 {
+    0%{
+        margin-top: 50px;
+
+    }
+    100%{
+        margin-top: 60px;
+    }
+    
+}
+.ul1{
+    margin-top: 120px;
+    margin-left: 7%;
+    /* border: 1px solid; */
+    width: 60%;
+    height: max-content;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    /* position: relative; */
+}
+.li1{
+    list-style: none;
+   
+    font-size: 18px;
+    font-family: LouisGeorgeCafe, sans-serif;
+    cursor: pointer;
+    animation: a3 .7s linear;
+
+}
+@keyframes a3 {
+    0%{
+        /* display: none; */
+        opacity: 0;
+        transform: rotateY(360deg);
+    }
+    50%{
+        /* display: block; */
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+    100%{
+        /* display: none; */
+        opacity: 0;
+        transform: rotateY(360deg);
+    }
+    /* 100%{
+        display: block;
+        opacity: 1;
+        transform: rotateY(0deg);
+        
+    } */
+   
+}
+.main3{
+    height: 110vh;
+    width: 50%;
+    /* border: 2px solid yellow; */
+    position: relative;
+}
+#image3{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#image4{
+    height: 140px;
+    position: absolute;
+    top: 255px;
+    left: 200px;
+    animation: a4 2s linear forwards;
+    opacity: 0;
+ 
+
+}
+@keyframes a4 {
+    from{
+        top: 165px;
+        opacity: 1;
+       
+    }
+    to{
+        top: 255px;
+        opacity: 1;
+      
+    }
+}
+.div3{
+    height: 60px;
+    width: 20%;
+    /* border: 1px solid; */
+    position: absolute;
+    right: 10%;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.icon1{
+    height: 100%;
+    width: 50%;
+    /* background-color: yellow; */
+    text-align: center;
+}
+.i1{
+    background-color: transparent;
+}
+#icon1{
+    font-size: 30px;
+    margin-top: 14px;
+    cursor: pointer;
+    
+}
+.div4{
+    height: 2px;
+    width: 0%;
+    background-color: black;
+    transition: .5s;
+    margin-top: -12.5px;
+}
+.li1:hover .div4{
+    width: 100%;
+}
+.main4{
+    height: 70vh;
+    width: 100%;
+    /* border: 1px solid; */
+}
+.div5{
+    height: 2px;
+    width: 6%;
+    background-color: black;
+    margin-left: 5%;
+    margin-top: 100px;
+}
+.p3{
+    font-family: LouisGeorgeCafe, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    color: rgb(13, 13, 18);
+    margin-left: 13%;
+    margin-top: -10px;
+}
+.p4{
+    font-family: LouisGeorgeCafe, sans-serif;
+    font-size: 49.266px;
+    font-weight: 500;
+    line-height: 49.266px;
+    color: rgb(13, 13, 18);
+    margin-left: 5%;
+    margin-top: 30px;
+}
+.p5{
+    font-family: HKGrotesk, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 26.5px;
+    color: rgb(74, 79, 85);
+    margin: 50px 5%;
+    /* margin-left: 5%;
+    margin-top: 30px; */
+}
+.btn1{
+    padding: 15px 90px;
+    background-color: black;
+    border-radius: 5px;
+    margin-left: 5%;
+    cursor: pointer;
+
+}   
+#icon2{
+    font-size: 20px;
+    color: red;
+    white-space: nowrap;
+}
+.p6{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+
+}
+
+
+/* .btns{
+    padding: 100px 50px;
+    background-color: black;
+    border-radius: 5px;
+   margin:50px 30%;
+    position: relative;
+color:white;
+    transform-style: preserve-3d;
+animation:animate 1s linear infinite;
+
+} 
+.btns button:nth-child(1){
+    position: absolute;
+   width:100%;
+   height:100%;
+   top:0;
+   left:0;
+    background-color: red;
+    backface-visibility: hidden;
+    border-radius: 5px; 
+    font-size: 50px;
+}
+
+@keyframes animate {
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(360deg);
+    }
+}  */
+    .main5{
+        height: auto;
+        width: 100%;
+        /* border: 1px solid red; */
+        padding: 1px;
+    }
+    .div6{
+        height: 3px;
+        width: 5%;
+        background-color: black;
+        margin-left: 11.5%;
+    margin-top: 100px;
+    }
+    .p7{
+        font-family: LouisGeorgeCafe, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    color: rgb(13, 13, 18);
+    margin-left: 18.5%;
+    margin-top: -10px;
+    }
+    .main6{
+        height: auto;
+        width: 90%;
+        margin: auto;
+        /* border: 2px solid; */
+        display: flex;
+        justify-content: space-around;
+        /* align-items: center; */
+        flex-wrap: wrap;
+    }
+    .child2{
+        height: 75vh;
+        width: 30%;
+        /* border: 1px solid; */
+        margin: 50px 5%;
+        /* margin-left: 5%;
+        margin-top: 50px; */
+        overflow: hidden;
+        position: relative;
+    
+    }
+    .child2 img {
+        height: 100%;
+        width: 100%;
+        transition: 1s ease-out;
+        /* z-index: -1; */
+        position: absolute;
+    }
+    .child2:hover img{
+        transform: scale(1.2);
+    }
+    .child2 button{
+        padding: 15px 30px;
+        background-color: black;
+        color: white;
+        /* z-index: 10; */
+        position: absolute;
+        font-size: large;
+        font-weight: 600;
+        bottom: 30px;
+        left: 5%;
+        cursor: pointer;
+        transition: .5s;
+        opacity: 0;
+    }
+    button:hover {
+        color: gray;
+    }
+    .child2:hover button{
+        /* color: gray; */
+        opacity: 1;
+    }
+    .child2 button i{
+        font-size: large;
+        margin-left: 15px;
+        transition: .5s;
+        opacity: 0;
+    }
+    .child2:hover button i{
+        color: red;
+        margin-left: 35px;
+        opacity: 1;
+    }
+    
+    
+.child2 button:nth-child(2){
+    bottom: 100px;
+    transition-delay: .1s;
+    padding: 5px 10px;
+    font-weight: 400;
+    font-size: medium;
+}
+.ch2{
+    width: 40%;
+    height: 80vh;
+}
+.btn5{
+    padding: 20px 40px;
+    /* width: max-content; */
+    background-color: black;
+    color: white;
+    /* padding-bottom: 30px; */
+   
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+
+    margin: 20px 40%;
+
+}
+.btn5:hover{
+    background-color: red;
+
+}
+.btn5 p{
+    font-size: medium;
+    font-weight: 600;
+    color: white;
+}
+.btn5 p i{
+    margin-left: 20px;
+    opacity: 0;
+    transition: .5s;
+    padding-right: 0;
+}
+.btn5:hover p i{
+    opacity: 1;
+    margin-left: 40px;
+}
+.main7{
+    height: auto;
+    width: 100%;
+    /* border: 1px solid; */
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main8{
+    height: auto;
+    /* border: 1px solid; */
+    width: 40%;
+}
+.div7{
+    height: 2px;
+    width: 10%;
+    background-color: black;
+    margin-left: 5%;
+    margin-top: 100px;
+}
+.p9{
+    font-family: LouisGeorgeCafe, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    color: rgb(13, 13, 18);
+    margin-left: 18%;
+    margin-top: -10px;
+    
+}
+.p10{
+    font-family: LouisGeorgeCafe, sans-serif;
+font-size: 49.266px;
+font-weight: 700;
+line-height: 49.266px;
+color: rgb(13, 13, 18);
+margin-left: 5%;
+margin-top: 20px;
+}
+.p11{
+    font-family: HKGrotesk, sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 26.7426px;
+color: rgb(74, 79, 85);
+margin-left: 5%;
+margin-top: 30px;
+}
+.btn6{
+    padding: 20px 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+    overflow: hidden;
+    width: max-content;
+    margin: 40px 5%;
+
+}
+.btn6:hover{
+    background-color: red;
+}
+.btn6 p{
+    white-space: nowrap;
+    margin-left: 10px;
+    font-size: medium;
+    font-weight: 600;
+    transition: .5s;
+
+}
+.btn6:hover p{
+    color: white;
+
+}
+.btn6 p i{
+    margin-left: 10px;
+    opacity: 0;
+    transition: .5s;
+}
+.btn6:hover p i{
+    opacity: 1;
+    margin-left: 30px;
+    /* color: red; */
+}
+.div8{
+    height: auto;
+    width: 40%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.p12{
+    font-family: LouisGeorgeCafe, sans-serif;
+font-size: 18.266px;
+font-weight: 700;
+line-height: 21.266px;
+color: rgb(13, 13, 18);
+}
+.p13{
+    font-family: LouisGeorgeCafe, sans-serif;
+font-size: 18.266px;
+font-weight: 700;
+line-height: 37.266px;
+color: rgb(13, 13, 18);
+margin-left: 280px;
+margin-top: 20px;
+
+}
+
+
+
+.main44{
+        height: 100vh;
+        width: 100%;
+        background-color: rgb(255,255,255);
+        padding: 1px;
+    }
+    .p14{
+
+        font-family:  LouisGeorgeCafe, sans-serif;
+        font-size: 49px;
+        font-weight: 500;
+        line-height: 49px;
+        color: black;
+        margin-left: 9%;
+        margin-top: 20px;
+
+
+    }
+    .child11{
+        height: 275px;
+        width: 90%;
+        /* border: 1px solid; */
+        margin: 30px 5%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* overflow: hidden; */
+    }
+    .child12{
+        height: 100%;
+        width: 25%;
+        border: 1px solid darkgray;
+        overflow: hidden;
+        position: relative;
+        transition: .5s linear;
+        
+        
+        
+    }
+    .child12:hover{
+        
+        transform: translateY(-4%);
+    }
+    #image7{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transition: .7s;
+        
+    }
+    .child12:hover #image7{
+        transform: scale(1.2);
+
+
+    }
+    .div9{
+        height: 100%;
+        width: 100%;
+        /* position: relative; */
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.49);
+        /* z-index: 100; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /* align-items: center; */
+        
+    }
+    .p15{
+        font-family: HKGrotesk, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        color: rgb(174, 174, 174);
+        margin-left: 5%;
+        transition: .5s;
+        cursor: pointer;
+        position: relative;
+        width: max-content;
+        z-index: 100;
+    }
+    .child12:hover .p15{
+        color: orangered;
+        font-weight: 600;
+    }
+    .color1{
+        height: 2px;
+        width: 0%;
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: .5s;
+    }
+    .p15:hover .color1{
+        width: 100%;
+        background-color: white;
+    }
+    .p16{
+        font-family: LouisGeorgeCafe, sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 28px;
+        color: black;
+        margin-left: 5%;
+        z-index: 100;
+        /* width: max-content; */
+        transition: color .5s;
+
+
+    }
+    .child12:hover .p16{
+        color: white;
+    }
+    .p17{
+        font-family: HKGrotesk, sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 21px;
+        color: rgb(174, 174, 174);
+        margin-left: 5%;
+        transition: .5s;
+        z-index: 100;
+        width: max-content;
+
+
+    }
+    .child12:hover .p17{
+        color: white;
+
+    }
+    .div10{
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        transition: .5s;
+
+    }
+    .child12:hover .div10{
+        opacity: 0;
+    }
+    .d7{
+        width: 5%;
+        margin-left: 9%;
+    }
+
+
+    .main11{
+        height: 90vh;
+        width: 100%;
+        /* border: 2px solid; */
+        background-image: url(./footer_bg.png);
+        background-position: center;
+        background-size: cover;
+        padding: 1px;
+    }
+    .p18{
+        text-align: center;
+        color: white;
+        margin-top: 250px;
+        font-size: 18px;
+        font-family: LouisGeorgeCafe, sans-serif;
+        font-weight: 600;
+
+    }
+    .p19{
+        font-family: LouisGeorgeCafe, sans-serif;
+        font-size: 49px;
+        font-weight: 600;
+        line-height: 49px;
+        color: white;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .btn8{
+        height: 60px;
+        width: 220px;
+        border: 1px solid white;
+        border-radius: 5px;
+        background-color: transparent;
+        cursor: pointer;
+        color: white;
+        font-weight: 600;
+        font-size: large;
+        overflow: hidden;
+        transition: .5s;
+        margin: 50px 42.5%;
+
+    }
+    .btn8:hover{
+        background-color: white;
+        border: 1px solid;
+    }
+    .p20{
+        margin-left: 50px;
+        white-space: nowrap;
+        transition: .5s;
+    }
+    .btn8:hover .p20{
+        margin-left: 0;
+        color: black;
+    }
+    #icon0{
+        margin-left: 70px;
+        transition: .5s;
+        color: black;
+    }
+    .p21{
+        margin: 20px 10%;
+        font-size: 18px;
+        color: white;
+        width: max-content;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .iconss{
+        height: 60px;
+        width: 10%;
+        /* border: 1px solid; */
+        margin-left: 80%;
+        margin-top: -50px;
+    }
+    .fa-brands{
+        color: white;
+        font-size: larger;
+        text-align: center;
+        margin-left: 15px;
+        margin-top: 0px;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+
+
+</style>
+<body>
+
+    <div class="main0">
+        <div class="main00">
+
+            <div class="main1">
+    
+                <div class="logo">
+                    <img id="image1" src="./logo-shortcut-inverse.png" alt="">
+                </div>
+                <div class="child1">
+                    <div class="div1">
+                    </div>
+                    <p class="p1">Hello, I am Helen Smith</p>
+                    <p class="p2 p41">D</p>
+                    <p class="p2 p42">e</p>
+                    <p class="p2 p43">s</p>
+                    <p class="p2 p44">i</p>
+                    <p class="p2 p45">g</p>
+                    <p class="p2 p46">n</p>
+                    <p class="p2 p47">e</p>
+                    <p class="p2 p48">r,</p> <br>
+        
+                    <p class="p2 p50">A</p>
+                    <p class="p2 p51">r</p>
+                    <p class="p2 p52">t &nbsp;</p>
+                    <p class="p2 p53">D</p>
+                    <p class="p2 p54">i</p>
+                    <p class="p2 p55">r</p>
+        
+                    <p class="p2 p57">e</p>
+                    <p class="p2 p58">c</p>
+                    <p class="p2 p59">t</p>
+                    <p class="p2 p60">o</p>
+                    <p class="p2 p61">r,</p> <br>
+        
+                    <p class="p2 p63">D</p>
+                    <p class="p2 p64">r</p>
+                    <p class="p2 p65">e</p>
+                    <p class="p2 p66">a</p>
+                    <p class="p2 p67">m</p>
+                    <p class="p2 p68">e</p>
+                    <p class="p2 p69">r.</p>
+                </div>
+                <img id="image2" src="./clicker-black.png" alt="">
+                <ul class="ul1">
+                    <li class="li1">Facebook
+                        <div class="div4"></div>
+                    </li>
+                    <li class="li1">Twitter
+                        <div class="div4"></div>
+                    </li>
+                    <li class="li1">Behance
+                        <div class="div4"></div>
+                    </li>
+                    <li class="li1">Dribble
+                        <div class="div4"></div>
+                    </li>
+                </ul>
+    
+    
+            </div>
+            <div class="main3">
+                <img id="image3" src="./redhair-girl-bg-copyright.jpg" alt="">
+                    <img id="image4" src="./glasses.png" alt="">
+                    <div class="div3">
+                        <div class="icon1">
+                             <i id="icon1" class="fa-solid fa-bars"></i>
+                        </div>
+                        <div class="icon1 i1">
+                            <i id="icon1" class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+        <!-- <div class="main1"> -->
+            <!-- <div class="child1"></div> -->
+            
+            <!-- <video src="./decoration-shape-2.png" loop autoplay controls></video> -->
+
+
+
+    </div>
+    <div class="main4">
+        <div class="div5"></div>
+        <p class="p3">Hello</p>
+        <p class="p4">I design and build <br>
+            ultimate things.</p>
+        <p class="p5">I love graphic design and photography and have been working on my portfolio since 2011. You <br> can download my resume in order to learn the details of my professional life as a designer and <br> photographer. Contact me and we will discuss your projects!</p>
+        <button class="btn1"> <i id="icon2" class="fa-solid fa-circle-arrow-down"></i> <p class="p6">Download Resume.pdf</p> </button>
+    </div>
+<!-- <div class="btns">
+    <button>button</button>
+</div> -->
+    <div class="main5">
+        <div class="div6"></div>
+        <p class="p7">
+            Creative Stuff</p>
+        <div class="main6">
+
+            <div class="child2">
+                <img src="./port-3-copyright-750x889.jpg" alt="">
+                <button >My Projects </button>
+                <button >Colors & Styles <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+
+
+
+            <div class="child2 ch2">
+                <img src="./port-4-copyright-750x736.jpg" alt="">
+                <button >My Projects </button>
+                <button >Brending Ideas <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+
+
+            <div class="child2 ch2">
+                <img src="./port-5-copyright-750x736.jpg" alt="">
+                <button >My Projects </button>
+                <button >Summer Vibes <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+
+
+
+            <div class="child2">
+                <img src="./port-7-copyright-750x889.jpg" alt="">
+                <button >My Projects </button>
+                <button >Study In Peace <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+
+        </div>
+        <button class="btn5"><p> View Portfolio <i class="fa-solid fa-arrow-right-long"></i> </p> </button>
+    </div>
+    <div class="main7">
+        <div class="main8">
+
+
+            <div class="div7"></div>
+            <p class="p9">My Achievements</p>
+            <p class="p10">Personal Awards</p>
+            <p class="p11">I am extremely proud and honored to have received these <br> amazing awards. They mean a lot to me as a professional <br> designer.</p>
+            <button class="btn6"><p> Experience <i class="fa-solid fa-arrow-right-long"></i> </p> </button>
+
+
+        </div>
+
+        <div class="div8">
+            <p class="p12">2017</p>
+            <p class="p13">
+                Awwwards Site Of The Day <br>
+                Awwwards Honorable mention <br>
+                Website of the day</p>
+
+            <p class="p12">2018</p>
+            <p class="p13">
+                Website of the day <br>
+                Awwwards Site Of The Day 
+                
+                </p> 
+            
+
+
+        </div>
+
+    </div>
+
+
+
+    <div class="main44">
+        <div class="div7 d7"></div>
+        <p class="p7">Latest Ariticles</p>
+        <p class="p14">Check our latest <br>
+            blog posts</p>
+            <div class="child11">
+                <div class="child12">
+                    <img id="image7" src="./post-5-copyright-740x580.jpg" alt="">
+                    <div class="div9">
+                        <p class="p15">News
+                            <span class="color1"></span>
+                        </p>
+                        <p class="p16">World's most famous app developers and designers </p>
+                        <p class="p17">April 9, 2019</p>
+
+                        <div class="div10"></div>
+                    </div>
+
+
+                    
+                </div>
+                <div class="child12">
+                    <img id="image7" src="./post-6-copyright-740x580.jpg" alt="">
+                    <div class="div9">
+                        <p class="p15">News
+                            <span class="color1"></span>
+                        </p>
+                        <p class="p16">World's most famous app developers and designers </p>
+                        <p class="p17">April 9, 2019</p>
+
+                        <div class="div10"></div>
+                    </div>
+
+
+                    
+
+
+                </div>
+                <div class="child12">
+                    <img id="image7" src="./post-4-copyright-740x580.jpg" alt="">
+                    <div class="div9">
+                        <p class="p15">News
+                            <span class="color1"></span>
+                        </p>
+                        <p class="p16">World's most famous app developers and designers </p>
+                        <p class="p17">April 9, 2019</p>
+
+                    </div>
+                    <div class="div10"></div>
+
+                </div>
+            </div>
+    </div>
+
+
+    <div class="main11">
+        <p class="p18">Get In Touch</p>
+        <p class="p19">Let’s start a project</p>
+        <button class="btn8"><p class="p20"> Get In Touch <i id="icon0" class="fa-solid fa-arrow-right-long"></i> </p></button>
+
+        <hr style="height: 1px; width: 80%; background-color: gray; margin: auto; margin-top: 20px;">
+        <p class="p21">AxiomThemes © 2022. All Rights Reserved.</p>
+        <div class="iconss">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-dribbble"></i>
+            <i class="fa-brands fa-behance"></i>
+        </div>
+    </div>
+
+</body>
+</html>

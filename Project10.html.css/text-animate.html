@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main {
+
+            width: 10%;
+            height: 30px;
+            border: 1px solid blue;
+            position: relative;
+            margin: auto;
+            margin-top: 10%;
+            overflow: hidden;
+
+        }
+
+        ul {
+            list-style: none;
+            font-size: 30px;
+            position: absolute;
+            width: 100%;
+            height: max-content;
+            /* border: 3px solid red; */
+
+
+            animation-name: slide;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        li {}
+
+
+        @keyframes slide {
+
+            0% {
+                top: 0px;
+
+            }
+
+            21% {
+                top: 0px;
+            }
+
+            26% {
+                top: -30px;
+            }
+
+            46% {
+                top: -30px;
+            }
+
+            51% {
+                top: -65px;
+            }
+
+            71% {
+                top: -65px;
+            }
+
+            76% {
+                top: -100px;
+            }
+
+            96% {
+                top: -100px;
+            }
+
+            100% {
+                top: 0px;
+            }
+
+
+
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+
+        </ul>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

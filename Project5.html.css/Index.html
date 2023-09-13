@@ -1,0 +1,2882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .main {
+            width: 100%;
+            height: 110vh;
+            background-image: url(./Images/consulting2.jpg);
+            background-size: cover;
+            padding: 1px;
+            box-sizing: border-box;
+            background-position: center center;
+        }
+
+
+        .navBar {
+            width: 100%;
+            height: 100px;
+            /* border: 1px solid white; */
+
+
+        }
+
+        .mainLogo {
+            width: 165px;
+            height: 40px;
+            /* border: 1px solid red; */
+            margin-left: 72px;
+            margin-top: 35px;
+
+
+
+        }
+
+        .navMain {
+            margin-left: 455px;
+            margin-top: -31px;
+
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .navlist {
+            list-style: none;
+            margin-left: 35px;
+            float: left;
+        }
+
+        /* ===dropdown menu start=== */
+
+
+        .homedrop {
+            position: relative;
+            z-index: 3;
+        }
+
+        .homedropmenu {
+            width: 1050px;
+            height: 400px;
+            background-color: white;
+            position: absolute;
+            left: -390px;
+            top: 70px;
+            visibility: hidden;
+            transition: all 0.20s;
+        }
+
+        .homedrop:hover .homedropmenu {
+            visibility: visible;
+            top: 40px;
+
+        }
+
+        /* ===dropdown menu end=== */
+        /* ===1st Li in dropdown start=== */
+
+        .List1Main {
+            list-style: none;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 27.2px;
+            color: rgb(85, 85, 85);
+            margin-left: 65px;
+            margin-top: 40px;
+        }
+
+        .list1a {
+            margin-top: 8px;
+        }
+
+
+
+        /* ===1st Li in dropdown end=== */
+        /* ===2nd li list in dropdown start=== */
+
+        .list1row2Main {
+            list-style: none;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 27.2px;
+            color: rgb(85, 85, 85);
+            margin-left: 300px;
+            margin-top: -317px;
+        }
+
+        .list1arow2 {
+            margin-top: 8px;
+        }
+
+        /* ===2nd li list in dropdown end=== */
+        /* ===3rd li list in dropdown start=== */
+
+        .list1row3Main {
+            list-style: none;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 27.2px;
+            color: rgb(85, 85, 85);
+            margin-left: 540px;
+            margin-top: -317px;
+        }
+
+        .list1arow3 {
+            margin-top: 8px;
+        }
+
+
+        /* ===3rd li list in dropdown end=== */
+        /* ===4th li list in dropdown start=== */
+
+        .list1row4Main {
+            list-style: none;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 27.2px;
+            color: rgb(85, 85, 85);
+            margin-left: 800px;
+            margin-top: -317px;
+        }
+
+        .list1arow4 {
+            margin-top: 8px;
+        }
+
+
+        /* ===4th li list in dropdown end=== */
+
+
+
+        /* ===dropdown menu final end with li=== */
+
+        /* ===dropdown start services=== */
+
+        .homedrop1 {
+            position: relative;
+            z-index: 3;
+        }
+
+        .homedropdownmenu1 {
+            position: absolute;
+            width: 280px;
+            height: 150px;
+            background-color: white;
+            top: 70px;
+            left: -30px;
+            visibility: hidden;
+            transition: all 0.20s;
+
+
+
+        }
+
+        .homedrop1:hover .homedropdownmenu1 {
+            visibility: visible;
+            top: 40px;
+
+        }
+
+        /* ===dropdown services end=== */
+        /* ===list li services dropdown=== */
+
+        .list2main {
+            position: absolute;
+            list-style: none;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 27.2px;
+            color: rgb(85, 85, 85);
+            top: 9px;
+
+
+        }
+
+        .list2 {
+            margin-top: 5px;
+            margin-left: 20px;
+
+        }
+
+        /* ===list dropdown services end=== */
+        /* ===dropdown services end=== */
+
+        /* ===dropdown start Pages=== */
+
+        .dropDownPageMain {
+            position: relative;
+            z-index: 3;
+        }
+
+        .dropDownMenuPage {
+            position: absolute;
+            width: 1050px;
+            height: 400px;
+            background-color: white;
+            top: 70px;
+            left: -660px;
+            visibility: hidden;
+            transition: all 0.20s;
+        }
+
+        .dropDownPageMain:hover .dropDownMenuPage {
+
+            visibility: visible;
+            top: 40px;
+
+
+        }
+
+
+
+        /* ===list dropdown Pages end=== */
+        /* ===list li pages dropdown=== */
+
+        /* used same as home  */
+
+        /* ===list pages services end=== */
+        /* ===list dropdown Pages final end=== */
+
+
+        /* ===dropdown start Element=== */
+
+        .homedropEle {
+            position: relative;
+            z-index: 3;
+
+        }
+
+        .homedropmenuEle {
+            position: absolute;
+            width: 1050px;
+            height: 400px;
+            background-color: white;
+            top: 70px;
+            left: -740px;
+            visibility: hidden;
+            transition: all 0.20s;
+        }
+
+        .homedropEle:hover .homedropmenuEle {
+            top: 40px;
+            visibility: visible;
+
+        }
+
+        /* ===list dropdown Element end=== */
+        /* ===dropdown start BLOG=== */
+
+        .dropMainBlog {
+            position: relative;
+            z-index: 3;
+
+        }
+
+        .dropMenuBlog {
+            position: absolute;
+            width: 250px;
+            height: 120px;
+            background-color: white;
+            top: 70px;
+            left: -20px;
+            visibility: hidden;
+            transition: all 0.20s;
+
+
+        }
+
+        .dropMainBlog:hover .dropMenuBlog {
+            visibility: visible;
+            top: 40px;
+
+        }
+
+
+        .mainblogli {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+
+        }
+
+
+
+        .blogli {
+
+            list-style: none;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 27.2px;
+            color: rgb(85, 85, 85);
+            margin-top: 5px;
+
+        }
+
+        /* ===list dropdown BLOG end=== */
+
+
+        .navBlueBox {
+            position: relative;
+            left: 20px;
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+            background-color: #0B51C5;
+            border-radius: 5px;
+            float: left;
+            margin-top: -5px;
+
+        }
+
+        .mainh1 {
+            text-align: center;
+            color: white;
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 33.8px;
+            letter-spacing: 1.5px;
+            margin-top: 150px;
+
+
+        }
+
+
+        /* container slide width main container relative */
+        /* overflow hidden */
+
+        /* white-space no wrap  */
+        .mainHead {
+            /* border: 2px solid white; */
+            /* background-color: yellow; */
+
+            height: 100px;
+            width: 550px;
+            /* margin-top: 30px;
+            margin-left: 123px; */
+            position: relative;
+            margin: 30px auto;
+            /* margin: x y; */
+            animation-name: nameMain_Width_Only;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            white-space: nowrap;
+            overflow: hidden;
+            animation-duration: 9s;
+            /* background-color: red; */
+            border-right: 5px solid yellow;
+
+        }
+
+
+
+        @keyframes nameMain_Width_Only {
+
+            /* full width 1  */
+
+            /* *************************** */
+            /* ---TEXT 1 start --- */
+            0% {
+                width: 0px;
+
+            }
+
+            11% {
+                width: 550px;
+            }
+
+            /* empty  */
+
+            22% {
+                width: 550px;
+            }
+
+            /* full width 2 */
+
+            33% {
+                width: 0px;
+            }
+
+            /* ---TEXT 1 end --- */
+            /* *************************** */
+            /* ---TEXT 2 start --- */
+
+            34% {
+                width: 0px;
+            }
+
+            45% {
+                width: 865px;
+            }
+
+            /* empty  */
+
+            56% {
+                width: 865px;
+            }
+
+            /* full width 3 */
+
+
+            67% {
+                width: 0px;
+            }
+
+            /* ---TEXT 2 end --- */
+            /* *************************** */
+
+            /* ---TEXT 3 start --- */
+
+            68% {
+                width: 0px;
+            }
+
+            78% {
+                width: 670px;
+            }
+
+            /* empty  */
+
+            89% {
+                width: 670px;
+            }
+
+            /* full width 4 */
+
+            100% {
+                width: 0px;
+
+            }
+
+            /* ---TEXT 3 end --- */
+            /* *************************** */
+        }
+
+
+        /* animation styling all absolute  */
+
+        .animation {
+            position: absolute;
+            color: white;
+            font-size: 55px;
+            border: 2px solid hotpink;
+            top: 50%;
+            left: 0%;
+            transform: translate(0%, -50%);
+            /* transform: translate(x, y); */
+            line-height: 84.5px;
+            white-space: nowrap;
+            /* margin-top: 80px; */
+            /* border: 3px solid red; */
+            opacity: 0;
+        }
+
+
+        .animation1 {
+            opacity: 0;
+            animation-name: name1;
+            animation-timing-function: linear;
+            animation-duration: 9s;
+            animation-iteration-count: infinite;
+            /* border: 3px solid red; */
+        }
+
+
+        @keyframes name1 {
+
+            /* full width 1  */
+            /* *************************** */
+            /* ---TEXT 1 start --- */
+
+            0% {
+                opacity: 1;
+
+            }
+
+            11% {
+                opacity: 1;
+
+            }
+
+            /* empty  */
+
+            22% {
+                opacity: 1;
+
+            }
+
+            /* full width 2 */
+
+
+
+            33% {
+                opacity: 1;
+
+            }
+
+            /* ---TEXT 1 end --- */
+            /* *************************** */
+            /* ---TEXT 2 start --- */
+
+
+            34% {
+                opacity: 0;
+            }
+
+            45% {
+                opacity: 0;
+
+            }
+
+            /* empty  */
+
+            56% {
+                opacity: 0;
+
+            }
+
+            /* full width 3 */
+
+
+
+            67% {
+                opacity: 0;
+
+            }
+
+            /* ---TEXT 2 end --- */
+            /* *************************** */
+
+            /* ---TEXT 3 start --- */
+
+            68% {
+                opacity: 0;
+            }
+
+            78% {
+                opacity: 0;
+
+            }
+
+            /* empty  */
+
+            89% {
+                opacity: 0;
+
+            }
+
+            /* full width 4 */
+
+            100% {
+                opacity: 0;
+
+            }
+
+
+            /* ---TEXT 3 end --- */
+            /* *************************** */
+        }
+
+
+
+
+        .animation2 {
+            animation-name: name2;
+            animation-duration: 9s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes name2 {
+
+            /* full width 1  */
+
+            /* *************************** */
+            /* ---TEXT 1 start --- */
+
+            0% {
+                opacity: 0;
+
+            }
+
+            11% {
+                opacity: 0;
+
+            }
+
+            /* empty  */
+
+            22% {
+                opacity: 0;
+
+            }
+
+            /* full width 2 */
+
+            33% {
+                opacity: 0;
+
+            }
+
+            /* ---TEXT 1 end --- */
+            /* *************************** */
+            /* ---TEXT 2 start --- */
+
+            34% {
+                opacity: 1;
+            }
+
+            45% {
+                opacity: 1;
+
+            }
+
+            /* empty  */
+
+            56% {
+                opacity: 1;
+
+            }
+
+            /* full width 3 */
+
+            67% {
+                opacity: 1;
+
+            }
+
+            /* ---TEXT 2 end --- */
+            /* *************************** */
+            /* ---TEXT 3 start --- */
+
+            68% {
+                opacity: 0;
+            }
+
+            78% {
+                opacity: 0;
+
+            }
+
+            /* empty  */
+
+            89% {
+                opacity: 0;
+
+            }
+
+            /* full width 4 */
+
+            100% {
+                opacity: 0;
+
+            }
+
+            /* ---TEXT 3 end --- */
+            /* *************************** */
+
+        }
+
+        .animation3 {
+            animation-name: name3;
+            animation-duration: 9s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes name3 {
+
+            /* full width 1  */
+
+            /* *************************** */
+            /* ---TEXT 1 start --- */
+
+            0% {
+                opacity: 0;
+
+            }
+
+            11% {
+                opacity: 0;
+
+            }
+
+            /* empty  */
+
+            22% {
+                opacity: 0;
+
+            }
+
+            /* full width 2 */
+
+            33% {
+                opacity: 0;
+
+            }
+
+
+            /* ---TEXT 1 end --- */
+            /* *************************** */
+            /* ---TEXT 2 start --- */
+
+            34% {
+                opacity: 0;
+            }
+
+            45% {
+                opacity: 0;
+
+            }
+
+            /* empty  */
+
+            56% {
+                opacity: 0;
+
+            }
+
+            /* full width 3 */
+
+            67% {
+                opacity: 0;
+
+            }
+
+            /* ---TEXT 2 end --- */
+            /* *************************** */
+            /* ---TEXT 3 start --- */
+
+            68% {
+                opacity: 1;
+            }
+
+            78% {
+                opacity: 1;
+
+            }
+
+            /* empty  */
+
+            89% {
+                opacity: 1;
+
+            }
+
+            /* full width 4 */
+
+            100% {
+                opacity: 1;
+
+            }
+
+            /* ---TEXT 3 end --- */
+            /* *************************** */
+
+
+        }
+
+        .headp1 {
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 27px;
+            margin-top: 130px;
+
+            /* border: 2px solid yellow; */
+
+
+        }
+
+        .buthead {
+            position: relative;
+            left: 450px;
+            margin-left: 15px;
+            margin-top: 25px;
+            width: 160px;
+            height: 52px;
+            color: white;
+            background-color: #0B51C5;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+
+        }
+
+        /* ===3 boxes=== */
+
+        .main3box {
+
+            width: 100%;
+            height: 500px;
+            /* border: 2px solid red; */
+
+        }
+
+
+        .box3 {
+            width: 363px;
+            height: 442px;
+            border: 1px solid black;
+            float: left;
+            border-radius: 10px;
+            margin-top: 30px;
+            margin-left: 42px;
+        }
+
+        .box3Blue {
+            width: 363px;
+            height: 442px;
+            border: 1px solid black;
+            float: left;
+            border-radius: 10px;
+            margin-top: 30px;
+            margin-left: 42px;
+            background-color: #0B51C5;
+        }
+
+        .boxCircle {
+            width: 132px;
+            height: 132px;
+            border-radius: 50%;
+            border: 0.5px solid black;
+            margin-left: 117px;
+            margin-top: 50px;
+
+        }
+
+        .boxCircleBlue {
+            width: 132px;
+            height: 132px;
+            border-radius: 50%;
+
+            margin-left: 117px;
+            margin-top: 50px;
+            background-color: white;
+
+        }
+
+        .boxhead {
+            font-size: 23px;
+            font-weight: 500;
+            line-height: 29.9px;
+            text-align: center;
+            margin-top: 35px;
+        }
+
+
+        .boxheadblue {
+            font-size: 23px;
+            font-weight: 500;
+            line-height: 29.9px;
+            text-align: center;
+            margin-top: 35px;
+            color: white;
+        }
+
+
+        .boxPara {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-top: 15px;
+
+        }
+
+
+        .boxParablue {
+            text-align: center;
+            font-size: 16px;
+
+            line-height: 24px;
+            margin-top: 15px;
+            color: white;
+
+        }
+
+        .boxread {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+            color: #0B51C5;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .boxreadblue {
+
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+            color: white;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        /* ===25 years experience=== */
+        .year25Main {
+            width: 100%;
+            height: 93vh;
+            /* border: 1px solid red; */
+
+        }
+
+        .yearChildL {
+            width: 49.6%;
+            height: 100%;
+            /* border: 2px solid blue; */
+            float: left;
+        }
+
+        .yearChildR {
+            width: 49.6%;
+            height: 100%;
+            /* border: 2px solid blue; */
+            float: left;
+        }
+
+        .year25pic {
+            margin-left: 33px;
+            /* border: 2px solid red; */
+
+        }
+
+        .font25 {
+            width: 190px;
+            height: 135px;
+            /* border: 1px solid red; */
+            font-size: 136px;
+            font-weight: 600;
+
+            line-height: 136px;
+            color: #0B51C5;
+            text-align: center;
+            margin-top: 10px;
+            float: left;
+
+
+        }
+
+        .font25title {
+            width: 380px;
+            height: 135px;
+            /* border: 1px solid yellowgreen; */
+            float: left;
+            margin-top: 10px;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 34px;
+            padding-top: 17px;
+            padding-left: 10px;
+            box-sizing: border-box;
+            word-spacing: 2px;
+            letter-spacing: 1.2px;
+
+        }
+
+        .font25Left {
+            /* border: 2px solid red; */
+            width: 550px;
+            height: 40%;
+            margin-top: 155px;
+            font-size: 16.5px;
+            font-weight: 400;
+            line-height: 27px;
+            margin-left: 25px;
+            color: rgb(97, 97, 97);
+
+        }
+
+        .button25 {
+            width: 185px;
+            height: 50px;
+            border: none;
+            background-color: #0B51C5;
+            color: white;
+            font-size: 17px;
+            letter-spacing: 1px;
+            border-radius: 5px;
+            margin-left: 26px;
+            margin-top: 98px;
+        }
+
+        /* ===servgreytextheader=== */
+
+        .maingrey {
+            width: 100%;
+            height: 1200px;
+            background-color: #353636;
+            /* border: 2px solid red; */
+            padding: 1px;
+            box-sizing: border-box;
+
+        }
+
+        .greyhead {
+            width: 100%;
+            height: 225px;
+            /* border: 1px solid green; */
+
+        }
+
+        .greyh1 {
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20.8px;
+            letter-spacing: 2px;
+            margin-top: 70px;
+
+
+        }
+
+
+        .greyh2 {
+            color: white;
+            text-align: center;
+            font-size: 39px;
+            font-weight: 600;
+            line-height: 46.8px;
+            letter-spacing: 1px;
+            margin-top: 20px;
+
+
+        }
+
+        .greyline {
+            width: 100px;
+            height: 6px;
+            border: none;
+            background-color: #9CB2D7;
+            margin-left: 585px;
+            border-radius: 25px;
+            margin-top: 25px;
+
+
+        }
+
+        .greyblueball {
+            width: 12px;
+            height: 12px;
+            background-color: #0B51C5;
+            border: none;
+            border-radius: 50px;
+            margin-left: 660px;
+            margin-top: -9px;
+
+
+        }
+
+        /* ===servgreytextheader end=== */
+        /* ===servgreyboxes=== */
+
+        .greyboxesmain {
+            width: 100%;
+            height: 750px;
+            /* border: 1px solid red; */
+
+        }
+
+        .greyboxchild {
+            width: 365px;
+            height: 300px;
+            /* border: 1px solid white; */
+            border-radius: 10px;
+            float: left;
+            margin-left: 40px;
+            margin-top: 40px;
+            box-shadow: 0.1px 0.1px 100px 0.1px #484848;
+
+
+        }
+
+        .greyicon {
+            width: 50px;
+            height: 50px;
+            border: 1px solid white;
+            border-radius: 10px;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+
+        .greyhead11 {
+            color: white;
+            margin-top: 25px;
+            margin-left: 30px;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 28.6px;
+
+        }
+
+
+        .greypara11 {
+            color: white;
+            margin-top: 15px;
+            margin-left: 30px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+
+        }
+
+        .greyread {
+            color: white;
+            margin-top: 25px;
+            margin-left: 30px;
+            font-weight: 700;
+
+
+        }
+
+        /* ===greyboxes end=== */
+
+        /* ===blue number === */
+
+        .bluebox {
+            width: 1150px;
+            height: 240px;
+            border: 1px solid #0B51C5;
+            border-radius: 10px;
+            margin-left: 55px;
+            margin-top: 30px;
+            background-image: url(./Images/service-bg.jpg);
+        }
+
+        .boxblu {
+            /* border: 1px solid black; */
+            width: 275px;
+            height: 235px;
+            float: left;
+            margin-left: 8px;
+            margin-top: 5px;
+
+        }
+
+        .bluhead {
+            text-align: center;
+            margin-top: 70px;
+            font-size: 60px;
+            font-weight: 400;
+            line-height: 52px;
+            color: white;
+
+
+
+        }
+
+        .blupara {
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 26px;
+            letter-spacing: 2px;
+
+        }
+
+
+        .lineblu {
+            height: 115px;
+            width: 1.5px;
+            background-color: white;
+            border: none;
+            margin-left: 870px;
+            margin-top: -115px;
+
+
+
+
+        }
+
+        /* ===case study=== */
+
+        .caseMain {
+            width: 100%;
+            height: 250px;
+            /* border: 1px solid red; */
+            margin-top: 150px;
+            padding: 1px;
+            box-sizing: border-box;
+
+
+
+        }
+
+        .casetitle {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20.8px;
+            color: rgb(12, 90, 219);
+            letter-spacing: 4px;
+            margin-left: 60px;
+            margin-top: 70px;
+
+        }
+
+        .casehead {
+            font-size: 39px;
+            font-weight: 800;
+            line-height: 46.8px;
+            color: rgb(35, 35, 35);
+            margin-left: 58px;
+            margin-top: 10px;
+
+
+        }
+
+        .caseline {
+            width: 100px;
+            height: 6px;
+            border: none;
+            background-color: #9CB2D7;
+            margin-left: 60px;
+            border-radius: 25px;
+            margin-top: 25px;
+
+
+        }
+
+        .caseblueball {
+            width: 12px;
+            height: 12px;
+            background-color: #0B51C5;
+            border: none;
+            border-radius: 50px;
+            margin-left: 80px;
+            margin-top: -9px;
+
+
+        }
+
+        .casebut {
+            position: relative;
+            left: 1000px;
+            top: -53px;
+            width: 185px;
+            height: 50px;
+            background-color: #0B51C5;
+            color: white;
+            font-size: 16px;
+            letter-spacing: 1px;
+            border: none;
+            border-radius: 5px;
+
+        }
+
+        /* ===pics4=== */
+
+        .pics4 {
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 410px;
+
+
+
+
+        }
+
+        .pic4child {
+            width: 315.8px;
+            height: 410px;
+            /* border: 1px solid; */
+            float: left;
+
+            /* margin-left: 0.8px; */
+
+
+
+        }
+
+        .pic4style {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+        }
+
+
+        /* ===process=== */
+
+        .promain {
+            width: 100%;
+            height: 650px;
+            /* border: 1px solid red; */
+
+
+        }
+
+        .prop {
+            text-align: center;
+            color: #0B51C5;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20.8px;
+            letter-spacing: 4px;
+            margin-top: 70px;
+        }
+
+        .proh {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 39px;
+            font-weight: 400;
+            line-height: 46.8px;
+            letter-spacing: 1px;
+
+
+        }
+
+        .proline {
+            width: 100px;
+            height: 6px;
+            border: none;
+            background-color: #9CB2D7;
+            margin-left: 585px;
+            border-radius: 25px;
+            margin-top: 25px;
+
+
+        }
+
+        .problueball {
+            width: 12px;
+            height: 12px;
+            background-color: #0B51C5;
+            border: none;
+            border-radius: 50px;
+            margin-left: 600px;
+            margin-top: -9px;
+
+
+        }
+
+        .probox3 {
+            width: 100%;
+            height: 400px;
+            margin-top: 50px;
+            /* border: 1px solid yellowgreen; */
+
+
+        }
+
+        .proboxchild {
+            width: 322px;
+            height: 390px;
+            /* border: 1px solid green; */
+            float: left;
+            margin-top: 4px;
+            margin-left: 70px;
+
+        }
+
+        .procirc {
+            width: 90px;
+            height: 90px;
+            border-radius: 50px;
+
+            margin-left: 35%;
+            margin-top: 50px;
+            background-color: #0B51C5;
+            padding: 1px;
+            box-sizing: border-box;
+
+
+        }
+
+        .pcirc {
+            font-size: 30px;
+            margin-left: 36px;
+            margin-top: 26px;
+            color: white;
+
+        }
+
+        .procirchead {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 26px;
+            margin-top: 30px;
+            letter-spacing: 1px;
+
+
+
+        }
+
+        .procircpara {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            color: rgb(97, 97, 97);
+
+        }
+
+        /* ===pic background what say=== */
+
+        .backMain {
+            width: 100%;
+            height: 750px;
+            margin-top: -80px;
+            /* border: 2px solid purple; */
+            background-image: url(./Images/123.JPG);
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+            padding: 1px;
+            box-sizing: border-box;
+
+        }
+
+        .pichead {
+            text-align: center;
+            color: white;
+            font-size: 16px;
+            letter-spacing: 3px;
+            line-height: 20.8px;
+            margin-top: 80px;
+
+        }
+
+        .pichead1 {
+            text-align: center;
+            color: white;
+            letter-spacing: 2px;
+            font-size: 40px;
+            line-height: 46.8px;
+            margin-top: 20px;
+        }
+
+        .back3boxmain {
+            width: 100%;
+            height: 280px;
+            /* border: 2px solid red; */
+            margin-top: 80px;
+
+
+        }
+
+        .backboxchild {
+            width: 350px;
+            height: 225px;
+            background-color: white;
+            border-radius: 5px;
+            float: left;
+            margin-left: 52px;
+            margin-top: 25px;
+
+        }
+
+        .backpbox {
+            margin-top: 47px;
+            margin-left: 22px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgb(97, 97, 97);
+        }
+
+        .backbox2 {
+            width: 350px;
+            height: 100px;
+            /* border: 1px solid white; */
+            border-radius: 5px;
+            float: left;
+            margin-left: 52px;
+            margin-top: 45px;
+
+        }
+
+        .circ2 {
+            width: 90px;
+            height: 90px;
+
+
+
+
+
+        }
+
+        .circstyle {
+            border-radius: 50px;
+            margin-top: 5px;
+            border-radius: 50px;
+
+        }
+
+        .backname {
+            color: white;
+            margin-top: -70px;
+            margin-left: 110px;
+            font-size: 30px;
+
+
+
+
+        }
+
+        .backname2 {
+            color: white;
+            margin-left: 110px;
+        }
+
+        /* ====experience======== */
+
+        .expmain {
+            width: 100%;
+            height: 900px;
+            /* border: 1px solid red; */
+
+
+        }
+
+        .expchildL {
+            width: 49.5%;
+            height: 900px;
+            /* border: 1px solid yellowgreen; */
+            float: left;
+            margin-left: 2px;
+
+        }
+
+        .expimg {
+            margin-left: 50px;
+            margin-top: 117px;
+
+        }
+
+
+        .expchildR {
+            width: 49.5%;
+            height: 900px;
+            /* border: 1px solid yellowgreen; */
+            float: left;
+            margin-left: 2px;
+
+        }
+
+        .exptxt {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20.8px;
+            color: rgb(12, 90, 219);
+            letter-spacing: 4px;
+            margin-left: 40px;
+            margin-top: 130px;
+
+
+
+
+
+        }
+
+        .exphead {
+            font-size: 39px;
+
+            line-height: 46.8px;
+            color: rgb(35, 35, 35);
+            letter-spacing: 1px;
+            margin-left: 40px;
+            margin-top: 20px;
+
+
+        }
+
+        .expline {
+            width: 100px;
+            height: 6px;
+            border: none;
+            background-color: #9CB2D7;
+            margin-left: 40px;
+            border-radius: 25px;
+            margin-top: 25px;
+
+
+        }
+
+        .expblueball {
+            width: 12px;
+            height: 12px;
+            background-color: #0B51C5;
+            border: none;
+            border-radius: 50px;
+            margin-left: 70px;
+            margin-top: -9px;
+
+
+        }
+
+        .exppara1 {
+
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 27px;
+            color: rgb(97, 97, 97);
+            margin-left: 40px;
+            margin-top: 40px;
+
+        }
+
+        /* ====box1==== */
+
+        #box3 {
+            /* padding: 1px;
+        box-sizing: border-box; */
+            /* margin-top: -50px; */
+            margin-left: 20px;
+            width: 400px;
+            height: 200px;
+            /* border: 2px solid black; */
+            display: inline-block;
+
+        }
+
+        #box-line {
+            margin-top: 115px;
+            margin-left: 23px;
+            width: 435px;
+            height: 6px;
+            border-radius: 10px;
+            background-color: #0B51C5;
+
+        }
+
+
+        #box-line2 {
+            margin-top: 7px;
+            margin-left: 455px;
+            width: 90px;
+            height: 6px;
+            border-radius: 10px;
+            background-color: grey;
+
+        }
+
+        #box-box {
+            margin-top: -45px;
+            margin-left: 425px;
+            width: 62px;
+            height: 32px;
+            background-color: #0B51C5;
+            border-radius: 5px;
+
+        }
+
+
+
+        #box-para {
+            padding-top: 6px;
+            padding-left: 2px;
+            box-sizing: border-box;
+            margin-left: 14px;
+            color: white;
+
+        }
+
+        #box-icon {
+            margin-top: 20px;
+            margin-left: 23px;
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+        }
+
+        #box-txt {
+            color: black;
+            margin-left: 26px;
+            margin-top: -37px;
+            font-size: 18px;
+        }
+
+        /* ====box3a==== */
+
+        #box3a {
+            /* padding: 1px;
+        box-sizing: border-box; */
+            margin-top: -100px;
+            margin-left: 20px;
+            width: 400px;
+            /* height: 100px; */
+            /* border: 2px solid black; */
+            display: inline-block;
+
+        }
+
+        #box-linea {
+            margin-top: 115px;
+            margin-left: 23px;
+            width: 495px;
+            height: 6px;
+            border-radius: 10px;
+            background-color: #0B51C5;
+
+        }
+
+
+        #box-line2a {
+            margin-top: 7px;
+            margin-left: 475px;
+            width: 70px;
+            height: 6px;
+            border-radius: 10px;
+            background-color: grey;
+
+        }
+
+        #box-boxa {
+            margin-top: -45px;
+            margin-left: 445px;
+            width: 62px;
+            height: 32px;
+            background-color: #0B51C5;
+            border-radius: 5px;
+
+        }
+
+
+
+        #box-paraa {
+            padding-top: 6px;
+            padding-left: 2px;
+            box-sizing: border-box;
+            margin-left: 14px;
+            color: white;
+
+        }
+
+        #box-icona {
+            margin-top: 20px;
+            margin-left: 23px;
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+        }
+
+        #box-txta {
+            color: black;
+            margin-left: 26px;
+            margin-top: -37px;
+            font-size: 18px;
+        }
+
+
+        /* ===box 3b==== */
+
+        #box3b {
+            /* padding: 1px;
+        box-sizing: border-box; */
+            margin-top: 15px;
+            margin-left: 20px;
+            width: 400px;
+            /* height: 100px; */
+            /* border: 2px solid black; */
+            display: inline-block;
+
+        }
+
+        #box-lineb {
+            margin-top: 115px;
+            margin-left: 23px;
+            width: 385px;
+            height: 6px;
+            border-radius: 10px;
+            background-color: #0B51C5;
+
+        }
+
+
+        #box-line2b {
+            margin-top: 7px;
+            margin-left: 395px;
+            width: 151px;
+            height: 6px;
+            border-radius: 10px;
+            background-color: grey;
+
+        }
+
+        #box-boxb {
+            margin-top: -45px;
+            margin-left: 365px;
+            width: 62px;
+            height: 32px;
+            background-color: #0B51C5;
+            border-radius: 5px;
+
+        }
+
+
+
+        #box-parab {
+            padding-top: 6px;
+            padding-left: 2px;
+            box-sizing: border-box;
+            margin-left: 14px;
+            color: white;
+
+        }
+
+        #box-iconb {
+            margin-top: 20px;
+            margin-left: 23px;
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+        }
+
+        #box-txtb {
+            color: black;
+            margin-left: 26px;
+            margin-top: -37px;
+            font-size: 18px;
+        }
+
+        /* ===latest==== */
+
+        .latestMain {
+            width: 100%;
+            height: 855px;
+            background-color: #EDF4FC;
+            padding: 1px;
+            box-sizing: border-box;
+
+        }
+
+        .lattxt {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20.8px;
+            color: rgb(12, 90, 219);
+            letter-spacing: 4px;
+            margin-left: 70px;
+            margin-top: 100px;
+
+
+
+
+
+        }
+
+        .lathead {
+            font-size: 39px;
+
+            line-height: 46.8px;
+            color: rgb(35, 35, 35);
+            letter-spacing: 1px;
+            margin-left: 70px;
+            margin-top: 20px;
+
+
+        }
+
+        .latline {
+            width: 100px;
+            height: 6px;
+            border: none;
+            background-color: #9CB2D7;
+            margin-left: 70px;
+            border-radius: 25px;
+            margin-top: 25px;
+
+
+        }
+
+        .latblueball {
+            width: 12px;
+            height: 12px;
+            background-color: #0B51C5;
+            border: none;
+            border-radius: 50px;
+            margin-left: 90px;
+            margin-top: -9px;
+
+
+        }
+
+        .latbut {
+            position: relative;
+            width: 165px;
+            height: 50px;
+            background-color: #0B51C5;
+            color: white;
+            font-size: 16px;
+            word-spacing: 2px;
+            border: none;
+            border-radius: 5px;
+            margin-left: 1020px;
+            top: -78px;
+
+        }
+
+        .lat3box {
+            width: 100%;
+            height: 450px;
+            /* border: 2px solid red; */
+            margin-top: 30px;
+
+        }
+
+        .lat3boxchild {
+            width: 355px;
+            height: 405px;
+            border: 1px solid white;
+            float: left;
+            margin-left: 50px;
+            margin-top: 20px;
+            background-color: white;
+
+
+        }
+
+        .latpic {
+            width: 100%;
+            height: 260px;
+            /* border: 1px solid blue; */
+
+        }
+
+        .latpicstyle {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .latp {
+            font-size: 15px;
+            color: grey;
+            margin-top: 20px;
+            margin-left: 20px;
+
+        }
+
+        .lath {
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 22px;
+            color: #484848;
+            letter-spacing: 0.5px;
+
+        }
+
+        .news {
+            width: 100%;
+            height: 245px;
+            background-color: #0B51C5;
+            padding: 1px;
+            box-sizing: border-box;
+
+        }
+
+        .newsh {
+            text-align: center;
+            color: white;
+            font-size: 31px;
+            font-weight: 700;
+            line-height: 31px;
+            letter-spacing: 1px;
+            margin-top: 50px;
+
+        }
+
+        .newsbox {
+            width: 750px;
+            height: 70px;
+            background-color: white;
+            border-radius: 20px;
+            font-size: 18px;
+            padding-top: 25px;
+            padding-left: 15px;
+            color: rgb(123, 122, 122);
+            box-sizing: border-box;
+            margin-left: 250px;
+            margin-top: 40px;
+
+        }
+
+        .subsc {
+            width: 157px;
+            height: 55px;
+            border-radius: 20px;
+            background-color: #0B51C5;
+            color: white;
+            font-size: 18px;
+            margin-left: 570px;
+            margin-top: -38px;
+            padding-top: 17px;
+            padding-left: 38px;
+            box-sizing: border-box;
+
+        }
+
+        /* ===footer=== */
+
+        .footmain {
+            width: 100%;
+            height: 350px;
+            background-color: #111A3A;
+
+        }
+
+        .fotlog {
+            margin-left: 70px;
+            margin-top: 70px;
+
+        }
+
+        .fotp {
+            color: white;
+            width: 260px;
+            height: 91px;
+            /* border: 1px solid red; */
+            margin-left: 70px;
+            margin-top: 30px;
+            line-height: 22px;
+
+
+        }
+
+        .footbox1 {
+            position: relative;
+            left: 60px;
+            top: 25px;
+            margin-left: 10px;
+            width: 40px;
+            height: 40px;
+            /* border: 1px solid white; */
+            float: left;
+
+        }
+
+        .footMenu {
+            width: 200px;
+            height: 250px;
+            /* border: 1px solid white; */
+            color: white;
+            list-style: none;
+            margin-left: 430px;
+            margin-top: -155px;
+
+
+        }
+
+        .footLiMain {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 28.6px;
+            color: rgb(248, 249, 255);
+            letter-spacing: 4px;
+            margin-top: 5px;
+
+        }
+
+
+        .footLi {
+            position: relative;
+            top: 20px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: white;
+            margin-top: 5px;
+
+        }
+
+
+
+        .footMenu1 {
+            width: 280px;
+            height: 200px;
+            /* border: 1px solid white; */
+            color: white;
+            list-style: none;
+            margin-left: 730px;
+            margin-top: -255px;
+
+
+        }
+
+        .footLiMain1 {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 28.6px;
+            color: rgb(248, 249, 255);
+            letter-spacing: 4px;
+            margin-top: 5px;
+
+        }
+
+
+        .footLi1 {
+            position: relative;
+            top: 10px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: white;
+            margin-top: 10px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="navBar">
+            <div class="mainLogo">
+                <img src="./Images/tr-logo.png" alt="">
+            </div>
+
+            <ul class="navMain">
+
+                <!-- ===dropdown menu start=== -->
+
+                <li class="navlist homedrop">Home
+                    <div class="homedropmenu">
+
+                        <!-- ===list in dropdown menu row1=== -->
+
+                        <ul class="List1Main">
+                            <li class="list1aa">Main Demo</li>
+                            <li class="list1a">IT Solution Demo 02</li>
+                            <li class="list1a">IT Solution Demo 03</li>
+                            <li class="list1a">IT Solution Demo 04</li>
+                            <li class="list1a">IT Solution Demo 05</li>
+                            <li class="list1a">IT Solution Demo 06</li>
+                            <li class="list1a">IT Solution Demo 07</li>
+                            <li class="list1a">IT Solution Demo 08</li>
+                            <li class="list1a">IT Solution Demo 10</li>
+                        </ul>
+
+                        <!--==list dropdown menu row 2==                   -->
+
+                        <ul class="list1row2Main">
+                            <li class="list1arow2">IT Solution Demo 09</li>
+                            <li class="list1arow2">IT Solution Demo 11</li>
+                            <li class="list1arow2">IT Solution Demo 12</li>
+                            <li class="list1arow2">IT Solution Demo 13</li>
+                            <li class="list1arow2">IT Solution Demo 14</li>
+                            <li class="list1arow2">IT Solution Demo 15</li>
+                            <li class="list1arow2">IT Startup Demo 01</li>
+                            <li class="list1arow2">IT Startup Demo 02</li>
+                            <li class="list1arow2">Odoo ERP Demo</li>
+                        </ul>
+
+
+                        <!--==list dropdown menu row 3==                   -->
+
+                        <ul class="list1row3Main">
+                            <li class="list1arow3">IT Startup Demo 03</li>
+                            <li class="list1arow3">Demo Cyber Security</li>
+                            <li class="list1arow3">Business Demo 01</li>
+                            <li class="list1arow3">Animate Demo 01</li>
+                            <li class="list1arow3">Dark Version 02</li>
+                            <li class="list1arow3">Dark Version 01</li>
+                            <li class="list1arow3">Landing Page Demo 01</li>
+                            <li class="list1arow3">Landing Page Demo 02</li>
+                            <li class="list1arow3">Landing Page Demo 04</li>
+                        </ul>
+
+                        <!--==list dropdown menu row 4==                   -->
+
+                        <ul class="list1row4Main">
+                            <li class="list1arow4">IT Startup Demo 03</li>
+                            <li class="list1arow4">Demo Cyber Security</li>
+                            <li class="list1arow4">Business Demo 01</li>
+                            <li class="list1arow4">Animate Demo 01</li>
+                            <li class="list1arow4">Dark Version 02</li>
+                            <li class="list1arow4">Dark Version 01</li>
+                            <li class="list1arow4">Landing Page Demo 01</li>
+                            <li class="list1arow4">Landing Page Demo 02</li>
+                            <li class="list1arow4">Landing Page Demo 04</li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- ===dropdrop menu end=== -->
+
+                <!--==list dropdown services start==                   -->
+
+                <li class="navlist">Company</li>
+                <li class="navlist homedrop1">Services
+                    <div class="homedropdownmenu1">
+                        <ul class="list2main">
+                            <li class="list2">IT Services</li>
+                            <li class="list2">Industries</li>
+                            <li class="list2">Business Solutions</li>
+                            <li class="list2">Managed IT Services</li>
+                        </ul>
+                    </div>
+                </li>
+                <!--==list dropdown menu services end==                   -->
+
+
+
+                <li class="navlist dropDownPageMain">Pages
+                    <div class="dropDownMenuPage">
+                        <!--==list dropdown pages start==                   -->
+                        <!-- ===list in dropdown menu row1=== -->
+
+                        <ul class="List1Main">
+                            <li class="list1aa">Main Demo</li>
+                            <li class="list1a">IT Solution Demo 02</li>
+                            <li class="list1a">IT Solution Demo 03</li>
+                            <li class="list1a">IT Solution Demo 04</li>
+                            <li class="list1a">IT Solution Demo 05</li>
+                            <li class="list1a">IT Solution Demo 06</li>
+                            <li class="list1a">IT Solution Demo 07</li>
+                            <li class="list1a">IT Solution Demo 08</li>
+                            <li class="list1a">IT Solution Demo 10</li>
+                        </ul>
+
+                        <!--==list dropdown menu row 2==                   -->
+
+                        <ul class="list1row2Main">
+                            <li class="list1arow2">IT Solution Demo 09</li>
+                            <li class="list1arow2">IT Solution Demo 11</li>
+                            <li class="list1arow2">IT Solution Demo 12</li>
+                            <li class="list1arow2">IT Solution Demo 13</li>
+                            <li class="list1arow2">IT Solution Demo 14</li>
+                            <li class="list1arow2">IT Solution Demo 15</li>
+                            <li class="list1arow2">IT Startup Demo 01</li>
+                            <li class="list1arow2">IT Startup Demo 02</li>
+                            <li class="list1arow2">Odoo ERP Demo</li>
+                        </ul>
+
+
+                        <!--==list dropdown menu row 3==                   -->
+
+                        <ul class="list1row3Main">
+                            <li class="list1arow3">IT Startup Demo 03</li>
+                            <li class="list1arow3">Demo Cyber Security</li>
+                            <li class="list1arow3">Business Demo 01</li>
+                            <li class="list1arow3">Animate Demo 01</li>
+                            <li class="list1arow3">Dark Version 02</li>
+                            <li class="list1arow3">Dark Version 01</li>
+                            <li class="list1arow3">Landing Page Demo 01</li>
+                            <li class="list1arow3">Landing Page Demo 02</li>
+                            <li class="list1arow3">Landing Page Demo 04</li>
+                        </ul>
+
+                        <!--==list dropdown menu row 4==                   -->
+
+                        <ul class="list1row4Main">
+                            <li class="list1arow4">IT Startup Demo 03</li>
+                            <li class="list1arow4">Demo Cyber Security</li>
+                            <li class="list1arow4">Business Demo 01</li>
+                            <li class="list1arow4">Animate Demo 01</li>
+                            <li class="list1arow4">Dark Version 02</li>
+                            <li class="list1arow4">Dark Version 01</li>
+                            <li class="list1arow4">Landing Page Demo 01</li>
+                            <li class="list1arow4">Landing Page Demo 02</li>
+                            <li class="list1arow4">Landing Page Demo 04</li>
+                        </ul>
+
+
+
+
+                        <!--==list dropdown pages end==                   -->
+                    </div>
+                </li>
+                <li class="navlist homedropEle">Elements
+                    <div class="homedropmenuEle">
+
+                        <!-- ===list element start=== -->
+                        <ul class="List1Main">
+                            <li class="list1aa">Main Demo</li>
+                            <li class="list1a">IT Solution Demo 02</li>
+                            <li class="list1a">IT Solution Demo 03</li>
+                            <li class="list1a">IT Solution Demo 04</li>
+                            <li class="list1a">IT Solution Demo 05</li>
+                            <li class="list1a">IT Solution Demo 06</li>
+                            <li class="list1a">IT Solution Demo 07</li>
+                            <li class="list1a">IT Solution Demo 08</li>
+                            <li class="list1a">IT Solution Demo 10</li>
+                        </ul>
+
+                        <!--==list element menu row 2==                   -->
+
+                        <ul class="list1row2Main">
+                            <li class="list1arow2">IT Solution Demo 09</li>
+                            <li class="list1arow2">IT Solution Demo 11</li>
+                            <li class="list1arow2">IT Solution Demo 12</li>
+                            <li class="list1arow2">IT Solution Demo 13</li>
+                            <li class="list1arow2">IT Solution Demo 14</li>
+                            <li class="list1arow2">IT Solution Demo 15</li>
+                            <li class="list1arow2">IT Startup Demo 01</li>
+                            <li class="list1arow2">IT Startup Demo 02</li>
+                            <li class="list1arow2">Odoo ERP Demo</li>
+                        </ul>
+
+
+                        <!--==list element menu row 3==                   -->
+
+                        <ul class="list1row3Main">
+                            <li class="list1arow3">IT Startup Demo 03</li>
+                            <li class="list1arow3">Demo Cyber Security</li>
+                            <li class="list1arow3">Business Demo 01</li>
+                            <li class="list1arow3">Animate Demo 01</li>
+                            <li class="list1arow3">Dark Version 02</li>
+                            <li class="list1arow3">Dark Version 01</li>
+                            <li class="list1arow3">Landing Page Demo 01</li>
+                            <li class="list1arow3">Landing Page Demo 02</li>
+                            <li class="list1arow3">Landing Page Demo 04</li>
+                        </ul>
+
+                        <!--==list element menu row 4==                   -->
+
+                        <ul class="list1row4Main">
+                            <li class="list1arow4">IT Startup Demo 03</li>
+                            <li class="list1arow4">Demo Cyber Security</li>
+                            <li class="list1arow4">Business Demo 01</li>
+                            <li class="list1arow4">Animate Demo 01</li>
+                            <li class="list1arow4">Dark Version 02</li>
+                            <li class="list1arow4">Dark Version 01</li>
+                            <li class="list1arow4">Landing Page Demo 01</li>
+                            <li class="list1arow4">Landing Page Demo 02</li>
+                            <li class="list1arow4">Landing Page Demo 04</li>
+                        </ul>
+
+
+
+
+
+                    </div>
+                </li>
+                <!-- ===list element end=== -->
+
+                <li class="navlist dropMainBlog">Blog
+                    <div class="dropMenuBlog">
+                        <ul class="mainblogli">
+                            <li class="blogli">Blog Grid</li>
+                            <li class="blogli">Blog List</li>
+                            <li class="blogli">Blog 2 Column</li>
+                        </ul>
+
+
+
+                    </div>
+                </li>
+                <li class="navlist">Contact</li>
+
+            </ul>
+
+            <div class="navBlueBox"></div>
+            <div class="navBlueBox"></div>
+        </div>
+
+        <h2 class="mainh1">WELCOME TO TECHNO</h2>
+
+
+        <div class="mainHead">
+
+            <h1 class="animation animation1">HOSTING SERVICES</h1>
+            <h1 class="animation animation2">DIGITAL MARKETING SERVICES</h1>
+            <h1 class="animation animation3">PROVIDE ALL SERVICES</h1>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <p class="headp1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            laboret dolore magna<br>aliqua. Ut en ad minim ullamco laboris nisi ut aliquip.</p>
+
+        <button class="buthead">ABOUT US</button>
+        <button class="buthead">HOW IT WORK</button>
+    </div>
+
+    <!-- ===3 boxes=== -->
+
+    <div class="main3box">
+        <div class="box3">
+            <div class="boxCircle"></div>
+            <h1 class="boxhead">Product Engineering</h1>
+            <p class="boxPara">We have the expertise to help you<br> define a game plan, design the<br> products
+                customers
+                want.
+            </p>
+
+            <p class="boxread">READ MORE</p>
+
+
+
+        </div>
+        <div class="box3Blue">
+            <div class="boxCircleBlue"></div>
+            <h1 class="boxheadblue">Digital Services</h1>
+            <p class="boxParablue">We have the expertise to help you<br> define a game plan, design the<br> products
+                customers
+                want.
+            </p>
+
+            <p class="boxreadblue">READ MORE</p>
+
+        </div>
+        <div class="box3">
+            <div class="boxCircle"></div>
+            <h1 class="boxhead">IT Consultancy</h1>
+            <p class="boxPara">We have the expertise to help you<br> define a game plan, design the<br> products
+                customers
+                want.
+            </p>
+
+            <p class="boxread">READ MORE</p>
+        </div>
+
+    </div>
+
+    <!-- ===25 years experience=== -->
+    <div class="year25Main">
+        <div class="yearChildR">
+            <img class="year25pic" src="./Images/about-video-img2.png" alt="" srcset="">
+        </div>
+        <div class="yearChildL">
+            <div class="font25">25</div>
+            <div class="font25title">
+                Years of experience<br> in IT Solution &<br>Business
+            </div>
+            <p class="font25Left">There are many variations of passages of Lorem Ipsum available,<br> but the majority
+                have
+                suffered alteration in some form, by injected<br> humour, or randomised words which don’t look even
+                slightly<br>
+                believable. If you are going to use a passage of Lorem Ipsum, you<br> need to be sure there isn’t
+                anything
+                embarrassing.<br><br>
+                There are many variations of passages of Lorem Ipsum available,<br> but the majority have suffered
+                alteration in some form, by injected<br> humour, or randomised wordshich don’t look even slightly
+                believable. If you are going to use a passage of Lorem Ipsum, you
+                need to be sure there isn’t anything embarrassing.</p>
+            <button class="button25">More Details</button>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ===servgreytextheader=== -->
+
+    <div class="maingrey">
+        <div class="greyhead">
+            <h2 class="greyh1">OUR SERVICES</h2>
+            <h1 class="greyh2">We Run All Kinds Of IT Services<br>
+                With 20 Years Of Experience</h1>
+
+            <div class="greyline"></div>
+            <div class="greyblueball"></div>
+
+        </div>
+
+        <!-- ===servgreyboxes=== -->
+
+        <div class="greyboxesmain">
+            <div class="greyboxchild">
+                <div class="greyicon"></div>
+                <div class="greyhead11">Digital Services</div>
+                <div class="greypara11">Digital solutions have transformed<br> the world’s customer expectations and the
+                    profitable growths.</div>
+                <div class="greyread">Read More</div>
+
+
+
+            </div>
+            <div class="greyboxchild">
+                <div class="greyicon"></div>
+                <div class="greyhead11">Product Development</div>
+                <div class="greypara11">Digital solutions have transformed<br> the world’s customer expectations and the
+                    profitable growths.</div>
+                <div class="greyread">Read More</div>
+
+
+            </div>
+            <div class="greyboxchild">
+                <div class="greyicon"></div>
+                <div class="greyhead11">Content Engineering</div>
+                <div class="greypara11">Digital solutions have transformed<br> the world’s customer expectations and the
+                    profitable growths.</div>
+                <div class="greyread">Read More</div>
+
+            </div>
+            <div class="greyboxchild">
+                <div class="greyicon"></div>
+                <div class="greyhead11">Experienced Design</div>
+                <div class="greypara11">Digital solutions have transformed<br> the world’s customer expectations and the
+                    profitable growths.</div>
+                <div class="greyread">Read More</div>
+            </div>
+            <div class="greyboxchild">
+                <div class="greyicon"></div>
+                <div class="greyhead11">Advisory Services</div>
+                <div class="greypara11">Digital solutions have transformed<br> the world’s customer expectations and the
+                    profitable growths.</div>
+                <div class="greyread">Read More</div>
+            </div>
+            <div class="greyboxchild">
+                <div class="greyicon"></div>
+                <div class="greyhead11">Data Structuring</div>
+                <div class="greypara11">Digital solutions have transformed<br> the world’s customer expectations and the
+                    profitable growths.</div>
+                <div class="greyread">Read More</div>
+            </div>
+
+        </div>
+
+        <!-- ===grey boxes end=== -->
+
+        <!-- ===blue number=== -->
+
+        <div class="bluebox">
+            <div class="boxblu">
+                <h1 class="bluhead">15K</h1>
+                <p class="blupara">Happy Clients</p>
+
+            </div>
+            <div class="boxblu">
+                <h1 class="bluhead">1280+</h1>
+                <p class="blupara">Account Number</p>
+            </div>
+            <div class="boxblu">
+                <h1 class="bluhead">10K</h1>
+                <p class="blupara">Finished Projects</p>
+            </div>
+            <div class="boxblu">
+                <h1 class="bluhead">992+</h1>
+                <p class="blupara">Win Awards</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ====case study=== -->
+    <div class="caseMain">
+        <h3 class="casetitle">CASE STUDIES</h3>
+        <h1 class="casehead">Some Of Our Case Studies
+        </h1>
+
+        <div class="caseline"></div>
+        <div class="caseblueball"></div>
+
+        <button class="casebut">See All Cases</button>
+
+    </div>
+
+
+    <!-- ===pics4==== -->
+    <div class="pics4">
+        <div class="pic4child">
+            <img class="pic4style" src="./Images/case2.jpg" alt="">
+
+        </div>
+        <div class="pic4child">
+            <img class="pic4style" src="./Images/case7.jpg" alt="">
+
+        </div>
+        <div class="pic4child">
+            <img class="pic4style" src="./Images/case3.jpg" alt="">
+
+        </div>
+        <div class="pic4child">
+            <img class="pic4style" src="./Images/case5.jpg" alt="">
+        </div>
+
+    </div>
+    <!-- ===process=== -->
+
+    <div class="promain">
+        <p class="prop">PROCESS</p>
+        <h1 class="proh">Our Working Process</h1>
+        <div class="proline"></div>
+        <div class="problueball"></div>
+
+        <div class="probox3">
+            <div class="proboxchild">
+                <div class="procirc">
+                    <p class="pcirc">1</p>
+
+
+                </div>
+
+                <p class="procirchead">Select Project</p>
+
+                <p class="procircpara">We have the technology and industry expertise to develop solutions that can
+                    connect people and businesses across variety of mobile devices.</p>
+
+            </div>
+            <div class="proboxchild">
+                <div class="procirc">
+                    <p class="pcirc">2</p>
+                </div>
+                <p class="procirchead">Project Analysis</p>
+
+                <p class="procircpara">We have the technology and industry expertise to develop solutions that can
+                    connect people and businesses across variety of mobile devices.</p>
+            </div>
+            <div class="proboxchild">
+                <div class="procirc">
+                    <p class="pcirc">3</p>
+                </div>
+                <p class="procirchead">Deliver Result</p>
+
+                <p class="procircpara">We have the technology and industry expertise to develop solutions that can
+                    connect people and businesses across variety of mobile devices.</p>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- ====pic background what say=== -->
+
+    <div class="backMain">
+        <div class="picmain">
+            <p class="pichead">TESTIMONIAL</p>
+            <h1 class="pichead1">What Says<br>
+                Our Happy Clients</h1>
+            <div class="back3boxmain">
+                <div class="backboxchild">
+                    <p class="backpbox">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor<br>
+                        incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
+                        incididunt ut labore<br> et dolor sit
+                        magna aliqua. </p>
+
+                </div>
+                <div class="backboxchild">
+                    <p class="backpbox">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor<br>
+                        incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
+                        incididunt ut labore<br> et dolor sit
+                        magna aliqua. </p>
+                </div>
+                <div class="backboxchild">
+                    <p class="backpbox">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor<br>
+                        incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
+                        incididunt ut labore<br> et dolor sit
+                        magna aliqua. </p>
+
+
+
+                </div>
+
+                <div class="backbox2">
+                    <div class="circ2">
+                        <img class="circstyle" src="./Images/testi2.jpg" alt="">
+                    </div>
+                    <h1 class="backname">Fatima Jahra</h1>
+                    <p class="backname2">Developer</p>
+
+
+                </div>
+
+
+
+                <div class="backbox2">
+                    <div class="circ2">
+                        <img class="circstyle" src="./Images/testi2.jpg" alt="">
+
+                    </div>
+                    <h1 class="backname">Angel Jessica</h1>
+                    <p class="backname2">Developer</p>
+
+                </div>
+                <div class="backbox2">
+                    <div class="circ2">
+                        <img class="circstyle" src="./Images/testi3.jpg" alt="">
+
+                    </div>
+
+                    <h1 class="backname">Abraham Jhone</h1>
+                    <p class="backname2">Developer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========experience=========== -->
+
+    <div class="expmain">
+        <div class="expchildL">
+            <img class="expimg" src="./Images/video-img3.png" alt="">
+
+        </div>
+        <div class="expchildR">
+            <p class="exptxt">OUR EXPERIENCE</p>
+            <h1 class="exphead">Stay Up, Stay Running
+                & Protected</h1>
+
+            <div class="expline"></div>
+            <div class="expblueball"></div>
+            <p class="exppara1">High-tech industries play an important role in the modern<br> economy, and often
+                experience
+                significantly higher pay than<br> other industries. And Digital solutions</p>
+
+            <div id="box3">
+                <div id="box-line"></div>
+                <div id="box-box">
+                    <p id="box-para">90%</p>
+                </div>
+                <div id="box-round"></div>
+                <div id="box-line2"></div>
+                <p id="box-txt">Web Development</p>
+            </div>
+
+            <div id="box3a">
+                <div id="box-linea"></div>
+                <div id="box-boxa">
+                    <p id="box-paraa">96%</p>
+                </div>
+                <div id="box-rounda"></div>
+                <div id="box-line2a"></div>
+                <p id="box-txta">Web Design</p>
+            </div>
+
+            <div id="box3b">
+                <div id="box-lineb"></div>
+                <div id="box-boxb">
+                    <p id="box-parab">70%</p>
+                </div>
+                <div id="box-roundb"></div>
+                <div id="box-line2b"></div>
+                <p id="box-txtb">Digital Marketing</p>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <!-- ====latest=== -->
+
+    <div class="latestMain">
+        <p class="lattxt">LATEST ARTICLE</p>
+        <h1 class="lathead">See Our Latest<br>
+            Blog Posts</h1>
+
+        <div class="latline"></div>
+        <div class="latblueball"></div>
+
+        <button class="latbut">See All Blogs</button>
+
+        <div class="lat3box">
+            <div class="lat3boxchild">
+                <div class="latpic">
+                    <img class="latpicstyle" src="./Images/blog06-390x290.jpg" alt="">
+                </div>
+
+                <p class="latp">Techno&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;October 22, 2020</p>
+                </p>
+                <h1 class="lath">Tiktok Illegally collecting<br> data sharing</h1>
+
+
+            </div>
+            <div class="lat3boxchild">
+                <div class="latpic">
+                    <img class="latpicstyle" src="./Images/blog1-390x290.jpg" alt="">
+
+                </div>
+                <p class="latp">Techno&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;October 22, 2020</p>
+                </p>
+                <h1 class="lath">How can use our latest<br> news by techo</h1>
+
+            </div>
+            <div class="lat3boxchild">
+                <div class="latpic">
+                    <img class="latpicstyle" src="./Images/blog01-390x290.jpg" alt="">
+
+                </div>
+                <p class="latp">Techno&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;October 22, 2020</p>
+                </p>
+                <h1 class="lath">Convincing reasons you<br> need to learn</h1>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="news">
+        <h1 class="newsh">Subscribe Our Newsletter</h1>
+
+        <div class="newsbox">Enter Your Email
+
+            <div class="subsc">Subscribe</div>
+        </div>
+
+
+
+    </div>
+
+    <!-- ===footer=== -->
+
+    <div class="footmain">
+        <img class="fotlog" src="./Images/tr-logo.png" alt="" srcset="">
+        <p class="fotp">Condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam
+            nunc, blandit vel, luctus.</p>
+
+        <div class="footbox1"></div>
+        <div class="footbox1"></div>
+        <div class="footbox1"></div>
+        <div class="footbox1"></div>
+        <div class="footbox1"></div>
+
+        <ul class="footMenu">
+            <li class="footLiMain">Our Services</li>
+            <li class="footLi">TMarketing Strategy</li>
+            <li class="footLi">Interior Design</li>
+            <li class="footLi">Digital Services</li>
+            <li class="footLi">Product Selling</li>
+            <li class="footLi">Product Design</li>
+            <li class="footLi">Social Marketing</li>
+
+        </ul>
+
+
+        <ul class="footMenu1">
+            <li class="footLiMain1">Company Address</li>
+            <li class="footLi1">Porem awesome dolor sitework<br> amet, consetur acing</li>
+            <li class="footLi1"><b>Address:</b> 54/1 New dhas sorini Asut, Melbord Austria.</li>
+            <li class="footLi1"><b>Phone:</b> 54786547521</li>
+            <li class="footLi1"><b>Email
+                </b> demo@example.com</li>
+
+
+        </ul>
+
+
+
+
+    </div>
+
+</html>

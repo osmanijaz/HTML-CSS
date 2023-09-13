@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.nav-bar {
+    width: 100%;
+    height: 55px;
+    /* border: 1px solid black; */
+    position: fixed;
+    top: 0px;
+    background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.nav-bar2 {
+    z-index: -5;
+    position: relative;
+}
+
+.logo {
+    width: 170px;
+    height: 35px;
+    /* border: 1px solid black; */
+    margin-left: 30px;
+    /* top: 13px; */
+}
+
+.logo-style {
+    line-height: 35px;
+    font-weight: 400;
+    Font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.br-style {
+    font-weight: bolder;
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    list-style: none;
+    /* margin-top: 18px; */
+    margin-right: 30px;
+}
+
+.nav-li {
+    margin-left: 2%;
+    letter-spacing: 3px;
+    font-size: 16px;
+}
+
+/* ---pic--- */
+
+.pic-main {
+    /* border: 2px solid hotpink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic-logo-border {
+    width: 295px;
+    height: 65px;
+    /* border: 2px solid black; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.br-logo {
+    height: 100%;
+    width: 25%;
+    font-size: 3em;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(44, 44, 44, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arch-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    Font weight: 400;
+    color: rgb(241, 241, 241);
+    letter-spacing: 3px;
+    width: 75%;
+}
+
+.pic-style {
+    width: 100%;
+    height: 100%;
+}
+
+/* ---projects--- */
+
+.proj-main {
+    width: 100%;
+    /* height: 560px; */
+    height: max-content;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.proj-header {
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    /* background-color: yellow; */
+
+
+    text-align: center;
+}
+
+.boxes-main {
+
+    width: 100%;
+    height: 80%;
+    /* border: 2px solid yellowgreen; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box-child {
+    width: 290px;
+    height: 195px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.proj-pic {
+    width: 100%;
+    height: 100%;
+}
+
+.black-box {
+
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box0 {
+    background-image: url(./Images/house5.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.box1 {
+    background-image: url(./Images/house2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box2 {
+    background-image: url(./Images/house3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box3 {
+    background-image: url(./Images/h4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box4 {
+    background-image: url(./Images/house5.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.box5 {
+    background-image: url(./Images/house2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box6 {
+    background-image: url(./Images/house3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box7 {
+    background-image: url(./Images/h4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* ---about--- */
+
+.about-main {
+    width: 100%;
+    height: max-content border: 2px solid red;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+
+
+
+}
+
+.about-head {
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 20px;
+
+
+    /* padding-bottom: 40px; */
+    /* text-align: center;
+    padding-top: 30px; */
+}
+
+.about-para {
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+
+/* ---peeps 4 profiles--- */
+
+.peep-main {
+    width: 100%;
+    /* height: 440px; */
+    height: max-content;
+    /* border: 2px solid yellowgreen; */
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.peep4-box {
+    width: 280px;
+    height: 413px;
+    border: 1px solid black;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+
+}
+
+.peep-pic {
+    width: 100%;
+    height: 195px;
+    /* border: 1px solid black; */
+}
+
+.peep-pic-style {
+    width: 100%;
+    height: 100%;
+
+}
+
+.peep-name {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.peep-job-title {
+    font-size: 15px;
+
+    font-weight: 400;
+    color: grey;
+}
+
+.peep-para {
+    font-size: 15px;
+
+}
+
+.peep-button {
+    width: 100%;
+    height: 38px;
+    border: none;
+    font-size: 15px;
+
+    background-color: lightgrey;
+
+
+}
+
+
+/* ---contact---- */
+
+.cont-main {
+
+    width: 100%;
+    /* height: max-content; */
+    height: 435px;
+    /* border: 2px solid blueviolet; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 2%;
+    padding-bottom: 40px;
+
+
+}
+
+.cont-head {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.cont-para {
+    font-size: 15px;
+    font-weight: 400;
+
+}
+
+.input-style {
+    width: 95%;
+    height: 38px;
+    border: 0.2px solid grey;
+    outline: none;
+
+}
+
+.input-style::placeholder {
+    padding-left: 4px;
+    color: grey;
+    font-size: 15px;
+}
+
+.cont-button {
+    width: 150px;
+    height: 35px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 16px;
+}
+
+/* ---pic--- */
+
+.pic-main {
+    width: 100%;
+    height: 710px;
+    background-image: url(./Images/architect.jpg);
+    background-size: cover;
+    background-position: center center;
+    /* border: 2px solid green; */
+
+
+}
+
+.style-map-pic {
+    width: 97%;
+    height: 97%;
+
+}
+
+.foot {
+    padding: 1px;
+
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 4%;
+
+}

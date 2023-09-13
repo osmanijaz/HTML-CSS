@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- > direct
+    + (next divs)
+    ~ (all siblings of parent divs)
+    space (next element) -->
+
+
+    <style>
+        .box1 {
+
+            /* border: 10px solid red; */
+            margin-top: 2%;
+            background-color: aqua;
+
+
+        }
+
+        div:nth-child(1) {
+            border: 10px solid red;
+        }
+
+        div:nth-child(2) {
+            border: 10px solid blue;
+        }
+
+        .ul2 li:nth-child(2) {
+            color: hotpink;
+        }
+
+
+
+
+
+
+
+        .box2 {
+            border: 5px solid rgb(38, 255, 0);
+            margin-top: 2%;
+
+
+        }
+
+        /* .box1 > .box2 > h1
+        .box2 h1:nth-child(1) {
+            color: red;
+        } */
+
+        .box3 {
+
+            border: 5px solid rgb(0, 60, 255);
+            margin-top: 2%;
+
+        }
+
+        .box4 {
+            border: 5px solid rgb(253, 0, 228);
+            margin-top: 2%;
+        }
+
+        .box5 {
+            border: 5px solid rgb(0, 0, 0);
+            margin-top: 2%;
+        }
+
+        .box6 {
+            border: 5px solid rgb(255, 247, 0);
+            margin-top: 2%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <ul class="ul1">
+        <li>apple</li>
+        <li>pear</li>
+        <li>grape</li>
+        <li>melon
+
+            <ul class="ul2">
+                <li>yellow</li>
+                <li>pink</li>
+                <li>green</li>
+            </ul>
+
+        </li>
+        <li>blueberry</li>
+    </ul>
+
+    <ul class="ul3">
+        <li>yellow</li>
+        <li>pink</li>
+        <li>green</li>
+    </ul>
+
+    <ul class="ul4">
+        <li>yellow</li>
+        <li>pink</li>
+        <li>green</li>
+    </ul>
+
+    <div class="box1">
+
+        <h1>Lorem Box 1 h1</h1>
+
+        <h2>h2 box 1 Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+
+        <p>p box 1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic ratione molestiae excepturi! Odio alias
+            atque
+            laboriosam, corrupti incidunt voluptatibus iste adipisci, autem iure accusantium rerum quaerat? Quas ratione
+            iusto expedita!</p>
+
+        <div class="box2">
+
+            <h1>Lorem Box 2 h1 Inner</h1>
+
+            <h2>h2 box 2 Inner Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+
+            <p>p box 2 Inner Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic ratione molestiae excepturi!
+                Odio alias
+                atque laboriosam, corrupti incidunt voluptatibus iste adipisci, autem iure accusantium rerum quaerat?
+                Quas ratione iusto expedita!</p>
+
+        </div>
+    </div>
+
+    <div class="box3">
+
+        <h1>Lorem Box 3 h1</h1>
+
+        <h2>h2 Box 3 Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+
+        <p>p Box 3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic ratione molestiae excepturi! Odio alias
+            atque laboriosam, corrupti incidunt voluptatibus iste adipisci, autem iure accusantium rerum quaerat?
+            Quas ratione iusto expedita!</p>
+
+    </div>
+
+    <div class="box4">
+        <h1>Lorem Box 4 h1</h1>
+        <p>p Box 4 Lorem ipsum dolor.</p>
+    </div>
+
+    <div class="box5">
+        <h1>Lorem Box 5 h1</h1>
+        <p>p Box 5 Lorem ipsum dolor.</p>
+    </div>
+
+    <div class="box6">
+        <h1>Lorem Box 6 h1</h1>
+        <p>p Box 6 Lorem ipsum dolor.</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+        font-family: Arial;
+
+    }
+
+    #main {
+        width: 100%;
+        height: 100vh;
+        background-image: url(./images/front-page-header.jpg);
+        background-color: royalblue;
+        background-size: cover;
+        padding: 1px;
+        background-attachment: fixed;
+        box-sizing: border-box;
+    }
+
+    #navBar {
+        width: 100%;
+        height: 70px;
+        /* border: 2px solid black; */
+        margin-top: 20px;
+
+    }
+
+    #logo {
+        margin-left: 60px;
+        margin-top: 5px;
+
+    }
+
+
+    #barlist {
+        list-style: none;
+        margin-left: 500px;
+        margin-top: -50px;
+    }
+
+    #navlist {
+        display: inline;
+        margin-left: 35px;
+        color: white;
+        font-size: 16px;
+    }
+
+    /* Banner Start */
+    #banner {
+        margin-top: 80px;
+        margin-left: 170px;
+        width: 950px;
+        height: 380px;
+        /* border: 1px solid; */
+    }
+
+    #ban-head {
+        margin-top: 70px;
+        margin-left: 10px;
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 84px;
+        color: white;
+
+
+    }
+
+    #color {
+        color: yellow;
+
+    }
+
+    #ban-para {
+        margin-top: 20px;
+        text-align: center;
+        color: white;
+        line-height: ;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    .but {
+        position: relative;
+        left: 200px;
+        margin-top: 60px;
+        width: 240px;
+        height: 60px;
+        background-color: #FFDE00;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        margin-left: 30px;
+
+    }
+
+    .but1 {
+        background-color: transparent;
+        border: 2px solid white;
+
+    }
+
+    #about {
+        padding: 1px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 230px;
+        /* border: 1px solid black; */
+
+
+
+    }
+
+
+    #about-h {
+        margin-top: 30px;
+        color: grey;
+        text-align: center;
+        font-weight: bolder;
+
+    }
+
+    #about-p {
+        margin-left: 75px;
+        margin-top: 50px;
+        color: grey;
+        text-align: center;
+        width: 1100px;
+        /* border: 2px solid black; */
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        font color: rgb(140, 149, 151);
+    }
+
+    /* =============================================box start */
+    #box3 {
+        /* padding: 1px;
+        box-sizing: border-box; */
+        /* margin-top: -50px; */
+        margin-left: 12px;
+        width: 400px;
+        height: 200px;
+        /* border: 2px solid black; */
+        display: inline-block;
+
+    }
+
+    #box-line {
+        margin-top: 115px;
+        margin-left: 23px;
+        width: 210px;
+        height: 2px;
+        background-color: palevioletred;
+
+    }
+
+
+    #box-line2 {
+        margin-top: -4px;
+        margin-left: 237px;
+        width: 134px;
+        height: 2px;
+        background-color: grey;
+
+    }
+
+    #box-box {
+        margin-top: -45px;
+        margin-left: 203px;
+        width: 62px;
+        height: 32px;
+        background-color: palevioletred;
+        border-radius: 5px;
+
+    }
+
+    #box-round {
+        width: 7px;
+        height: 7px;
+        margin-left: 230px;
+        margin-top: 8px;
+        border-radius: 50%;
+        background-color: palevioletred;
+
+    }
+
+
+    #box-para {
+        padding-top: 6px;
+        padding-left: 2px;
+        box-sizing: border-box;
+        margin-left: 14px;
+        color: white;
+
+    }
+
+    #box-icon {
+        margin-top: 20px;
+        margin-left: 23px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+    }
+
+    #box-txt {
+        color: palevioletred;
+        margin-left: 22px;
+        margin-top: 10px;
+    }
+
+    /* ==========================box a========= */
+
+    #box3a {
+        /* padding: 1px;
+        box-sizing: border-box; */
+        /* margin-top: -50px; */
+        margin-left: 12px;
+        width: 400px;
+        height: 200px;
+        /* border: 2px solid black; */
+        display: inline-block;
+
+    }
+
+    #box-linea {
+        margin-top: 80px;
+        margin-left: 23px;
+        width: 280px;
+        height: 2px;
+        background-color: rgb(182, 182, 42);
+
+    }
+
+
+    #box-line2a {
+        margin-top: -4px;
+        margin-left: 307px;
+        width: 70px;
+        height: 2px;
+        background-color: grey;
+
+    }
+
+    #box-boxa {
+        margin-top: -45px;
+        margin-left: 274px;
+        width: 62px;
+        height: 32px;
+        background-color: rgb(182, 182, 42);
+        border-radius: 5px;
+
+    }
+
+    #box-rounda {
+        width: 7px;
+        height: 7px;
+        margin-left: 300px;
+        margin-top: 8px;
+        border-radius: 50%;
+        background-color: rgb(182, 182, 42);
+
+    }
+
+
+    #box-paraa {
+        padding-top: 6px;
+        padding-left: 2px;
+        box-sizing: border-box;
+        margin-left: 14px;
+        color: white;
+
+    }
+
+    #box-icona {
+        margin-top: 20px;
+        margin-left: 23px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+    }
+
+    #box-txta {
+        color: rgb(182, 182, 42);
+        margin-left: 22px;
+        margin-top: 10px;
+    }
+
+    /* =================box b==================== */
+    #box3b {
+        /* padding: 1px;
+        box-sizing: border-box; */
+        /* margin-top: -50px; */
+        margin-left: 12px;
+        width: 400px;
+        height: 200px;
+        /* border: 2px solid black; */
+        display: inline-block;
+
+    }
+
+    #box-lineb {
+        margin-top: 115px;
+        margin-left: 23px;
+        width: 280px;
+        height: 2px;
+        background-color: purple;
+
+    }
+
+
+    #box-line2b {
+        margin-top: -4px;
+        margin-left: 307px;
+        width: 70px;
+        height: 2px;
+        background-color: grey;
+
+    }
+
+    #box-boxb {
+        margin-top: -45px;
+        margin-left: 274px;
+        width: 62px;
+        height: 32px;
+        background-color: purple;
+        border-radius: 5px;
+
+    }
+
+    #box-roundb {
+        width: 7px;
+        height: 7px;
+        margin-left: 300px;
+        margin-top: 8px;
+        border-radius: 50%;
+        background-color: purple;
+
+    }
+
+
+    #box-parab {
+        padding-top: 6px;
+        padding-left: 2px;
+        box-sizing: border-box;
+        margin-left: 14px;
+        color: white;
+
+    }
+
+    #box-iconb {
+        margin-top: 20px;
+        margin-left: 23px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+    }
+
+    #box-txtb {
+        color: purple;
+        margin-left: 22px;
+        margin-top: 10px;
+    }
+
+    /* ===================box 3 end=================== */
+
+
+    #proj {
+        width: 100%;
+        height: 100px;
+        /* border: 2px solid black; */
+
+    }
+
+    #projh {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 38px;
+        color: grey;
+
+    }
+
+    #projp {
+
+        margin-top: 2px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: grey;
+    }
+
+    #main4box {
+        width: 100%;
+        height: 320px;
+        /* border: 2px solid limegreen; */
+
+
+    }
+
+    .box4 {
+        width: 25%;
+        height: 330px;
+        /* display: inline-block; */
+        float: left;
+
+    }
+
+
+    .box4:hover {
+        opacity: 0.5;
+
+    }
+
+    .pic4 {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* ==========================testimonial ====================== */
+    #testi {
+        width: 100%;
+        height: 640px;
+        /* background-image: linear-gradient(rgb(106, 77, 138, .9), rgb(106, 77, 138, .9)), url(./images/front-page-counter.jpg); */
+        background-image: url(./images/front-page-counter.jpg);
+        padding-top: 1px;
+        box-sizing: border-box;
+    }
+
+    #testh {
+
+        text-align: center;
+        color: white;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 38px;
+        margin-top: 50px;
+        font-weight: bold;
+    }
+
+    /* ===============slider================================ */
+
+    #slider {
+
+        width: 1000px;
+        height: 450px;
+        /* border: 1px solid blue; */
+        padding: 1px;
+        box-sizing: border-box;
+    }
+
+    .slider-pic {
+        margin-left: 440px;
+        margin-top: 5px;
+        width: 120px;
+        height: 120px;
+        /* border: 1px solid red; */
+        border-radius: 50%;
+        background-image: url(./images/redhead-1123645_960_720-1-127x127.jpg);
+
+
+
+
+    }
+
+    .slider-txt {
+        width: 1000px;
+        height: 155px;
+        border: 1px solid hsl(52, 100%, 67%);
+        margin-top: 40px;
+        background-color: #f8dd2b;
+        opacity: 0.3;
+        z-index: -1;
+
+    }
+
+    .slitxt {
+        margin-top: -100px;
+        margin-left: 15px;
+        text-align: center;
+        color: white;
+        /* border: 2px solid red; */
+        width: 960px;
+        z-index: 10;
+
+
+    }
+
+
+    .slider-name {
+        width: 190px;
+        height: 50px;
+
+        /* border: 2px solid red; */
+        margin-top: 80px;
+        margin-left: 395px;
+
+    }
+
+    #slider-main {
+        margin-top: 30px;
+        margin-left: 127px;
+        width: 1000px;
+        height: 450px;
+
+        padding: 1px;
+        box-sizing: border-box;
+        /* border: 2px solid green; */
+
+    }
+
+    .dot {
+
+        margin-top: -100px;
+
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: white;
+        display: inline-block;
+        margin-left: 15px;
+
+    }
+
+
+    #button-slider {
+        margin-left: 545px;
+
+    }
+
+    #nametxt {
+        font-size: 22px;
+        margin-left: 37px;
+        margin-top: 13px;
+        color: white;
+        font-weight: 700;
+    }
+
+
+    /* =====================slider end========================== */
+    /* =================serv========================= */
+
+    #serv {
+        width: 100%;
+        height: 370px;
+        /* border: 2px solid blue; */
+    }
+
+    .servh {
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 38px;
+        color: rgb(84, 84, 84);
+        text-align: center;
+        margin-top: 30px;
+        margin-left: -30px;
+    }
+
+
+    .servp {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(84, 84, 84);
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .servmain {
+        width: 100%;
+        height: 220px;
+        /* border: 2px solid red; */
+        margin-top: 50px;
+    }
+
+    .servchild {
+        height: 100%;
+        width: 400px;
+        /* border: 2px solid greenyellow; */
+        float: left;
+        margin-left: 13px;
+    }
+
+    .servh {
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 32px;
+        color: rgb(241, 139, 109);
+        text-align: center;
+        margin-left: 2px;
+    }
+
+    .servp {
+        font-size: 16px;
+        margin-top: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(140, 149, 151);
+        text-align: center;
+    }
+
+    .servh1 {
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 32px;
+        color: rgb(241, 210, 4);
+        text-align: center;
+        margin-left: 2px;
+        margin-top: 30px;
+    }
+
+    .servh2 {
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 32px;
+        color: rgb(106, 77, 138);
+        text-align: center;
+        margin-left: 2px;
+        margin-top: 30px;
+    }
+
+    /* ===========latest news================ */
+
+    .newsmain {
+        width: 100%;
+        height: 990px;
+        background-color: #222F36;
+        /* border: 2px solid red; */
+        padding: 1px;
+        box-sizing: border-box;
+
+
+    }
+
+    .newshead {
+        /* border: 2px solid red; */
+        height: 215px;
+        margin-top: 40px;
+    }
+
+    .head {
+
+
+        /* border: 2px solid yellowgreen; */
+        font-size: 35px;
+        width: 99.5%;
+        font-weight: 700;
+        line-height: 38px;
+        color: white;
+        text-align: center;
+        margin-top: 85px;
+
+    }
+
+    .newsp {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(140, 149, 151);
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .newsbut {
+        width: 155px;
+        height: 47px;
+        background-color: rgb(241, 210, 4);
+        color: white;
+        font-weight: bolder;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 52px;
+        margin-left: 545px;
+    }
+
+    .pics-3-main {
+        width: 100%;
+        height: 685px;
+        /* border: 2px solid greenyellow; */
+
+
+    }
+
+    .pic3child {
+        width: 365px;
+        height: 587px;
+        /* border: 2px solid yellow; */
+        float: left;
+        margin-left: 40px;
+        margin-top: 50px;
+        background-color: white;
+    }
+
+    .pic3achild {
+        width: 365px;
+        height: 554px;
+        /* border: 2px solid yellow; */
+        float: left;
+        margin-left: 40px;
+        margin-top: 50px;
+        background-color: white;
+
+    }
+
+    .picz {
+        width: 100%;
+        height: 215px;
+
+        /* border: 2px solid red; */
+    }
+
+    .picz-style {
+        width: 100%;
+    }
+
+    .piczhead {
+        font-size: 25px;
+        font-weight: bolder;
+        line-height: 28px;
+        color: rgb(94, 94, 94);
+        margin-left: 30px;
+        margin-top: 45px;
+    }
+
+    .piczp {
+        margin-left: 30px;
+        margin-top: 40px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(140, 149, 151);
+    }
+
+    .piczread {
+        margin-left: 30px;
+        margin-top: 50px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(241, 210, 4);
+    }
+
+    /* ==========picz 3 end ========== */
+
+    .yellow {
+        width: 100%;
+        height: 155px;
+        /* border: 2px solid yellow; */
+        background-image: url(./Images/Capture.JPG);
+        padding: 1px;
+        box-sizing: border-box;
+    }
+
+    .yelh {
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 24px;
+        color: white;
+
+        margin-left: 160px;
+        margin-top: 65px;
+
+    }
+
+    .yelh1 {
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 24px;
+        color: white;
+        margin-top: -22px;
+        margin-left: 580px;
+    }
+
+    .yelh2 {
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 24px;
+        color: white;
+        margin-top: -25px;
+        margin-left: 990px;
+    }
+
+    .line {
+        width: 2px;
+        height: 36px;
+        background-color: white;
+        margin-left: 437px;
+        margin-top: -35px;
+
+    }
+
+    .line1 {
+        width: 2px;
+        height: 36px;
+        background-color: white;
+        margin-left: 827px;
+        margin-top: -35px;
+    }
+
+    /* =======yellow end========== */
+    /* ======team=========== */
+
+    .teammain {
+        width: 100%;
+        height: 470px;
+        padding: 1px;
+        box-sizing: border-box;
+        /* 
+        border: 2px solid red; */
+
+    }
+
+    .teamfont {
+        /* border: 1px solid green; */
+        width: 100%;
+        height: 170px;
+        padding: 1px;
+        box-sizing: border-box;
+
+
+    }
+
+    .teamh {
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 38px;
+        color: rgb(84, 84, 84);
+        text-align: center;
+        margin-top: 95px;
+    }
+
+    .teamp {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(140, 149, 151);
+        text-align: center;
+        margin-top: 6px;
+    }
+
+
+    .team3picmain {
+        width: 100%;
+        height: 340px;
+        /* border: 2px solid yellowgreen; */
+        padding: 1px;
+        box-sizing: border-box;
+    }
+
+    .team3pic {
+        width: 360px;
+        height: 100%;
+        /* border: 2px solid blue; */
+        float: left;
+        margin-left: 34px;
+
+    }
+
+    .teampicbox {
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        /* border: 1px solid; */
+        margin-left: 30px;
+        margin-top: 80px;
+
+
+    }
+
+    .teamname {
+
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        color: rgb(94, 94, 94);
+        margin-left: 180px;
+        margin-top: -110px;
+
+    }
+
+    .teamp1 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(241, 139, 109);
+        margin-left: 180px;
+        /* margin-top: -5px; */
+    }
+
+    .teamp3 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(106, 77, 138);
+        margin-left: 180px;
+        /* margin-top: -5px; */
+    }
+
+    .teamp12 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(241, 210, 4);
+        margin-left: 180px;
+        /* margin-top: -5px; */
+    }
+
+    .teampara {
+
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: rgb(140, 149, 151);
+        margin-left: 180px;
+        margin-top: 20px;
+
+    }
+
+    .teamstyle {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+
+    }
+
+    .teamcircle {
+        position: relative;
+        left: 174px;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        margin-top: 10px;
+        border: 1px solid rgb(241, 139, 109);
+        margin-left: 5px;
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+
+    .teamcircle2 {
+        position: relative;
+        left: 174px;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        margin-top: 10px;
+        border: 1px solid rgb(241, 210, 4);
+        margin-left: 5px;
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+
+    .teamcircle3 {
+        position: relative;
+        left: 174px;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        margin-top: 10px;
+        border: 1px solid rgb(106, 77, 138);
+
+        margin-left: 5px;
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    /* -------contact us------------- */
+
+    .cont {
+
+        width: 100%;
+        height: 700px;
+        /* border: 2px solid red; */
+        padding: 1px;
+        box-sizing: border-box;
+
+    }
+
+    .conthead {
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 38px;
+        color: rgb(84, 84, 84);
+        text-align: center;
+    }
+
+
+    .add {
+        position: relative;
+        left: 50px;
+        width: 400px;
+        height: 100px;
+        /* border: 2px solid; */
+        float: left;
+        margin-top: 50px;
+        margin-left: 10px;
+
+
+
+
+    }
+
+    .contline {
+        width: 1px;
+        height: 36px;
+        background-color: grey;
+        margin-left: 80px;
+        margin-top: -20px;
+
+    }
+
+    .contline1 {
+        width: 1px;
+        height: 36px;
+        background-color: grey;
+        margin-left: 150px;
+        margin-top: -20px;
+    }
+
+    .contpara {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(241, 210, 4);
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .address {
+        color: grey;
+        margin-left: 97px;
+        margin-top: -38px;
+
+
+    }
+
+
+
+    .address1 {
+        color: grey;
+        margin-left: 167px;
+        margin-top: -38px;
+
+
+    }
+
+
+    .nam {
+        margin-left: -380px;
+        margin-top: 100px;
+        border: 1px solid grey;
+        width: 320px;
+        height: 35px;
+
+
+    }
+
+    .namp {
+        color: grey;
+        padding-top: 8px;
+        padding-left: 10px;
+    }
+
+    .E-mail {
+
+        border: 1px solid grey;
+        width: 320px;
+        height: 35px;
+        margin-top: -36px;
+        margin-left: -10px;
+    }
+
+    .sub {
+
+        border: 1px solid grey;
+        width: 300px;
+        height: 35px;
+
+    }
+
+    .msg {
+        border: 1px solid grey;
+        width: 1140px;
+        height: 218px;
+
+
+    }
+
+    .namp1 {
+        color: grey;
+        padding-top: 8px;
+        padding-left: 10px;
+    }
+
+    .Subject {
+        border: 1px solid grey;
+        width: 320px;
+        height: 35px;
+        margin-left: 360px;
+        margin-top: -36px;
+    }
+
+    .msg {
+        border: 1px solid grey;
+        width: 1060px;
+        height: 215px;
+        margin-left: -380px;
+        margin-top: 30px;
+    }
+
+    .conbut {
+        width: 155px;
+        height: 45px;
+        background-color: #f8dd2b;
+        margin-top: 530px;
+        margin-left: 175px;
+        border: none;
+        border-radius: 10px;
+
+
+    }
+
+    .contb {
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        margin-left: -5px;
+
+    }
+
+    /* =========info============= */
+
+    .info {
+        width: 100%;
+        height: 260px;
+        background-color: #222F36;
+        color: white;
+        padding: 1px;
+        box-sizing: border-box;
+
+
+    }
+
+    .prhead {
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 32px;
+        margin-left: 80px;
+        margin-top: 40px;
+
+
+    }
+
+    .products {
+        float: left;
+
+    }
+
+    .prlist {
+        position: relative;
+        top: 20px;
+        margin-left: 80px;
+        list-style: none;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 33px;
+        color: grey
+    }
+
+
+    .end {
+        width: 100%;
+        height: 111px;
+        background-color: black;
+        color: white;
+        padding: 1px;
+        box-sizing: border-box;
+
+
+
+    }
+
+    .endp {
+        text-align: center;
+        margin-top: 30px;
+
+    }
+</style>
+
+
+<body>
+
+    <div id="main">
+        <!--  Navbar Started -->
+        <div id="navBar">
+            <img id="logo" src="./images/cropped-footer-logo-1.png" alt="">
+            <ul id="barlist">
+                <li id="navlist">About</li>
+                <li id="navlist">Portfolio</li>
+                <li id="navlist">Testimonials</li>
+                <li id="navlist">Services</li>
+                <li id="navlist">Blog</li>
+                <li id="navlist">Our Team</li>
+                <li id="navlist">Contact Us</li>
+            </ul>
+
+        </div>
+        <!--  Navbar ended -->
+
+        <!-- banner start -->
+        <div id="banner">
+            <h1 id="ban-head">Clean<span id="color">.</span>Slick<span id="color">.</span>Pixel Perfect</h1>
+            <p id="ban-para">lldy is a great one-page theme, perfect for developers and designers but also for someone
+                who just wants a<br> new website for his business. Try it now!</p>
+
+            <button class="but but1">Learn More</button>
+            <button class="but">Download</button>
+        </div>
+
+
+
+
+    </div>
+
+    <!-- About section -->
+
+    <div id="about">
+        <h1 id="about-h">About</h1>
+        <p id="about-p">It is an amazng one-page theme with great features that offers an incredible experience. It is
+            easy to install, make changes, adapt for your business. A modern design with clean lines and styling for a
+            wide variety of content, exactly how a business design should be. You can add as many images as you want to
+            the main header area and turn them into slider.</p>
+    </div>
+
+
+    <!-- ====================================== -->
+    <div id="box3">
+        <div id="box-line"></div>
+        <div id="box-box">
+            <p id="box-para">60%</p>
+        </div>
+        <div id="box-round"></div>
+        <div id="box-line2"></div>
+        <p id="box-txt">Typography</p>
+    </div>
+
+    <!-- ====================================== -->
+    <div id="box3a">
+        <div id="box-linea"></div>
+        <div id="box-boxa">
+            <p id="box-paraa">82%</p>
+        </div>
+        <div id="box-rounda"></div>
+        <div id="box-line2a"></div>
+        <p id="box-txta">Design</p>
+    </div>
+
+    <!-- ================================================= -->
+    <div id="box3b">
+        <div id="box-lineb"></div>
+        <div id="box-boxb">
+            <p id="box-parab">86%</p>
+        </div>
+        <div id="box-roundb"></div>
+        <div id="box-line2b"></div>
+        <p id="box-txtb">Development</p>
+
+    </div>
+    <!-- =======================box end================================= -->
+
+    <!-- ====project=== -->
+    <div id="proj">
+        <h1 id="projh">Projects</h1>
+        <p id="projp">You'll love our work. Check it out!</p>
+    </div>
+
+    <!-- ===================4 box row================= -->
+
+    <div id="main4box">
+        <div class="box4">
+            <img class="pic4" src="./images/front-page-project-4.jpg" alt="">
+        </div>
+
+        <div class="box4">
+            <img class="pic4" src="./images/front-page-project-3.jpg" alt="">
+        </div>
+        <div class="box4">
+            <img class="pic4" src="./images/front-page-project-2.jpg" alt="">
+        </div>
+        <div class="box4">
+            <img class="pic4" src="./images/front-page-project-1.jpg" alt="">
+        </div>
+
+    </div>
+
+    <!-- =======================Testimoni========================= -->
+    <div id="testi">
+        <h1 id="testh">Testimonials</h1>
+
+        <!-- ===============================slider====================== -->
+
+        <div id="slider-main">
+            <div id="slider">
+                <div class="slider-pic"></div>
+                <div class="slider-txt"></div>
+                <p class="slitxt">It is an amazng one-page theme with great features that offers an incredible
+                    experience. It is easy to install, make changes, adapt for your business. A modern design with clean
+                    lines and styling for a wide variety of content, exactly how a business design should be. You can
+                    add as many images as you want to the main header area and turn them into slider.</p>
+                <div class="slider-name">
+                    <p id="nametxt">Jane Smith</p>
+
+
+                </div>
+            </div>
+        </div>
+        <div id="button-slider">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+
+    </div>
+
+    <!-- ======================slider end============== -->
+
+    <!-- ===========services================= -->
+    <div id="serv">
+        <h1 class="servh">Services</h1>
+        <p class="servp">In order to help you grow your business, our carefully selected experts can advise you in the
+            following areas:</p>
+
+        <div class="servmain">
+            <div class="servchild">
+                <h1 class="servh">Web Design</h1>
+                <p class="servp">Consectetur adipiscing elit. Praesent molestie urna hendrerit erat tincidunt tempus.
+                    Aliquam a leo risus. Fusce a metus non augue dapibus porttitor at in mauris. Pellentesque commodo...
+                </p>
+
+            </div>
+            <div class="servchild">
+                <h1 class="servh1">WEB DEVELOPMENT</h1>
+                <p class="servp">Consectetur adipiscing elit. Praesent molestie urna hendrerit erat tincidunt tempus.
+                    Aliquam a leo risus. Fusce a metus non augue dapibus porttitor at in mauris. Pellentesque commodo...
+                </p>
+            </div>
+            <div class="servchild">
+                <h1 class="servh2">SEO Analisys</h1>
+                <p class="servp">Consectetur adipiscing elit. Praesent molestie urna hendrerit erat tincidunt tempus.
+                    Aliquam a leo risus. Fusce a metus non augue dapibus porttitor at in mauris. Pellentesque commodo...
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- =================latest news======= -->
+
+    <div class="newsmain">
+        <div class="newshead">
+            <h1 class="head">Latest News</h1>
+            <p class="newsp">If you are interested in the latest articles in the industry, take a sneak peek at our
+                blog. You have nothing to loose!</p>
+            <button class="newsbut">See blog</button>
+
+
+        </div>
+
+        <div class="pics-3-main">
+            <div class="pic3achild">
+                <div class="picz">
+                    <img class="picz-style" src="./Images/photo-1449168013943-3a15804bb41c-360x213.jpg" alt="">
+                </div>
+
+                <h1 class="piczhead">We Have Made Illdy<br>Theme SEO Freindly</h1>
+
+                <p class="piczp">Illdy One Page WordPress theme is fully<br>SEO friendly and is ready to help you to
+                    achieve the highest rankings…</p>
+
+                <p class="piczread">> Read more</p>
+
+
+            </div>
+
+
+            <div class="pic3child">
+                <div class="picz">
+                    <img class="picz-style" src="./Images/photo-1450101215322-bf5cd27642fc-360x213.jpg" alt="">
+
+                </div>
+                <h1 class="piczhead">Stunning One Page WordPress Theme For Masses</h1>
+
+                <p class="piczp">This theme is not just free, it is free for<br> private and commercial use since it
+                    is<br>licensed under GPL…</p>
+
+                <p class="piczread">> Read more</p>
+
+
+            </div>
+
+
+            <div class="pic3achild">
+                <div class="picz">
+                    <img class="picz-style" src="./Images/photo-1447687643809-e05fd462f350-360x213.jpg" alt="">
+
+                </div>
+                <h1 class="piczhead">Hello World!</h1>
+
+                <p class="piczp">Welcome to colorlib.com. This is our first post around Illdy WordPress theme. Now show
+                    that you can make out of it.…</p>
+
+                <p class="piczread">> Read more</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- =============pics 3 end========= -->
+
+    <!-- yellow start==== -->
+    <div class="yellow">
+        <h1 class="yelh">PROJECTS</h1>
+        <h1 class="yelh1">CLIENTS</h1>
+        <h1 class="yelh2">COFFEES</h1>
+        <div class="line"></div>
+        <div class="line1"></div>
+    </div>
+
+    <!-- yellow end====== -->
+
+    <!-- =====team============== -->
+
+    <div class="teammain">
+
+        <div class="teamfont">
+            <h1 class="teamh">Team</h1>
+            <p class="teamp">Meet the people that are going to take your business to the next level.</p>
+        </div>
+
+        <div class="team3picmain">
+
+
+            <div class="team3pic">
+                <div class="teampicbox">
+                    <img class="teamstyle" src="./Images/front-page-team-1.jpg" alt="">
+                </div>
+                <h1 class="teamname">Mark Lawrance</h1>
+                <p class="teamp1">Web Designer</p>
+                <p class="teampara">Creative, detail-oriented,<br>always focused when it comes to work.</p>
+                <div class="teamcircle"></div>
+                <div class="teamcircle"></div>
+                <div class="teamcircle"></div>
+            </div>
+
+
+
+
+
+            <div class="team3pic">
+                <div class="teampicbox">
+                    <img class="teamstyle" src="./Images/front-page-team-2.jpg" alt="">
+                </div>
+                <h1 class="teamname">Jane Stenton</h1>
+                <p class="teamp12">SEO Specialist</p>
+                <p class="teampara">Curious, tech-geek, gets serious when it comes to work.</p>
+                <div class="teamcircle2"></div>
+                <div class="teamcircle2"></div>
+                <div class="teamcircle2"></div>
+            </div>
+
+
+
+
+
+
+            <div class="team3pic">
+                <div class="teampicbox">
+                    <img class="teamstyle" src="./Images/front-page-team-3.jpg" alt="">
+                </div>
+                <h1 class="teamname">Mark Lawrance</h1>
+                <p class="teamp3">Web Designer</p>
+                <p class="teampara">Enthusiastic, passionate with great sense of humor.</p>
+                <div class="teamcircle3"></div>
+                <div class="teamcircle3"></div>
+                <div class="teamcircle3"></div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ========contact us============= -->
+
+    <div class="cont">
+        <h1 class="conthead">Contact Us</h1>
+        <div class="add">
+            <p class="contpara">Address</p>
+            <div class="contline"></div>
+            <p class="address">Street 221B Baker Street,<br>London, UK</p>
+
+        </div>
+        <div class="add">
+
+            <p class="contpara">Customer Support</p>
+            <div class="contline1"></div>
+            <p class="address1">E-mail: contact@site.com<br>Phone: (555) 555-5555</p>
+
+
+            <div class="nam">
+                <p class="namp">Your Name (required)</p>
+            </div>
+
+            <div class="E-mail">
+                <p class="namp">Your Email (required)</p>
+
+            </div>
+
+            <div class="Subject">
+                <p class="namp1">Subject</p>
+
+            </div>
+
+
+            <div class="msg">
+                <p class="namp1">Your Message</p>
+
+            </div>
+        </div>
+
+        <button class="conbut">
+            <p class="contb">Send</p>
+        </button>
+    </div>
+    <!-- =========info============== -->
+
+    <div class="info">
+        <ul class="products">
+            <h1 class="prhead">PRODUCTS</h1>
+            <li class="prlist">> Our List</li>
+            <li class="prlist">> List</li>
+            <li class="prlist">> News</li>
+            <li class="prlist">> Announcement</li>
+        </ul>
+
+        <ul class="products">
+            <h1 class="prhead">INFORMATION</h1>
+            <li class="prlist">> Pricing</li>
+            <li class="prlist">> Terms</li>
+            <li class="prlist">> Affiliates</li>
+            <li class="prlist">> Blog</li>
+        </ul>
+
+        <ul class="products">
+            <h1 class="prhead">SUPPORT</h1>
+            <li class="prlist">> Documentation</li>
+            <li class="prlist">> FAQs</li>
+            <li class="prlist">> Forums</li>
+            <li class="prlist">> Contact</li>
+        </ul>
+
+    </div>
+
+
+    <div class="end">
+        <p class="endp">Theme: Illdy. © Copyright 2017. All Rights Reserved.</p>
+
+    </div>
+</body>
+
+</html>

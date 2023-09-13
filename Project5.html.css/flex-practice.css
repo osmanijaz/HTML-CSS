@@ -1,0 +1,16 @@
+.main{
+   height: 155vh;
+   width: 100%;
+border: 1px solid #000;
+display: flex;
+flex-wrap: wrap;
+align-content: center;
+justify-content: center;
+}
+.card{
+    height: 400px;
+    width: 200px;
+    background-color: red;
+    border: 2px solid black;
+    color: white;
+}

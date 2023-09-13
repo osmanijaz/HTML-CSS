@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box>p {
+            background-color: red;
+        }
+
+        .box~div {
+            background-color: pink;
+        }
+
+        .box3:hover {
+            color: blue;
+        }
+
+        .box3::first-letter {
+            background-color: red;
+            font-size: 3em;
+        }
+
+        ul li::marker {
+            color: blue;
+            font-size: 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- selectors -->
+    <!-- 1-simple selectors
+   elemnts,id,name,class
+   2-combinator selectors
+   space (general child selector)
+    > (direct child)
+    + (adjecnet sibling)
+    ~ (general sibling)
+3-pseduo class (:hover)
+4-pseduo element(::after)-->
+
+    <div class="box">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, doloribus.</p>
+        <div class="inner-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, nisi?</p>
+        </div>
+    </div>
+    <div class="box2">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, doloribus.</p>
+    </div>
+    <ul>
+        <li>home</li>
+        <li>about</li>
+    </ul>
+    <div class="box3">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum pariatur harum exercitationem neque ipsam, non
+            minus impedit odit tempora necessitatibus! Reiciendis assumenda, nulla ipsum ex eum nam similique veritatis
+            error eius vitae consequuntur natus, eos est corporis laboriosam nobis cupiditate ab! Eum nesciunt eos id
+            quasi aspernatur voluptatum odio, sint corrupti perferendis excepturi dicta beatae, necessitatibus corporis
+            ex ut est quidem illo, laudantium nulla magnam commodi. Magni aperiam vero quia alias doloribus
+            perspiciatis, unde debitis, dolor tempore fugiat libero nobis numquam, autem necessitatibus dolore quae sint
+            at aut. Nostrum magni deleniti voluptatem similique dolor? Culpa, adipisci ex! Voluptate illo dolores magnam
+            velit eos laudantium nesciunt vel maxime nobis, neque corporis omnis maiores dolore suscipit veritatis ipsam
+            saepe corrupti fugit molestiae quis modi tempore praesentium reprehenderit nihil. Cum ab natus dignissimos
+            neque eveniet explicabo rem quas veniam consectetur praesentium, perferendis non illum voluptate ullam, eius
+            ipsa in perspiciatis repellat sequi ducimus excepturi quo. Nemo, voluptate quod harum placeat at
+            reprehenderit ducimus praesentium, eveniet architecto distinctio deleniti quis alias deserunt. Ad debitis
+            ratione iusto recusandae. Facilis unde dolorem cupiditate ipsum delectus repellendus consequatur suscipit,
+            in quae eligendi alias deleniti quasi necessitatibus soluta iure non culpa repudiandae! Mollitia saepe
+            ducimus reiciendis dolor ullam.</p>
+    </div>
+</body>
+
+</html>

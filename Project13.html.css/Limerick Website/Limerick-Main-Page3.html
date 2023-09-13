@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .nav-main {
+            width: 100%;
+            height: 80px;
+            border: 0.5px solid black;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 1%;
+            padding-left: 1%;
+            position: sticky;
+            top: 0px;
+            z-index: 100;
+        }
+
+        .left-picz-rotate {
+            background: url(./Limerick-images/1-2.jpg);
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all ease 0.4s;
+        }
+
+        .left-picz1:hover .left-picz-rotate {
+            transform: rotate(10deg) scale(130%);
+        }
+
+        .nav-icons-main {
+            /* border: 1px solid black; */
+            width: 230px;
+            height: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 2s;
+        }
+
+        .icon-nav:hover {
+            color: #FF427C;
+            cursor: pointer;
+        }
+
+        .title-nav {
+            width: 752px;
+            height: 82px;
+            /* border: 2px solid yellowgreen; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .title-style {
+            height: 40px;
+        }
+
+
+        .navlist-main {
+
+            width: 500px;
+            height: max-content;
+
+        }
+
+        .nav-ul {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-li {
+            list-style: none;
+            margin-left: 4%;
+
+        }
+
+        .bars-style {
+            font-size: 25px;
+        }
+
+
+        .nav-li a {
+            list-style: none;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            display: inline-block;
+
+            color: black;
+        }
+
+        .nav-li a:hover {
+            cursor: pointer;
+            color: #FF427C;
+            outline: none;
+
+
+        }
+
+        /* --dropdown-- */
+
+        /* ---bars start--- */
+
+        .home-drop-main1 {
+            position: relative;
+            z-index: 100;
+            cursor: pointer;
+
+        }
+
+
+        .drop-bars-list {
+            position: absolute;
+            background-color: white;
+            right: 0%;
+            top: 46.5px;
+            visibility: hidden;
+            width: 310px;
+            height: 200px;
+
+
+            border-top: 3px solid #FF427C;
+            transition: all 0.15s;
+
+
+        }
+
+        .home-drop-main1:hover .drop-bars-list {
+            top: 35px;
+            visibility: visible;
+
+        }
+
+        .home-drop-main1:hover {
+            visibility: visible;
+        }
+
+        /* ---bars end--- */
+
+
+        .drop-list2 {
+            position: absolute;
+            top: 73px;
+            right: 325px;
+            width: 200px;
+            visibility: hidden;
+            /* background-color: white; */
+            border-top: 3px solid #FF427C;
+            background-color: rgb(255, 255, 255);
+            transition: all 0.15s;
+        }
+
+        .drop-list2-margin1 {
+            right: 253px;
+        }
+
+        .drop-list2-margin2 {
+            right: 133px;
+            width: 240px;
+        }
+
+        .drop-list2-margin3 {
+            right: 56px;
+            width: 200px;
+        }
+
+        .home-drop1 {
+            position: relative;
+            z-index: 3;
+
+
+        }
+
+        .home-drop1:hover+.drop-list2 {
+            visibility: visible;
+        }
+
+        .drop-list2:hover {
+            visibility: visible;
+            top: 60px;
+        }
+
+        .dropul {
+            list-style: none;
+            width: 100%;
+
+
+        }
+
+        .dropli {
+            width: 100%;
+            height: 40px;
+            border: 0.5px solid grey;
+            margin-top: 0.7px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding-left: 2%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pink-move {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to right, #ff427bbf, #ff427b);
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            opacity: 0;
+
+        }
+
+
+
+        @keyframes move {
+            0% {
+                left: -100%;
+                opacity: 0.2;
+            }
+
+            100% {
+                left: 200%;
+                opacity: 0.5;
+            }
+        }
+
+        .dropli:hover a {
+            color: #FF427C;
+
+        }
+
+        .dropli:hover .pink-move {
+            animation: 0.55s move linear forwards;
+
+        }
+
+        .dropli:active {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .dropli:active a {
+            font-weight: 600;
+            font: 16px;
+
+        }
+
+        .dropli a {
+            width: 100%;
+            text-decoration: none;
+            color: grey;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .icon-circle {
+            width: 40px;
+            height: 40px;
+            border: 1px solid black;
+            border-radius: 50%;
+            /* padding-top: 4.5%;
+            padding-left: 8%; */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .icon-circle:hover .icon-nav {
+            color: #ff427b;
+
+        }
+
+        .icon-circle:hover {
+            border: 1px solid #ff427b;
+
+        }
+
+
+
+        /* -----dropdown end------ */
+        /* -------main 1 pic -------------- */
+
+        .pic1-main {
+            padding-top: 12%;
+            padding-bottom: 15%;
+            width: 100%;
+            /* height: 500px; */
+            height: max-content;
+            /* border: 2px solid red; */
+            position: relative;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .pic1-main-style {
+            height: auto;
+            width: 30%;
+            left: 0%;
+            top: 20%;
+            position: absolute;
+        }
+
+        .pic2-main-style {
+            position: absolute;
+            height: auto;
+            width: 40%;
+            bottom: 25%;
+            right: 0px;
+
+        }
+
+        .pic1-main-h2 {
+            color: grey;
+            font-weight: 500;
+            font-size: 20px;
+            position: relative;
+        }
+
+        .pic1-main-h2-yellow {
+            position: absolute;
+            top: -25px;
+            right: -25px;
+            width: 90px;
+            height: 90px;
+            border-radius: 100%;
+            background-color: #fbff7d;
+            z-index: -1;
+        }
+
+
+        .pic1-main-h1 {
+            color: rgb(52, 52, 52);
+            font-weight: 600;
+            font-size: 5vmax;
+            position: relative;
+
+            /* font-size: 90px; */
+
+        }
+
+        .pic1-main-h2-part2 {
+            text-align: center;
+            color: grey;
+            font-size: 19px;
+            font-weight: 400;
+            /* padding-top: 0.5%; */
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+
+        .pic1-main-h1-green {
+            position: absolute;
+            top: -15px;
+            left: 30px;
+            width: 120px;
+            height: 120px;
+            border-radius: 100%;
+            background-color: aquamarine;
+            z-index: -1;
+        }
+
+
+        /* ---boxes----- */
+
+        .boxes-main {
+            width: 100%;
+
+            height: max-content;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+
+            /* background-color: #fbff7d; */
+
+
+        }
+
+        .box {
+            width: 330px;
+            height: 400px;
+            /* border: 2px solid black; */
+            margin: 20px;
+            cursor: pointer;
+
+
+        }
+
+        .box-pic {
+            /* width: 100%; */
+            height: 75%;
+            /* border: 2px solid greenyellow; */
+            position: relative;
+            overflow: hidden;
+        }
+
+        .box-black {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.586);
+            opacity: 0;
+            transition: all 0.45s;
+            z-index: 2;
+
+
+
+
+        }
+
+        .box:hover .box-pic .box-black {
+            opacity: 1;
+
+        }
+
+
+
+        .box-style {
+            width: 100%;
+            height: 100%;
+            transform: scale(1) rotate(0deg);
+            transition: all 0.45s;
+        }
+
+        .box:hover .box-style {
+            transform: scale(1.2) rotate(5deg);
+
+        }
+
+
+
+
+        .box-head {
+            text-align: center;
+            font-weight: 500;
+            font-size: 25px;
+            padding-top: 5%;
+            transition: all 0.45s;
+        }
+
+        .box:hover .box-head {
+            color: #ff427b;
+        }
+
+        .box-para {
+            text-align: center;
+            color: grey;
+            padding-bottom: 1%;
+        }
+
+        /* ---slider--- */
+
+
+        .slider-main-outline {
+            /* width: 100%; */
+            height: 450px;
+            /* height: max-content; */
+            background-color: bisque;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+
+        }
+
+        /* ----- slider button ---- */
+
+
+        .slider-button-main {
+            width: 80%;
+            height: 450px;
+            position: absolute;
+            /* border: 3px solid yellow; */
+
+
+
+
+        }
+
+        .button-ul {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+
+        }
+
+        .button-li {
+            font-size: 150px;
+            font-weight: 100;
+            list-style: none;
+            /* position: absolute; */
+
+            display: flex;
+            align-items: center;
+
+
+        }
+
+        .button-li a {
+            text-decoration: none;
+            color: grey;
+        }
+
+        /* ----image container--- */
+
+        .main-slider-container {
+
+            position: relative;
+            width: 60%;
+            height: 80%;
+            /* border: 2px solid green; */
+            overflow: hidden;
+
+        }
+
+        .slider {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            /* border: 2px solid rgb(0, 47, 255); */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: bisque;
+        }
+
+        .slider:target {
+            animation: move 1s;
+
+        }
+
+        @keyframes move {
+            from {
+                margin-left: -60%;
+            }
+
+            to {
+                margin-left: 0;
+            }
+        }
+
+
+        .img1 {
+            width: 100px;
+            height: 100px;
+            /* border: 1px solid black; */
+            border-radius: 50%;
+            background-image: url(./Portfolio-home-images/author-1.jpg);
+        }
+
+        .slidh1 {
+            font-size: 16px;
+            font-weight: 300;
+            text-align: center;
+
+
+        }
+
+        .slidh2 {
+            color: grey;
+            font-weight: 300;
+        }
+
+        /* ---4 logos--- */
+
+        .logo4-main {
+            padding-top: 2%;
+            padding-bottom: 2%;
+            width: 100%;
+            height: max-content;
+            /* height: 280px; */
+            /* border: 2px solid red; */
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .lof4-box{
+width: 200px;
+/* width: 20%; */
+height: 130px;
+/* border: 2px solid hotpink; */
+
+
+        }
+
+        .lofimg{
+
+height: 100%;
+width: 100%;
+
+        }
+
+
+        .foot {
+
+width: 100%;
+height: 180px;
+/* height: max-content; */
+/* border: 2px solid red; */
+display: flex;
+flex-wrap: wrap;
+
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.foot-logo {
+height: 50px;
+}
+
+.foot-para{
+font-size: 14px;
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*********************/
+        /* media query start */
+        /*********************/
+
+        @media screen and (max-width:1000px) {
+
+            .nav-icons-main {
+                display: none;
+            }
+
+            .navlist-main {
+                display: none;
+            }
+
+            .title-nav {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .lof4-box{
+                margin-top: 10px;
+            }
+
+        }
+
+
+
+        @media screen and (max-width:667px) {}
+
+
+
+
+        /* ************** */
+        /* media query end*/
+        /* ************** */
+    </style>
+
+</head>
+
+<body>
+    <!-- ---navbar--- -->
+
+    <div class="nav-main">
+
+        <div class="nav-icons-main">
+
+            <div class="icon-circle">
+                <i class=" icon-nav fa-brands fa-facebook-f"></i>
+            </div>
+
+            <div class="icon-circle">
+                <i class=" icon-nav ic1 fa-brands fa-twitter"></i>
+            </div>
+
+            <div class="icon-circle">
+                <i class=" icon-nav fa-brands fa-google-plus-g"></i>
+            </div>
+
+            <div class="icon-circle">
+                <i class=" icon-nav fa-brands fa-pinterest-p"></i>
+            </div>
+
+            <div class="icon-circle">
+                <i class=" icon-nav fa-brands fa-instagram"></i>
+            </div>
+        </div>
+
+        <!-- ---title navbar--- -->
+
+        <div class="title-nav">
+            <img class="title-style" src="./Blog-with-slidebar-image/logo.png" alt="" srcset="">
+
+
+            <div class="navlist-main">
+                <ul class="nav-ul">
+
+
+
+                    <!-- ---dropdown 1 start--- -->
+                    <li class="nav-li home-drop1"><a href="">HOME</a></li>
+
+                    <div class="drop-list2">
+
+                        <ul class="dropul">
+
+                            <li class="dropli"><a href="">Creative Home</a>
+                                <div class="pink-move"></div>
+                            </li>
+
+
+
+                            <li class="dropli"><a href="">Designer Home</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Portfolio Home</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Parallax Home</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Carousel Home</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Header Styles</a>
+                                <div class="pink-move"></div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <!-- ---dropdown 1 end--- -->
+
+                    <!-- ---dropdown 2 start--- -->
+                    <li class="nav-li home-drop1"><a href="">ABOUT</a></li>
+
+                    <div class="drop-list2 drop-list2-margin1">
+
+                        <ul class="dropul">
+
+                            <li class="dropli"><a href="">About Us</a>
+                                <div class="pink-move"></div>
+                            </li>
+
+
+
+                            <li class="dropli"><a href="">Error Page</a>
+                                <div class="pink-move"></div>
+                            </li>
+
+
+                    </div>
+
+
+                    <!-- ---dropdown 2 end--- -->
+
+                    <!-- ---dropdown 3 start--- -->
+                    <li class="nav-li home-drop1"><a href="">PORTFOLIO</a></li>
+
+                    <div class="drop-list2 drop-list2-margin2">
+
+                        <ul class="dropul">
+
+                            <li class="dropli"><a href="">Portfolio Left Sidebar</a>
+                                <div class="pink-move"></div>
+                            </li>
+
+
+
+                            <li class="dropli"><a href="">Portfolio Right Sidebar</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Portfolio Centered</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Portfolio Slide</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Portfolio Masonry</a>
+                                <div class="pink-move"></div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <!-- ---dropdown 3 end--- -->
+
+                    <!-- ---dropdown 3 start--- -->
+                    <li class="nav-li home-drop1"><a href="">BLOG</a></li>
+
+                    <div class="drop-list2 drop-list2-margin3">
+
+                        <ul class="dropul">
+
+                            <li class="dropli"><a href="">Blog With Sidebar</a>
+                                <div class="pink-move"></div>
+                            </li>
+
+
+
+                            <li class="dropli"><a href="">Blog Grid</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Blog List</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Blog Masonry</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Blog Single</a>
+                                <div class="pink-move"></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- ---dropdown 3 end--- -->
+
+                    <li class="nav-li"><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+
+
+            <!-- -----bars drop down start---- -->
+
+            <i class="bars-style fa-solid fa-bars home-drop-main1">
+
+
+
+                <div class="drop-bars-list">
+
+                    <ul class="dropul">
+
+                        <li class="dropli"><a href="">Home</a>
+                            <div class="pink-move"></div>
+                        </li>
+
+
+
+                        <li class="dropli"><a href="">About Us</a>
+                            <div class="pink-move"></div>
+                        </li>
+
+                        <li class="dropli"><a href="">Portfolio</a>
+                            <div class="pink-move"></div>
+                        </li>
+                        <li class="dropli"><a href="">Blog</a>
+                            <div class="pink-move"></div>
+                        </li>
+
+                        <li class="dropli"><a href="">Contact Us</a>
+                            <div class="pink-move"></div>
+                        </li>
+                </div>
+
+                <!-- ----bars drop down end---- -->
+                <!-- ---dropdown 2 end--- -->
+            </i>
+        </div>
+    </div>
+    <!-- -----------main 1 pic -------------------- -->
+
+    <div class="pic1-main">
+
+        <img class="pic1-main-style" src="./Portfolio-home-images/pattern-1.png" alt="" srcset="">
+
+        <img class="pic2-main-style" src="./Portfolio-home-images/pattern-2.png" alt="" srcset="">
+
+        <h2 class="pic1-main-h2">Welcome To Limerick
+            <div class="pic1-main-h2-yellow"></div>
+
+        </h2>
+        <h1 class="pic1-main-h1">
+            <div class="pic1-main-h1-green"></div>
+            SHOWCASE YOUR SKILL
+        </h1>
+        <h2 class="pic1-main-h2-part2">I like to think that my work is a living, breathing embodiment of my passion for
+            discovery. Here’s some of it.</h2>
+
+    </div>
+
+    <!-- ------boxes------ -->
+
+    <div class="boxes-main">
+
+
+        <!-- ---box1 start--- -->
+        <div class="box">
+
+            <div class="box-pic">
+
+                <div class="box-black"></div>
+                <img class="box-style" src="./Portfolio-home-images/30-300x300.jpg" alt="" srcset="">
+
+            </div>
+
+
+            <h1 class="box-head">Contemporary Art</h1>
+            <p class="box-para">Design & Photography</p>
+
+        </div>
+
+        <!-- ---box1 end--- -->
+
+
+        <!-- ---box2 start--- -->
+        <div class="box">
+
+            <div class="box-pic">
+
+                <div class="box-black"></div>
+                <img class="box-style" src="./Portfolio-home-images/31-300x300.jpg" alt="" srcset="">
+
+            </div>
+
+
+            <h1 class="box-head">Man Drawing</h1>
+            <p class="box-para">Design & Photography</p>
+
+        </div>
+
+        <!-- ---box2 end--- -->
+
+        <!-- ---box3 start--- -->
+        <div class="box">
+
+            <div class="box-pic">
+
+                <div class="box-black"></div>
+                <img class="box-style" src="./Portfolio-home-images/32-300x300.jpg" alt="" srcset="">
+
+            </div>
+
+
+            <h1 class="box-head">Minimal Pettern</h1>
+            <p class="box-para">Design & Photography</p>
+
+        </div>
+
+        <!-- ---box3 end--- -->
+
+        <!-- ---box4 start--- -->
+        <div class="box">
+
+            <div class="box-pic">
+
+                <div class="box-black"></div>
+                <img class="box-style" src="./Portfolio-home-images/33-300x300.jpg" alt="" srcset="">
+
+            </div>
+
+
+            <h1 class="box-head">Summer Climet</h1>
+            <p class="box-para">Design & Photography</p>
+
+        </div>
+
+        <!-- ---box4 end--- -->
+
+
+        <!-- ---box5 start--- -->
+        <div class="box">
+
+            <div class="box-pic">
+
+                <div class="box-black"></div>
+                <img class="box-style" src="./Portfolio-home-images/34-300x300.jpg" alt="" srcset="">
+
+            </div>
+
+
+            <h1 class="box-head">Photography Style</h1>
+            <p class="box-para">Design & Photography</p>
+
+        </div>
+
+        <!-- ---box5 end--- -->
+
+        <!-- ---box6 start--- -->
+        <div class="box">
+
+            <div class="box-pic">
+
+                <div class="box-black"></div>
+                <img class="box-style" src="./Portfolio-home-images/35-300x300.jpg" alt="" srcset="">
+
+            </div>
+
+
+            <h1 class="box-head">Cup Of Coffe</h1>
+            <p class="box-para">Design & Photography</p>
+
+        </div>
+
+        <!-- ---box6 end--- -->
+
+        <!-- ---box7 start--- -->
+        <div class="box">
+
+            <div class="box-pic">
+
+                <div class="box-black"></div>
+                <img class="box-style" src="./Portfolio-home-images/36-300x300.jpg" alt="" srcset="">
+
+            </div>
+
+
+            <h1 class="box-head">Indesign Art</h1>
+            <p class="box-para">Design & Photography</p>
+
+        </div>
+
+        <!-- ---box7 end--- -->
+
+
+        <!-- ---box8 start--- -->
+        <div class="box">
+
+            <div class="box-pic">
+
+                <div class="box-black"></div>
+                <img class="box-style" src="./Portfolio-home-images/37-300x300.jpg" alt="" srcset="">
+
+            </div>
+
+
+            <h1 class="box-head">Fashion Vogue</h1>
+            <p class="box-para">Design & Photography</p>
+
+        </div>
+
+        <!-- ---box8 end--- -->
+
+        <!-- ---box9 start--- -->
+        <div class="box">
+
+            <div class="box-pic">
+
+                <div class="box-black"></div>
+                <img class="box-style" src="./Portfolio-home-images/38-300x300.jpg" alt="" srcset="">
+
+            </div>
+
+
+            <h1 class="box-head">Table With Cup</h1>
+            <p class="box-para">Design & Photography</p>
+
+        </div>
+
+        <!-- ---box9 end--- -->
+
+        <!-- ---box10 start--- -->
+        <div class="box">
+
+            <div class="box-pic">
+
+                <div class="box-black"></div>
+                <img class="box-style" src="./Portfolio-home-images/39-300x300.jpg" alt="" srcset="">
+
+            </div>
+
+
+            <h1 class="box-head">Contemporary Art</h1>
+            <p class="box-para">Design & Photography</p>
+
+        </div>
+
+        <!-- ---box10 end--- -->
+
+
+        <!-- ---box11 start--- -->
+        <div class="box">
+
+            <div class="box-pic">
+
+                <div class="box-black"></div>
+                <img class="box-style" src="./Portfolio-home-images/40-300x300.jpg" alt="" srcset="">
+
+            </div>
+
+
+            <h1 class="box-head">Fully Security</h1>
+            <p class="box-para">Design & Photography</p>
+
+        </div>
+
+        <!-- ---box11 end--- -->
+
+        <!-- ---box12 start--- -->
+        <div class="box">
+
+            <div class="box-pic">
+
+                <div class="box-black"></div>
+                <img class="box-style" src="./Portfolio-home-images/41-300x300.jpg" alt="" srcset="">
+
+            </div>
+
+
+            <h1 class="box-head">Fashion Photography</h1>
+            <p class="box-para">Design & Photography</p>
+
+        </div>
+
+        <!-- ---box12 end--- -->
+
+
+        <!-- ---box13 start--- -->
+        <div class="box">
+
+            <div class="box-pic">
+
+                <div class="box-black"></div>
+                <img class="box-style" src="./Portfolio-home-images/42-300x300.jpg" alt="" srcset="">
+
+            </div>
+
+
+            <h1 class="box-head">Contemporary Art</h1>
+            <p class="box-para">Design & Photography</p>
+
+        </div>
+
+        <!-- ---box13 end--- -->
+
+
+        <!-- ---box14 start--- -->
+        <div class="box">
+
+            <div class="box-pic">
+
+                <div class="box-black"></div>
+                <img class="box-style" src="./Portfolio-home-images/43-300x300.jpg" alt="" srcset="">
+
+            </div>
+
+
+            <h1 class="box-head">Contemporary Art</h1>
+            <p class="box-para">Design & Photography</p>
+
+        </div>
+
+        <!-- ---box14 end--- -->
+
+        <!-- ---box15 start--- -->
+        <div class="box">
+
+            <div class="box-pic">
+
+                <div class="box-black"></div>
+                <img class="box-style" src="./Portfolio-home-images/44-300x300.jpg" alt="" srcset="">
+
+            </div>
+
+
+            <h1 class="box-head">Cool Design</h1>
+            <p class="box-para">Design & Photography</p>
+
+        </div>
+
+        <!-- ---box15 end--- -->
+
+        <!-- ---box16 start--- -->
+        <div class="box">
+
+            <div class="box-pic">
+
+                <div class="box-black"></div>
+                <img class="box-style" src="./Portfolio-home-images/45-300x300.jpg" alt="" srcset="">
+
+            </div>
+
+
+            <h1 class="box-head">Art & Writting</h1>
+            <p class="box-para">Design & Photography</p>
+
+        </div>
+
+        <!-- ---box16 end--- -->
+
+
+        <!-- ---box17 start--- -->
+        <div class="box">
+
+            <div class="box-pic">
+
+                <div class="box-black"></div>
+                <img class="box-style" src="./Portfolio-home-images/46-300x300.jpg" alt="" srcset="">
+
+            </div>
+
+
+            <h1 class="box-head">Contemporary Art</h1>
+            <p class="box-para">Design & Photography</p>
+
+        </div>
+
+        <!-- ---box17 end--- -->
+
+
+        <!-- ---box18 start--- -->
+        <div class="box">
+
+            <div class="box-pic">
+
+                <div class="box-black"></div>
+                <img class="box-style" src="./Portfolio-home-images/47-300x300.jpg" alt="" srcset="">
+
+            </div>
+
+
+            <h1 class="box-head">Contemporary Art</h1>
+            <p class="box-para">Design & Photography</p>
+
+        </div>
+
+        <!-- ---box18 end--- -->
+
+        <!-- ---box19 start--- -->
+        <div class="box">
+
+            <div class="box-pic">
+
+                <div class="box-black"></div>
+                <img class="box-style" src="./Portfolio-home-images/48-300x300.jpg" alt="" srcset="">
+
+            </div>
+
+
+            <h1 class="box-head">Contemporary Art</h1>
+            <p class="box-para">Design & Photography</p>
+
+        </div>
+
+        <!-- ---box19 end--- -->
+
+
+        <!-- ---box20 start--- -->
+        <div class="box">
+
+            <div class="box-pic">
+
+                <div class="box-black"></div>
+                <img class="box-style" src="./Portfolio-home-images/34-300x300.jpg" alt="" srcset="">
+
+            </div>
+
+
+            <h1 class="box-head">Contemporary Art</h1>
+            <p class="box-para">Design & Photography</p>
+
+        </div>
+
+        <!-- ---box20 end--- -->
+
+
+        <!-- ---box21 start--- -->
+        <div class="box">
+
+            <div class="box-pic">
+
+                <div class="box-black"></div>
+                <img class="box-style" src="./Portfolio-home-images/35-300x300.jpg" alt="" srcset="">
+
+            </div>
+
+
+            <h1 class="box-head">Contemporary Art</h1>
+            <p class="box-para">Design & Photography</p>
+
+        </div>
+
+        <!-- ---box21 end--- -->
+
+
+        <!-- ---box22 start--- -->
+        <div class="box">
+
+            <div class="box-pic">
+
+                <div class="box-black"></div>
+                <img class="box-style" src="./Portfolio-home-images/36-300x300.jpg" alt="" srcset="">
+
+            </div>
+
+
+            <h1 class="box-head">Fully Security</h1>
+            <p class="box-para">Design & Photography</p>
+
+        </div>
+
+        <!-- ---box22 end--- -->
+
+        <!-- ---box23 start--- -->
+        <div class="box">
+
+            <div class="box-pic">
+
+                <div class="box-black"></div>
+                <img class="box-style" src="./Portfolio-home-images/37-300x300.jpg" alt="" srcset="">
+
+            </div>
+
+
+            <h1 class="box-head">Blog Talk</h1>
+            <p class="box-para">Design & Photography</p>
+
+        </div>
+
+        <!-- ---box23 end--- -->
+
+        <!-- ---box24 start--- -->
+        <div class="box">
+
+            <div class="box-pic">
+
+                <div class="box-black"></div>
+                <img class="box-style" src="./Portfolio-home-images/45-300x300.jpg" alt="" srcset="">
+
+            </div>
+
+
+            <h1 class="box-head">Wall Frame</h1>
+            <p class="box-para">Design & Photography</p>
+
+        </div>
+
+        <!-- ---box24 end--- -->
+
+    </div>
+
+    <!-- ---slider---- -->
+
+    <div class="slider-main-outline">
+
+
+
+        <div class="slider-button-main">
+
+            <ul class="button-ul">
+                <li class="button-li"><a href="#slide1">&#60;</a>
+                </li>
+                <li class="button-li"><a href="#slide2">></a></li>
+            </ul>
+
+        </div>
+
+
+
+        <div class="main-slider-container">
+
+
+
+            <div class="slider" id="slide1">
+                <div class="img1"></div>
+                <h1 class="slidh1">Lorem ipsum dolor sit amet consectetur adipisicing elit. amet veritatis est
+                    at illum aspernatur iste. Repellendus, error?</h1>
+                <h2 class="slidh2">John Doe</h2>
+            </div>
+
+
+
+
+
+            <div class="slider" id="slide2">
+                <div class="img1"></div>
+                <h1 class="slidh1">Lorem ipsum dolor sit amet consectetur adipisicing elit. amet veritatis est
+                    at illum aspernatur iste. Repellendus, error?</h1>
+                <h2 class="slidh2">John Doe</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----4 logos--- -->
+
+    <div class="logo4-main">
+<div class="lof4-box">
+<img class="lofimg" src="./Portfolio-home-images/1.jpg" alt="" srcset="">
+
+</div>
+<div class="lof4-box">
+    <img class="lofimg" src="./Portfolio-home-images/2.jpg" alt="" srcset="">
+</div>
+<div class="lof4-box">
+    <img class="lofimg" src="./Portfolio-home-images/3.jpg" alt="" srcset="">
+</div>
+<div class="lof4-box"><img class="lofimg" src="./Portfolio-home-images/4.jpg" alt="" srcset=""></div>
+
+    </div>
+
+
+
+    <!-- ----foot--- -->
+
+    <div class="foot">
+        <img class="foot-logo" src="./Limerick-images/logo.png" alt="">
+        <p class="foot-para">© Copyright 2019 Limerick. All Rights Reserved</p>
+
+        <div class="nav-icons-main">
+
+            <div class="icon-circle">
+                <i class=" icon-nav fa-brands fa-facebook-f"></i>
+            </div>
+
+            <div class="icon-circle">
+                <i class=" icon-nav ic1 fa-brands fa-twitter"></i>
+            </div>
+
+            <div class="icon-circle">
+                <i class=" icon-nav fa-brands fa-google-plus-g"></i>
+            </div>
+
+            <div class="icon-circle">
+                <i class=" icon-nav fa-brands fa-pinterest-p"></i>
+            </div>
+
+            <div class="icon-circle">
+                <i class=" icon-nav fa-brands fa-instagram"></i>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

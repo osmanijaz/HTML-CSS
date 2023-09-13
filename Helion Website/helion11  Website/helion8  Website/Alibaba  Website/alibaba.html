@@ -1,0 +1,1947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .navbar{
+        height: max-content;
+        width: 100%;
+        border-bottom: 1px solid gray;
+        padding: 1px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .logo{
+        height: max-content;
+        width: 15%;
+        /* border: 1px solid red; */
+        margin-left: 2%;
+    }
+    #image1{
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+    }
+    .searchbar{
+        height: 40px;
+        width: 45%;
+        border: 1px solid orangered;
+        border-radius: 30px;
+        /* margin: auto; */
+        /* margin-top: -65px; */
+        display: flex;
+        justify-content: center;
+    }
+    #products{
+        height: 100%;
+        width: 150px;
+        border: none;
+        border-right: 1px solid gray;
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+        padding-left: 8px;
+        top: 0px;
+        outline: none;
+        position: relative;
+        font-size: small;
+        
+
+    }
+    #products option{
+        height: 30px;
+        font-size: medium;
+        line-height: 30px;
+        border-bottom: 1px solid gray;
+        color: orangered;
+    }
+    .inp1{
+        font-family:  Roboto, Helvetica, Tahoma, Arial, "Microsoft YaHei";
+        height: 100%;
+        width: 70%;
+        outline: none;
+        border: none;
+        top: 0px;
+        position: relative;
+        padding-left: 10px;
+        border-right: 1px solid gray;
+    }
+    .btn1{
+        
+        height: 100%;
+        width: 25%;
+        white-space: nowrap;
+        margin-top: 0.25px;
+        position: relative;
+        border: none;
+        background-color: orangered;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        color: white;
+        font-size: medium;
+        cursor: pointer;
+        
+    }
+    .icons{
+        height: 90px;
+        width: 400px;
+        /* border: 1px solid blue; */
+        display: flex;
+        justify-content: center;
+        /* margin-right: 0; */
+    }
+    .icon1{
+        height: 90px;
+        width: 140px;
+        /* border: 1px solid; */
+    }
+    .fa-user{
+        font-size: 25px;
+        color: gray;
+        margin: 25px 0px;
+        /* margin-top: 25px; */
+        cursor: pointer;
+    }
+    .p1{
+        font-family: Roboto, Helvetica, Tahoma, Arial, "Microsoft YaHei";
+        font-size: 13px;
+        margin-left: 34%;
+        margin-top: -50px;
+        /* margin: -50px 30%; */
+      
+        cursor: pointer;
+        width: max-content;
+    }
+    .p2{
+        font-family: Roboto, Helvetica, Tahoma, Arial, "Microsoft YaHei";
+        font-size: 13px;
+        margin-left: 34%;
+        margin-top: 5px;
+        /* margin: 50px 29%; */
+        cursor: pointer;
+        /* width: max-content; */
+        white-space: nowrap;
+    }
+    .fa-message{
+        font-size: 25px;
+        color: gray;
+        margin: 15px 37%;
+        cursor: pointer;
+    }
+    .p3{
+        font-family: Roboto, Helvetica, Tahoma, Arial, "Microsoft YaHei";
+        font-size: 13px;
+        /* margin: 0px 29%; */
+        text-align: center;
+        cursor: pointer;
+        /* width: max-content; */
+        transition: .3s;
+    }
+    .p3:hover{
+        color: orangered;
+
+    }
+    .fa-sack-dollar{
+        font-size: 25px;
+        color: gray;
+        margin: 15px 37%;
+        cursor: pointer;
+    }
+    .fa-cart-shopping{
+        font-size: 25px;
+        color: gray;
+        margin: 15px 35%;
+        cursor: pointer;
+    }
+    .nav{
+        height: 50px;
+        width: 100%;
+        border-bottom: 1px solid;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .ul1{
+        color: black;
+        /* border: 1px solid red; */
+        /* margin: 10px 10px; */
+        white-space: nowrap;
+        width: max-content;
+        height: max-content;
+
+    }
+    .li1{
+        list-style: none;
+        font-size: 14px;
+        display: inline-block;
+        margin-left: 3%;
+        cursor: pointer;
+        font-family: Roboto, Helvetica, Tahoma, Arial, "Microsoft YaHei";
+        
+        /* background-color: aqua; */
+
+    }
+    #ic1{
+        color: black;
+        font-size: 13px;
+        transition: none;
+    }
+
+    .ul1:hover #ic1{
+        color: orangered;
+        transform: rotate(180deg);
+    }
+    
+    .ul2{
+        color: black;
+        /* border: 1px solid red; */
+        /* margin: 10px 10px; */
+        /* white-space: nowrap; */
+        width: max-content;
+        height: 20px;
+    }
+    .li2{
+        font-family: Roboto, Helvetica, Tahoma, Arial, "Microsoft YaHei";
+        list-style: none;
+        font-size: 14px;
+        display: inline-block;
+        margin-left: 35px;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .li2:hover{
+        color: orangered;
+    }
+    .fa-angle-down{
+        color: black;
+        transition: .3s;
+        font-size: 13px;
+
+    }
+    .li2:hover .fa-angle-down{
+        color: orangered;
+        transform: rotate(180deg);
+
+    }
+    
+    .ul4{
+        color: black;
+        /* border: 1px solid red; */
+        /* margin: 10px 10px; */
+        /* width: 100%; */
+        height: max-content;
+    }
+    #ic1{
+        color: black;
+        font-size: 13px;
+        transition: none;
+    }
+
+    .li2:hover #ic1{
+        transform: rotate(180deg);
+        color: orangered;
+    }
+    #icn2{
+        color: black;
+        font-size: 13px;
+        transition: none;
+    }
+
+    .li2:hover #icn2{
+        transform: rotate(180deg);
+        color: orangered;
+    }
+    .menu{
+        height: max-content;
+        width: 6%;
+        font-size: 18px;
+        /* border: 1px solid red; */
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        cursor: pointer;
+        display: none;
+        white-space: nowrap;
+    }
+    .cat{
+        font-family: Roboto, Helvetica, Tahoma, Arial, "Microsoft YaHei";
+        height: max-content;
+        width: 10%;
+        /* border: 1px solid red; */
+        position: absolute;
+        top: 130px;
+        left: 30px;
+        cursor: pointer;
+        display: none;
+        white-space: nowrap;
+
+
+    }
+    .cat:hover{
+        color: orangered;
+    }
+    .cat:hover .fa-angle-down{
+        color: orangered;
+        transform: rotate(180deg);
+    }
+    .eng{
+        font-family: Roboto, Helvetica, Tahoma, Arial, "Microsoft YaHei";
+        height: max-content;
+        width: 8%;
+        /* border: 1px solid red; */
+        font-size: 17px;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        cursor: pointer;
+        display: none;
+        white-space: nowrap;
+
+
+    }
+    .eng:hover{
+        color: orangered;
+    }
+    .eng:hover .fa-angle-down{
+        color: orangered;
+        transform: rotate(180deg);
+    }
+    .cart{
+        height: max-content;
+        width: 5%;
+        /* border: 1px solid; */
+        position: absolute;
+        right: 30px;
+        top: 120px;
+        display: none;
+        
+    }
+    #cart1{
+        font-size: 18px;
+        color: black;
+        margin: 0 0;
+    }
+    .image111{
+        height: 120px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(244,244,244);
+        /* margin: 10px 2%;  */
+    }
+    #image2{
+        height: 100px;
+        width: 96%;
+        /* margin: 10px 0%; */
+    }
+    .main1{
+        height: max-content;
+        width: 100%;
+        background-color: rgb(244,244,244);
+        padding: 1px;
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        /* align-items: center; */
+
+    }
+    .div1{
+        height: max-content;
+        width: 220px;
+        /* border: 1px solid red; */
+        background-color: white;
+        /* margin: 20px 2%; */
+    }
+    .ul5{
+        margin-top: 5px;
+       
+
+    }
+    .li5{
+        list-style: none;
+        font-family: Roboto, Helvetica, Tahoma, Arial, "Microsoft YaHei";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17.9999px;
+        color: rgb(51, 51, 51);
+        cursor: pointer;
+        margin: 7px 4%;
+    
+        /* width: max-content; */
+
+
+    }
+    .li5:hover{
+        text-decoration: underline;
+        color: orangered;
+    }
+    .li6{
+        cursor: pointer;
+        text-decoration:underline;
+        /* width: max-content; */
+        list-style: none;
+        margin: 7px 4%;
+    }
+    .li6:hover{
+        color: blue;
+
+    }
+    .main2{
+        height: max-content;
+        width: 82%;
+        /* border: 1px solid tomato; */
+        padding: 1px;
+    }
+    .p5{
+        font-family: Roboto, Helvetica, Tahoma, Arial, "Microsoft YaHei";
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 21.9999px;
+        color: rgb(51, 51, 51);
+        /* cursor: pointer; */
+        cursor: default;
+    }
+    .child1{
+        height: max-content;
+        width: 100%;
+        /* border: 1px solid yellowgreen; */
+        margin: 10px 0;
+        display: flex;
+
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .child2{
+        height: max-content;
+        width: 290px;
+        /* border: 1px solid brown; */
+        
+        /* margin-top: 5px; */
+    }
+    .child3{
+        height: max-content;
+        width: 100%;
+        /* background-color: wheat; */
+        position: relative;
+        /* overflow: hidden; */
+        cursor: pointer;
+
+    }
+    .child4{
+        height: max-content;
+        width: 100%;
+        /* background-color: skyblue; */
+
+    }
+    .div3{
+        height: 70px;
+        width: 30px;
+        background-color: rgba(128, 128, 128, 0.587);
+        position: absolute;
+        z-index: 10;
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: .5s;
+    }
+    .child2:hover .div3{
+        opacity: 1;
+
+    }
+    .div4{
+        height: 70px;
+        width: 30px;
+        background-color: rgba(128, 128, 128, 0.587);
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        cursor: pointer;
+        transition: .5s;
+    }
+    .child2:hover .div4{
+        opacity: 1;
+
+    }
+    #icon6{
+        font-size: 25px;
+        color: whitesmoke;
+    }
+    .child5{
+        height: 10vh;
+        width: 100%;
+        border-top: 1px solid darkgray;
+        /* background-color: pink; */
+    }
+    .div2{
+        height: 25px;
+        width: 25px;
+        background-color: white;
+        border: 1px solid darkgray;
+        border-radius: 50%;
+        position: absolute;
+        left: 250px;
+        top: 0px;
+        z-index: 10;
+      
+    }
+    #icon2{
+        font-size: 16px;
+        color: darkgray;
+        margin-top: 5px;
+        margin-left: 4px;
+
+
+    }
+    #icon2:hover{
+        color: gray;
+    }
+    #image3{
+        height: 80%;
+        width: 80%;
+        transition: .5s;
+        margin: 20px 30px;
+
+    }
+    .image3-a{
+       
+        margin: 20px 30px;
+    }
+    .child2-a{
+        padding: 10.5px 0;
+    }
+
+
+    .child2:hover #image3{
+        transform: scale(1.1);
+    }
+    .p6{
+        font-family: Roboto, Helvetica, Tahoma, Arial, "Microsoft YaHei";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18.9999px;
+        color: rgb(51, 51, 51);
+        cursor: pointer;
+        margin-left: 5px;
+    }
+    .p6:hover{
+        text-decoration: underline;
+
+    }
+    .p7{
+        font-family: Roboto, Helvetica, Tahoma, Arial, "Microsoft YaHei";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15.9999px;
+        color: rgb(51, 51, 51);
+        /* margin: 50px 5px; */
+        margin-top: 50px;
+        margin-left: 5px;
+        
+    }
+    .color1{
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20.9999px;
+        color: rgb(51, 51, 51);
+
+    }
+    .p8{
+        font-family: Roboto, Helvetica, Tahoma, Arial, "Microsoft YaHei";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15.9999px;
+        color: rgb(51, 51, 51);
+        margin: 5px 5px;
+        /* margin-top: 10px; */
+    }
+    .color2{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.9999px;
+        color: black;
+    }
+    #image4{
+        height: 15px;
+        /* margin: 50px 5px; */
+        margin-top: 50px;
+        margin-left: 5px;
+    }
+    .p9{
+        font-family: Roboto, Helvetica, Tahoma, Arial, "Microsoft YaHei";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.9999px;
+        color: rgb(51, 51, 51);
+        /* margin: -70px 25%; */
+        margin-left: 25%;
+        margin-top: -20px;
+        cursor: pointer;
+    }
+    .p9:hover{
+        text-decoration: underline;
+    }
+    .color3{
+        font-family: Roboto, Helvetica, Tahoma, Arial, "Microsoft YaHei";
+        font-size: 12px;
+        line-height: 17.9999px;
+        color: rgb(51, 51, 51);
+        font-weight: 700;
+    }
+    #icon3{
+        font-size: 14px;
+        cursor: pointer;
+        
+    }
+    #icon3:hover{
+        text-decoration: underline;
+    }
+    .btn2{
+        height: 40px;
+        width: 50%;
+        background-color: orangered;
+        border: none;
+        border-radius: 20px;
+        margin: 15px 10px;
+        color: white;
+        font-weight: 500;
+    }
+    #icon4{
+        font-size: 16px;
+        cursor: pointer;
+        color: blue;
+        margin-left: 10px;
+
+    }
+    
+    #icon5{
+        font-size: 18px;
+        cursor: pointer;
+        color: gray;
+        margin-left: 15px;
+
+    }
+    .main3{
+        height: max-content;
+        width: 100%;
+        /* border: 1px solid red; */
+        background-color: rgb(244,244,244);
+        padding: 1px;
+    }
+    .div5{
+        height: 10vh;
+        width: 100%;
+        background-color: white;
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .div6{
+        height: max-content;
+        width: 100%;
+        border-top: 1px solid;
+        /* background-color: wheat; */
+    }
+    .p10{
+        font-family: Roboto, Helvetica, Tahoma, Arial, "Microsoft YaHei";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17.9999px;
+        color: darkgray;
+        text-align: center;
+        margin-top: 20px;
+
+    }
+    .color4{
+        transition: .1s;
+        cursor: pointer;
+        
+    }
+    .color4:hover{
+        text-decoration: underline;
+    }
+    /* .p11{
+        font-family: Roboto, Helvetica, Tahoma, Arial, "Microsoft YaHei";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17.9999px;
+        color: darkgray;
+        text-align: center;
+        margin-top: 10px;
+    } */
+    .color5{
+        transition: .1s;
+        cursor: pointer;
+        
+    }
+    .color5:hover{
+        text-decoration: underline;
+    }
+    .color6{
+        cursor: pointer;
+    }
+
+
+  
+    
+
+
+
+
+
+
+
+    /* /////////////////////////////// Media Queries ////////////////////////////// */
+
+    @media screen and (max-width:1024px) {
+        #products{
+            width: 25%;
+        }
+        .inp1{
+            width: 50%;
+        }
+        .btn1{
+            width: 25%;
+        }
+        .p4{
+            display: none;
+        }
+        .icons{
+            width: 300px;
+        }
+        .icon1{
+            width: 75px;
+        }
+        .fa-user{
+            font-size: 20px;
+        }
+
+        .fa-message{
+            font-size: 20px;
+        }
+        .fa-sack-dollar{
+            font-size: 20px;
+        }
+        .fa-cart-shopping{
+            font-size: 20px;
+        }
+        
+        .p1{
+            margin-left: 35%;
+            font-size: 12px;
+        }
+        .p2{
+            margin-left: 35%;
+            font-size: 12px;
+        }
+        .p3{
+            font-size: 12px;
+        }
+        .ul4{
+            display: none;
+        }
+        
+
+        
+    }
+    @media screen and (max-width:768px) {
+        .icons{
+            display: none;
+        }
+        .navbar{
+            
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .logo{
+            height: 60px;
+            width: 30%;
+            margin-top: 20px;
+        }
+        /* #image1{
+            height: 100%;
+            width: 100%;
+        } */
+        .searchbar{
+            width: 55%;
+            margin: 40px 0%;
+        }
+        #products{
+            width: 30%;
+        }
+        .inp1{
+            width: 40%;
+        }
+        .btn1{
+            margin-top: -0.25px;
+            width: 30%;
+        }
+        .icon1 .fa-cart-shopping{
+            display: block;
+        }
+        .ul2{
+            display: none;
+        }
+        .ul4{
+            display: block;
+        }
+        .menu{
+            display: block;
+            font-size: 14px;
+            left: 10px;
+        }
+        .cat{
+            display: block;
+            font-size: 14px;
+            margin-top: 5px;
+            left: 10px;
+
+        }
+        .eng{
+            display: block;
+            right: 70px;
+            font-size: 14px;
+
+        }
+        .cart{
+            display: block;
+            font-size: 14px;
+        }
+        .nav{
+            display: none;
+        }
+
+        
+    }
+    @media screen and (max-width:425px) {
+        .searchbar{
+            width: 50%;
+            height: 30px;
+            margin-top: 46px;
+        }
+       
+        #products{
+            width: 50%;
+        }
+        .main2{
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        
+    }
+    
+    
+
+</style>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img id="image1" src="./TB1hVGkvVP7gK0jSZFjXXc5aXXa-365-49.svg" alt="">
+        </div>
+        <div class="searchbar">
+            <select name="" id="products">
+               
+                    <option id="op1">Products</option>
+                    <option id="op1">Seller</option>
+
+                
+            </select>
+            <input class="inp1" type="text" placeholder="What are you looking for...">
+            <button class="btn1"><i class="fa-solid fa-magnifying-glass"></i><p class="p4">Search</p> </button>
+
+        </div>
+        <div class="icons">
+            <div class="icon1">
+                <i class="fa-solid fa-user"></i>
+                <p class="p1">Sign In</p>
+                <p class="p2">Join Free</p>
+
+            </div>
+
+            <div class="icon1">
+                <i class="fa-solid fa-message"></i>
+                <p class="p3">Messages</p> 
+
+            </div>
+            <div class="icon1">
+                <i class="fa-solid fa-sack-dollar"></i>
+                <p class="p3">Orders</p> 
+
+            </div>
+            <div class="icon1">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p class="p3">Cart</p> 
+
+            </div>
+            
+
+        </div>
+    </div>
+    <div class="nav">
+        <ul class="ul1">
+            <li class="li1"><i class="fa-solid fa-bars"></i></li>
+            <li class="li1">Categories</li> 
+            <li class="li1"><i id="ic1" class="fa-solid fa-angle-down"></i></li>
+            
+        </ul>
+        <ul class="ul2">
+            <li class="li2">Ready to Ship</li>
+            <li class="li2">Personal Protective E...</li>
+            <li class="li2">Trade Shows</li>
+       
+            <li class="li2">Buyer Central <i class="fa-solid fa-angle-down"></i></li>
+            <li class="li2">Sell On Alibaba <i class="fa-solid fa-angle-down"></i></li>
+            <li class="li2">Help <i class="fa-solid fa-angle-down"></i></li>
+           
+        </ul>
+        
+            <ul class="ul4">
+                <li class="li2">Get The App</li>
+                <li class="li2">English-USD <i id="ic1" class="fa-solid fa-angle-down"></i></li>
+                <li class="li2">Ship to: <i id="icn2" class="fa-solid fa-angle-down"></i></li>
+            </ul>
+            
+        </div>
+        <div class="menu"><i class="fa-solid fa-bars"></i> Menu </div>
+        <div class="cat"> Categories  <i class="fa-solid fa-angle-down"></i> </div>
+        <div class="eng">English-USD <i class="fa-solid fa-angle-down"></i></div>
+        <div class="cart"> <i id="cart1" class="fa-solid fa-cart-shopping"></i> <br> Cart</div>
+        <div class="image111">
+            <img id="image2" src="./aliibaba  Website/O1CN01XKg42T1Isgb6t2t7t_!!6000000000949-0-tps-1500-140.jpg" alt="">
+        </div>
+        <div class="main1">
+            <div class="div1">
+                <ul class="ul5">
+                    <li class="li5">Packaging & Printing</li>
+                    <li class="li5">Construction & Real Estate</li>
+                    <li class="li5">Consumer Electronics</li>
+                    <li class="li5"> Home & Garden</li>
+                    <li class="li5"> Beauty & Personal Care</li>
+                    <li class="li5"> Luggage, Bags & Cases</li>
+                    <li class="li5"> Furniture</li>
+                    <li class="li6"> View More</li>
+                </ul>
+            </div>
+            <div class="main2">
+                <p class="p5">Recommend for you</p>
+                <div class="child1">
+
+
+
+
+
+
+
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/He1d6ab0d8dab46b4a478af84a9b9a983p.png_220x220.png" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Cheap Retail High Quality Custom Printed <br> Reusable Ldpe Plastic Shopping Bag With</p>
+                            <p class="p7"><span class="color1"> $0.01 - $0.05 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 500 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 3YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/Hc02d665036bc4f1f857186a6845ce7e3N.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Eco Friendly Modern Cosmetic Packaging <br> Custom Printed Cardboard Tube Cylinder</p>
+                            <p class="p7"><span class="color1"> $0.12 - $0.35 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 500 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 8YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/H5baa2cc4fd5941ca91e514f9d1d62e47V.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">High quality custom printing logo label <br> shiny die cutting sticker uv self adhesive</p>
+                            <p class="p7"><span class="color1"> $0.01 - $0.10 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 500 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 4YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/A2585e564b41641c6a7655505b0d6e263h.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Custom Die Cut Stickers Waterproof Self <br> Adhesive Holographic PVC Label UV</p>
+                            <p class="p7"><span class="color1"> $0.03 - $0.25 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 500 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 3YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/H0fb3f41f4c454ecea210e352ce8bd0a5f.png_220x220.png" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Hot selling wholesale brown kraft folding <br> clothing shipping packaging box custom</p>
+                            <p class="p7"><span class="color1"> $0.05 - $0.20 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 500 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 4YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/H848f91ac083441a1a8bb942c805bb3f99.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Custom Printing Lovely Journal Decoration <br> Self Adhesive Vinyl Kiss Cut Sticker Sheet</p>
+                            <p class="p7"><span class="color1"> $0.01 - $0.06 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 100.0 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 1YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/H7a300390aa1c435290b285f0cade8349l.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Wholesale Cheap Customized printed logo Foldable Recyclable Biodegradable Plastic</p>
+                            <p class="p7"><span class="color1"> $0.01 - $0.02 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 1000 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 2YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/Hb56f959d4a9a4871978c2727742875bbr.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">map tray Customized Black PP With EVOH <br> MAP Tray Food Grade Plastic PP Trays For</p>
+                            <p class="p7"><span class="color1"> $0.11 - $0.12 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 10000 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 3YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/Heb88154b2c194e53be204cb816c26196p.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Chemical grade heavy duty self adhesive <br> tape and drape masking film plastic drop</p>
+                            <p class="p7"><span class="color1"> $0.33 - $0.90 </span> / rolls</p>
+                            <p class="p8"><span class="color2"> 10000 rolls </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 4YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/Hecd175b059964ec9834757aeaa0c1fafY.png_220x220.png" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Hot sale Colorful custom printed cloth <br> shoes paper shopping bag with Your Own</p>
+                            <p class="p7"><span class="color1"> $0.01 - $0.20 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 10.0 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 1YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/Hdd707cb895074ab4aa9171f948f98a76L.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Anti-reflective Gaffer Cloth Tape Matt Cloth <br> Free Samples Black Waterproof Rubber</p>
+                            <p class="p7"><span class="color1"> $0.93 - $0.99 </span> / rolls</p>
+                            <p class="p8"><span class="color2"> 2000 rolls </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 5YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/Hcc9cfac66e9a4ce3b19accb5ed69f3a4C.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Picture Frame Corner Protectors <br> Cardboard Edges for Art                            </p>
+                            <p class="p7"><span class="color1"> $0.01 - $0.04 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 100 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 2YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/H079415a575ce4707a169af2e84b9a68f1.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Custom Logo 17Gsm/22Gsm Printed <br> Clothing Packaging Tissue Paper</p>
+                            <p class="p7"><span class="color1"> $0.03 - $0.10 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 500 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 2YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/Hfb41a2c422df482cbfbde2f756e3a352c.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Custom Luxury Jewelry Packing Pouch <br> Small Drawstring Gift Velvet Bag                            </p>
+                            <p class="p7"><span class="color1">$0.01 - $0.03 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 100 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 1YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/Hf75e3c43de63433094fddcf947f019edi.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">16 cm branded 11oz empty candle set gift <br> boxes cardboard gift packaging 9cl 4x4x4                            </p>
+                            <p class="p7"><span class="color1">$0.05 - $0.85 </span> / piece</p>
+                            <p class="p8"><span class="color2"> 1 piece </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 5YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/H456795cc0c9b481eaa9535b80dc5d607X.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Custom Luxury Paper Magnet Foldable <br> Folding Magnetic Gift Box Garment                           </p>
+                            <p class="p7"><span class="color1"> $0.22 - $0.79 </span> / piece</p>
+                            <p class="p8"><span class="color2"> 1 piece </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 2YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/Hae75d636e7424494b64521cac48d11fdv.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Factory custom clear side gusset plastic <br> bags packaging food grade packaging bag                           </p>
+                            <p class="p7"><span class="color1"> $0.02 - $0.06</span> / pieces</p>
+                            <p class="p8"><span class="color2"> 1000 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 17YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/Hbc183a1fc5b44a6ca1f81878e1c0681eY.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Bulk Kraft Paper Window Clear 4 6 12 24 <br> Hole Muffin Cup Cake Cupcake Packaging                           </p>
+                            <p class="p7"><span class="color1"> $0.18 - $0.35 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 1000.0 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 14YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2 child2-a">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" class="image3-a" src="./aliibaba  Website/H2e890360e955476d874955bc101f61567.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Custom Mailing Bag with Logo Waterproof <br> Padded Envelopes with Self Seal Shipping                           </p>
+                            <p class="p7"><span class="color1"> $0.01 - $0.50 </span> / piece</p>
+                            <p class="p8"><span class="color2"> 1.0 piece </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 9YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/H456795cc0c9b481eaa9535b80dc5d607X.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Custom Luxury Paper Magnet Foldable <br> Folding Magnetic Gift Box Garment                           </p>
+                            <p class="p7"><span class="color1"> $0.22 - $0.79 </span> / piece</p>
+                            <p class="p8"><span class="color2"> 1 piece </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 2YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/H8720fedccfc14b82813abe610726f16a6.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">[USA Warehouse] Wholesale Price Blue <br> Bubble Padded Envelopes Packaging</p>
+                            <p class="p7"><span class="color1"> $0.01 - $0.20 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 100.0 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 10YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/Hc12b6ea2f0834f63b7ee5fdbeb6d2c39H.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Wholesale Custom Printed Unique <br> Corrugated Kraft Shipping Boxes Custom</p>
+                            <p class="p7"><span class="color1"> $0.07 - $1.32 </span> / piece</p>
+                            <p class="p8"><span class="color2"> 1 piece </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 6YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/He466f5bdace547ff99f9983cf4364e35n.png_220x220.png" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">17g High Quality Custom Logo Printing <br> Gift Wrapping Tissue Paper for Packing                           </p>
+                            <p class="p7"><span class="color1">$0.01 - $0.03 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 100 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 4YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/H3628d65a58a04b318e759ec2e5a18b90W.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">custom logo transparent resealable Smell <br> Proof Bags clear mylar bags holographic                         </p>
+                            <p class="p7"><span class="color1">$0.01 - $0.10 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 50 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 8YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/H8f17f032371340748bde9b93385a4939o.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">High quality 38mm 42mm 41mm 45mm <br> 48mm 53mm 63mm plastic filp spice                        </p>
+                            <p class="p7"><span class="color1">$0.01 - $0.03 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 1000 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 2YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/H5f9a9ff7f9be4322b37c0dad06182d00O.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">New party gift decoration craft paper roll <br> DIY holiday children's wrapping paper                        </p>
+                            <p class="p7"><span class="color1">$0.09 - $0.12 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 500 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 6YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/Hfc83a9294ff5490f93e4d5b8175d94afs.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Custom low MOQ postal bags black matte logo jiffy shipping bag clothing poly                        </p>
+                            <p class="p7"><span class="color1">$0.02 - $0.05 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 100 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 7YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/H76c6c9064b5a4346b6515b1e6c00c615W.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Free logo custom UV printing Matt black <br> color hardboard paper custom shipping                             </p>
+                            <p class="p7"><span class="color1">$0.15 - $0.46 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 100 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 5YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/H64f093d14af84819a8e0c7662bcf2688O.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Wholesale Cheap Custom Poly Mailer Bags <br> Plastic Shipping Mailing Bag Envelopes                             </p>
+                            <p class="p7"><span class="color1">$0.01 - $0.06</span> / pieces</p>
+                            <p class="p8"><span class="color2"> 100 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 1YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/H3d87b60e1a7c4a75ba67ee53a2fd0e08s.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Empty Plastic Juicer Beverage Container <br> Square PET Bottle for Juices                           </p>
+                            <p class="p7"><span class="color1">$0.12 - $0.14 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 200 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 2YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/H1d478f29c83f46c0adbb7021b15f82b8e.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Customized High Quality Softcover <br> Catalog Company Brochure Print Full Color                            </p>
+                            <p class="p7"><span class="color1">$0.40 - $1.50 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 500 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 7YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/H7d831f84b24749b78a85531b40add3f6N.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Custom print resealable plastic food seal <br> packaging ziplock foil pouch 3.5g 7g 14g                             </p>
+                            <p class="p7"><span class="color1">$0.01 - $0.03 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 1000.0 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 1YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/H04db092b70394f659d5c0a0c7ecdb8b4Z.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Accept small order quantity polly mailer <br> bags self-seal adhesive poly mailer bubble                            </p>
+                            <p class="p7"><span class="color1">$0.01 - $0.55</span> / pieces</p>
+                            <p class="p8"><span class="color2"> 50 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 1YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/Hb3da1013c8ef4b60a1001487e42fc79fO.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Factory Custom Black Rigid Cardboard <br> Flat Luxury Magnetic Large Folding                             </p>
+                            <p class="p7"><span class="color1">$0.19 - $1.75 </span> / piece</p>
+                            <p class="p8"><span class="color2"> 1 piece </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 1YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/HTB1XhfdJZbpK1RjSZFyq6x_qFXar.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">250g 500g Matt black box bottom coffee <br> bags with zip and valve</p>
+                            <p class="p7"><span class="color1">$0.03 - $0.06 </span> / bags</p>
+                            <p class="p8"><span class="color2"> 500.0 bags </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 8YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/Ub2841fb1cbd04782803b0ba468c6a507d.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Metal mini Stainless iron round pill storage <br> case box                            </p>
+                            <p class="p7"><span class="color1">$0.45 - $0.47 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 200 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 4YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/H51d5cba8888249ddbce43f2eb397a278i.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Premount 100 pack 7 mil mylar bags for <br> food storage with oxygen absorber - 5                          </p>
+                            <p class="p7"><span class="color1">$0.02 - $0.09 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 1000 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 4YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/Hff67b32f90ad4f1d923ab1e25c7608f84.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">250ml 500ml 1L 2L stand up bag <br> aluminum spout pouch for food liquid                           </p>
+                            <p class="p7"><span class="color1">$0.10 - $0.40 </span> / bags</p>
+                            <p class="p8"><span class="color2"> 200 bags </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 5YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/H8325b9c1440f4d6cb4684543be8b3b94t.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Custom Kraft carton hexagonal bottle <br> handbag box jam honey box Macaroni                           </p>
+                            <p class="p7"><span class="color1">$0.01 </span> / boxes</p>
+                            <p class="p8"><span class="color2"> 100 boxes </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 1YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="child2">
+                        <div class="child3">
+                            <div class="div2">
+                                <i id="icon2" class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="div3"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <div class="div4"><i id="icon6" class="fa-solid fa-angle-left"></i></div>
+                            <img id="image3" src="./aliibaba  Website/Ha0f8488d35c54ca78b6343548a544ba7L.jpg_220x220.jpg" alt="">
+                        </div>
+                        <div class="child4">
+                            <p class="p6">Logo Custom Magnetic Buckle Closure <br> Cardboard Foldable Lid Packaging With                           </p>
+                            <p class="p7"><span class="color1">$0.90 - $2.60 </span> / pieces</p>
+                            <p class="p8"><span class="color2"> 500 pieces </span> (MOQ)</p>
+                            <img id="image4" src="./aliibaba  Website/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png" alt="">
+                            <p class="p9"><span class="color3"> 2YRS </span> US Supplier <i id="icon3" class="fa-solid fa-angle-right"></i></p>
+                        </div>
+                        <div class="child5">
+                            <button class="btn2">Contact Supplier</button>
+                            <i id="icon4" class="fa-solid fa-comments"></i>
+                            <i id="icon5" class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="main3">
+            <div class="div5"></div>
+
+            <div class="div6">
+                <p class="p10">AliExpress | 1688.com | <span class="color4"> Tmall Taobao World </span> | <span class="color4"> Alipay </span> | <span class="color4"> Lazada </span></p>
+                <p class="p10">Browse Alphabetically: <span class="color5"> Onetouch </span> | <span class="color5"> Showroom </span> | <span class="color5"> Country Search </span> | <span class="color5"> Suppliers </span> | <span class="color5"> Affiliate </span></p>
+                <p class="p10"><span class="color5"> Product Listing Policy </span> - <span class="color5">  Intellectual Property Protection </span> - <span class="color6">  Privacy Policy </span> - <span class="color5"> Terms of Use </span> - <span class="color5">   User Information Legal Enquiry Guide </span></p>
+                <p class="p10">© 1999-2022 Alibaba.com. All rights reserved. <span class="color6"> 浙公网安备 33010002000092号 浙B2-20120091-4 </span></p>
+
+                 
+            </div>
+        </div>
+
+
+
+    
+</body>
+</html>

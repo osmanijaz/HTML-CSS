@@ -1,0 +1,183 @@
+@media screen and (max-width:900px) {
+
+
+    .icon-display-menu {
+
+        /* border: 1px solid red; */
+        visibility: visible;
+    }
+
+    .ul-navbar {
+        visibility: hidden;
+
+    }
+
+    .top-bar {
+        display: none;
+
+    }
+
+    .power-left {
+        width: 100%;
+    }
+
+    .left-a {
+        margin-left: 10%;
+        box-sizing: border-box;
+    }
+
+
+
+    .power-right {
+        width: 99%;
+    }
+
+    .left-create {
+        width: 100%;
+
+    }
+
+    .right-create {
+        width: 100%;
+    }
+
+    .num-box {
+        width: 49%;
+        padding: 30px 0;
+        margin-top: 50px;
+
+    }
+
+    .box6core {
+        width: 45%;
+        margin-left: 3%;
+    }
+
+    .work-box {
+        width: 45%;
+        margin-left: 4%;
+    }
+
+    .work-h1-circle {
+        font-size: 22px;
+    }
+
+    .blog-box {
+        width: 92%;
+        padding-bottom: 7%;
+
+    }
+
+
+
+    .blog-pic {
+        height: 350px;
+
+    }
+
+    .blog2 {
+        display: none;
+    }
+
+    .blog3 {
+        display: none;
+    }
+
+    .foot-box {
+        width: 45%;
+        margin-top: 8%;
+
+
+    }
+
+    .foot-li {
+        list-style: none;
+        margin-top: 1%;
+        color: grey;
+
+    }
+
+
+
+
+
+
+
+
+    @media screen and (max-width:613px) {
+        .left-robot-box {
+            width: 100%;
+
+        }
+
+
+        .right-robot-box {
+            width: 100%;
+
+        }
+
+        .power-left {
+            padding-top: 19%;
+
+        }
+
+        .left-a {
+
+            width: 80%;
+            border: 1 solid rgb(12, 12, 12);
+
+        }
+
+        .number-main {
+            padding-left: 0;
+        }
+
+        .num-box {
+            width: 100%;
+            height: 100px;
+            /* padding: 5% 0; */
+
+        }
+
+        .box6core {
+            width: 94%;
+            margin-top: 4%;
+            /* margin-left: 3%; */
+        }
+
+        .latest-box {
+            width: 60%;
+            margin-left: 20%;
+            margin-top: 5%;
+
+
+        }
+
+        .box2 {
+            display: none;
+        }
+
+        .work-box {
+            width: 95%;
+            margin-left: 4%;
+        }
+
+        .work-h1-circle {
+            margin-top: 5%;
+
+        }
+
+        .foot-box {
+            width: 95%;
+
+
+        }
+
+        .foot-li {
+            list-style: none;
+            margin-top: 1%;
+            color: grey;
+        }
+
+
+    }

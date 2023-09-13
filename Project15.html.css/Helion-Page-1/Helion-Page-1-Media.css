@@ -1,0 +1,264 @@
+@media screen and (max-width:1260px) {
+
+    .left-email {
+        width: 100%;
+
+    }
+
+    .right-email {
+        width: 100%;
+
+    }
+
+}
+
+
+@media screen and (max-width:1244px) {
+    .we-left {
+
+        width: 100%;
+
+    }
+
+    .we-right-main {
+        width: 100%;
+
+    }
+
+    .we-button {
+        margin-top: 2%;
+    }
+
+    .we-h1 {
+        margin-top: 2%;
+    }
+
+    .we-p {
+        margin-top: 2%;
+    }
+
+
+}
+
+@media screen and (max-width:1203px) {
+    .orange-left {
+        width: 100%;
+    }
+
+    .orange-right {
+        width: 100%;
+    }
+
+
+
+    .orange-left-text-main {
+        align-items: center;
+
+
+    }
+
+}
+
+
+@media screen and (max-width:1111px) {
+
+
+
+    .slider-child {
+
+        width: 300%;
+    }
+
+
+    @keyframes slide {
+
+        0% {
+            left: 0%;
+        }
+
+        5% {
+            left: 0%;
+        }
+
+        6% {
+            left: -50%;
+        }
+
+
+        33% {
+            left: -50%;
+        }
+
+        34% {
+            left: -100%;
+        }
+
+        66% {
+            left: -100%;
+        }
+
+        67% {
+            /* left: -200%; */
+        }
+
+
+        100% {
+            /* left: -200%; */
+        }
+
+
+    }
+
+
+    @media screen and (max-width:900px) {
+        .nav-ul {
+            display: none;
+        }
+
+        .icon-bars-hide {
+            visibility: visible;
+        }
+
+
+
+        .pic-left {
+            width: 100%;
+
+        }
+
+        .pic-right {
+            width: 100%;
+
+        }
+    }
+
+    @media screen and (max-width:730px) {
+
+
+
+
+        .slider-container-parent {
+            width: 65%;
+        }
+
+
+
+        .slider-child {
+            height: 100%;
+            width: 500%;
+
+        }
+
+        @keyframes slide {
+
+            0% {
+                left: -75%;
+            }
+
+            5% {
+                left: -75%;
+            }
+
+            6% {
+                left: -158%;
+            }
+
+
+            33% {
+                left: -158%;
+            }
+
+            34% {
+                left: -240%;
+            }
+
+            66% {
+                left: -240%;
+            }
+
+            67% {
+                left: -324%;
+            }
+
+
+            100% {
+                left: -324%;
+            }
+
+
+        }
+
+
+
+        @media screen and (max-width:740px) {}
+
+
+
+
+
+        @media screen and (max-width:320px) {
+
+
+            .box-foot {
+             
+                width: 100%;
+
+            }
+
+            .blog-cont {
+                align-items: center;
+            }
+
+
+            .slider-container-parent {
+                width: 100%;
+            }
+
+
+
+            .slider-child {
+                height: 100%;
+                width: 500%;
+
+            }
+
+            @keyframes slide {
+
+                0% {
+                    left: -68%;
+                }
+
+                5% {
+                    left: -68%;
+                }
+
+                6% {
+                    left: -156%;
+                }
+
+
+                33% {
+                    left: -156%;
+                }
+
+                34% {
+                    left: -244%;
+                }
+
+                66% {
+                    left: -244%;
+                }
+
+                67% {
+                    left: -332%;
+                }
+
+
+                100% {
+                    left: -332%;
+                }
+
+
+
+
+            }

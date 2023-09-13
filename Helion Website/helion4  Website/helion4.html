@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helion 4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .main1{
+        height: max-content;
+        width: 100%;
+        background-color: white;
+        background-image: url(./decoration.png);
+        background-position: 0;
+        background-size: 30% 30%;
+        background-repeat: no-repeat;
+        padding: 1px;
+
+
+    }
+    .navbar{
+        height: 90px;
+        width: 100%;
+        /* border: 1px solid; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo{
+        height: 24px;
+        width: 9%;
+        /* border: 1px solid; */
+    }
+    #logo{
+        height: 100%;
+        width: 100%;
+    }
+    .ul1{
+        /* border: 1px solid; */
+        
+        width: 40%;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    .li1{
+        list-style: none;
+    font-family: HKGrotesk, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: black;
+    /* display: inline-block; */
+    /* margin-left: 16%; */
+    cursor: pointer;
+    transition: .5s;
+    /* position: relative; */
+    }
+    .color1{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    transition: .5s;
+    margin-top: -14.5px;
+    /* border: 1px solid; */
+   
+
+}
+.li1:hover .color1{
+    width: 100%;
+    background-color: black;
+}
+.color2{
+    height: 2.5px;
+    width: 0%;
+    background-color: black;
+    transition: .5s;
+    margin-top: -14.5px;
+    /* border: 1px solid; */
+   
+
+}
+.li1:hover .color2{
+    width: 100%;
+    background-color: black;
+
+}
+.navbar_div1{
+    height: 70px; width: 10%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+}
+.navbar_child1{
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+#navbar_icon1{
+    font-size: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: .5s;
+
+}
+#navbar_icon1:hover{
+    color: orangered;
+}
+.drop1{
+    height: 70vh;
+    width: 80%;
+    background-color: black;
+    position: absolute;
+    top: 50px;
+    transition: all .5s;
+    visibility: hidden;
+    /* display: none; */
+    opacity: 0;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center;  */
+}
+.li1:hover .drop1 {
+    visibility: visible;
+    /* display: block; */
+    opacity: 1;
+}
+.ul2{
+    color: gray;
+
+    margin-top: 30px;
+    margin-left: -30px;
+}
+.li2{
+    list-style: none;
+    font-family: HKGrotesk, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    width: max-content;
+    height: max-content;
+    color: gray;
+    /* display: inline-block; */
+    /* margin-left: 30px; */
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+.li2:hover{
+    color: orangered;
+    margin-left: 2px;
+}
+.ul3{
+    color: gray;
+    margin-top: 30px;
+    margin-left: -20px;
+}
+.li3{
+    list-style: none;
+    font-family: HKGrotesk, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    width: max-content;
+    height: max-content;
+    color: gray;
+    /* display: inline-block; */
+    /* margin-left: 30px; */
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+.li3:hover{
+    color: orangered;
+    margin-left: 2px;
+}
+.main1_h1{
+    font-family: LouisGeorgeCafe, sans-serif;
+    font-size: 49px;
+    font-weight: 600;
+    line-height: 49px;
+    color: black;
+    text-align: center;
+    margin-top: 100px;
+
+}
+.main1_p1{
+    font-family:  HKGrotesk, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 21px;
+    color: black;
+    text-align: center;
+    margin: 30px 0;
+}
+.main1_color1{
+    color: black;
+    transition: .5s;
+    cursor: pointer;
+}
+.main1_color1:hover{
+    color: orangered;
+}
+#navbar_icon2{
+    font-size: 20px;
+    margin-left: auto;
+    /* position: absolute; */
+    /* top: 3px; */
+    /* right: 32%; */
+    display: none;
+}
+.main2{
+    height: auto;
+    width: 100%;
+    background-color: skyblue;
+    padding: 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.main3{
+    height: auto;
+    width: 100%;
+    background-color: skyblue;
+    padding: 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.main4{
+    height: auto;
+    width: 100%;
+    background-color: skyblue;
+    padding: 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.main5{
+    height: auto;
+    width: 100%;
+    background-color: skyblue;
+    padding: 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.main2_child2{
+    height: max-content;
+    width: 40%;
+    padding: 30px 0;
+    margin: auto;
+    /* border: 2px solid; */
+
+}
+#main2_image1{
+    height: 100%;
+    width: 100%;
+}
+.main2_p1{
+    font-family: HKGrotesk, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    cursor: pointer;
+    width: max-content;
+    transition: .5s;
+}
+.main2_p1:hover{
+    color: orangered;
+
+}
+.main2_p2{
+    font-family: LouisGeorgeCafe, sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 44px;
+    cursor: pointer;
+    width: max-content;
+    transition: .5s;
+}
+.main2_p2:hover{
+    color: orangered;
+
+}
+.main2_p3{
+    font-family: LouisGeorgeCafe, sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 26px;
+    color: rgb(74, 79, 85);
+}
+.btn1{
+    padding: 15px 30px;
+    border: 1px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+    width: max-content;
+    border: none;
+}
+.main2_p4{
+    font-family: LouisGeorgeCafe, sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 26px;
+    color: rgb(74, 79, 85);
+    
+}
+#main2_icon1{
+    font-size: 15px;
+    color: black;
+    margin-left: 20px;
+    transition: .5s;
+}
+.btn1:hover #main2_icon1{
+    color: orangered;
+    margin-left: 30px;
+}
+.ch2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;  
+
+}
+.main10{
+        height: max-content;
+        width: 100%;
+        background-color: rgb(26,26,31);
+        /* padding-bottom: 40px; */
+        padding: 20px;
+    }
+    .child19{
+        height: max-content;
+        width: 90%;
+        /* border: 1px solid white; */
+        margin: auto;
+        margin-top: 80px;
+        /* padding: 20px; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+    .child20{
+        height: max-content;
+        width: 300px;
+        /* border: 1px solid red; */
+        
+        
+    }
+    #image10{
+        height: 25px;
+        cursor: pointer;
+        /* margin-left: 40px; */
+        
+
+
+    }
+    .p26{
+        font-family: LouisGeorgeCafe, sans-serif;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 24px;
+        color: white;
+    }
+    .p27{
+        font-family:HKGrotesk, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 31px;
+        color: rgb(174, 174, 174);
+        margin-top: 30px;
+    }
+
+    .p28{
+        font-family:HKGrotesk, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 39px;
+        color: rgb(174, 174, 174);
+        width: max-content;
+        /* background-color: red; */
+        transition: .5s;
+        cursor: pointer;
+        position: relative;
+        margin-top: 20px;
+    }
+    .p28:hover{
+        color: white;
+    }
+
+    .p28_pd1{
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 154px;
+        background-color: rgb(109, 114, 119);
+        cursor: pointer;
+        transition: .5s;
+
+    }
+    .p28:hover .p28_pd1{
+        width: 0px;
+        background-color: white;
+        /* color: white; */
+    }
+    .p29{
+        font-family:HKGrotesk, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 39px;
+        color: white;
+        margin-top: 30px;
+    }
+    .p30{
+        font-family:HKGrotesk, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(174, 174, 174);
+        margin-top: 25px;
+        transition: .5s;
+        cursor: pointer;
+        width: max-content;
+    }
+    .p30:hover{
+        color: orangered;
+        margin-left: 10px;
+
+    }
+    #icon11{
+        font-size: 20px;
+        color: rgb(109, 114, 119);
+        margin-top: 20px;
+        cursor: pointer;
+        margin-left: 20px;
+        transition: .5s;
+    }
+    #icon11:hover{
+        color: orangered;
+    }
+    .color4{
+        color: gray;
+    }
+    .p31{
+        margin-left: 5%;
+        color: white;
+        padding-bottom: 20px;
+    }
+
+
+
+
+/* //////////////////////// media quries /////////////////////////////// */
+
+
+@media screen and (max-width:1024px) {
+    .ul1{
+        width: 60%;
+        /* border: 1px solid red; */
+        font-size: 15px;
+    }
+    .li1{
+        font-size: 17px;
+        margin-left: 5%;
+    }
+   
+}
+@media screen and (max-width:890px) {
+    .li4{
+        display: none;
+        opacity: 0;
+    }
+    #navbar_icon2{
+        display: block;
+    }
+    
+    .li1{
+        margin-left: 11%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .ul1{
+        display: none;
+    }
+    .logo{
+        width: 120px;
+    }
+    .navbar_div1{
+        width: 110px;
+    }
+    .main2_child2{
+        width: 400px;
+        
+    }
+    
+}
+
+</style>
+<body>
+
+    <div class="main1">
+        <div class="navbar">
+            <div class="logo">
+                <img id="logo" src="./logo.png" alt="">
+            </div>
+            <ul class="ul1">
+                <li class="li1">Home.
+                    <div class="color2"></div>
+                    <div class="drop1">
+                        <ul class="ul2">
+                            <li class="li2">Design Agency</li>
+                            <li class="li2">Photographer 1</li>
+                            <li class="li2">Photographer 2</li>
+                            <li class="li2">Photographer 3</li>
+                            <li class="li2">Personal</li>
+                            <li class="li2">3D Artist</li>
+                            <li class="li2">Graphic Designer</li>
+                            <li class="li2">Architect</li>
+                            <li class="li2">Concept Artist</li>
+                        </ul>
+                        <ul class="ul3">
+                            <li class="li3">Character Designer</li>
+                            <li class="li3">Motion Graphics</li>
+                            <li class="li3">Showcase</li>
+                            <li class="li3">Musician</li>
+                            <li class="li3">Videographer</li>
+                            <li class="li3">Brutalism</li>
+                            <li class="li3">NFT</li>
+                            <li class="li3">Architect</li>
+                            <li class="li3">Home RTL</li>
+                        </ul>
+                    </div>
+                    
+                </li>
+                <li class="li1">Pages.
+                    <div class="color1"></div>
+
+                </li>
+                <li class="li1">About Us.
+                    <div class="color2"></div>
+
+
+                </li>
+                <li class="li1">Blog.
+                    <div class="color2"></div>
+
+                </li>
+                <li class="li1 li4">Store.
+                    <div class="color2"></div>
+
+                </li>
+                <li class="li1 li4">Contacts.
+                    <div class="color2"></div>
+
+                </li>
+                <i id="navbar_icon2" class="fa-solid fa-ellipsis-vertical"></i>
+            </ul>
+            <div class="navbar_div1">
+                <div class="navbar_child1">
+                    <i id="navbar_icon1" class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <div class="navbar_child1">
+                    <i id="navbar_icon1" class="fa-solid fa-magnifying-glass"></i>
+
+                </div>
+            </div>
+
+        </div>
+        <h1 class="main1_h1">List Large – Hover Waves</h1>
+        <p class="main1_p1">  <span class="main1_color1">Home </span>. List Large – Hover Waves</p>
+        <div class="main2">
+
+            <div class="main2_child2">
+                <img id="main2_image1" src="./port-60-copyright-740x580.jpg" alt="">
+            </div>
+            <div class="main2_child2 ch2">
+                <p class="main2_p1">Ecommerce</p>
+                <p class="main2_p2">Earth Day Ad</p>
+                <p class="main2_p3">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia <br> voluptas sit aspernatur aut odit aut fugit, sed quia <br> consequuntur. Dicta sunt explicabo.</p>
+                <button class="btn1"><p class="main2_p4">View All Projects <i id="main2_icon1" class="fa-solid fa-arrow-right-long"></i></p> </button>
+
+            </div>
+        </div>
+        <div class="main3">
+            <div class="main2_child2">
+                <img id="main2_image1" src="./port-118-copyright-740x580.jpg" alt="">
+
+            </div>
+            <div class="main2_child2 ch2">
+                <p class="main2_p1">Ecommerce</p>
+                <p class="main2_p2">Clothing Store Ad</p>
+                <p class="main2_p3">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia <br> voluptas sit aspernatur aut odit aut fugit, sed quia <br> consequuntur. Dicta sunt explicabo.</p>
+                <button class="btn1"><p class="main2_p4">View All Projects <i id="main2_icon1" class="fa-solid fa-arrow-right-long"></i></p> </button>
+            </div>
+
+        </div>
+
+        <div class="main4">
+
+            <div class="main2_child2">
+                <img id="main2_image1" src="./port-117-copyright-740x580.jpg" alt="">
+
+            </div>
+            <div class="main2_child2 ch2">
+                <p class="main2_p1">Ecommerce</p>
+                <p class="main2_p2">Digital Store Ad</p>
+                <p class="main2_p3">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia <br> voluptas sit aspernatur aut odit aut fugit, sed quia <br> consequuntur. Dicta sunt explicabo.</p>
+                <button class="btn1"><p class="main2_p4">View All Projects <i id="main2_icon1" class="fa-solid fa-arrow-right-long"></i></p> </button>
+            </div>
+
+
+        </div>
+
+        <div class="main5">
+
+
+            <div class="main2_child2">
+                <img id="main2_image1" src="./port-116-copyright-740x580.jpg" alt="">
+            </div>
+            <div class="main2_child2 ch2">
+                <p class="main2_p1">Ecommerce</p>
+                <p class="main2_p2">Home Decor Ad</p>
+                <p class="main2_p3">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia <br> voluptas sit aspernatur aut odit aut fugit, sed quia <br> consequuntur. Dicta sunt explicabo.</p>
+                <button class="btn1"><p class="main2_p4">View All Projects <i id="main2_icon1" class="fa-solid fa-arrow-right-long"></i></p> </button>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="main10">
+        <div class="child19">
+            <div class="child20">
+                <img  id="image10" src="./last logo.png" alt="">
+            </div>
+            <div class="child20">
+                <p class="p26">Office</p>
+                <p class="p27">2700 Fire Mesa StLas <br> Vegas, NV 89128</p>
+                <p class="p28">info@example.com<span class="p28_pd1"></span></p>
+                <p class="p29">+1 800 123 45 67</p>
+            </div>
+            <div class="child20">
+                <p class="p26">Links</p>
+                <p class="p30">Blog</p>
+                <p class="p30">About Us</p>    
+                <p class="p30"> Shop</p>  
+                <p class="p30">Contacts</p> 
+                    
+
+            </div>
+            <div class="child20">
+                <p class="p26">Socials</p>
+                <i id="icon11" class="fa-brands fa-facebook-f"></i>
+                <i id="icon11" class="fa-brands fa-twitter"></i>
+                <i id="icon11" class="fa-brands fa-dribbble"></i>
+                <i id="icon11" class="fa-brands fa-behance"></i>
+
+            </div>
+        </div>
+        <hr style="border: 1px solid; background-color: gray; height: 1px; width: 90%; margin: auto;">
+
+        <p class="p27 p31"><span class="color4"> Axiom Theme </span> © 2022. All Rights Reserved.</p>
+
+    </div>
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        #container-anim {
+            color: #260119;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 36px;
+            margin-top: 50px;
+            font-family: 'Fredericka the Great', cursive;
+            width: 100%;
+            bottom: 45%;
+            display: block;
+            border: 2px solid red;
+        }
+
+        #flip {
+            height: 50px;
+            overflow: hidden;
+            border: 2px solid red;
+        }
+
+        #flip>div>div {
+            color: #fff;
+            padding: 4px 12px;
+            height: 45px;
+            margin-bottom: 45px;
+            display: inline-block;
+            /* background-color: aqua; */
+        }
+
+        #flip div:first-child {
+            animation: show 5s linear infinite;
+        }
+
+        #flip div div {
+            background: #8C1864;
+        }
+
+        #flip div:first-child div {
+            background: #F2911B;
+        }
+
+        #flip div:last-child div {
+            background: #BF4904;
+        }
+
+        @keyframes show {
+            0% {
+                margin-top: -270px;
+            }
+
+            5% {
+                margin-top: -180px;
+            }
+
+            33% {
+                margin-top: -180px;
+            }
+
+            38% {
+                margin-top: -90px;
+            }
+
+            66% {
+                margin-top: -90px;
+            }
+
+            71% {
+                margin-top: 0px;
+            }
+
+            99.99% {
+                margin-top: 0px;
+            }
+
+            100% {
+                margin-top: -270px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div id="container-anim"> Faites
+
+        <div id="flip">
+
+            <div>
+                <div>décoller</div>
+            </div>
+
+
+            <div>
+                <div>vivre</div>
+            </div>
+
+
+            <div>
+                <div>briller</div>
+            </div>
+
+
+        </div>
+        Votre carrière !
+
+
+    </div>
+
+
+</body>
+
+</html>

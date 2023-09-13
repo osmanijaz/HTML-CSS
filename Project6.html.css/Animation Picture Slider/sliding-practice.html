@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .main-container-parent-overflow-hidden {
+
+        width: 80vw;
+        height: 80vh;
+        /* border: 5px solid rgb(0, 0, 0); */
+        left: 10vw;
+        top: 10vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .sub-main-animation-style-once-only {
+
+        width: 300%;
+        height: 80vh;
+        /* border: 5px solid rgb(56, 255, 1); */
+        position: absolute;
+        animation-name: slide;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-delay: ;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+
+    }
+
+
+    @keyframes slide {
+
+        0% {
+            left: 0%;
+        }
+
+        17% {
+            left: 0%;
+        }
+
+        33.3333% {
+            left: -100%;
+        }
+
+
+
+        50% {
+            left: -100%;
+        }
+
+        66.6666% {
+            left: -200%
+        }
+
+
+
+        84% {
+            left: -200%;
+        }
+
+        100% {
+            left: -200%
+        }
+
+
+    }
+
+    .pic {
+        height: 100%;
+        width: 33.33%;
+        /* border: 2px solid rgb(255, 1, 1); */
+        float: left;
+
+
+    }
+
+    .pic1 {
+        background-size: 100% 100%;
+        background-position: center;
+        background-image: url(./Pictures/1.jpg);
+    }
+
+    .pic2 {
+        background-size: 100% 100%;
+        background-position: center;
+        background-image: url(./Pictures/2.jpg);
+    }
+
+    .pic3 {
+        background-size: 100% 100%;
+        background-position: center;
+        background-image: url(./Pictures/3.jpg);
+    }
+</style>
+
+<body>
+
+    <div class="main-container-parent-overflow-hidden">
+
+        <div class="sub-main-animation-style-once-only">
+            <div class="pic pic1"></div>
+            <div class="pic pic2"></div>
+            <div class="pic pic3"></div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

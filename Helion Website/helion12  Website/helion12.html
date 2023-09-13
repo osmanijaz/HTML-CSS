@@ -1,0 +1,1799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helion 12</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+    }
+    .main1{
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        background-image: url(./slide-6_1-copyright1.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+    .nav{
+        height: 100px;
+        width: 90%;
+        /* border: 1px solid; */
+        position: absolute;
+        z-index: 200;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    #image1{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        animation: a1 35s linear infinite forwards;
+        z-index: 25;
+    }
+    @keyframes a1 {
+      0%{
+        transform: scale(1);
+        top: 100vh;
+        z-index: 50;
+        
+    }
+    4%{
+        top: 0;
+        z-index: 50;
+        transform: scale(1);
+    }
+    /* 16%{
+        transform: scale(1.2);
+    }
+    33%{
+        transform: scale(1.2);
+    } */
+    100%{
+          transform: scale(1.2);
+
+      }
+        
+    }
+
+    #image2{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        animation: a2 35s linear infinite forwards;
+        z-index: 25;
+    }
+    @keyframes a2 {
+        0%{
+        top: 100vh;   
+    }
+    33%{
+        top: 100vh;
+       
+    }
+    34%{
+        top: 100vh;
+        transform: scale(1);
+        z-index: 75;
+    }
+    38%{
+        top: 0;
+        transform: scale(1);
+    }
+    48%{
+        top: 0vh;
+        z-index: 75;
+       
+    }
+   
+    100%{
+        transform: scale(1.2);
+      }
+        
+    }
+        
+    
+    #image3{
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        animation: a3 35s linear infinite forwards ;
+        z-index: 25;
+    }
+    @keyframes a3 {
+        0%{
+        top: 100vh;   
+    }
+    33%{
+        top: 100vh;
+       
+    }
+    34%{
+        top: 100vh;
+    }
+    48%{
+        top: 100vh;
+    }
+    66%{
+        top: 100vh;
+    }
+    67%{
+        top: 100vh;
+        transform: scale(1);
+        z-index: 75; 
+    }
+    71%{
+        top: 0;
+       
+    }
+    100%{
+        transform: scale(1.2);
+      }
+        
+    } 
+    .logo{
+        height: 30px;
+        width: 170px;
+        /* border: 1px solid; */
+
+    }
+    .logo #logo{
+        height: 30px;
+        cursor: pointer;
+    }
+    .nav-div{
+        height: 30px;
+        width: 30%;
+        /* border: 1px solid yellow; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .nav-div p{
+        font-family: LouisGeorgeCafe, sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 23px;
+        color: white;
+        transition: .5s;
+        cursor: pointer;
+    }
+    .nav-div p:hover{
+        color: red;
+    }
+    #icon1{
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+    .bar{
+        height: 25px;
+        width: 30px;
+        /* border: 1px solid; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        overflow: hidden;
+        /* align-items: ; */
+        cursor: pointer;
+
+    }
+    .line1{
+        height: 2px;
+        width: 100%;
+        background-color: white;
+
+    }
+    .line2{
+        height: 2px;
+        width: 100%;
+        margin-left: 50%;
+        background-color: white;
+        transition: .5s;
+    }
+    .bar:hover .line2{
+        margin-left: 0;
+    }
+    .icons{
+        height: 200px;
+        width: 40px;
+        position: absolute;
+        /* border: 1px solid; */
+        left: 7%;
+        top: 250px;
+        z-index: 250;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .icon2 a{
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+        transform: rotate(-180deg);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .icon2{
+        list-style: none;
+        transform: rotate(-90deg);
+    }
+    .icon2 a:hover{
+        color: orangered;
+    }
+    .text1{
+        height: max-content;
+        width: 55vw;
+        /* border: 1px solid red; */
+        position: absolute;
+        /* background-color: rgba(34, 141, 235, 0.73); */
+        top: 23vh;
+        left: 15%;
+        z-index: 250;
+        opacity: 0;
+        overflow: hidden;
+        animation: animate 35s linear infinite;
+       
+
+    }
+    @keyframes animate {
+      0%{
+        opacity: 0;
+    }
+    4%{
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+    }
+    33%{
+        opacity: 1;
+    }
+    34%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    41%{
+        opacity: 1;
+    }
+    66%{
+        opacity: 1;
+    }
+    67%{
+        opacity: 0;
+    }
+    72%{
+        opacity: 0;
+    }
+    73%{
+        opacity: 1;
+    }
+    100%{
+         opacity: 1; 
+
+      }
+        
+    }
+
+   
+    .text1-p1{
+        font-family: LouisGeorgeCafe, sans-serif;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 19px;
+        color: rgb(255, 255, 255);
+        margin-top: 50px;
+        opacity: 1;
+        position: relative;
+        cursor: default;
+        /* display: none; */
+        animation: a4 11.6s linear infinite;
+    }
+    @keyframes a4 {
+        0%{
+            margin-top: 50px;
+            opacity: 0;
+            display: block;
+            
+        }
+        30%{
+            margin-top: 0;
+            opacity: 1;
+            display: block;
+        }
+        100%{
+            margin-top: 0;
+            opacity: 1;
+            display: block;
+        }
+    }
+
+
+    .text1-h1{
+        font-family: LouisGeorgeCafe, sans-serif;
+        font-size: 70px;
+        font-weight: 700;
+        line-height: 70px;
+        color: rgb(255, 255, 255);
+        margin-top: 80px;
+        opacity: 1;
+        cursor: default;
+        animation: a5 11.6s linear infinite;
+    }
+    @keyframes a5 {
+        0%{
+            margin-top: 120px;
+            opacity: 0;
+            display: block;
+            
+        }
+        30%{
+            margin-top: 80px;
+            opacity: 1;
+            display: block;
+        }
+        100%{
+            margin-top: 80px;
+            opacity: 1;
+            display: block;
+        }
+    }
+    .btn1{
+        height: 55px;
+        width: 200px;
+        border: none;
+        background-color: orangered;
+        color: white;
+        font-size: medium;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .5s;
+        margin-top: 135px;
+        opacity: 0;
+        animation: a6 11.6s linear infinite;
+    }
+    @keyframes a6 {
+        0%{
+            margin-top: 135px;
+            opacity: 1;
+            display: block;
+            
+        }
+        30%{
+            margin-top: 80px;
+            opacity: 1;
+            display: block;
+        }
+        100%{
+            margin-top: 80px;
+            opacity: 1;
+            display: block;
+        }
+    }
+    .btn1:hover{
+        background-color: white;
+        /* border: 2px solid black; */
+        color: black;
+    }
+    .main2{
+        height: max-content;
+        width: 100%;
+        /* background-color: wheat; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 150px 0;
+    }
+    .parent1{
+        height: max-content;
+        width: 80vw;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+
+    }
+    .child1{
+        padding: 20px 0;
+        height: max-content;
+        width: 400px;
+        background-color: white;
+        /* border: 2px solid; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    #icon3{
+        font-size: 70px;
+        color: orangered;
+        cursor: pointer;
+        transition: .5s;
+
+    }
+    .child1:hover #icon3{
+        color: rgb(60, 58, 58);
+    }
+    h2{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 35px;
+        cursor: pointer;
+        transition: .1s;
+    }
+    h2:hover{
+        color: rgb(45, 44, 44);
+    }
+    .child1-p1{
+        font-family: HKGrotesk, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26.5px;
+        color: rgb(66, 63, 63);
+    }
+    .butt{
+        height: 45px;
+        width: 170px;
+        /* border: 1px solid; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+
+    }
+    .icon-div{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: whitesmoke;
+        /* border: 1px solid rgba(128, 128, 128, 0.37); */
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    .butt-p1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: medium;
+        font-weight: 600;
+        cursor: pointer;
+
+    }
+    .butt-p1:hover{
+        color: orangered;
+    }
+    .main3{
+        height: max-content;
+        width: 100%;
+        background-color: white;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 100px;
+    }
+    .parent2{
+        height: max-content;
+        width: 90%;
+        /* border: 1px solid red; */
+        position: relative;
+        background-image: url(./decoration-house-bg-copyright.png);
+        background-position: center;
+        background-size: 65% 60%;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .main3-child1{
+        height: 75vh;
+        width: 500px;
+        /* border: 2px solid; */
+        position: relative;
+    }
+    .main3-child2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .main3-div1{
+        height: 40px;
+        width: 40%;
+        /* border: 1px solid; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main3-div2{
+        height: 2px;
+        width: 40%;
+        background-color: black;
+    }
+    .main3-div1-p1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        white-space: nowrap;
+
+    }
+    .main3-h1{
+        font-family:  LouisGeorgeCafe, sans-serif;
+        font-size: 49px;
+        font-weight: 700;
+        line-height: 49px;
+        /* white-space: nowrap; */
+    }
+    .main3-p1{
+        font-family:  LouisGeorgeCafe, sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(158, 152, 152);
+    }
+    .button1{
+        height: 60px;
+        width: 35%;
+        /* border: 1px solid; */
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .btn2{
+        border-radius: 5px;
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: medium;
+        overflow: hidden;
+        border: 2px solid;
+        transition: .5s;
+    }
+    .btn2:hover{
+        background-color: black;
+    }
+    .btn2-p1{
+        margin-left: 50px;
+        white-space: nowrap;
+        transition: .5s;
+    }
+    #btn2-icon1{
+        font-size: 17px;
+        margin-left: 40px;
+        /* transition: .5s; */
+    }
+    .btn2:hover  .btn2-p1{
+        margin-left: 10px;
+        color: white;
+        font-weight: 600;
+    }
+    .main3-child3{
+        background-image: url(./decoration-circles-2-1.png);
+        background-position: top right;
+        background-size: 80% 80%;
+        background-repeat: no-repeat;
+    }
+    #image5{
+        height: 90%;
+        width: 90%;
+        position: absolute;
+        bottom: 0;
+    }
+    #inp1{
+        height: 80px;
+        width: 80px;
+        position: absolute;
+        top: 45%;
+        left: 35%;
+        background-color: orangered;
+        /* border: 1px solid; */
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .5s;
+        cursor: pointer;
+    }
+    #icon6{
+        font-size: 30px;
+        color: white;
+
+    }
+    #inp1:hover{
+        background-color: rgb(178, 56, 12);
+    }
+    .video-div{
+        height: 75vh;
+        width: 100%;
+        background-color: silver;
+        border-radius: 15px;
+
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+
+    }
+    .video1{
+        height: 65vh;
+        width: 80%;
+        border-radius: 10px;
+    }
+    #vid:target{
+        display: block;
+    }
+    #icon7{
+        font-size: 40px;
+        position: absolute;
+        right: 20%;
+        top: 0;
+        transition: .5s;
+    }
+    a:hover #icon7{
+        transform: rotate(180deg);
+    }
+    .main4{
+        height: 100vh;
+        width: 100%;
+        /* background-color: skyblue; */
+        padding: 1px;
+    }
+    .main4-div{
+        height: 40px;
+        width: 15%;
+        /* border: 1px solid; */
+        margin-top: 50px;
+        margin-left: 5%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .main4-div1{
+        height: 2px;
+        width: 60px;
+        background-color: black;
+    }
+    .main4-p1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .main4-h1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 49px;
+        font-weight: 600;
+        margin-left: 5%;
+    }
+    .parent4{
+        height: max-content;
+        width: 100%;
+        /* border: 1px solid; */
+        overflow: hidden;
+        margin: 50px 0;
+    }
+    .slider{
+        height: 30vmax;
+        width: 267%;
+        /* border: 2px solid yellow; */
+        display: flex;
+        justify-content: space-around;
+        animation: slider 25s linear infinite;
+
+    }
+    @keyframes slider {
+        0%{
+           margin-left: 0; 
+        }
+        25%{
+            margin-left: 0;
+        }
+        26%{
+            margin-left: -33.3%;
+        }
+        50%{
+            margin-left: -33.3%;
+        }
+        51%{
+            margin-left: -66.6%;
+        }
+        75%{
+            margin-left: -66.6%;
+        }
+        76%{
+            margin-left: -100%;
+        }
+        100%{
+            margin-left: -100%;
+        }
+        /* 81%{
+            margin-left: -2020px;
+        }
+        100%{
+            margin-left: -2020px;
+        } */
+        /* 0%{
+            margin-left: 0;
+        }
+        12.5%{
+            margin-left: 0;
+        }
+        13%{
+            margin-left: -380px;
+        }
+        25%{
+            margin-left: -380px;
+        }
+        25.5%{
+            margin-left: -760px;
+        }
+        37.5%{
+            margin-left: -760px;
+        }
+        38%{
+            margin-left: -1140px;
+        }
+        50%{
+            margin-left: -1140px;
+        }
+        50.5%{
+            margin-left: -1515px;
+        }
+        62.5%{
+            margin-left: -1515px;
+        }
+        63%{
+            margin-left: -1895px;
+        }
+        75%{
+            margin-left: -1895px;
+        }
+        75.5%{
+            margin-left: -2272px;
+        }
+        87.5%{
+            margin-left: -2272px;
+        }
+        88%{
+            margin-left: -2650px;
+        }
+        100%{
+            margin-left: -2650px;
+        } */
+        
+    }
+    .slides{
+        height: 100%;
+        width: 12%;
+        background-color: aqua;
+        border: 1px solid;
+       
+    }
+    #slideimage{
+        height: 100%;
+        width: 100%;
+
+    }
+    .main5{
+        height: max-content;
+        width: 100%;
+        /* background-color: skyblue; */
+        padding: 100px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .parent5{
+        height: 70vh;
+        width: 90%;
+        /* border: 2px solid; */
+        overflow: hidden;
+    }
+    .slider1{
+        height: 100%;
+        width: 200%;
+        /* border: 1px solid; */
+        display: flex;
+        justify-content: space-around;
+
+        animation: slider1 15s linear infinite;
+    }
+    @keyframes slider1 {
+        0%{
+            margin-left: 0;
+        }
+        33.3%{
+            margin-left: 0;
+        }
+        34%{
+            margin-left: -50%;
+        }
+        66%{
+            margin-left: -50%;
+        }
+        67%{
+            margin-left: -100%;
+        }
+        100%{
+            margin-left: -100%;
+        }
+    }
+    .main5-child1{
+        height: 100%;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        /* background-color: blue; */
+        /* border: 2px solid white; */
+    }
+    .main5-circle1{
+        height: 100px;
+        width: 100px;
+        /* border: 1px solid; */
+        border-radius: 50%;
+    }
+    #main5-image1{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+    .main5-p1{
+        font-family: HKGrotesk, sans-serif;
+font-size: 22.734px;
+font-weight: 400;
+line-height: 33.7759px;
+color: rgb(13, 13, 18);
+width: 98%;
+    }
+    .clip-div{
+        height: 30px;
+        width: 7%;
+        /* border: 1px solid; */
+        display: flex;
+        justify-content: center;
+
+    }
+    .clip-child1{
+        height: 100%;
+        width: 50%;
+        /* border: 1px solid red; */
+        background-color: orangered;
+        clip-path: polygon(14% 56%, 85% 0, 85% 100%, 13% 100%);
+    }
+    .main5-p2{
+        font-family: HKGrotesk, sans-serif;
+font-size: 22.734px;
+font-weight: 400;
+line-height: 44.7759px;
+color: rgb(13, 13, 18);
+width: max-content;
+margin-top: 30px;
+
+    }
+    .color1{
+        color: gray;
+    }
+    .main6{
+        height: max-content;
+        width: 100%;
+        /* background-color: skyblue; */
+        padding: 50px 0;
+    }
+    .main6-div{
+        height: 40px;
+        width: 15%;
+        /* border: 1px solid; */
+        margin-left: 5%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .main6-div1{
+        height: 2px;
+        width:  80px;
+        background-color: black;
+    }
+    .main6-p1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+    .main6-h1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 49px;
+        font-weight: 600;
+        margin-left: 5%;
+    }
+    .parent6{
+        height: 45vh;
+        width: 80%;
+        /* border: 1px solid; */
+        margin: 50px auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .main6-child1{
+        height: 100%;
+        width: 33.3%;
+        /* border: 1px solid red; */
+        border-radius: 5px;
+        position: relative;
+    }
+    #main6-image1{
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        position: absolute;
+
+    }
+    .main6-div5{
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        transition: .5s;
+        opacity: 0;
+        border-radius: 5px;
+
+    }
+    .main6-child1:hover .main6-div5{
+        opacity: 1;
+    }
+    .main6-h5{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        color: orangered;
+        cursor: pointer;
+        position: relative;
+        width: max-content;
+        /* overflow: hidden; */
+
+    }
+    .main6-h2{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 27px;
+    }
+    .main6-p2{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+        color: gray;
+    }
+    .mm1{
+        margin-left: 5%;
+    }
+    .color-h5{
+        height: 1.5px;
+        width: 0%;
+        position: absolute;
+        background-color: orangered;
+        bottom: -5px;
+        right: 0%;
+        transition: .5s;
+
+    }
+    .main6-h5:hover .color-h5{
+        right: 0%;
+        width: 100%;
+    }
+    .main6-btn1{
+        height: max-content;
+        width: 210px;
+        /* border: 1px solid; */
+        left: 10%;
+        cursor: pointer;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        position: relative;
+    }
+    #main6-icon7{
+        font-size: 18px;
+        left: 80%;
+        top: 5px;
+        position: absolute;
+        z-index: 75;
+        opacity: 1;
+        transition: .2s;
+    }
+    .main6-btn1:hover #main6-icon7{
+        opacity: 0;
+        left: 90%;
+    }
+
+    #main6-icon8{
+        font-size: 18px;
+        left: 70%;
+        top: 5px;
+        position: absolute;
+        color: red;
+        z-index: 50px;
+        opacity: 0;
+        transition: .2s;
+    }
+    .main6-btn1:hover #main6-icon8{
+        left: 80%;
+        z-index: 100;
+        opacity: 1;
+    }
+    .main7{
+        height: auto;
+        width: 100%;
+        /* background-color: skyblue; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main7-child1{
+        height: 100%;
+        width: 90%;
+        /* border: 1px solid; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .main7-image{
+        height: 140px;
+        width: 16%;
+        /* border: 1px solid; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #main7-icons{
+        height: 100px;
+        opacity: .5;
+        cursor: pointer;
+        transition: .5s;
+    }
+    #main7-icons:hover{
+        opacity: 1;
+    }
+    .main8{
+        height: max-content;
+        width: 100%;
+        background-image: url(./get_in_touch-bg-copyright.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 80px 0;
+    }
+    .main8-h1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 40px;
+        color: white;
+        font-weight: 600;
+    }
+    .main8-btn1{
+        height: 60px;
+        width: 250px;
+        background-color: orangered;
+        border: none;
+        color: white;
+        font-size: medium;
+        font-weight: 600;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: .2s;
+        overflow: hidden;
+    }
+    .main8-p1{
+        margin-left: 80px;
+        white-space: nowrap;
+        transition: .2s;
+    }
+    #main8-icon1{
+        margin-left: 80px;
+    }
+    .main8-btn1:hover .main8-p1{
+        margin-left: 0px;
+    }
+    .main9{
+        height: 70vh;
+        width: 100%;
+        background-color: black;
+        background-image: url(./decoration-3.png);
+        background-position: bottom right;
+        background-size: 30% 80%;
+        background-repeat: no-repeat;
+        padding: 30px 0;
+
+    }
+    .main9-child{
+        height: 50vh;
+        width: 90%;
+        /* border: 1px solid white; */
+        margin: 25px auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+    }
+    .main9-child1{
+        height: 100%;
+        width: 24%;
+        /* border: 1px solid pink; */
+       
+    }
+    .main9-child2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .main9-h3{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+    }
+    .main9-h4{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        color: gray;
+    }
+    .main9-h5{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        color: gray;
+        width: max-content;
+        position: relative;
+        cursor: pointer;
+    }
+    .main9-color1{
+        height: 2px;
+        width: 100%;
+        background-color: gray;
+        position: absolute;
+        transition: .5s;
+        bottom: -5px;
+        left: 0;
+    }
+    .main9-h5:hover .main9-color1{
+        width: 0%;
+    }
+    .main9-p1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+    }
+    .main9-ul{
+        border: 1px solid;
+    }
+    .li1{
+        color: white;
+        list-style: none;
+        margin-top: 30px;
+    }
+    .li1 a{
+        text-decoration: none;
+        color: gray;
+        transition: .5s;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 300;
+
+    }
+    .li1 a:hover{
+        margin-left: 15px;
+        color: orangered;
+    }
+    .li2{
+        list-style: none;
+        /* margin-left: 15px; */
+        margin-top: 30px;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        cursor: pointer;
+        transition: .5s;
+        
+    }
+    .li2:hover{
+        color: gray;
+        
+    }
+    .li2 a{
+        text-decoration: none;
+        color: gray;
+        transition: .5s;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 300;
+    }
+    .li2:hover a{
+        color: orangered;
+    }
+    .main9-btn1{
+        height: 50px;
+        width: 160px;
+        background-color: transparent;
+        border: 1px solid white;
+        transition: .5s;
+        color: white;
+        font-size: medium;
+        margin-top: 50px;
+        cursor: pointer;
+    }
+    .main9-btn1:hover{
+        background-color: white;
+        color: black;
+        font-weight: 500;
+    }
+    #main9-icon1{
+        font-size: 20px;
+        color: white;
+        transition: .5s;
+    }
+    .main9-btn1:hover #main9-icon1{
+        color: black;
+        /* font-weight: 600; */
+    }
+
+
+
+    
+
+    
+
+
+
+
+
+    /* //////////////////////////////// Media Queries ////////////////////////////////// */
+
+    @media screen and (max-width:1440px) {
+        .text1-h1{
+            font-size: 65px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .text1{
+            width: 65vw;
+        }
+        .text1-h1{
+            font-size: 55px;
+        }
+        .nav-div{
+            width: 42%;
+        }
+    }
+    @media screen and (max-width:821px) {
+       
+        .main9-child1{
+            width: 25%;
+        }
+        
+    }
+    @media screen and (max-width:768px) {
+        .text1{
+            width: 75vw;
+        }
+        .text1-h1{
+            font-size: 45px;
+        }
+        .nav-div{
+            width: 53%;
+        }
+        #icon1{
+            font-size: 22px;
+        }
+        .logo{
+            height: 25px;
+        }
+        .logo #logo{
+            height: 25px;
+        }
+        .button1{
+            width: 37.5%;
+        }
+        .main3-child1{
+            width: 50%;
+        }
+        .main6-child1{
+            width: 50%;
+        }
+        .main6{
+            height: 140vh;
+        }
+        .main6-div{
+            margin-left: 6%;
+            width: 30%;
+        }
+        .main6-btn1{
+            left: 30%;
+            top: 280px;
+        }
+        .main7-image{
+            width: 30%;
+        }
+        .main9{
+            height: 130vh;
+        }
+        .main9-child1{
+            width: 50%;
+        }
+        .main8-h1{
+            font-size: 35px;
+        }
+        .main8-btn1{
+            height: 50px;
+            width: 190px;
+        }
+        .main8-p1{
+            margin-left: 40px;
+        }
+        #main8-icon1{
+            margin-left: 50px;
+        }
+      
+
+    }
+    @media screen and (max-width:426px) {
+        .text1{
+            height: max-content;
+            width: 75vw;
+        }
+        .text1-h1{
+            font-size: 26px;
+        }
+        .nav-div p{
+            display: none;
+        }
+        .nav-div{
+            width: 35%;
+        }
+        .logo{
+            height: 20px;
+        }
+        .logo #logo{
+            height: 20px;
+        }
+        .btn1{
+            height: 40px;
+            width: 150px;
+        }
+        .button1{
+            width: 87.5%;
+            height: 40px;
+        }
+        .main3-child1{
+            width: 100%;
+        }
+        #image5{
+            width: 100%;
+        }
+        .parent5{
+            height: 90vh;
+        }
+        .main5-p1{
+            font-size: 16px;
+        }
+        .clip-div{
+            width: 20%;
+        }
+        .main5-p2{
+            font-size: 16px;
+        }
+        .main6-child1{
+            width: 100%;
+        }
+        .main6{
+            height: 190vh;
+        }
+        .main6-div{
+            margin-left: 6%;
+            width: 40%;
+        }
+        .main6-div1{
+            width: 30%;
+        }
+        .main6-btn1{
+            left: 10%;
+            top: 560px;
+        }
+        .main7-image{
+            width: 50%;
+        }
+        .main9{
+            height: 230vh;
+        }
+        .main9-child1{
+            width: 100%;
+        }
+        .main8-h1{
+            font-size: 20px;
+        }
+        .main8-btn1{
+            height: 40px;
+            width: 160px;
+        }
+        .main8-p1{
+            margin-left: 30px;
+        }
+        #main8-icon1{
+            margin-left: 20px;
+        }
+      
+
+    }
+    @media screen and (max-width:376px){
+        .text1-h1{
+            font-size: 23px;
+        }
+        .main6{
+            height: 200vh;
+        }
+        .main9-child1{
+            width: 100%;
+        }
+        .main8-h1{
+            font-size: 18px;
+        }
+        .main8-btn1{
+            height: 40px;
+            width: 160px;
+        }
+        .main8-p1{
+            margin-left: 28px;
+        }
+        #main8-icon1{
+            margin-left: 15px;
+        }
+        
+    }
+    @media screen and (max-width:320px) {
+        .text1{
+            width: 75vw;
+            left: 40%;
+        }
+        .text1-h1{
+            font-size: 20px;
+        }
+        .icons{
+            left: 15px;
+        }
+        .main6-div{
+            margin-left: 6%;
+            width: 50%;
+        }
+        .main8-h1{
+            font-size: 16px;
+        }
+        .main8-btn1{
+            height: 40px;
+            width: 160px;
+            font-size: small;
+        }
+        .main8-p1{
+            margin-left: 28px;
+        }
+        #main8-icon1{
+            margin-left: 20px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="main1">
+        <ul class="icons">
+            <li class="icon2"><a href="https://www.behance.net/axiomthemes">be</a></li>
+            <li class="icon2"><a href="https://dribbble.com/AxiomThemes">dr</a></li>
+            <li class="icon2"><a href="https://twitter.com/ThemesAxiom">tw</a></li>
+            <li class="icon2"><a href="https://web.facebook.com/AxiomThemes">fb</a></li>
+        </ul>
+        <div class="text1 text2 text3">
+            <p class="text1-p1">Portfolio</p>
+            <h1 class="text1-h1">Modern villa architecture <br> in Switzerland</h1>
+            <button class="btn1">Get In Touch</button>
+        </div>
+        <img id="image1" src="./slide-6_1-copyright1.jpg" alt="">
+
+        <img id="image2" src="./slide-6_2-copyright1.jpg" alt="">
+        <img id="image3" src="./slide-6_3-copyright1.jpg" alt="">
+        <div class="nav">
+            <div class="logo">
+                <img id="logo" src="./logo-inverse.png" alt="">
+            </div>
+            <div class="nav-div">
+                <p>Call Us: +1 800 541 841 33</p>
+                <div class="bar">
+                    <div class="line1"></div>
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                </div>
+                <i id="icon1" class="fa-solid fa-bag-shopping"></i>
+                <i id="icon1" class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </div>
+    <div class="main2">
+        <div class="parent1">
+            <div class="child1">
+                <i id="icon3" class="fa-solid fa-book-open"></i>
+                <h2>
+                    Architecture</h2>
+                    <p class="child1-p1">Every architecture design project is a <br> challenge that we accept eagerly. Learn more <br> about our top projects.</p>
+                    <div class="butt"> <div class="icon-div"><i id="icon4" class="fa-solid fa-arrow-right-long"></i></div> <p class="butt-p1">View More</p></div>
+            </div>
+            <div class="child1">
+                <i id="icon3" class="fa-solid fa-moon"></i>
+                <h2>
+                    
+Interior Design</h2>
+                    <p class="child1-p1">We apply unique, innovative ideas to our <br> interior design projects. Look at your place <br> from a new perspective!</p>
+                    <div class="butt"> <div class="icon-div"><i id="icon4" class="fa-solid fa-arrow-right-long"></i></div> <p class="butt-p1">View More</p></div>
+            </div>
+            <div class="child1">
+                <i id="icon3" class="fa-solid fa-filter"></i>
+                <h2>
+                   
+Product Design</h2>
+                    <p class="child1-p1">Design, to us, is something magical – we are <br> lucky that our clients let us get creative and <br> transform the world.</p>
+                    <div class="butt"> <div class="icon-div"><i id="icon4" class="fa-solid fa-arrow-right-long"></i></div> <p class="butt-p1">View More</p></div>
+            </div>
+        </div>
+    </div>
+    <div class="main3">
+        <div class="parent2">
+            <div class="main3-child1 main3-child2">
+                <div class="main3-div1">
+                    <div class="main3-div2"></div>
+                    <p class="main3-div1-p1">Who We Are</p>
+                </div>
+                <h1 class="main3-h1">We design & build <br> ultimate things.</h1>
+                <p class="main3-p1">
+                    View the range of our services and projects that we perform <br> internationally with huge love and care.</p>
+                    <div class="button1">
+                        <button class="btn2"><p class="btn2-p1">Our Projects <i id="btn2-icon1" class="fa-solid fa-arrow-right-long"></i></p></button>
+                    </div>
+            </div>
+            <div class="main3-child1 main3-child3 main3-child4">
+                <img id="image5" src="./popup-bg-video-copyright.jpg" alt="">
+                <div id="inp1"><a href="#vid"><i id="icon6" class="fa-solid fa-play"></i></a></div>
+                
+                
+            </div>
+            <div id="vid" class="video-div">
+
+                <video class="video1" src="./ISSB_Test_and_Interview_preparation_tips_to_get_selected_and_recommended(360p).mp4" loop controls autoplay muted></video>
+                <a href=""><i id="icon7" class="fa-solid fa-xmark"></i></a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="main4">
+        <div class="main4-div">
+            <div class="main4-div1"></div>
+            <p class="main4-p1">Portfolio</p>
+        </div>
+        <h1 class="main4-h1">Check Our Projects</h1>
+        <div class="parent4">
+            <div class="slider">
+
+                <div class="slides">
+                    <img id="slideimage" src="./port-098-copyright.jpg" alt="">
+                </div>
+                <div class="slides">
+                    <img id="slideimage" src="./port-39-copyright.jpg" alt="">
+                </div>
+                <div class="slides">
+                    <img id="slideimage" src="./port-40-copyright.jpg" alt="">
+                </div>
+                <div class="slides">
+                    <img id="slideimage" src="./port-41-copyright.jpg" alt="">
+                </div>
+                <div class="slides">
+                    <img id="slideimage" src="./port-42-copyright.jpg" alt="">
+                </div>
+                <div class="slides">
+                    <img id="slideimage" src="./port-43-copyright-scaled-740x580.jpg" alt="">
+                </div>
+                <div class="slides">
+                    <img id="slideimage" src="./post-14-copyright.jpg" alt="">
+                </div>
+                <div class="slides">
+                    <img id="slideimage" src="./post-15-copyright-740x580.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main5">
+        <div class="parent5">
+            <div class="slider1">
+                <div class="main5-child1">
+                    <div class="main5-circle1">
+                        <img id="main5-image1" src="./1test-copyright-480x480.jpg" alt="">
+                    </div>
+                    <p class="main5-p1">I know I can count on your service if I need my project <br> done fast and with the best possible result. I am a <br> regular customer and hope to continue our work!</p>
+                    <div class="clip-div">
+                        <div class="clip-child1"></div>
+                        <div class="clip-child1"></div>
+                    </div> 
+                    <p class="main5-p2"> Brian Smith <br> <span class="color1">Project Manager</span></p>
+                </div>
+                <div class="main5-child1">
+                    <div class="main5-circle1">
+                        <img id="main5-image1" src="./2test-copyright-480x480.jpg" alt="">
+                    </div>
+                    <p class="main5-p1">When our designs need an expert opinion or approval, <br> I know I can rely on your agency. Thank you for all your <br> help – I will be recommending you to everyone!</p>
+                    <div class="clip-div">
+                        <div class="clip-child1"></div>
+                        <div class="clip-child1"></div>
+                    </div> 
+                    <p class="main5-p2">John Lewis <br> <span class="color1">CEO, Designer</span></p>
+                </div>
+                <div class="main5-child1">
+                    <div class="main5-circle1">
+                        <img id="main5-image1" src="./3test-copyright-480x480.jpg" alt="">
+                    </div>
+                    <p class="main5-p1">For me as a photographer, this is an awesome <br> opportunity to share my works and to communicate <br> with other people who are into graphic art and <br> photography!</p>
+                    <div class="clip-div">
+                        <div class="clip-child1"></div>
+                        <div class="clip-child1"></div>
+                    </div> 
+                    <p class="main5-p2"> Lisa Morrison
+                         <br> <span class="color1">Photographer</span></p>
+                </div>
+                <div class="main5-child1">
+                    <div class="main5-circle1">
+                        <img id="main5-image1" src="./1test-copyright-480x480.jpg" alt="">
+                    </div>
+                    <p class="main5-p1">I know I can count on your service if I need my project <br> done fast and with the best possible result. I am a <br> regular customer and hope to continue our work!</p>
+                    <div class="clip-div">
+                        <div class="clip-child1"></div>
+                        <div class="clip-child1"></div>
+                    </div> 
+                    <p class="main5-p2"> Brian Smith <br> <span class="color1">Project Manager</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main6">
+        <div class="main6-div">
+            <div class="main6-div1"></div>
+            <p class="main6-p1">New Articles</p>
+        </div>
+        <h1 class="main6-h1">Check our latest blog posts</h1>
+        <div class="parent6">
+            <div class="main6-child1">
+                <img id="main6-image1" src="./post-14-copyright-740x580.jpg" alt="">
+                <div class="main6-div5">
+                    <h5 class="main6-h5 mm1">Design
+                        <span class="color-h5"></span>
+                    </h5>
+                    <h2 class="main6-h2 mm1">How Interior designers <br> Get Inspired</h2>
+                    <p class="main6-p2 mm1">January 28, 2019</p>
+
+                </div>
+            </div>
+            <div class="main6-child1">
+                <img id="main6-image1" src="./port-43-copyright-scaled-740x580.jpg" alt="">
+                <div class="main6-div5">
+                    <h5 class="main6-h5 mm1">Design
+                        <span class="color-h5"></span>
+                    </h5>
+                    <h2 class="main6-h2 mm1">How Interior designers <br> Get Inspired</h2>
+                    <p class="main6-p2 mm1">January 28, 2019</p>
+
+                </div>
+            </div>
+            <div class="main6-child1">
+                <img id="main6-image1" src="./post-15-copyright-740x580.jpg" alt="">
+                <div class="main6-div5">
+                    <h5 class="main6-h5 mm1">Design
+                        <span class="color-h5"></span>
+                    </h5>
+
+                    <h2 class="main6-h2 mm1">How Interior designers <br> Get Inspired</h2>
+                    <p class="main6-p2 mm1">January 28, 2019</p>
+                </div>
+            </div>
+        </div>
+        <div class="main6-btn1">View More Details <i id="main6-icon7" class="fa-solid fa-arrow-right-long"></i><i id="main6-icon8" class="fa-solid fa-arrow-right-long"></i></div>
+    </div>
+    <div class="main7">
+        <div class="main7-child1">
+            <div class="main7-image">
+                <img id="main7-icons" src="./clients-black-1-copyright.png" alt="">
+            </div>
+            <div class="main7-image">
+                <img id="main7-icons" src="./clients-black-3-copyright.png" alt="">
+            </div>
+            <div class="main7-image">
+                <img id="main7-icons" src="./clients-black-4-copyright.png" alt="">
+            </div>
+            <div class="main7-image">
+                <img id="main7-icons" src="./clients-black-6-copyright.png" alt="">
+            </div>
+            <div class="main7-image">
+                <img id="main7-icons" src="./clients-black-7-copyright.png" alt="">
+            </div>
+            <div class="main7-image">
+                <img id="main7-icons" src="./clients-black-8-copyright.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="main8">
+        <h1 class="main8-h1">Make your project unforgettable <br>
+            Let’s work together.</h1>
+            <button class="main8-btn1" type="submit"><p class="main8-p1">Get In Touch <i id="main8-icon1" class="fa-solid fa-arrow-right-long"></i></p></button>
+            <!-- <button class="main8-btn1" type="reset">Get In Touch</button> -->
+            <!-- <button class="main8-btn1" disabled="disabled">Get In Touch</button> -->
+
+    </div>
+    <div class="main9">
+        <div class="main9-child">
+            <div class="main9-child1 main9-child2">
+                <h3 class="main9-h3">Office</h3>
+                <h3 class="main9-h4">2700 Fire Mesa StLas <br>
+                    Vegas, NV 89128</h3>
+                <h3 class="main9-h5">info@example.com 
+                    <span class="main9-color1"></span>
+                </h3>
+                <p class="main9-p1">+1 800 123 45 67</p>
+
+            </div>
+            <div class="main9-child1">
+                <h3 class="main9-h3">Links</h3>
+                <ul class="main9-ul">
+                    <li class="li1"><a href="http://helion.axiomthemes.com/blog-classic-3-columns/">Blog</a></li>
+                    <li class="li1"><a href="http://helion.axiomthemes.com/about-agency/">About Us</a></li>
+                    <li class="li1"><a href="http://helion.axiomthemes.com/shop/">Shop</a></li>
+                    <li class="li1"><a href="http://helion.axiomthemes.com/contacts-agency/">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="main9-child1">
+                <h3 class="main9-h3">Socials</h3>
+                <ul class="main9-ul1">
+                    <li class="li2"><a href="https://www.facebook.com/AxiomThemes"><i class="fa-brands fa-facebook-f"></i></a>&nbsp;&nbsp;&nbsp;&nbsp; Facebook</li>
+                    <li class="li2"><a href="https://twitter.com/ThemesAxiom"><i class="fa-brands fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;&nbsp; Twitter</li>
+                    <li class="li2"><a href="https://dribbble.com/AxiomThemes"><i class="fa-brands fa-dribbble"></i></a>&nbsp;&nbsp;&nbsp;&nbsp; Dribble</li>
+                    <li class="li2"><a href="https://www.behance.net/axiomthemes"><i class="fa-brands fa-behance"></i></a>&nbsp;&nbsp;&nbsp;&nbsp; Behance</li>
+                </ul>
+            </div>
+            <div class="main9-child1">
+                <h3 class="main9-h3">Newsletter</h3>
+                <button class="main9-btn1">Subscribe &nbsp;&nbsp;<i id="main9-icon1" class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

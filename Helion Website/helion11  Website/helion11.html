@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helion 11</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            border: none;
+            outline: none;
+            text-decoration: none;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        .main1{
+            height: 100vh;
+            width: 100%;
+            /* background-color: skyblue; */
+            background-image: url(./slide_11-1-copyright1.jpg);
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar{
+            height: 100px;
+            width: 100%;
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo{
+            height: 25px;
+            width: 150px;
+            /* border: 1px solid; */
+            margin-left: 40px;
+        }
+        .logo img{
+            height: 25px;
+        }
+        ul{
+            width: 150px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;    
+        }
+        ul li a i{
+            font-size: 35px;
+            color: white;
+        }
+        #anker-div{
+            height: 100vh;
+            width: 100%;
+            background-color: rgb(68, 67, 67);
+            position: absolute;
+            top: 0;
+            opacity: 0;
+            display: none;
+        }
+        .anker1:hover #anker-div{
+            display: block;
+            opacity: 1;
+        }
+        .text-div{
+            height: 90vh;
+            width: 60%;
+            /* border: 1px solid white;   */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;       
+        }
+        .text1{
+            height: auto;
+            width: 100%;
+            /* border: 2px solid orange; */
+            
+
+        }
+        .we{
+            height: 100px;
+            width: 100%;
+            /* border: 1px solid pink; */
+            text-align: center;         
+        }
+        .h{
+            font-family: LouisGeorgeCafe, sans-serif;
+            font-size: 74px;
+            font-weight: 700;
+            line-height: 74px;
+            color: white;
+            display: inline-block;
+            cursor: default;
+            /* margin-top: 70px; */
+            animation: a1 1s linear forwards;
+            opacity: 0;
+        }
+        @keyframes a1 {
+            0%{
+                    /* transform: translateY(-50px); */
+                    transform: rotateX(60deg);
+                    opacity: 0;
+                    display: none;
+            }
+            100%{
+                transform: rotateX(0deg);
+                /* transform: translateY(0px); */
+                opacity: 1;
+                display: block;
+            }
+            
+        }
+        .d1{
+            animation-name: a2;
+            animation-delay: .3s;
+            /* color: red; */
+            opacity: 0;
+        }
+        @keyframes a2 {
+            0%{
+                /* margin-top: -50px; */
+                transform: translateY(-70px) rotateX(30deg);
+                opacity: 0;
+                display: none;
+
+            }
+            100%{
+                transform: translateY(0px) rotateX(0deg); 
+               
+                opacity: 1;
+                display: block;
+            }
+            
+        }
+        .d3{
+            animation-name: a3;
+            animation-delay: .6s;
+            /* color: pink; */
+            opacity: 0;
+        }
+        @keyframes a3 {
+            0%{
+                /* margin-top: -50px; */
+                transform: translateY(70px) rotateX(30deg);
+                opacity: 0;
+                display: none;
+
+            }
+            100%{
+                transform: translateY(0px) rotateX(0deg);
+                margin-top: 0px;
+                opacity: 1;
+                display: block;
+            }
+            
+        }
+        .d4{
+            animation-name: a4;
+            animation-delay: .9s;
+            /* color: blue; */
+            opacity: 0;
+        }
+        @keyframes a4 {
+            0%{
+                /* margin-top: -50px; */
+                transform: translateY(-80px) rotateX(30deg);
+                opacity: 0;
+                display: none;
+
+            }
+            100%{
+                transform: translateY(0px) rotateX(0deg);
+                margin-top: 0px;
+                opacity: 1;
+                display: block;
+            }
+            
+        }
+        .d6{
+            animation-name: a5;
+            animation-delay: .8s;
+            /* color: ; */
+            opacity: 0;
+        }
+        @keyframes a5 {
+            0%{
+                /* margin-top: -50px; */
+                transform: translateY(60px) rotateX(30deg);
+                opacity: 0;
+                display: none;
+
+            }
+            100%{
+                transform: translateY(0px) rotateX(0deg);
+                margin-top: 0px;
+                opacity: 1;
+                display: block;
+            }
+            
+        }
+        .d7{
+            animation-delay: 0.2s;
+        }
+        .d8{
+            animation-delay: .4s;
+        }
+        .d9{
+            animation-delay: .6s;
+        }
+        .d10{
+            animation-delay: .8s;
+        }
+        .d11{
+            animation-delay: .6s;
+        }
+        .d12{
+            animation-delay: .8s;
+        }
+
+        .h{
+            text-align: center;
+            animation: a6 1s linear forwards;
+            opacity: 0;
+          
+        }
+        @keyframes a6 {
+            0%{
+                    /* transform: translateY(-50px); */
+                    transform: rotateX(60deg);
+                    opacity: 0;
+                    display: none;
+            }
+            100%{
+                transform: rotateX(0deg);
+                /* transform: translateY(0px); */
+                opacity: 1;
+                display: block;
+            }
+            
+        }
+        .h{
+            
+            opacity: 0;
+            animation: a7 1s linear forwards;
+        }
+        @keyframes a7 {
+            0%{
+                    
+                    transform: rotateX(60deg);
+                    opacity: 0;
+                    display: none;
+            }
+            100%{
+                transform: rotateX(0deg);
+                opacity: 1;
+                display: block;
+            }
+            
+        }
+        .d13{
+            animation-name: a8;
+            animation-delay: .3s;
+            color: white;
+            opacity: 0;
+            /* margin-left: -20px; */
+            /* transform: translate(-20px, 0); */
+        }
+        @keyframes a8 {
+            0%{
+                transform:  rotateX(30deg) translate(-30px, -70px);
+                opacity: 0;
+                display: none;
+
+            }
+            100%{
+                transform: translateY(0px) rotateX(0deg); 
+                margin-top: 0px;
+                opacity: 1;
+                display: block;
+            }
+            
+        }
+        .d14{
+            animation-name: a9;
+            animation-delay: .3s;
+            color: white;
+            opacity: 0;
+            /* margin-left: -20px; */
+            /* transform: translate(-20px, 0); */
+        }
+        @keyframes a9 {
+            0%{
+                transform:  rotateY(30deg) translate(-30px, 70px);
+                opacity: 0;
+                display: none;
+
+            }
+            100%{
+                transform: translateY(0px) rotateY(0deg); 
+                margin-top: 0px;
+                opacity: 1;
+                display: block;
+            }
+            
+        }
+        .d15{
+            animation-name: a10;
+            animation-delay: .3s;
+            color: white;
+            animation-duration: 1s;
+            opacity: 0;
+            /* margin-left: -20px; */
+            /* transform: translate(-20px, 0); */
+        }
+        @keyframes a10 {
+            0%{
+                transform:  rotateY(30deg) translate(0, -70px);
+                opacity: 0;
+                display: none;
+
+            }
+            100%{
+                transform: translate(0px) rotateY(0deg); 
+                margin-top: 0px;
+                opacity: 1;
+                display: block;
+            }
+            
+        }
+        .d17{
+            animation-name: a11;
+            animation-delay: .3s;
+            color: white;
+            animation-duration: 1s;
+            opacity: 0;
+        }
+        @keyframes a11 {
+            0%{
+                transform:  rotateY(30deg) translate(0, -70px);
+                opacity: 0;
+                display: none;
+
+            }
+            100%{
+                transform: translate(0px) rotateY(0deg); 
+                margin-top: 0px;
+                opacity: 1;
+                display: block;
+            }
+            
+        }
+        .d19{
+            animation-name: a12;
+            animation-delay: .3s;
+            color: white;
+            animation-duration: 1s;
+            opacity: 0;
+        }
+        @keyframes a12 {
+            0%{
+                transform:  rotateY(30deg) translate(0, 70px);
+                opacity: 0;
+                display: none;
+
+            }
+            100%{
+                transform: translate(0px) rotateY(0deg); 
+                margin-top: 0px;
+                opacity: 1;
+                display: block;
+            }
+            
+        }
+
+
+        .photo{
+            height: 100px;
+            width: 100%;
+            /* border: 1px solid red; */
+            text-align: center;
+        }
+        .btn{
+            height: 60px;
+            width: 210px;
+            /* border: 2px solid white; */
+            border-radius: 10px;
+            margin: auto;
+            transition: .5s;
+        }
+        .btn:hover{
+            width: 250px;
+            
+        }
+        .btn1{
+            border-radius: 10px;
+            height: 100%;
+            width: 100%;
+            background-color: orangered;
+            color: white;
+            font-weight: 600;
+            font-size: medium;
+            cursor: pointer;
+            transition: .5s;
+        }
+       
+        .btn1:hover {
+            background-color: white;
+            color: black;
+            font-size: large;
+        }
+        .text2{
+            height: 200px;
+            width: 100%;
+            /* border: 2px solid yellow; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .text2-child1{
+            height: 100px;
+            width: 100%;
+            /* border: 1px solid rgb(87, 87, 234); */
+            text-align: center;
+
+        }
+        .image1{
+            height: 30px;
+            cursor: pointer;
+            animation: animate 2s linear infinite alternate ;
+        }
+        @keyframes animate {
+            from{
+                margin-top: 0;
+            }
+            to{
+                margin-top: 30px;
+            }
+        }
+       
+        .text2-child1-p1{
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: LouisGeorgeCafe, sans-serif;
+        }
+        .main1-div{
+            height: 200px;
+            width: 20px;
+            /* border: 1px solid white; */
+            position: fixed;
+            right: 100px;
+            top: 240px;
+        }
+        .main1-div > a{
+            transition: all linear .5s;
+            color: white;
+            margin-top: 20px;
+            
+
+        }
+        .inp1{
+            display: block;
+            margin-top: 15px;
+            cursor: pointer;
+            transition: all linear .5s;
+
+        }
+        .main2{
+            height: 100vh;
+            width: 100%;
+            background-color: rgb(199, 227, 252);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            transition: all linear .5s;
+        }
+        .main2-child1{
+            height: 100vh;
+            width: 50%;
+            /* border: 2px solid; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main2-child1-text1{
+            height: 50vh;
+            width: 80%;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        .main2-child1-text1 > p{
+            font-size: 18px;
+            color: darkgray;
+        }
+        .h1-div{
+            height: 2px ;
+            width: 10%;
+            background-color: orangered;
+        }
+        .view{
+            height: max-content;
+            width: max-content;
+            border: silver 1px solid;
+            border-radius: 5px;
+            font-size: large;
+            cursor: pointer;
+        }
+        .main2-image1{
+            background-image: url(./port-56-copyright.jpg);
+            background-size: cover;
+        }
+        .main2-image2{
+            background-image: url(./port-57-copyright.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .main2-image3{
+            background-image: url(./port-58-copyright.jpg);
+            background-size: cover;
+        }
+        .main2-image4{
+            background-image: url(./port-59-copyright.jpg);
+            background-size: cover;
+        }
+        .main2-child2 {
+            background-color: black;
+            color: white;
+        }
+        .main2-child4 {
+            background-color: black;
+            color: white;
+        }
+        h2{
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: max-content;
+            position: relative;
+            cursor: pointer;
+        }
+        .color1{
+            height: 2px;
+            width: 100%;
+            background-color: white;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            transition: .5s;
+
+        }
+        h2:hover .color1{
+            width: 0%;
+        }
+        .inp1:checked #main1{
+            color: white;
+            transition: .5s;
+        }
+        #main1{
+            transition: all linear .5s;
+
+        }
+        #main2{
+            transition: all linear .5s;
+
+        }
+        #main3{
+            transition: all linear .5s;
+
+        }
+        #main4{
+            transition: all linear .5s;
+
+        }
+        #radio1{
+            transition: all 1s linear;
+        }
+        #radio2{
+            transition: all 1s linear;
+        }
+        #radio3{
+            transition: all 1s linear;
+        }
+        #radio4{
+            transition: all 1s linear;
+        }
+
+
+
+       
+
+
+        /* ///////////////////////////////// Media Queries /////////////////////////////// */
+
+        @media screen and (max-width:1158px) {
+            .h{
+                font-size:65px;
+            }
+            .we{
+                height: max-content;
+            }
+            .photo{
+                height: max-content;
+            }
+            .btn{
+                width: 205px;
+            }
+        }
+        @media screen and (max-width:1008px) {
+            .h{
+                font-size:56px;
+            }
+            .btn{
+                width: 200px;
+            }
+        }
+        @media screen and (max-width:881px) {
+            .h{
+                font-size:47px;
+            }
+            .btn{
+                width: 195px;
+            }
+        }
+        @media screen and (max-width:753px) {
+            .h{
+                font-size:38px;
+            }
+            .btn{
+                width: 190px;
+            }
+        }
+        @media screen and (max-width:625px) {
+            .h{
+                font-size:29px;
+            }
+            .btn{
+                height: 55px;
+                width: 185px;
+            }
+        }
+        @media screen and (max-width:498px) {
+            .h{
+                font-size:19px;
+            }
+            .btn{
+                height: 50px;
+                width: 180px;
+            }
+        }
+        @media screen and (max-width:357px) {
+            .h{
+                font-size:16px;
+            }
+            .btn{
+                height: 45px;
+                width: 175px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main0" class="main1">
+        <div class="navbar">
+            <div class="logo">
+                <img src="./logo-inverse.png" alt="">
+            </div>
+            <ul>
+                <li><a href=""><i class="fa-solid fa-bars-staggered"></i></a></li>
+                
+                <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+
+                <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+            
+        </div>
+        <div class="text-div">
+            <div class="text1">
+                <div class="we">
+                    <h1 class="h d1">W</h1>
+                    <h1 class="h d2">e</h1>
+                    <h1 class="h d3">&nbsp;M</h1>
+                    <h1 class="h d4">a</h1>
+                    <h1 class="h d5">k</h1>
+                    <h1 class="h d6">e</h1>
+                    <h1 class="h d7">&nbsp;C</h1>
+                    <h1 class="h d8">r</h1>
+                    <h1 class="h d9">e</h1>
+                    <h1 class="h d12">a</h1>
+                    <h1 class="h d13">t</h1>
+                    <h1 class="h d14">i</h1>
+                    <h1 class="h d15">v</h1>
+                    <h1 class="h d16">e</h1> 
+                    
+                    
+                </div>
+                <div class="photo">
+                    <h1 class="h d17">P</h1>
+                    <h1 class="h d18">h</h1>
+                    <h1 class="h d19">o</h1>
+                    <h1 class="h d20">t</h1>
+                    <h1 class="h d1">o</h1>
+                    <h1 class="h d2">g</h1>
+                    <h1 class="h d3">r</h1>
+                    <h1 class="h d4">a</h1>
+                    <h1 class="h d5">p</h1>
+                    <h1 class="h d6">h</h1>
+                    <h1 class="h d7">y</h1>
+    
+    
+                </div>
+                <div class="btn">
+                    <button class="btn1">Get In Touch</button>
+                </div>
+            </div>
+            <div class="text2">
+                <div class="text2-child1">
+                    <img class="image1" src="./mouse-clicker.png" alt="">
+                </div>
+                <div class="text2-child1">
+                    <p class="text2-child1-p1">Scroll More</p>
+                </div>
+            </div>
+        </div>
+        <div class="main1-div">
+            <a id="radio0" href="#main0">Main1
+                <input class="inp1" type="radio" name="one" id="radio0" >
+
+            </a>
+            
+            <a id="radio1" href="#main1">Main2
+                    <input class="inp1" type="radio" name="one" id="radio1">
+
+                </a>
+          
+
+                
+                <a id="radio2" href="#main2">Main3
+                    <input class="inp1" type="radio" name="one" id="radio2">
+
+                </a>
+         
+
+                
+                <a id="radio3" href="#main3">Main4
+                    <input class="inp1" type="radio" name="one" id="radio3">
+
+                </a>
+           
+            
+                
+                <a id="radio4" href="#main4">Main5
+                    <input class="inp1" type="radio" name="one" id="radio4">
+
+                </a>
+          
+           
+           
+        </div>
+    </div>
+    <div class="main2" id="main1">
+        <div class="main2-child1">
+            <div class="main2-child1-text1">
+                <p>Creative​</p>
+                <h1>
+                    Everlasting <br>
+                    Summer Nights</h1>
+                    <div class="h1-div"></div>
+                    <div class="view">View Profile</div>
+            </div>
+        </div>
+        <div class="main2-child1 main2-image1"></div>
+    </div>
+    <div class="main2" id="main2">
+        <div class="main2-child1 main2-child2">
+            <div class="main2-child1-text1">
+                <p>Creative​</p>
+                <h1>
+                    Everlasting <br>
+                    Summer Nights</h1>
+                    <div class="h1-div"></div>
+                    <div class="view">View Profile</div>
+            </div>
+        </div>
+        <div class="main2-child1 main2-image2"></div>
+    </div>
+    <div class="main2" id="main3">
+        <div class="main2-child1 main2-child3">
+            <div class="main2-child1-text1">
+                <p>Creative​</p>
+                <h1>
+                    Everlasting <br>
+                    Summer Nights</h1>
+                    <div class="h1-div"></div>
+                    <div class="view">View Profile</div>
+            </div>
+        </div>
+        <div class="main2-child1 main2-image3"></div>
+    </div>
+    <div class="main2" id="main4">
+        <div class="main2-child1 main2-child4">
+            <div class="main2-child1-text1">
+                <p>Get In Touch​</p>
+                <h1>
+                    Let's Work Together
+                </h1>
+                
+                    <h2>info@website.com <span class="color1"></span></h2>
+            </div>
+        </div>
+        <div class="main2-child1 main2-image4"></div>
+    </div>
+</body>
+</html>

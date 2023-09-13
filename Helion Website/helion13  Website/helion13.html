@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helion 13</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main1 {
+            height: 250vh;
+            width: 100%;
+            background-color: skyblue;
+            padding-bottom: 50px;
+
+        }
+
+        .navbar {
+            height: 25vh;
+            width: 100%;
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .nav {
+            height: 100vh;
+            width: 10%;
+            background-color: pink;
+            box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.348);
+            position: fixed;
+        }
+
+        .logo {
+            height: 45px;
+            width: 40px;
+            /* border: 1px solid; */
+            cursor: pointer;
+        }
+
+        #logo {
+            height: 45px;
+        }
+
+        .icons {
+            height: 50px;
+            width: 40px;
+            /* border: 1px solid; */
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .line1 {
+            height: 2px;
+            width: 100%;
+            background-color: black;
+            margin-top: 10px;
+        }
+
+        .line2 {
+            height: 3px;
+            width: 100%;
+            background-color: black;
+            margin-top: 10px;
+            margin-left: 50%;
+            transition: .5s;
+
+        }
+
+        .icons:hover .line2 {
+            margin-left: 0%;
+        }
+        .grid-template{
+            height: 250vh;
+            /* height:max-content; */
+            width: 90%;
+            background-color: white;
+            margin-left: 10%;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 20% 20% 20% 20% 20%;
+        }
+        
+        .box1{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            background-image: url(./port-44-copyright.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .box2{
+            background-image: url(./port-45-copyright-740x580.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .box3{
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            background-image: url(./port-46-copyright.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .box4{
+            background-image: url(./port-50-copyright-740x580.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .box5{
+            background-image: url(./port-52-copyright-740x580.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .box6{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 5;
+            background-image: url(./port-53-copyright.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .box7{
+            background-image: url(./port-51-copyright-740x580.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .box8{
+            background-image: url(./port-49-copyright-740x580.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .box9{
+            background-image: url(./port-48-copyright-740x580.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .box10{
+            background-image: url(./port-54-copyright-740x580.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .box11{
+            background-image: url(./port-47-copyright-740x580.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .box12{
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 5;
+            grid-row-end: 6;
+            background-image: url(./port-55-copyright.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .box-div{
+            height: 100%;
+            width: 100%;
+            background-color: white;
+            opacity: 0;
+            transition: .5s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box-div:hover {
+            opacity: 1;
+        }
+        .box-div1{
+            height: 26%;
+            width: 60%;
+            /* border: 1px solid red; */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #div1-icon1{
+            font-size: 25px;
+            color: orangered;
+
+        }
+        .main2{
+            height: 60vh;
+            width: 90%;
+            background-color: black;
+            margin-left: 10%;
+            background-image: url(./decoration-3.png);
+            background-position: bottom right;
+            background-size: 20% 50%;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main2-child1{
+            height: 40vh;
+            width: 90%;
+            border: 1px solid white;
+            display: flex;
+            color: white;
+            font-size: 22px;
+            justify-content: space-between;
+            
+
+        }
+        .child-div{
+            height: 40vh;
+            width: 60%;
+            /* border: 1px solid yellow; */
+            display: flex;
+            justify-content: center;
+        }
+        .child1-div1{
+            height: 40vh;
+            width: 33.3%;
+            /* background-color: orange; */
+            border: 1px solid white;
+        }
+        .child-div0{
+            height: 40vh;
+            width: 25%;
+            /* background-color: pink; */
+            border: 1px solid white;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="main1">
+
+
+        <div class="nav">
+            <div class="navbar">
+
+                <div class="logo">
+                    <img id="logo" src="./logo-shortcut.png" alt="">
+                </div>
+                <div class="icons">
+                    <div class="line1"></div>
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="grid-template">
+            <div class="box box1">
+                <div class="box-div">
+                    <div class="box-div1">
+
+                        <i id="div1-icon1" class="fa-solid fa-right-long"></i>
+                        <h2>Cartoon <br> Illustration</h2>
+                        <p>Illustrations</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="box box2">
+                <div class="box-div">
+                    <div class="box-div1">
+
+                        <i id="div1-icon1" class="fa-solid fa-right-long"></i>
+                        <h2>Cartoon <br> Illustration</h2>
+                        <p>Illustrations</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="box box3">
+                <div class="box-div">
+                    <div class="box-div1">
+
+                        <i id="div1-icon1" class="fa-solid fa-right-long"></i>
+                        <h2>Cartoon <br> Illustration</h2>
+                        <p>Illustrations</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="box box4">
+                <div class="box-div">
+                    <div class="box-div1">
+
+                        <i id="div1-icon1" class="fa-solid fa-right-long"></i>
+                        <h2>Cartoon <br> Illustration</h2>
+                        <p>Illustrations</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="box box5">
+                <div class="box-div">
+                    <div class="box-div1">
+
+                        <i id="div1-icon1" class="fa-solid fa-right-long"></i>
+                        <h2>Cartoon <br> Illustration</h2>
+                        <p>Illustrations</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="box box6">
+                <div class="box-div">
+                    <div class="box-div1">
+
+                        <i id="div1-icon1" class="fa-solid fa-right-long"></i>
+                        <h2>Cartoon <br> Illustration</h2>
+                        <p>Illustrations</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="box box7">
+                <div class="box-div">
+                    <div class="box-div1">
+
+                        <i id="div1-icon1" class="fa-solid fa-right-long"></i>
+                        <h2>Cartoon <br> Illustration</h2>
+                        <p>Illustrations</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="box box8">
+                <div class="box-div">
+                    <div class="box-div1">
+
+                        <i id="div1-icon1" class="fa-solid fa-right-long"></i>
+                        <h2>Cartoon <br> Illustration</h2>
+                        <p>Illustrations</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="box box9">
+                <div class="box-div">
+                    <div class="box-div1">
+
+                        <i id="div1-icon1" class="fa-solid fa-right-long"></i>
+                        <h2>Cartoon <br> Illustration</h2>
+                        <p>Illustrations</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="box box10">
+                <div class="box-div">
+                    <div class="box-div1">
+
+                        <i id="div1-icon1" class="fa-solid fa-right-long"></i>
+                        <h2>Cartoon <br> Illustration</h2>
+                        <p>Illustrations</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="box box11">
+                <div class="box-div">
+                    <div class="box-div1">
+
+                        <i id="div1-icon1" class="fa-solid fa-right-long"></i>
+                        <h2>Cartoon <br> Illustration</h2>
+                        <p>Illustrations</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="box box12">
+                <div class="box-div">
+                    <div class="box-div1">
+
+                        <i id="div1-icon1" class="fa-solid fa-right-long"></i>
+                        <h2>Cartoon <br> Illustration</h2>
+                        <p>Illustrations</p>
+
+                    </div>
+                </div>
+            </div>
+
+          
+        </div>
+
+    </div>
+    <div class="main2">
+        <div class="main2-child1">
+            <div class="child-div">
+
+                <div class="child1-div1">
+                    <h2>Let’s Work <br> Together</h2>
+                    <h3>info@website.com</h3>
+                </div>
+                <div class="child1-div1">
+                    <p> 
+                        Home <br>
+                        About Me <br>
+                        Blog</p>
+                </div>
+                <div class="child1-div1">
+                    Privacy Policy <br>
+                    Service Plus <br>
+                    Personal
+                </div>
+
+            </div>
+            <div class="child-div0">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-dribbble"></i>
+                <i class="fa-brands fa-behance"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

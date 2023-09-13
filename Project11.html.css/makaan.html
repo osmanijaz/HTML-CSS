@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="makaan.css">
+    <link rel="stylesheet" href="makaan-media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="nav-bar">
+
+        <!-- ---dropdown bars start--- -->
+
+        <i class="bar-nav fa-solid fa-bars">
+            <div class="bar-nav-dropdown2">
+
+                <ul class="listul2">
+                    <li class="listli2"><a href="">HOME</a></li>
+                    <li class="listli2"><a href="">ABOUT</a></li>
+                    <li class="listli2"><a href="">PROPERTY</a></li>
+                    <li class="listli2"><a href="">PAGES</a></li>
+                    <li class="listli2"><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+        </i>
+
+        <!-- ---dropdown bars end---  -->
+
+
+        <div class="logo">
+
+            <ul class="navbar-main-ul">
+                <li class="navbar-list-li">HOME</li>
+                <li class="navbar-list-li">ABOUT</li>
+
+                <!-- --------------dropdown 1 start---------------- -->
+                <li class="navbar-list-li main-dropdown">PROPERTY ∨
+
+                    <div class="dropdown-list">
+
+                        <ul class="drop1-ul">
+                            <li class="drop1-li"><a href="">Property List</a></li>
+                            <li class="drop1-li"><a href="">Property Type</a></li>
+                            <li class="drop1-li"><a href="">Property Agent</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+                <!-- --------------dropdown 1 end---------------- -->
+
+                <!-- --------------dropdown 2 start---------------- -->
+                <li class="navbar-list-li main-dropdown">PAGES ∨
+                    <div class="dropdown-list">
+
+                        <ul class="drop1-ul">
+                            <li class="drop1-li"><a href="">Testimonial</a></li>
+                            <li class="drop1-li"><a href="">404 Error</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- --------------dropdown 2 end---------------- -->
+
+                <li class="navbar-list-li">CONTACT</li>
+                <li class="navbar-list-li">Add Property</li>
+        </div>
+    </div>
+
+    <!-- ---2 divs left right--- -->
+
+    <div class="main-first-container">
+
+        <div class="main-left">
+
+            <h1 class="main-left-h1">Find A <span class="main-left-h1-green"> Perfect Home</span> To Live With Your
+                Family</h1>
+            <p class="main-left-p">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum
+                et diam justo clita et kasd rebum sea elitr.</p>
+            <button class="main-left-button">Get Started</button>
+        </div>
+
+        <div class="main-right">
+
+
+
+
+
+
+            <!-- ---click slider start--- -->
+
+            <div class="main-slider-image">
+                <div class="slider">
+                    <img id="slide1" class="image-style-slider" src="./Images/carousel-1.jpg" alt="" srcset="">
+                </div>
+                <div class="slider">
+                    <img id="slide2" class="image-style-slider" src="./Images/carousel-2.jpg" alt="" srcset="">
+                </div>
+            </div>
+
+            <!-- --- -->
+
+            <div class="main-slide-click-button-container">
+                <ul class="button-ul">
+                    <li class="button-li"><a href="#slide1">&lt;</a></li>
+                    <li class="button-li"><a href="#slide2">&gt;</a></li>
+                </ul>
+            </div>
+
+
+
+
+            <!-- ---click slider end--- -->
+        </div>
+    </div>
+
+    <!-- ---green border select option--- -->
+
+    <div class="green-main">
+
+        <div class="select-box-main">
+            <input class="search-input" type="text" placeholder="Search Keyword" maxlength="10">
+        </div>
+
+
+        <div class="select-box-main">
+            <select id="property-type">
+                <option value="">Property Type</option>
+                <option value="">Property Type 1</option>
+                <option value="">Property Type 2</option>
+                <option value="">Property Type 3</option>
+            </select>
+        </div>
+
+
+        <div class="select-box-main">
+            <select id="location-type">
+                <option value="">Location</option>
+                <option value="">Location Type 1</option>
+                <option value="">Location Type 2</option>
+                <option value="">Location Type 3</option>
+            </select>
+        </div>
+
+        <div class="select-box-main">
+            <button class="search-type">Search</button>
+        </div>
+    </div>
+
+    <!-- ---property type boxes--- -->
+
+    <div class="prop-main">
+        <h1 class="prop-head">Property Types</h1>
+        <p class="prop-para">Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd<br>vero
+            ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+
+        <!-- ---box 8 inside prop-main div--- -->
+
+        <div class="box8-main">
+
+            <!-- ---box1 start--- -->
+
+            <div class="box8-child">
+                <div class="box8-pic">
+                    <img class="img-style" src="./Images/icon-building.png" alt="" srcset="">
+
+                </div>
+                <h4 class="box8-head white">Apartment</h4>
+                <p class="box8-para white">123 Properties</p>
+            </div>
+
+            <!-- ---box1 end--- -->
+
+            <!-- ---box2 start--- -->
+
+            <div class="box8-child">
+                <div class="box8-pic">
+                    <img class="img-style" src="./Images/icon-building.png" alt="" srcset="">
+
+                </div>
+                <h4 class="box8-head white">Apartment</h4>
+                <p class="box8-para white">123 Properties</p>
+            </div>
+
+            <!-- ---box2 end--- -->
+
+            <!-- ---box3 start--- -->
+
+            <div class="box8-child">
+                <div class="box8-pic">
+                    <img class="img-style" src="./Images/icon-building.png" alt="" srcset="">
+
+                </div>
+                <h4 class="box8-head white">Shop</h4>
+                <p class="box8-para white">123 Properties</p>
+            </div>
+
+            <!-- ---box3 end--- -->
+
+            <!-- ---box4 start--- -->
+
+            <div class="box8-child">
+                <div class="box8-pic">
+                    <img class="img-style" src="./Images/icon-building.png" alt="" srcset="">
+
+                </div>
+                <h4 class="box8-head white">Building</h4>
+                <p class="box8-para white">123 Properties</p>
+            </div>
+
+            <!-- ---box4 end--- -->
+
+            <!-- ---box5 start--- -->
+
+            <div class="box8-child">
+                <div class="box8-pic">
+                    <img class="img-style" src="./Images/icon-building.png" alt="" srcset="">
+
+                </div>
+                <h4 class="box8-head white">Townhouse</h4>
+                <p class="box8-para white">123 Properties</p>
+            </div>
+
+            <!-- ---box5 end--- -->
+
+            <!-- ---box6 start--- -->
+
+            <div class="box8-child">
+                <div class="box8-pic">
+                    <img class="img-style" src="./Images/icon-building.png" alt="" srcset="">
+
+                </div>
+                <h4 class="box8-head white">Office</h4>
+                <p class="box8-para white">123 Properties</p>
+            </div>
+
+            <!-- ---box6 end--- -->
+
+            <!-- ---box7 start--- -->
+
+            <div class="box8-child">
+                <div class="box8-pic">
+                    <img class="img-style" src="./Images/icon-building.png" alt="" srcset="">
+
+                </div>
+                <h4 class="box8-head white">Home</h4>
+                <p class="box8-para white">123 Properties</p>
+            </div>
+
+            <!-- ---box7 end--- -->
+
+            <!-- ---box8 start--- -->
+
+            <div class="box8-child">
+                <div class="box8-pic">
+                    <img class="img-style" src="./Images/icon-building.png" alt="" srcset="">
+
+                </div>
+                <h4 class="box8-head white">Villa</h4>
+                <p class="box8-para white">123 Properties</p>
+            </div>
+
+            <!-- ---box8 end--- -->
+        </div>
+    </div>
+
+    <!-- ----#1 Place To Find---- -->
+
+    <div class="place-main">
+
+        <div class="place-left">
+            <div class="green-border-left"></div>
+            <img class="green-border-pic" src="./Images/about.jpg" alt="" srcset="">
+
+        </div>
+
+
+        <div class="place-right">
+            <h1 class="place-head">#1 Place To Find The Perfect Property</h1>
+
+            <p class="place-para">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
+                eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet.
+                <br><br>
+
+            <ul>
+                <li class="place-para2"><i class="icon-style fa-solid fa-check"></i>&nbsp&nbsp&nbspTempor erat elitr
+                    rebum at clita</li>
+                <li class="place-para2"><i class="icon-style fa-solid fa-check"></i>&nbsp&nbsp&nbspAliqu diam amet diam
+                    et eos</li>
+                <li class="place-para2"><i class="icon-style fa-solid fa-check"></i>&nbsp&nbsp&nbspClita duo justo magna
+                    dolore erat amet</li>
+            </ul>
+
+            <button class="place-button">Read More</button>
+            </p>
+        </div>
+    </div>
+
+    <!-- ---property listing--- -->
+
+    <div class="list-main">
+        <div class="list-left">
+            <h1 class="list-left-head">Property Listing</h1>
+            <p class="list-left-para">Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd
+                vero ipsum sit eirmod sit diam justo sed rebum.</p>
+
+
+        </div>
+        <div class="list-right">
+            <div class="list-button-main">
+                <button class="list-button list-but-style">Featured</button>
+                <button class="list-button">For Sell</button>
+                <button class="list-button">For Rent</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---6 div property--- -->
+
+    <div class="prop6">
+
+        <!-- ---box 1 start--- -->
+
+        <div class="prop6-box">
+
+            <div class="prop6-image">
+
+                <img class="prop6-pics-style" src="./Images/property-1.jpg" alt="" srcset="">
+            </div>
+
+            <h1 class="prop6-p1">$12,345</h1>
+
+            <h2 class="prop6-p2">Golden Urban House For Sell</h2>
+            <p class="prop6-p3"><i class="prop-icon fa-solid fa-location-dot"></i>&nbsp;&nbsp;123 Street, New York, USA
+            </p>
+
+            <div class="prop6-box123">
+                <p class="prop-para-boxy"><i class="propy-icon fa-solid fa-ruler-combined"></i>&nbsp;1000 Sqft</p>
+            </div>
+            <div class="prop6-box123">
+                <p class="prop-para-boxy"><i class="propy-icon fa-solid fa-bed"></i>&nbsp;3 Bed</p>
+            </div>
+            <div class="prop6-box123 aa">
+                <p class="prop-para-boxy"><i class="propy-icon fa-solid fa-bed"></i>&nbsp; 2 Bath</p>
+            </div>
+        </div>
+        <!-- ---box 1 end--- -->
+
+        <!-- ---box 2 start--- -->
+
+        <div class="prop6-box">
+
+            <div class="prop6-image">
+
+                <img class="prop6-pics-style" src="./Images/property-2.jpg" alt="" srcset="">
+            </div>
+
+            <h1 class="prop6-p1">$12,345</h1>
+
+            <h2 class="prop6-p2">Golden Urban House For Sell</h2>
+            <p class="prop6-p3"><i class="prop-icon fa-solid fa-location-dot"></i>&nbsp;&nbsp;123 Street, New York, USA
+            </p>
+
+            <div class="prop6-box123">
+                <p class="prop-para-boxy"><i class="propy-icon fa-solid fa-ruler-combined"></i>&nbsp;1000 Sqft</p>
+            </div>
+            <div class="prop6-box123">
+                <p class="prop-para-boxy"><i class="propy-icon fa-solid fa-bed"></i>&nbsp;3 Bed</p>
+            </div>
+            <div class="prop6-box123 aa">
+                <p class="prop-para-boxy"><i class="propy-icon fa-solid fa-bed"></i>&nbsp; 2 Bath</p>
+            </div>
+        </div>
+        <!-- ---box 2 end--- -->
+
+        <!-- ---box 3 start--- -->
+
+        <div class="prop6-box">
+
+            <div class="prop6-image">
+
+                <img class="prop6-pics-style" src="./Images/property-3.jpg" alt="" srcset="">
+            </div>
+
+            <h1 class="prop6-p1">$12,345</h1>
+
+            <h2 class="prop6-p2">Golden Urban House For Sell</h2>
+            <p class="prop6-p3"><i class="prop-icon fa-solid fa-location-dot"></i>&nbsp;&nbsp;123 Street, New York, USA
+            </p>
+
+            <div class="prop6-box123">
+                <p class="prop-para-boxy"><i class="propy-icon fa-solid fa-ruler-combined"></i>&nbsp;1000 Sqft</p>
+            </div>
+            <div class="prop6-box123">
+                <p class="prop-para-boxy"><i class="propy-icon fa-solid fa-bed"></i>&nbsp;3 Bed</p>
+            </div>
+            <div class="prop6-box123 aa">
+                <p class="prop-para-boxy"><i class="propy-icon fa-solid fa-bed"></i>&nbsp; 2 Bath</p>
+            </div>
+        </div>
+        <!-- ---box 3 end--- -->
+
+        <!-- ---box 4 start--- -->
+
+        <div class="prop6-box">
+
+            <div class="prop6-image">
+
+                <img class="prop6-pics-style" src="./Images/property-4.jpg" alt="" srcset="">
+            </div>
+
+            <h1 class="prop6-p1">$12,345</h1>
+
+            <h2 class="prop6-p2">Golden Urban House For Sell</h2>
+            <p class="prop6-p3"><i class="prop-icon fa-solid fa-location-dot"></i>&nbsp;&nbsp;123 Street, New York, USA
+            </p>
+
+            <div class="prop6-box123">
+                <p class="prop-para-boxy"><i class="propy-icon fa-solid fa-ruler-combined"></i>&nbsp;1000 Sqft</p>
+            </div>
+            <div class="prop6-box123">
+                <p class="prop-para-boxy"><i class="propy-icon fa-solid fa-bed"></i>&nbsp;3 Bed</p>
+            </div>
+            <div class="prop6-box123 aa">
+                <p class="prop-para-boxy"><i class="propy-icon fa-solid fa-bed"></i>&nbsp; 2 Bath</p>
+            </div>
+        </div>
+        <!-- ---box 4 end--- -->
+
+        <!-- ---box 5 start--- -->
+
+        <div class="prop6-box">
+
+            <div class="prop6-image">
+
+                <img class="prop6-pics-style" src="./Images/property-5.jpg" alt="" srcset="">
+            </div>
+
+            <h1 class="prop6-p1">$12,345</h1>
+
+            <h2 class="prop6-p2">Golden Urban House For Sell</h2>
+            <p class="prop6-p3"><i class="prop-icon fa-solid fa-location-dot"></i>&nbsp;&nbsp;123 Street, New York, USA
+            </p>
+
+            <div class="prop6-box123">
+                <p class="prop-para-boxy"><i class="propy-icon fa-solid fa-ruler-combined"></i>&nbsp;1000 Sqft</p>
+            </div>
+            <div class="prop6-box123">
+                <p class="prop-para-boxy"><i class="propy-icon fa-solid fa-bed"></i>&nbsp;3 Bed</p>
+            </div>
+            <div class="prop6-box123 aa">
+                <p class="prop-para-boxy"><i class="propy-icon fa-solid fa-bed"></i>&nbsp; 2 Bath</p>
+            </div>
+        </div>
+        <!-- ---box 5 end--- -->
+
+        <!-- ---box 6 start--- -->
+
+        <div class="prop6-box">
+
+            <div class="prop6-image">
+
+                <img class="prop6-pics-style" src="./Images/property-6.jpg" alt="" srcset="">
+            </div>
+
+            <h1 class="prop6-p1">$12,345</h1>
+
+            <h2 class="prop6-p2">Golden Urban House For Sell</h2>
+            <p class="prop6-p3"><i class="prop-icon fa-solid fa-location-dot"></i>&nbsp;&nbsp;123 Street, New York, USA
+            </p>
+
+            <div class="prop6-box123">
+                <p class="prop-para-boxy"><i class="propy-icon fa-solid fa-ruler-combined"></i>&nbsp;1000 Sqft</p>
+            </div>
+            <div class="prop6-box123">
+                <p class="prop-para-boxy"><i class="propy-icon fa-solid fa-bed"></i>&nbsp;3 Bed</p>
+            </div>
+            <div class="prop6-box123 aa">
+                <p class="prop-para-boxy"><i class="propy-icon fa-solid fa-bed"></i>&nbsp; 2 Bath</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- ---box 6 end--- -->
+    <!-- --------------------------------------------- -->
+    <!-- ---contact with cert agent--- -->
+
+
+    <div class="cert-main">
+
+        <div class="cert-child">
+
+            <div class="cert-left">
+                <img class="cert-pic" src="./Images/call-to-action.jpg" alt="" srcset="">
+            </div>
+
+
+
+
+
+            <div class="certt-right">
+
+                <h1 id="h">Contact With Our Certified Agent</h1>
+                <p class="cert-para">Eirmod sed ipsum dolor sit rebum magna erat. Tempor lorem kasd vero ipsum sit sit
+                    diam justo sed vero dolor duo.</p>
+
+
+                <button class="cert-but1"><i class="icon-cert fa-solid fa-phone"></i>&nbsp;&nbsp;Make A Call</button>
+                <button class="cert-but1 cert-but2"><i class="icon-cert fa-solid fa-calendar-days"></i>&nbsp;&nbsp;Get
+                    Appointment</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----agents--- -->
+
+    <div class="agent-main">
+        <h1 class="agent-h1">Property Agents</h1>
+        <p class="agent-p">Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd <br> vero
+            ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+
+        <!-- ---agent 4 pics--- -->
+        <div class="agent4-main">
+
+
+<!--agent pic 1 start -->
+
+            <div class="agent-profile">
+
+                <div class="agent-pic-div">
+                    <img class="agent-team-pic-style" src="./Images/team-1.jpg" alt="" srcset="">
+                </div>
+
+                <div class="circ-main">
+
+
+                    <div class="circle"><i class="circ-icon fa-brands fa-facebook-f"></i></div>
+                    <div class="circle"><i class="circ-icon fa-brands fa-twitter"></i></div>
+                    <div class="circle"><i class="circ-icon fa-brands fa-instagram"></i></div>
+                </div>
+
+
+
+
+                <h3 class="agent-head">Full Name</h3>
+                <p class="agent-para">Designation</p>
+
+            </div>
+
+            <!--agent pic 1 end -->
+
+            
+<!--agent pic 2 start -->
+
+<div class="agent-profile">
+
+    <div class="agent-pic-div">
+        <img class="agent-team-pic-style" src="./Images/team-2.jpg" alt="" srcset="">
+    </div>
+
+    <div class="circ-main">
+
+
+        <div class="circle"><i class="circ-icon fa-brands fa-facebook-f"></i></div>
+        <div class="circle"><i class="circ-icon fa-brands fa-twitter"></i></div>
+        <div class="circle"><i class="circ-icon fa-brands fa-instagram"></i></div>
+    </div>
+
+
+
+
+    <h3 class="agent-head">Full Name</h3>
+    <p class="agent-para">Designation</p>
+
+</div>
+
+<!--agent pic 2 end -->
+
+
+<!--agent pic 3 start -->
+
+<div class="agent-profile">
+
+    <div class="agent-pic-div">
+        <img class="agent-team-pic-style" src="./Images/team-3.jpg" alt="" srcset="">
+    </div>
+
+    <div class="circ-main">
+
+
+        <div class="circle"><i class="circ-icon fa-brands fa-facebook-f"></i></div>
+        <div class="circle"><i class="circ-icon fa-brands fa-twitter"></i></div>
+        <div class="circle"><i class="circ-icon fa-brands fa-instagram"></i></div>
+    </div>
+
+
+
+
+    <h3 class="agent-head">Full Name</h3>
+    <p class="agent-para">Designation</p>
+
+</div>
+
+<!--agent pic 3 end -->
+
+
+<!--agent pic 4 start -->
+
+<div class="agent-profile">
+
+    <div class="agent-pic-div">
+        <img class="agent-team-pic-style" src="./Images/team-4.jpg" alt="" srcset="">
+    </div>
+
+    <div class="circ-main">
+
+
+        <div class="circle"><i class="circ-icon fa-brands fa-facebook-f"></i></div>
+        <div class="circle"><i class="circ-icon fa-brands fa-twitter"></i></div>
+        <div class="circle"><i class="circ-icon fa-brands fa-instagram"></i></div>
+    </div>
+
+
+
+
+    <h3 class="agent-head">Full Name</h3>
+    <p class="agent-para">Designation</p>
+
+</div>
+
+<!--agent pic 4 end -->
+       </div>
+    </div>
+
+    <!-- ---Our Clients Say!--- -->
+
+
+    <!-- <div class="client-main">
+
+        <h1 class="client-h1">Our Clients Say!</h1>
+        <p class="client-p">Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd <br> vero
+            ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+
+    </div> -->
+
+<!-- ---footer-- -->
+
+
+    <div class="footer-main">
+
+         <!-- ====footer==== -->
+
+    <div class="foot-main">
+        <div class="foot-box">
+           <h1 class="work-hours-h1">Get in Touch</h1>
+            <p class="logo-para">Lorem ipsum dolor sit amet, conse turini adipiscing elit, sed do eiusmod tempor in
+                cididunt ut labore.</p>
+
+            <div class="foot-circ">
+                <i class="foot-icon fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="foot-circ">
+                <i class="foot-icon fa-brands fa-instagram"></i>
+            </div>
+            <div class="foot-circ">
+                <i class="foot-icon fa-brands fa-twitter"></i>
+            </div>
+        </div>
+
+
+        <div class="foot-box">
+            <h1 class="work-hours-h1">WORK HOURS</h1>
+            <p class="work-para-hours">10.00 AM - 6.00 PM , Monday - Saturday<br><br>
+
+                Our Support and Sales team is available 24 * 7 to answer your queries</p>
+
+        </div>
+
+        <div class="foot-box">
+            <h1 class="work-hours-h1">NAVIGATE</h1>
+            <ul>
+                <li class="foot-li">About Us</li>
+                <li class="foot-li">Features</li>
+                <li class="foot-li">Mobile App</li>
+                <li class="foot-li">Software Demo</li>
+                <li class="foot-li">Download</li>
+
+            </ul>
+        </div>
+
+        <div class="foot-box">
+            <h1 class="work-hours-h1">PRIVACY & TOS</h1>
+            <ul>
+                <li class="foot-li">Contact</li>
+                <li class="foot-li">Login</li>
+                <li class="foot-li">Team</li>
+                <li class="foot-li">Register</li>
+
+
+            </ul>
+        </div>
+
+    </div>
+
+
+
+    </div>
+</body>
+
+</html>

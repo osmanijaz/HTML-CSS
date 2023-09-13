@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        /* -----------------nav bar -----------dropdown---------- */
+
+        .nav-main {
+            width: 100%;
+            height: 80px;
+            /* border: 0.5px solid black; */
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 1%;
+            padding-left: 1%;
+            position: sticky;
+            top: 0px;
+            z-index: 100;
+        }
+
+        .left-picz-rotate {
+            background: url(./Limerick-images/1-2.jpg);
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all ease 0.4s;
+        }
+
+        .left-picz1:hover .left-picz-rotate {
+            transform: rotate(10deg) scale(130%);
+        }
+
+        .nav-icons-main {
+            /* border: 1px solid black; */
+            width: 230px;
+            height: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 2s;
+        }
+
+        .icon-nav:hover {
+            color: #FF427C;
+            cursor: pointer;
+        }
+
+        .title-nav {
+            width: 752px;
+            height: 82px;
+            /* border: 2px solid yellowgreen; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .title-style {
+            height: 40px;
+        }
+
+
+        .navlist-main {
+
+            width: 500px;
+            height: max-content;
+
+        }
+
+        .nav-ul {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-li {
+            list-style: none;
+            margin-left: 4%;
+
+        }
+
+        .bars-style {
+            font-size: 25px;
+        }
+
+
+        .nav-li a {
+            list-style: none;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            display: inline-block;
+
+            color: black;
+        }
+
+        .nav-li a:hover {
+            cursor: pointer;
+            color: #FF427C;
+            outline: none;
+
+
+        }
+
+        /* --dropdown-- */
+
+        /* ---bars start--- */
+
+        .home-drop-main1 {
+            position: relative;
+            z-index: 100;
+            cursor: pointer;
+
+        }
+
+
+        .drop-bars-list {
+            position: absolute;
+            background-color: white;
+            right: 0%;
+            top: 46.5px;
+            visibility: hidden;
+            width: 310px;
+            height: 200px;
+
+
+            border-top: 3px solid #FF427C;
+            transition: all 0.15s;
+
+
+        }
+
+        .home-drop-main1:hover .drop-bars-list {
+            top: 35px;
+            visibility: visible;
+
+        }
+
+        .home-drop-main1:hover {
+            visibility: visible;
+        }
+
+        /* ---bars end--- */
+
+
+        .drop-list2 {
+            position: absolute;
+            top: 73px;
+            right: 325px;
+            width: 200px;
+            visibility: hidden;
+            /* background-color: white; */
+            border-top: 3px solid #FF427C;
+            background-color: rgb(255, 255, 255);
+            transition: all 0.15s;
+        }
+
+        .drop-list2-margin1 {
+            right: 253px;
+        }
+
+        .drop-list2-margin2 {
+            right: 133px;
+            width: 240px;
+        }
+
+        .drop-list2-margin3 {
+            right: 56px;
+            width: 200px;
+        }
+
+        .home-drop1 {
+            position: relative;
+            z-index: 3;
+
+
+        }
+
+        .home-drop1:hover+.drop-list2 {
+            visibility: visible;
+        }
+
+        .drop-list2:hover {
+            visibility: visible;
+            top: 60px;
+        }
+
+        .dropul {
+            list-style: none;
+            width: 100%;
+
+
+        }
+
+        .dropli {
+            width: 100%;
+            height: 40px;
+            /* border: 0.5px solid grey; */
+            margin-top: 0.7px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding-left: 2%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pink-move {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to right, #ff427bbf, #ff427b);
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            opacity: 0;
+
+        }
+
+
+
+        @keyframes move {
+            0% {
+                left: -100%;
+                opacity: 0.2;
+            }
+
+            100% {
+                left: 200%;
+                opacity: 0.5;
+            }
+        }
+
+        .dropli:hover a {
+            color: #FF427C;
+
+        }
+
+        .dropli:hover .pink-move {
+            animation: 0.55s move linear forwards;
+
+        }
+
+        .dropli:active {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .dropli:active a {
+            font-weight: 600;
+            font: 16px;
+
+        }
+
+        .dropli a {
+            width: 100%;
+            text-decoration: none;
+            color: grey;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .icon-circle {
+            width: 40px;
+            height: 40px;
+            /* border: 1px solid black; */
+            border-radius: 50%;
+            /* padding-top: 4.5%;
+            padding-left: 8%; */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .icon-circle:hover .icon-nav {
+            color: #ff427b;
+
+        }
+
+        .icon-circle:hover {
+            border: 1px solid #ff427b;
+
+        }
+
+        /* -----dropdown end------ */
+
+        /* ---main pic1 start--- */
+
+
+        .main-pic1-bordermain {
+            width: 100%;
+            height: 650px;
+            /* height: max-content; */
+            /* border: 2px solid red; */
+            display: flex;
+
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .main-head1 {
+            font-weight: 500;
+            color: grey;
+            position: relative;
+        }
+
+        .main-head2 {
+            color: rgb(59, 59, 59);
+            /* font-size: 100px; */
+            font-size: 6vmax;
+            position: relative;
+
+
+
+        }
+
+        .main-head3 {
+
+            text-align: center;
+            color: grey;
+            /* font-size: 100px; */
+            font-size: 20px;
+            /* font-size: 7vmax; */
+
+        }
+
+        .main-head2-style {
+            color: #ffb4f9;
+        }
+
+
+        .row1-head-hover::before {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            /* left: 243px;
+            top: 280px;
+            */
+            z-index: -5;
+            background-color: rgb(255, 229, 111);
+        }
+
+
+        .green-circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: absolute;
+            top: -10px;
+            right: 0px;
+
+            z-index: -5;
+            background-color: rgb(132, 255, 132);
+        }
+
+        .main-pic1-button {
+            width: 210px;
+            height: 60px;
+            border-radius: 30px;
+            background-color: #ff8cf5;
+            border: none;
+            color: white;
+            font-size: 20px;
+            margin-top: 2%;
+
+
+        }
+
+        /* ---main pic1 end--- */
+
+        /* ---------row 1---------- */
+
+        .row1-main {
+            width: 100%;
+            height: max-content;
+            /* height: 340px; */
+            /* border: 1px solid rgb(0, 255, 60); */
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+
+        .row1-pic-style {
+            width: 100%;
+            height: 100%;
+        }
+
+        .row1-box {
+            width: 25%;
+            /* width: 350px; */
+            height: 340px;
+
+            /* border: 1px solid black; */
+            position: relative;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .row1-hovertext {
+            position: absolute;
+            width: 85%;
+            height: 85%;
+            /* border: 2px solid black; */
+            background-color: rgba(255, 255, 255, 0.847);
+
+            transition: all 0.5s;
+            transform: rotateY(0deg) scale(0.5);
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .row1-box:hover .row1-hovertext {
+            transform: rotateY(360deg) scale(1);
+            opacity: 1;
+        }
+
+        .row1-head-hover {
+            text-align: center;
+            /* width: max-content; */
+            height: max-content;
+
+            /* position: absolute; */
+            font-weight: 600;
+            z-index: 1;
+            /* border: 2px solid black; */
+            bottom: 0px;
+            transition: all 0.5s .5s;
+            opacity: 0;
+
+
+        }
+
+        .row1-box:hover .row1-head-hover {
+            bottom: 130px;
+            opacity: 1;
+
+        }
+
+        .row1-para-hover {
+            font-weight: 600;
+            color: rgb(136, 136, 136);
+        }
+
+        .row1-head-hover::before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: 96px;
+            left: 50px;
+
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            /* background-color: rgb(255, 255, 131); */
+        }
+
+        /* ----row2 start---- */
+
+
+        .row2-main-container {
+            width: 100%;
+            /* height: 680px; */
+            height: max-content;
+            /* border: 4px solid red; */
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+
+        /* --- row2 left box--- */
+
+        .row2-left-border {
+            width: 50%;
+            height: 680px;
+            /* border: 3px solid yellowgreen; */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .row2-box {
+            width: 50%;
+
+        }
+
+
+
+
+
+
+
+        /* --- row2 right box--- */
+
+
+        .row2-right-border {
+            width: 50%;
+            height: 680px;
+            /* border: 3px solid rgb(47, 0, 255); */
+        }
+
+        .row2-rightbox {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .row2-head-hover::before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: 235px;
+            left: 200px;
+
+
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: rgb(255, 255, 131);
+        }
+
+
+
+
+
+
+        /* ----row2 end---- */
+
+        /*********************/
+        /* media query start */
+        /*********************/
+
+        @media screen and (max-width:1000px) {
+            .nav-icons-main {
+                display: none;
+            }
+
+            .navlist-main {
+                display: none;
+            }
+
+            .title-nav {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .row1-box {
+                width: 50%;
+            }
+
+          
+
+            .row2-rightbox {
+                width: 100%
+            }
+
+            .row2-left-border {
+                width: 100%;
+            }
+
+            .row2-right-border {
+                width: 100%;
+            }
+
+        }
+
+        /* ---row4--- */
+
+        .row4-main {
+            width: 100%;
+            height: max-content;
+            /* height: 680px; */
+            /* border: 3px solid yellowgreen; */
+            display: flex;
+
+        }
+
+        /* row4 left  */
+
+        .row4-left {
+            width: 50%;
+            height: 680px;
+            /* border: 3px solid rgb(60, 255, 0); */
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .row4-box {
+            width: 100%;
+            /* width: 350px; */
+            height: 340px;
+
+            /* border: 1px solid black; */
+            position: relative;
+
+
+
+
+        }
+
+
+
+
+
+
+        /* row4-right  */
+
+        .row4-right {
+            width: 50%;
+            height: 680px;
+            /* border: 3px solid rgb(255, 0, 0); */
+            display: flex;
+            flex-wrap: wrap;
+
+
+
+        }
+
+
+        .row4-box-long {
+            height: 100%;
+            width: 50%;
+
+
+
+        }
+
+        .row9-box {
+            width: 100%;
+            flex-direction: column;
+
+
+        }
+
+        .row10-box {
+            width: 100%;
+
+        }
+
+        .column {
+            width: 50%;
+            height: max-content;
+            /* border: 3px solid yellow; */
+
+        }
+
+        /* ---foot--- */
+
+        .foot {
+
+            width: 100%;
+            height: 180px;
+            /* height: max-content; */
+            /* border: 2px solid red; */
+            display: flex;
+            flex-wrap: wrap;
+
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .foot-logo {
+            height: 50px;
+        }
+
+
+
+
+        @media screen and (max-width:1000px) {
+            .foot {
+                margin-top: 320px;
+
+            }
+
+            .row4-main {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            .row4-left{
+                width: 100%;
+            }
+
+            .row4-right{
+                width: 100%;
+            }
+
+            .column {
+            width: 100%;
+        }
+
+        .row4-box-long {
+         
+            width: 100%;
+
+
+
+        }
+
+        .foot {
+                margin-top: 720px;
+
+            }
+
+            
+
+        }
+
+
+        @media screen and (max-width:667px) {
+            .row1-box {
+                width: 100%;
+            }
+
+            .foot {
+                margin-top: 720px;
+                font-size: 12px;
+
+            }
+
+
+        }
+
+
+
+
+        /* ************** */
+        /* media query end*/
+        /* ************** */
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ----------------navbar dropdown---------------------- -->
+
+    <!-- ---navbar--- -->
+
+    <div class="nav-main">
+
+        <div class="nav-icons-main">
+
+            <div class="icon-circle">
+                <i class=" icon-nav fa-brands fa-facebook-f"></i>
+            </div>
+
+            <div class="icon-circle">
+                <i class=" icon-nav ic1 fa-brands fa-twitter"></i>
+            </div>
+
+            <div class="icon-circle">
+                <i class=" icon-nav fa-brands fa-google-plus-g"></i>
+            </div>
+
+            <div class="icon-circle">
+                <i class=" icon-nav fa-brands fa-pinterest-p"></i>
+            </div>
+
+            <div class="icon-circle">
+                <i class=" icon-nav fa-brands fa-instagram"></i>
+            </div>
+        </div>
+
+        <!-- ---title navbar--- -->
+
+        <div class="title-nav">
+            <img class="title-style" src="./Blog-with-slidebar-image/logo.png" alt="" srcset="">
+
+
+            <div class="navlist-main">
+                <ul class="nav-ul">
+
+
+
+                    <!-- ---dropdown 1 start--- -->
+                    <li class="nav-li home-drop1"><a href="">HOME</a></li>
+
+                    <div class="drop-list2">
+
+                        <ul class="dropul">
+
+                            <li class="dropli"><a href="">Creative Home</a>
+                                <div class="pink-move"></div>
+                            </li>
+
+
+
+                            <li class="dropli"><a href="">Designer Home</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Portfolio Home</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Parallax Home</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Carousel Home</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Header Styles</a>
+                                <div class="pink-move"></div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <!-- ---dropdown 1 end--- -->
+
+                    <!-- ---dropdown 2 start--- -->
+                    <li class="nav-li home-drop1"><a href="">ABOUT</a></li>
+
+                    <div class="drop-list2 drop-list2-margin1">
+
+                        <ul class="dropul">
+
+                            <li class="dropli"><a href="">About Us</a>
+                                <div class="pink-move"></div>
+                            </li>
+
+
+
+                            <li class="dropli"><a href="">Error Page</a>
+                                <div class="pink-move"></div>
+                            </li>
+
+
+                    </div>
+
+
+                    <!-- ---dropdown 2 end--- -->
+
+                    <!-- ---dropdown 3 start--- -->
+                    <li class="nav-li home-drop1"><a href="">PORTFOLIO</a></li>
+
+                    <div class="drop-list2 drop-list2-margin2">
+
+                        <ul class="dropul">
+
+                            <li class="dropli"><a href="">Portfolio Left Sidebar</a>
+                                <div class="pink-move"></div>
+                            </li>
+
+
+
+                            <li class="dropli"><a href="">Portfolio Right Sidebar</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Portfolio Centered</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Portfolio Slide</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Portfolio Masonry</a>
+                                <div class="pink-move"></div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <!-- ---dropdown 3 end--- -->
+
+                    <!-- ---dropdown 3 start--- -->
+                    <li class="nav-li home-drop1"><a href="">BLOG</a></li>
+
+                    <div class="drop-list2 drop-list2-margin3">
+
+                        <ul class="dropul">
+
+                            <li class="dropli"><a href="">Blog With Sidebar</a>
+                                <div class="pink-move"></div>
+                            </li>
+
+
+
+                            <li class="dropli"><a href="">Blog Grid</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Blog List</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Blog Masonry</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Blog Single</a>
+                                <div class="pink-move"></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- ---dropdown 3 end--- -->
+
+                    <li class="nav-li"><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+
+
+            <!-- -----bars drop down start---- -->
+
+            <i class="bars-style fa-solid fa-bars home-drop-main1">
+
+
+
+                <div class="drop-bars-list">
+
+                    <ul class="dropul">
+
+                        <li class="dropli"><a href="">Home</a>
+                            <div class="pink-move"></div>
+                        </li>
+
+
+
+                        <li class="dropli"><a href="">About Us</a>
+                            <div class="pink-move"></div>
+                        </li>
+
+                        <li class="dropli"><a href="">Portfolio</a>
+                            <div class="pink-move"></div>
+                        </li>
+                        <li class="dropli"><a href="">Blog</a>
+                            <div class="pink-move"></div>
+                        </li>
+
+                        <li class="dropli"><a href="">Contact Us</a>
+                            <div class="pink-move"></div>
+                        </li>
+                </div>
+
+                <!-- ----bars drop down end---- -->
+                <!-- ---dropdown 2 end--- -->
+            </i>
+        </div>
+    </div>
+    <!-- -------------dropdown end------------------------------------ -->
+
+    <!-- ----main pic1---- -->
+
+    <div class="main-pic1-bordermain">
+
+
+
+        <h3 class="main-head1">Welcome To Limerick<div class="green-circle"></div>
+        </h3>
+
+
+
+        <h1 class="main-head2">DESIGN YOUR M<span class="main-head2-style">I</span>ND
+
+            <div class="yellow-circle"></div>
+        </h1>
+
+        <p class="main-head3">I like to think that my work is a living, breathing embodiment of my passion for
+            discovery. <br> Here’s some of it.</p>
+
+        <button class="main-pic1-button">READ MORE +</button>
+    </div>
+
+
+    <!-- -----row 1--------------- -->
+
+
+    <div class="row1-main">
+
+
+        <!-- box1 start-->
+
+        <div class="row1-box">
+            <img class="row1-pic-style" src="./Designer-Home/15-337x337.jpg" alt="" srcset="">
+
+            <div class="row1-hovertext">
+                <h2 class="row1-head-hover"> CREATIVE PORTFOLIO<br><span class="row1-para-hover">Design</span>
+
+
+                </h2>
+
+
+            </div>
+        </div>
+
+        <!-- box1 end-->
+
+        <!-- box2 start-->
+        <div class="row1-box">
+            <img class="row1-pic-style" src="./Designer-Home/16-337x337.jpg" alt="" srcset="">
+
+            <div class="row1-hovertext">
+                <h2 class="row1-head-hover">CREATIVE PORTFOLIO<br><span class="row1-para-hover">Design</span>
+
+                    <div class="yel-circle"></div>
+                </h2>
+
+
+            </div>
+        </div>
+
+        <!-- box2 end-->
+
+        <!-- box3 start-->
+        <div class="row1-box">
+            <img class="row1-pic-style" src="./Designer-Home/17-337x337.jpg" alt="" srcset="">
+
+            <div class="row1-hovertext">
+                <h2 class="row1-head-hover">CREATIVE PORTFOLIO<br><span class="row1-para-hover">Design</span>
+
+                    <div class="yel-circle"></div>
+                </h2>
+
+
+            </div>
+        </div>
+
+        <!-- box3 end-->
+
+        <!-- box4 start-->
+        <div class="row1-box">
+            <img class="row1-pic-style" src="./Designer-Home/18-337x337.jpg" alt="" srcset="">
+
+            <div class="row1-hovertext">
+                <h2 class="row1-head-hover">CREATIVE PORTFOLIO<br><span class="row1-para-hover">Design</span>
+
+
+                </h2>
+
+
+            </div>
+        </div>
+
+        <!-- box4 end-->
+    </div>
+
+    <!-- ---row2--- -->
+    <div class="row2-main-container">
+
+
+
+        <!-- /* --- row2 left box--- */ -->
+
+        <div class="row2-left-border">
+
+            <!-- box1 start-->
+
+            <div class="row1-box row2-box">
+                <img class="row1-pic-style" src="./Designer-Home/19-337x337.jpg" alt="" srcset="">
+
+                <div class="row1-hovertext">
+                    <h2 class="row1-head-hover"> CREATIVE PORTFOLIO<br><span class="row1-para-hover">Design</span>
+
+
+                    </h2>
+
+
+                </div>
+            </div>
+
+            <!-- box1 end-->
+
+            <!-- box2 start-->
+            <div class="row1-box row2-box">
+                <img class="row1-pic-style" src="./Designer-Home/20-337x337.jpg" alt="" srcset="">
+
+                <div class="row1-hovertext">
+                    <h2 class="row1-head-hover">CREATIVE PORTFOLIO<br><span class="row1-para-hover">Design</span>
+
+                        <div class="yel-circle"></div>
+                    </h2>
+
+
+                </div>
+            </div>
+
+            <!-- box2 end-->
+
+            <!-- box3 start-->
+            <div class="row1-box row2-box">
+                <img class="row1-pic-style" src="./Designer-Home/22-337x337.jpg" alt="" srcset="">
+
+                <div class="row1-hovertext">
+                    <h2 class="row1-head-hover">CREATIVE PORTFOLIO<br><span class="row1-para-hover">Design</span>
+
+                        <div class="yel-circle"></div>
+                    </h2>
+
+
+                </div>
+            </div>
+
+            <!-- box3 end-->
+
+            <!-- box4 start-->
+            <div class="row1-box row2-box">
+                <img class="row1-pic-style" src="./Designer-Home/23-337x337.jpg" alt="" srcset="">
+
+                <div class="row1-hovertext">
+                    <h2 class="row1-head-hover">CREATIVE PORTFOLIO<br><span class="row1-para-hover">Design</span>
+
+                        <div class="yel-circle"></div>
+                    </h2>
+
+
+                </div>
+            </div>
+
+            <!-- box4 end-->
+
+
+        </div>
+        <!-- /* --- row2 right box--- */ -->
+
+        <div class="row2-right-border">
+
+
+            <!-- row2 right box start-->
+            <div class="row1-box row2-rightbox">
+                <img class="row1-pic-style" src="./Designer-Home/21-675x675.jpg" alt="" srcset="">
+
+                <div class="row1-hovertext">
+                    <h2 class="row2-head-hover ">CREATIVE PORTFOLIO<br><span class="row1-para-hover">Design</span>
+
+
+                    </h2>
+
+
+                </div>
+            </div>
+
+            <!-- row2 right box end-->
+
+        </div>
+    </div>
+
+
+    <!-- ---row4---- -->
+
+    <div class="row4-main">
+
+        <!-- row4-left -->
+
+        <div class="row4-left">
+
+            <!-- box1 start-->
+            <div class="row1-box row2-box">
+                <img class="row1-pic-style" src="./Designer-Home/26-337x337.jpg" alt="" srcset="">
+
+                <div class="row1-hovertext">
+                    <h2 class="row1-head-hover">CREATIVE PORTFOLIO<br><span class="row1-para-hover">Design</span>
+
+                        <div class="yel-circle"></div>
+                    </h2>
+
+
+                </div>
+            </div>
+
+            <!-- box1 end-->
+
+            <!-- box2 start-->
+            <div class="row1-box row2-box">
+                <img class="row1-pic-style" src="./Designer-Home/27-337x337.jpg" alt="" srcset="">
+
+                <div class="row1-hovertext">
+                    <h2 class="row1-head-hover">CREATIVE PORTFOLIO<br><span class="row1-para-hover">Design</span>
+
+                        <div class="yel-circle"></div>
+                    </h2>
+
+
+                </div>
+            </div>
+
+            <!-- box2 end-->
+
+            <!-- box3 start-->
+            <div class="row1-box row4-box">
+                <img class="row1-pic-style" src="./Designer-Home/29-675x337.jpg" alt="" srcset="">
+
+                <div class="row1-hovertext">
+                    <h2 class="row1-head-hover">CREATIVE PORTFOLIO<br><span class="row1-para-hover">Design</span>
+
+                        <div class="yel-circle"></div>
+                    </h2>
+
+
+                </div>
+            </div>
+
+            <!-- box3 end-->
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <!-- row4 right  -->
+
+
+        <div class="row4-right">
+
+            <!-- box1 start-->
+            <div class="row1-box row4-box-long">
+                <img class="row1-pic-style" src="./Designer-Home/24-337x675.jpg" alt="" srcset="">
+
+                <div class="row1-hovertext">
+                    <h2 class="row1-head-hover">CREATIVE PORTFOLIO<br><span class="row1-para-hover">Design</span>
+
+                        <div class="yel-circle"></div>
+                    </h2>
+
+
+                </div>
+            </div>
+
+            <!-- box1 end-->
+
+
+
+            <div class="column">
+                <!-- box2 start-->
+
+                <div class="row1-box row9-box">
+                    <img class="row1-pic-style" src="./Designer-Home/19-337x337.jpg" alt="" srcset="">
+
+                    <div class="row1-hovertext">
+                        <h2 class="row1-head-hover"> CREATIVE PORTFOLIO<br><span class="row1-para-hover">Design</span>
+
+
+                        </h2>
+
+
+                    </div>
+                </div>
+
+                <!-- box2 end-->
+
+                <!-- box3start-->
+                <div class="row1-box row10-box">
+                    <img class="row1-pic-style" src="./Designer-Home/20-337x337.jpg" alt="" srcset="">
+
+                    <div class="row1-hovertext">
+                        <h2 class="row1-head-hover">CREATIVE PORTFOLIO<br><span class="row1-para-hover">Design</span>
+
+                            <div class="yel-circle"></div>
+                        </h2>
+
+
+                    </div>
+                </div>
+
+                <!-- box3 end-->
+
+            </div>
+
+
+
+        </div>
+        <!-- row4 right end  -->
+    </div>
+
+    <!-- foot -->
+
+    <!-- ----foot--- -->
+
+    <div class="foot">
+        <img class="foot-logo" src="./Limerick-images/logo.png" alt="">
+        <p class="foot-para">© Copyright 2019 Limerick. All Rights Reserved</p>
+
+        <div class="nav-icons-main">
+
+            <div class="icon-circle">
+                <i class=" icon-nav fa-brands fa-facebook-f"></i>
+            </div>
+
+            <div class="icon-circle">
+                <i class=" icon-nav ic1 fa-brands fa-twitter"></i>
+            </div>
+
+            <div class="icon-circle">
+                <i class=" icon-nav fa-brands fa-google-plus-g"></i>
+            </div>
+
+            <div class="icon-circle">
+                <i class=" icon-nav fa-brands fa-pinterest-p"></i>
+            </div>
+
+            <div class="icon-circle">
+                <i class=" icon-nav fa-brands fa-instagram"></i>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

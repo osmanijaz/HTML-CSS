@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main1{
+            height: 100vh;
+            width: 100%;
+            background-color: skyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(6, 120, 120);
+        }
+        .line{
+            height: 3px;
+            width: 80%;
+            background-color: white;
+            /* margin-top: 10px; */
+            margin: 20px auto;
+            animation: a1 1s infinite linear alternate;
+        }
+        @keyframes a1 {
+            from{
+                transform-origin: left;
+                transform: rotate(0);
+            }
+            to{
+                transform-origin: left;
+                transform: rotate(10deg);
+            }
+            
+        }
+        .line1{
+            height: 3px;
+            width: 80%;
+            background-color: white;
+            /* margin-top: 10px; */
+            margin: 20px auto;
+        }
+        .line2{
+            height: 3px;
+            width: 80%;
+            background-color: white;
+            /* margin-top: 10px; */
+            margin: 20px auto;
+            animation: a2 1s infinite linear alternate;
+        }
+        @keyframes a2 {
+            from{
+                transform-origin: left;
+                transform: rotate(0);
+            }
+            to{
+                transform-origin: left;
+                transform: rotate(-10deg);
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main1">
+        <div class="box">
+            <div class="line"></div>
+            <div class="line1"></div>
+            <div class="line2"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

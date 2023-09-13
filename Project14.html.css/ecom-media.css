@@ -1,0 +1,43 @@
+@media screen and (max-width:1215px) {
+    .box2-B {
+        margin-top: 4%;
+    }
+
+    
+.but-style {
+    margin-top: 4%;
+}
+
+.foot-1234 {
+    margin-top: 8%;
+
+}
+
+
+
+@media screen and (max-width:1010px) {
+    .nav-bar-white {
+        visibility: visible;
+    }
+
+    .pics11 {
+        margin-top: 4%;
+    }
+
+    .navbar-main {
+        display: none;
+    }
+
+    .text-container {
+        left: 0%;
+
+    }
+
+
+}
+
+@media screen and (max-width:500px) {
+    .input-button {
+        flex-wrap: wrap;
+    }
+}

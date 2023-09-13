@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helion 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 100vh;
+    width: 19.8%;
+    border: 1px solid;
+    position: fixed;
+  
+
+}
+#image{
+    height: 30vh;
+}
+.logo{
+    height: 23px;
+    width: 43%;
+    /* border: 1px solid; */
+    /* margin: auto; */
+    /* margin: 60px 10%; */
+    position: absolute;
+    top: 60px;
+    left: 11%;
+}
+#image1{
+    height: 100%;
+    width: 100%;
+}
+.ul1{
+    /* border: 1px solid; */
+    margin: 10px 11%;
+}
+.li1{
+    list-style: none;
+    font-size: HKGrotesk, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: black;
+    cursor: pointer;
+    transition: .5s;
+    margin-top: 20px;
+}
+#icon1{
+    margin-left: 45%;
+    opacity: 0;
+    transition: .5s;
+}
+.li1:hover{
+    color: orangered;
+}
+.li1:hover #icon1{
+    color: orangered;
+    opacity: 1;
+    margin-left: 50%;
+}
+.main1{
+    height: max-content;
+    width: 80.3%;
+    margin-left: 19.7%;
+    background-color: white;
+    padding: 1px;
+}
+.ul2{
+    /* border: 1px solid; */
+    width: max-content;
+    /* position: absolute; */
+    /* right: 0; */
+    margin: 55px 60% ;
+
+}
+.li2{
+    list-style: none;
+    font-family: HKGrotesk, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: normal;
+    color: black;
+    display: inline-block;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: .5s;
+}
+.li2:hover{
+    color: orangered;
+}
+.lii2{
+    color: orangered;
+}
+.color1{
+    height: 3px;
+    width: 100%;
+    background-color: orangered;
+    margin-top: 10px;
+    transition: .5s;
+    margin-top: -12px;
+    /* border: 1px solid; */
+   
+
+}
+.li2:hover .color1{
+    width: 100%;
+    background-color: orangered;
+}
+.color2{
+    height: 2.5px;
+    width: 0%;
+    background-color: black;
+    margin-top: 0px;
+    transition: .5s;
+    margin-top: -12px;
+    /* border: 1px solid; */
+   
+
+}
+.li2:hover .color2{
+    width: 100%;
+    background-color: orangered;
+
+}
+.main2{
+    /* border: 3px solid; */
+    height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+}
+.child1{
+    height: 260px;
+    width: 350px;
+    /* border: 1px solid ; */
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+}
+.child1:hover #image3{
+    transform: scale(1.1);
+}
+#image3{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: .5s;
+
+}
+.div1{
+    height: 90%;
+    width: 90%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.619),rgba(0, 0, 0, 0.655));
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0;
+    transition: .5s;
+    position: absolute;
+}
+.div1:hover{
+    opacity: 1;
+}
+#icon2{
+    font-size: large;
+    color: red;
+    margin-top: 20px;
+    opacity: 0;
+    transition: .5s;
+}
+.div1:hover #icon2{
+    opacity: 1;
+    margin-top: 40px;
+}  
+
+
+
+.p1{
+    font-family: HKGrotesk, sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 28px;
+    color: white;
+    margin-top: 20px;
+    opacity: 0;
+    transition: .5s;
+}
+.div1:hover .p1{
+    margin-top: 30px;
+    opacity: 1;
+}  
+.p2{
+    font-family: HKGrotesk, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: gray;
+    margin-top: 70px;
+    /* margin: 20px 0; */
+    opacity: 0;
+    transition: .5s;
+}
+.div1:hover .p2{
+    margin-top: 20px;
+    opacity: 1;
+} 
+.ch1{
+    height: 350px;
+}
+.ch2{
+    height: 400px;
+    /* margin-top: 50px; */
+}
+.ch3{
+    height: 240px;
+}
+.ch4{
+    height: 375px;
+}
+.btn1{
+    height: 50px;
+    width: 160px;
+    border: 2px solid;
+    font-size: medium;
+    color: black;
+    background-color: transparent;
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 100px 40%;
+}
+.btn1:hover{
+    background-color: black;
+    color: white;
+
+}
+.main3{
+    height: 100vh;
+    width: 80%;
+    /* border: 2px solid; */
+    margin-left: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.child2{
+    height:90vh;
+    width: 48%;
+    /* border: 1px solid red; */
+}
+.div2{
+    height: 2px;
+    width: 10%;
+    background-color: black;
+    margin-top: 50px;
+    margin-left: 5%;
+    /* margin: 50px 5%; */
+
+}
+.p3{
+    font-family: LouisGeorgeCafe, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    color: black;
+    margin-top: -10px;
+    margin-left: 17%;
+}
+.p4{
+    font-family: LouisGeorgeCafe, sans-serif;
+    font-size: 49px;
+    font-weight: 500;
+    line-height: 49px;
+    color: black;
+    margin-top: 50px;
+    margin-left: 5%;
+}
+.p5{
+    font-family: HKGrotesk, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgb(74, 79, 85);
+    margin-top: 30px;
+    margin-left: 5%;
+}
+.div3{
+    height: max-content ;
+    width: 160px;
+    /* border: 2px solid; */
+    background-color: transparent;
+    border-radius: 5px;
+    margin: 150px 5%;
+    cursor: pointer;
+    transition: .5s;
+    position: relative;
+  
+}
+.p6{
+    font-family: HKGrotesk, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 26px;
+    color: black;
+    /* background-color: wheat; */
+    width: max-content;
+    top: 10px;
+    left: 5%;
+    position: absolute;
+    
+}
+#icon3{
+    font-size: 17px;
+    color: orangered;
+    left: 90px;
+    top: 15px;
+    position: absolute;
+    opacity: 0;
+    display: none;    
+    transition: all .5s;
+}
+.div3:hover #icon3{
+    opacity: 1;
+    display: block;
+    left: 110px;
+}
+#icon4{
+    font-size: 17px;
+    color: black;
+    left: 110px;
+    top: 15px;
+    position: absolute;
+    /* opacity: 0; */
+    /* display: none;     */
+    transition: all .5s;
+    z-index: 10;
+}
+.div3:hover #icon4{
+    color: orangered;
+}
+.image4{
+    background-image: url(./decoration-circles-2.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+#image5{
+    height: 88%;
+    width: 85%;
+    margin-top: 12%;
+
+}
+#image6{
+    height: 35px;
+    
+    position: absolute;
+    top: 120px;
+    left: 75%;
+    animation: a3 4s infinite linear;
+    
+}
+@keyframes a3 {
+    0%{
+        top: 120px;
+        left: 75%;
+    }
+    25%{
+       left: 80%;
+       top: 140px;
+    }
+    50%{
+        top: 160px;
+        left: 75%;
+    }
+    75%{
+        left: 70%;
+       top: 140px;
+    }
+    100%{
+        left: 75%;
+        top: 120px;
+    }
+}
+#image7{
+    height: 115px;
+    
+    position: absolute;
+    left: -30px;
+    top: 420px;
+    animation: a4 4s infinite linear;
+    
+}
+@keyframes a4 {
+    0%{
+        left: -30px;
+        top: 420px;
+    }
+    25%{
+       left: -10px;
+       top: 440px;
+    }
+    50%{
+        top: 460px;
+        left: -30px;
+    }
+    75%{
+        left: -50px;
+       top: 440px;
+    }
+    100%{
+        left: -30px;
+        top: 420px;
+    }
+}
+.main4{
+    height: 50vh;
+    width: 80%;
+    margin-left: 20%;
+    background-color: black;
+    /* padding: 1px; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.child3{
+    height: 40vh;
+    width: 45%;
+    /* border: 2px solid white; */
+
+}
+.p7{
+    font-family: LouisGeorgeCafe, sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 44px;
+    color: white;
+    margin-top: 100px;
+    margin-left: 5%;
+}
+.p8{
+    font-family: LouisGeorgeCafe, sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 28px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 5%;
+    width: max-content;
+    position: relative;
+    cursor: pointer;
+    
+
+}
+.color3{
+    height: 2px;
+    width: 0;
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    top: 40px;
+    transition: .5s;
+}
+.p8:hover .color3{
+    width: 100%;
+
+}
+.ul3{
+    margin-left: 5%;
+    margin-top: 60px;
+}
+.p9{
+    list-style: none;
+    font-family: LouisGeorgeCafe, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    color: white;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: .5s;
+    width: max-content;
+}
+.p9:hover{
+    color: orangered;
+    margin-left: 15px;
+}
+.p10{
+    /* margin-left: 30%; */
+    /* margin-top: -70px; */
+}
+.ul4{
+   margin-top: -170px;
+   margin-left: 30%;
+    
+}
+.div4{
+    height: 40px;
+    width: 30%;
+    /* border: 1px solid white; */
+    margin: -135px 65%;
+    text-align: center;
+}
+#icon5{
+    font-size: 25px;
+    color: gray;
+    transition: .5s;
+    cursor: pointer;
+    margin-left: 8%;
+}
+#icon5:hover{
+    transform: scale(1.1);
+    color: white;
+}
+
+
+
+
+
+
+
+/* ////////////////////// Media  Queries ///////////////// */
+
+@media screen and (max-width:1024px) {
+    #image5{
+        top: 100px;
+    }    
+}
+
+
+
+    
+
+</style>
+<body>
+    
+    <div class="navbar">
+        <img id="image" src="./decoration-2.png" alt="">
+        <div class="logo">
+            <img id="image1" src="./logo.png" alt="">
+        </div>
+        <ul class="ul1">
+            <li class="li1">Home <i id="icon1" class="fa-solid fa-arrow-right-long"></i></li>
+            <li class="li1">Pages. <i id="icon1" class="fa-solid fa-arrow-right-long"></i></li>
+            <li class="li1">About Us.<i id="icon1" class="fa-solid fa-arrow-right-long"></i></li>
+            <li class="li1">Blog. <i id="icon1" class="fa-solid fa-arrow-right-long"></i></li>
+            <li class="li1">Store. </li>
+            <li class="li1">Contacts. <i id="icon1" class="fa-solid fa-arrow-right-long"></i></li>
+        </ul>
+    </div>
+    <div class="main1">
+        <ul class="ul2">
+            <li class="li2 lii2">All Works
+                <div class="color1"></div>
+            </li>
+            <li class="li2">Couples
+                <div class="color2"></div>
+
+            </li>
+            <li class="li2">Lifestyle
+                <div class="color2"></div>
+
+            </li>
+            <li class="li2">Portraits
+                <div class="color2"></div>
+
+            </li>
+        </ul>
+
+        <div class="main2">
+            
+        
+
+        <div class="child1">
+            <img id="image3" src="./port-19-copyright-750x617.jpg" alt="">
+            <div class="div1">
+                <i id="icon2" class="fa-solid fa-arrow-right-long"></i>
+                <p class="p1">Love In The Air</p>
+                <p class="p2">Lifestyle</p>
+
+            </div>
+        </div>
+        <div class="child1 ch2">
+            <img id="image3" src="./port-20-copyright-750x919.jpg" alt="">
+            <div class="div1">
+                <i id="icon2" class="fa-solid fa-arrow-right-long"></i>
+                <p class="p1">People's Portraits</p>
+                <p class="p2">Portraits</p>
+
+            </div>
+        </div>
+        <div class="child1">
+            <img id="image3" src="./port-21-copyright-750x617.jpg" alt="">
+            <div class="div1">
+                <i id="icon2" class="fa-solid fa-arrow-right-long"></i>
+                <p class="p1">Anniversary Session</p>
+                <p class="p2">Couples</p>
+
+            </div>
+        </div>
+        <div class="child1">
+            <img id="image3" src="./port-24-copyright-750x675.jpg" alt="">
+            <div class="div1">
+                <i id="icon2" class="fa-solid fa-arrow-right-long"></i>
+                <p class="p1">Friendly Street Style</p>
+                <p class="p2">Portraits
+                   
+                </p>
+
+            </div>
+        </div>
+        <div class="child1 ch3">
+            <img id="image3" src="./port-23-copyright-750x535.jpg" alt="">
+            <div class="div1">
+                <i id="icon2" class="fa-solid fa-arrow-right-long"></i>
+                <p class="p1">Marathon Highlights</p>
+                <p class="p2">Couples</p>
+
+            </div>
+        </div>
+        <div class="child1 ch4">
+            <img id="image3" src="./port-22-copyright-750x738.jpg" alt="">
+            <div class="div1">
+                <i id="icon2" class="fa-solid fa-arrow-right-long"></i>
+                <p class="p1">Trending Hairstyles</p>
+                <p class="p2">Couples</p>
+
+            </div>
+        </div>
+        <div class="child1">
+            <img id="image3" src="./port-27-copyright-750x617.jpg" alt="">
+            <div class="div1">
+                <i id="icon2" class="fa-solid fa-arrow-right-long"></i>
+                <p class="p1">Newlywed Shoot</p>
+                <p class="p2">Couples</p>
+
+            </div>
+        </div>
+        <div class="child1 ch1">
+            <img id="image3" src="./port-26-copyright-750x818.jpg" alt="">
+            <div class="div1">
+                <i id="icon2" class="fa-solid fa-arrow-right-long"></i>
+                <p class="p1">Craftsmen</p>
+                <p class="p2">Portraits</p>
+
+            </div>
+        </div>
+        <div class="child1">
+            <img id="image3" src="./port-25-copyright-750x614.jpg" alt="">
+            <div class="div1">
+                <i id="icon2" class="fa-solid fa-arrow-right-long"></i>
+                <p class="p1">City Cafe Favorites</p>
+                <p class="p2">Lifestyle</p>
+
+            </div>
+        </div>
+        <div class="child1 ch1">
+            <img id="image3" src="./port-30-copyright-750x807.jpg" alt="">
+            <div class="div1">
+                <i id="icon2" class="fa-solid fa-arrow-right-long"></i>
+                <p class="p1">Ethnic Stories</p>
+                <p class="p2">Portraits</p>
+
+            </div>
+        </div>
+      
+      
+       
+        <div class="child1 ch3">
+            <img id="image3" src="./port-29-copyright-750x614.jpg" alt="">
+            <div class="div1">
+                <i id="icon2" class="fa-solid fa-arrow-right-long"></i>
+                <p class="p1">Relationship Goals </p>
+                <p class="p2">Couples</p>
+
+            </div>
+        </div>
+       
+      
+      
+        <div class="child1 ch1">
+            <img id="image3" src="port-28-copyright-750x835.jpg" alt="">
+            <div class="div1">
+                <i id="icon2" class="fa-solid fa-arrow-right-long"></i>
+                <p class="p1">Coworking Space</p>
+                <p class="p2">Lifestyle</p>
+
+            </div>
+        </div>
+
+    </div>
+    <button class="btn1">Load More</button>
+    </div>
+    <div class="main3">
+        <div class="child2">
+            <div class="div2"></div>
+            <p class="p3">Hello</p>
+            <p class="p4">I’m a french <br> photographer based <br> in Lyon, since 2014.</p>
+            <p class="p5">I love graphic design and photography and have been working on <br> my portfolio since 2014. You can learn the details of my <br> professional life as a designer and photographer. Contact me and <br> we will discuss your projects!</p>
+            <div class="div3">
+                <p class="p6">Read More</p>
+                <i id="icon3" class="fa-solid fa-arrow-right-long"></i>
+                <i id="icon4" class="fa-solid fa-arrow-right-long"></i>
+            </div>
+           
+        </div>
+        <div class="child2 image4">
+            <img id="image5" src="./img-4-copyright.jpg" alt="">
+            <img id="image6" src="./decoration-circle.png" alt="">
+            <img id="image7" src="./decoration-cross.png" alt="">
+       
+        </div>
+    </div>
+    <div class="main4">
+        <div class="child3">
+            <p class="p7">Let’s Work Together</p>
+            <p class="p8">info@website.com
+                <span class="color3"></span> </p>
+
+
+        </div>
+        <div class="child3">
+            <ul class="ul3">
+                <li class="p9">Home</li>
+                <li class="p9">About me</li>
+                <li class="p9">Blog</li>
+
+            </ul>
+            
+            <ul class="ul4">
+                <li class="p9 p10">Privacy Policy</li>
+                <li class="p9 p10">Service Plus</li>
+                <li class="p9 p10">Personal</li>
+
+            </ul>
+            <div class="div4">
+                <i id="icon5" class="fa-brands fa-facebook-f"></i>
+                <i id="icon5" class="fa-brands fa-twitter"></i>               
+                <i id="icon5" class="fa-brands fa-dribbble"></i>
+                <i id="icon5" class="fa-brands fa-behance"></i>
+            </div>
+
+
+        </div>
+        
+    </div>
+</body>
+</html>

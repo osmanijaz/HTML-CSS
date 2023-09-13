@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Limerick-Main-Page1</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+
+        .nav-main {
+            width: 100%;
+            height: 80px;
+            /* border: 0.5px solid black; */
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 1%;
+            padding-left: 1%;
+            position: sticky;
+            top: 0px;
+            z-index: 100;
+        }
+
+        .left-picz-rotate {
+            background: url(./Limerick-images/1-2.jpg);
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all ease 0.4s;
+        }
+
+        .left-picz1:hover .left-picz-rotate {
+            transform: rotate(10deg) scale(130%);
+        }
+
+        .nav-icons-main {
+            /* border: 1px solid black; */
+            width: 230px;
+            height: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 2s;
+        }
+
+        .icon-nav:hover {
+            color: #FF427C;
+            cursor: pointer;
+        }
+
+        .title-nav {
+            width: 752px;
+            height: 82px;
+            /* border: 2px solid yellowgreen; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .title-style {
+            height: 40px;
+        }
+
+
+        .navlist-main {
+
+            width: 500px;
+            height: max-content;
+
+        }
+
+        .nav-ul {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-li {
+            list-style: none;
+            margin-left: 4%;
+
+        }
+
+        .bars-style {
+            font-size: 25px;
+        }
+
+
+        .nav-li a {
+            list-style: none;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            display: inline-block;
+
+            color: black;
+        }
+
+        .nav-li a:hover {
+            cursor: pointer;
+            color: #FF427C;
+            outline: none;
+
+
+        }
+
+        /* --dropdown-- */
+
+        /* ---bars start--- */
+
+        .home-drop-main1 {
+            position: relative;
+            z-index: 100;
+            cursor: pointer;
+
+        }
+
+
+        .drop-bars-list {
+            position: absolute;
+            background-color: white;
+            right: 0%;
+            top: 46.5px;
+            visibility: hidden;
+            width: 310px;
+            height: 200px;
+
+
+            border-top: 3px solid #FF427C;
+            transition: all 0.15s;
+
+
+        }
+
+        .home-drop-main1:hover .drop-bars-list {
+            top: 35px;
+            visibility: visible;
+
+        }
+
+        .home-drop-main1:hover {
+            visibility: visible;
+        }
+
+        /* ---bars end--- */
+
+
+        .drop-list2 {
+            position: absolute;
+            top: 73px;
+            right: 325px;
+            width: 200px;
+            visibility: hidden;
+            /* background-color: white; */
+            border-top: 3px solid #FF427C;
+            background-color: rgb(255, 255, 255);
+            transition: all 0.15s;
+        }
+
+        .drop-list2-margin1 {
+            right: 253px;
+        }
+
+        .drop-list2-margin2 {
+            right: 133px;
+            width: 240px;
+        }
+
+        .drop-list2-margin3 {
+            right: 56px;
+            width: 200px;
+        }
+
+        .home-drop1 {
+            position: relative;
+            z-index: 3;
+
+
+        }
+
+        .home-drop1:hover+.drop-list2 {
+            visibility: visible;
+        }
+
+        .drop-list2:hover {
+            visibility: visible;
+            top: 60px;
+        }
+
+        .dropul {
+            list-style: none;
+            width: 100%;
+
+
+        }
+
+        .dropli {
+            width: 100%;
+            height: 40px;
+            border: 0.5px solid grey;
+            margin-top: 0.7px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding-left: 2%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pink-move {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to right, #ff427bbf, #ff427b);
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            opacity: 0;
+
+        }
+
+
+
+        @keyframes move {
+            0% {
+                left: -100%;
+                opacity: 0.2;
+            }
+
+            100% {
+                left: 200%;
+                opacity: 0.5;
+            }
+        }
+
+        .dropli:hover a {
+            color: #FF427C;
+
+        }
+
+        .dropli:hover .pink-move {
+            animation: 0.55s move linear forwards;
+
+        }
+
+        .dropli:active {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .dropli:active a {
+            font-weight: 600;
+            font: 16px;
+
+        }
+
+        .dropli a {
+            width: 100%;
+            text-decoration: none;
+            color: grey;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .icon-circle {
+            width: 40px;
+            height: 40px;
+            border: 1px solid black;
+            border-radius: 50%;
+            /* padding-top: 4.5%;
+            padding-left: 8%; */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .icon-circle:hover .icon-nav {
+            color: #ff427b;
+
+        }
+
+        .icon-circle:hover {
+            border: 1px solid #ff427b;
+
+        }
+
+
+
+        /* -----dropdown end------ */
+
+        /* <!-- ---picz 1 row--- --> */
+        .picz1 {
+            width: 100%;
+            height: max-content;
+            /* height: 100vh; */
+            /* border: 10px solid rgb(255, 0, 195); */
+            display: flex;
+        }
+
+        .left-picz1 {
+            width: 50%;
+            height: 680px;
+            /* height: 100%; */
+
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .left-picz1-image {
+            width: 100%;
+            height: 100%;
+            transform: scale(1.1);
+
+
+
+        }
+
+        .right-picz1 {
+            width: 50%;
+            height: max-content;
+            /* height: 680px; */
+            /* height: 100%; */
+            /* border: 8px solid rgb(2, 145, 255); */
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .right-picz4 {
+
+            width: 50%;
+            height: 340px;
+            /* height: 50%; */
+            /* border: 5px solid red; */
+        }
+
+        .left-header {
+
+            color: white;
+
+
+            font-size: 60px;
+            font-weight: 500;
+        }
+
+        .head-but-main {
+            position: absolute;
+            width: 70%;
+            height: max-content;
+            /* border: 2px solid yellow; */
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: flex-start;
+        }
+
+        .left-button {
+
+            width: 155px;
+            height: 60px;
+            border-radius: 30px;
+            background-color: #ff427b;
+            color: white;
+            border: none;
+            font-size: 16px;
+            transition: all 0.20s;
+            cursor: pointer;
+            /* margin-top: 5px; */
+        }
+
+        .left-button:hover {
+            background-color: transparent;
+            color: #ff427b;
+            font-weight: 500;
+            border: 1.5px solid #ff427b;
+        }
+
+        /* ----right-picz4---- */
+
+
+        .right-picz4 {
+            overflow: hidden;
+            /* border: 2px solid red; */
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .right-picz4:before {
+            content: "";
+            position: absolute;
+            width: 50%;
+            height: 60px;
+            /* left: 0px; */
+            left: -50%;
+            background-color: #ff427b;
+            z-index: 20;
+            transition: all 0.54s;
+            opacity: 0;
+        }
+
+        .right-picz4:hover::before {
+            left: 0px;
+            opacity: 1;
+        }
+
+        .right-picz4:hover::after {
+            right: 0px;
+            opacity: 1;
+        }
+
+        .right-picz4:after {
+            content: "";
+            position: absolute;
+            /* right: 0px; */
+            right: -50%;
+            /* top: 0%; */
+            width: 50%;
+            height: 60px;
+            background-color: #000000;
+            z-index: 20;
+            transition: all 0.54s;
+            opacity: 0;
+        }
+
+        .boxz {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            z-index: 50;
+            border-radius: 5px;
+            background-color: rgb(255, 255, 255);
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: all 0.34s;
+            bottom: 20%;
+
+        }
+
+        .right-picz4:hover .boxz {
+            opacity: 1;
+            bottom: 44.2%;
+        }
+
+        .box-A {
+            /* left: 35%; */
+            margin-left: 60px;
+
+
+
+        }
+
+        .box-B {
+
+            /* right: 35%; */
+            margin-right: 60px;
+
+        }
+
+
+
+
+        .picture1 {
+            background-image: url(./Limerick-images/16.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            z-index: -1;
+            height: 100%;
+            transition: all ease 0.3s;
+        }
+
+        .picture2 {
+            background-image: url(./Limerick-images/3-2.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            z-index: -1;
+            height: 100%;
+            transition: all ease 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right-picz4:hover .picture1 {
+            transform: scale(1.2) rotate(2deg);
+        }
+
+        .pic2-head {
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            color: white;
+            z-index: 5;
+            border: black 1px solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pic2-style {
+            font-size: 35px;
+        }
+
+        .picture3 {
+            background-image: url(./Limerick-images/15.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            z-index: -1;
+            height: 100%;
+            transition: all ease 0.3s;
+        }
+
+        .picture4 {
+            background-image: url(./Limerick-images/5-1.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            z-index: -1;
+            height: 100%;
+            transition: all ease 0.3s;
+        }
+
+        .newrow-main {
+            width: 100%;
+            height: 320px;
+            /* border: 2px solid blue; */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+
+
+
+        .leftnewrow {
+            width: 50%;
+            height: max-content;
+            /* height: 320px; */
+            /* border: 5px solid red; */
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .box22 {
+            width: 50%;
+            height: 320px;
+            /* height: 100%; */
+            /* border: 7px solid rgb(0, 0, 0); */
+
+        }
+
+        .box44 {
+            width: 100%;
+
+        }
+
+        .rightnewrow {
+
+            width: 50%;
+            /* border: 5px solid rgb(34, 255, 9); */
+            /* height: 320px; */
+        }
+
+        .right-picz-newrow {
+            width: 100%;
+            height: 100%;
+        }
+
+        .picture5 {
+            background-image: url(./Limerick-images/6-1.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            z-index: -1;
+            height: 100%;
+            transition: all ease 0.3s;
+        }
+
+
+        .picture6 {
+            background-image: url(./Limerick-images/7-1.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            z-index: -1;
+            height: 100%;
+
+        }
+
+        .box22-text-main {
+            height: 100%;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            color: white;
+            padding: 5%;
+            /* border: 2px solid yellow */
+        }
+
+        .box22-head {
+            font-size: 2.5vmax;
+            font-weight: 600;
+        }
+
+        .box22-para {
+            font-weight: 400;
+            font-size: 1.9vmax;
+        }
+
+        .picture7 {
+            background-image: url(./Limerick-images/8-1.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            z-index: -1;
+            height: 100%;
+
+        }
+
+        .new2row-main {
+            width: 100%;
+            height: 320px;
+            /* border: 2px solid blue; */
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+
+        }
+
+
+
+        .picture8 {
+            background-image: url(./Limerick-images/10.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            z-index: -1;
+            height: 100%;
+
+        }
+
+
+
+        .picture10 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: white;
+            width: 100%;
+            z-index: -1;
+            height: 100%;
+        }
+
+        .pic10-but {
+            width: 190px;
+            height: 60px;
+            border-radius: 30px;
+            background-color: #ff8ff5;
+            border: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        .picture9 {
+            width: 100%;
+            height: 100%;
+            background-image: url(./Limerick-images/9-1.jpg);
+        }
+
+        /* ----new row end---- */
+
+        .new3row-main {
+            width: 100%;
+            height: 320px;
+            /* border: 2px solid blue; */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }
+
+        .picture11 {
+            background-image: url(./Limerick-images/12.jpg);
+
+
+        }
+
+
+        .picture12 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgb(40, 40, 40);
+            width: 100%;
+            z-index: -1;
+            height: 100%;
+        }
+
+        .pic12-head {
+            color: white;
+            font-size: 50px;
+        }
+
+
+        .picture13 {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(rgb(255, 255, 255, 0.5), rgb(255, 255, 255, 0.5)), url(./Limerick-images/14.jpg);
+        }
+
+        .pic13-head {
+            position: absolute;
+            text-align: center;
+            padding: 3%;
+        }
+
+        /* ---foot--- */
+
+        .foot {
+
+            width: 100%;
+            height: 180px;
+            /* height: max-content; */
+            /* border: 2px solid red; */
+            display: flex;
+            flex-wrap: wrap;
+
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+
+        .foot-logo {
+            height: 50px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* ************************************************* */
+        /* ---------media query start------------ */
+        /* ************************************************ */
+
+
+
+
+        @media screen and (max-width:1000px) {
+            .nav-icons-main {
+                display: none;
+            }
+
+            .navlist-main {
+                display: none;
+            }
+
+            .title-nav {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .left-picz1 {
+                width: 100%;
+            }
+
+            .right-picz1 {
+                width: 100%;
+            }
+
+            .picz1 {
+                flex-flow: wrap;
+            }
+
+            .leftnewrow {
+                width: 100%;
+            }
+
+            .rightnewrow {
+                width: 100%;
+            }
+
+            .foot {
+                margin-top: 320px;
+
+            }
+
+
+
+        }
+
+        @media screen and (max-width:667px) {
+            .left-header {
+                font-size: 5vmax;
+                /* font-size: 60px; */
+            }
+
+            .leftnewrow {
+                width: 100%;
+            }
+
+            .right-picz4 {
+                width: 100%;
+            }
+
+            .box22 {
+                width: 100% !important;
+            }
+
+            .foot {
+                margin-top: 620px;
+
+            }
+
+
+        }
+
+
+
+
+        /* *********************************************** */
+        /* -----------media query end------------ */
+        /* ************************************************** */
+    </style>
+</head>
+
+<body>
+    <!-- ---navbar--- -->
+
+    <div class="nav-main">
+
+        <div class="nav-icons-main">
+
+            <div class="icon-circle">
+                <i class=" icon-nav fa-brands fa-facebook-f"></i>
+            </div>
+
+            <div class="icon-circle">
+                <i class=" icon-nav ic1 fa-brands fa-twitter"></i>
+            </div>
+
+            <div class="icon-circle">
+                <i class=" icon-nav fa-brands fa-google-plus-g"></i>
+            </div>
+
+            <div class="icon-circle">
+                <i class=" icon-nav fa-brands fa-pinterest-p"></i>
+            </div>
+
+            <div class="icon-circle">
+                <i class=" icon-nav fa-brands fa-instagram"></i>
+            </div>
+        </div>
+
+        <!-- ---title navbar--- -->
+
+        <div class="title-nav">
+            <img class="title-style" src="./Blog-with-slidebar-image/logo.png" alt="" srcset="">
+
+
+            <div class="navlist-main">
+                <ul class="nav-ul">
+
+
+
+                    <!-- ---dropdown 1 start--- -->
+                    <li class="nav-li home-drop1"><a href="">HOME</a></li>
+
+                    <div class="drop-list2">
+
+                        <ul class="dropul">
+
+                            <li class="dropli"><a href="">Creative Home</a>
+                                <div class="pink-move"></div>
+                            </li>
+
+
+
+                            <li class="dropli"><a href="">Designer Home</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Portfolio Home</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Parallax Home</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Carousel Home</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Header Styles</a>
+                                <div class="pink-move"></div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <!-- ---dropdown 1 end--- -->
+
+                    <!-- ---dropdown 2 start--- -->
+                    <li class="nav-li home-drop1"><a href="">ABOUT</a></li>
+
+                    <div class="drop-list2 drop-list2-margin1">
+
+                        <ul class="dropul">
+
+                            <li class="dropli"><a href="">About Us</a>
+                                <div class="pink-move"></div>
+                            </li>
+
+
+
+                            <li class="dropli"><a href="">Error Page</a>
+                                <div class="pink-move"></div>
+                            </li>
+
+
+                    </div>
+
+
+                    <!-- ---dropdown 2 end--- -->
+
+                    <!-- ---dropdown 3 start--- -->
+                    <li class="nav-li home-drop1"><a href="">PORTFOLIO</a></li>
+
+                    <div class="drop-list2 drop-list2-margin2">
+
+                        <ul class="dropul">
+
+                            <li class="dropli"><a href="">Portfolio Left Sidebar</a>
+                                <div class="pink-move"></div>
+                            </li>
+
+
+
+                            <li class="dropli"><a href="">Portfolio Right Sidebar</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Portfolio Centered</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Portfolio Slide</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Portfolio Masonry</a>
+                                <div class="pink-move"></div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <!-- ---dropdown 3 end--- -->
+
+                    <!-- ---dropdown 3 start--- -->
+                    <li class="nav-li home-drop1"><a href="">BLOG</a></li>
+
+                    <div class="drop-list2 drop-list2-margin3">
+
+                        <ul class="dropul">
+
+                            <li class="dropli"><a href="">Blog With Sidebar</a>
+                                <div class="pink-move"></div>
+                            </li>
+
+
+
+                            <li class="dropli"><a href="">Blog Grid</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Blog List</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Blog Masonry</a>
+                                <div class="pink-move"></div>
+                            </li>
+                            <li class="dropli"><a href="">Blog Single</a>
+                                <div class="pink-move"></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- ---dropdown 3 end--- -->
+
+                    <li class="nav-li"><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+
+
+            <!-- -----bars drop down start---- -->
+
+            <i class="bars-style fa-solid fa-bars home-drop-main1">
+
+
+
+                <div class="drop-bars-list">
+
+                    <ul class="dropul">
+
+                        <li class="dropli"><a href="">Home</a>
+                            <div class="pink-move"></div>
+                        </li>
+
+
+
+                        <li class="dropli"><a href="">About Us</a>
+                            <div class="pink-move"></div>
+                        </li>
+
+                        <li class="dropli"><a href="">Portfolio</a>
+                            <div class="pink-move"></div>
+                        </li>
+                        <li class="dropli"><a href="">Blog</a>
+                            <div class="pink-move"></div>
+                        </li>
+
+                        <li class="dropli"><a href="">Contact Us</a>
+                            <div class="pink-move"></div>
+                        </li>
+                </div>
+
+                <!-- ----bars drop down end---- -->
+                <!-- ---dropdown 2 end--- -->
+            </i>
+        </div>
+    </div>
+
+
+    <!-- ---picz 1 row--- -->
+
+    <div class="picz1">
+
+
+        <div class="left-picz1">
+            <div class="left-picz-rotate">
+            </div>
+
+
+            <div class="head-but-main">
+                <h1 class="left-header">Paper Lost Boat</h1>
+                <button class="left-button">READ MORE +</button>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="right-picz1">
+
+            <!-- ----pic 1---- -->
+
+            <div class="right-picz4">
+                <div class="picture1"></div>
+
+                <div class="boxz box-A"><i class="boxz-icon fa-solid fa-link"></i></div>
+
+                <div class="boxz box-B"><i class="boxz-icon fa-solid fa-magnifying-glass"></i></div>
+
+            </div>
+
+
+
+            <!-- -------------pic 2----- -->
+
+            <div class="right-picz4">
+                <div class="picture1 picture2"></div>
+                <div class="boxz box-A"><i class="boxz-icon fa-solid fa-link"></i></div>
+
+                <div class="boxz box-B"><i class="boxz-icon fa-solid fa-magnifying-glass"></i></div>
+                <div class="pic2-head">
+                    <h1 class="pic2-style">About Us</h1>
+                </div>
+            </div>
+
+            <!-- -------------pic 3----- -->
+
+            <div class="right-picz4">
+                <div class="picture1 picture3"></div>
+                <div class="boxz box-A"><i class="boxz-icon fa-solid fa-link"></i></div>
+
+                <div class="boxz box-B"><i class="boxz-icon fa-solid fa-magnifying-glass"></i></div>
+            </div>
+
+            <!-- ----pic 4---- -->
+
+            <div class="right-picz4">
+
+                <div class="picture1 picture4"></div>
+                <div class="boxz box-A"><i class="boxz-icon fa-solid fa-link"></i></div>
+
+                <div class="boxz box-B"><i class="boxz-icon fa-solid fa-magnifying-glass"></i></div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- ----new row--- -->
+
+    <div class="newrow-main">
+        <div class="leftnewrow">
+            <div class="box22">
+
+                <div class="right-picz4 right-picz-newrow">
+
+                    <div class="picture1 picture5"></div>
+                    <div class="boxz box-A"><i class="boxz-icon fa-solid fa-link"></i></div>
+
+                    <div class="boxz box-B"><i class="boxz-icon fa-solid fa-magnifying-glass"></i></div>
+                </div>
+            </div>
+
+
+            <div class="box22">
+
+                <div class="right-picz4 right-picz-newrow">
+
+                    <div class="picture1 picture6">
+
+
+                    </div>
+
+                    <div class="box22-text-main">
+                        <h1 class="box22-head">We Are Branding</h1>
+                        <h2 class="box22-head box22-para">Check out all my awesome art work. Our Amazing Portfolio
+                            Capitalize on low the hanging fruit to tify.</h2>
+                    </div>
+                    <div class="boxz box-A"><i class="boxz-icon fa-solid fa-link"></i></div>
+
+                    <div class="boxz box-B"><i class="boxz-icon fa-solid fa-magnifying-glass"></i></div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+
+        <div class="rightnewrow">
+
+
+
+            <div class="box22 box44">
+
+                <div class="right-picz4 right-picz-newrow">
+
+                    <div class="picture1 picture7"></div>
+                    <div class="boxz box-A"><i class="boxz-icon fa-solid fa-link"></i></div>
+
+                    <div class="boxz box-B"><i class="boxz-icon fa-solid fa-magnifying-glass"></i></div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <!-- </div> ?????-->
+
+
+
+
+
+    <!-- ----new row--- -->
+
+    <div class="newrow-main new2row-main">
+        <div class="leftnewrow">
+            <div class="box22">
+
+                <div class="right-picz4 right-picz-newrow">
+
+                    <div class="picture1 picture9"></div>
+                    <div class="boxz box-A"><i class="boxz-icon fa-solid fa-link"></i></div>
+
+                    <div class="boxz box-B"><i class="boxz-icon fa-solid fa-magnifying-glass"></i></div>
+                </div>
+            </div>
+
+
+            <div class="box22">
+
+                <div class="right-picz4 right-picz-newrow">
+
+                    <div class="picture10">
+                        <h1 class="pic10-head">Meet Team</h1>
+
+
+                        <button class="pic10-but">SEE TEAM +</button>
+
+                    </div>
+
+                    <div class="box22-text-main">
+
+                    </div>
+                    <div class="boxz box-A"><i class="boxz-icon fa-solid fa-link"></i></div>
+
+                    <div class="boxz box-B"><i class="boxz-icon fa-solid fa-magnifying-glass"></i></div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+
+        <div class="rightnewrow">
+
+
+
+            <div class="box22 box44">
+
+                <div class="right-picz4 right-picz-newrow">
+
+                    <div class="picture1 picture8"></div>
+                    <div class="boxz box-A"><i class="boxz-icon fa-solid fa-link"></i></div>
+
+                    <div class="boxz box-B"><i class="boxz-icon fa-solid fa-magnifying-glass"></i></div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <!-- --------------new row end----- -->
+
+
+    <!-- ---new row 3 start--- -->
+
+    <div class="newrow-main new3row-main">
+        <div class="leftnewrow">
+            <div class="box22">
+
+                <div class="right-picz4 right-picz-newrow">
+
+                    <div class="picture1 picture11"></div>
+                    <div class="boxz box-A"><i class="boxz-icon fa-solid fa-link"></i></div>
+
+                    <div class="boxz box-B"><i class="boxz-icon fa-solid fa-magnifying-glass"></i></div>
+                </div>
+            </div>
+
+
+            <div class="box22">
+
+                <div class="right-picz4 right-picz-newrow">
+
+                    <div class="picture12">
+
+
+
+
+
+                        <h1 class="pic12-head">Contact</h1>
+
+
+
+
+                    </div>
+
+                    <div class="box22-text-main">
+
+                    </div>
+                    <div class="boxz box-A"><i class="boxz-icon fa-solid fa-link"></i></div>
+
+                    <div class="boxz box-B"><i class="boxz-icon fa-solid fa-magnifying-glass"></i></div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+
+        <div class="rightnewrow">
+
+
+
+            <div class="box22 box44">
+
+                <div class="right-picz4 right-picz-newrow">
+
+                    <div class="picture1 picture13">
+
+                    </div>
+
+                    <h1 class="pic13-head">Leverage agile frameworks to the provide a robust synopsis for high <br>John
+                        Doe</h1>
+                    <div class="boxz box-A"><i class="boxz-icon fa-solid fa-link"></i></div>
+
+                    <div class="boxz box-B"><i class="boxz-icon fa-solid fa-magnifying-glass"></i></div>
+
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <!-- ---new row 3 end--- -->
+
+    <!-- ----foot--- -->
+
+    <div class="foot">
+        <img class="foot-logo" src="./Limerick-images/logo.png" alt="">
+        <p class="foot-para">© Copyright 2019 Limerick. All Rights Reserved</p>
+
+        <div class="nav-icons-main">
+
+            <div class="icon-circle">
+                <i class=" icon-nav fa-brands fa-facebook-f"></i>
+            </div>
+
+            <div class="icon-circle">
+                <i class=" icon-nav ic1 fa-brands fa-twitter"></i>
+            </div>
+
+            <div class="icon-circle">
+                <i class=" icon-nav fa-brands fa-google-plus-g"></i>
+            </div>
+
+            <div class="icon-circle">
+                <i class=" icon-nav fa-brands fa-pinterest-p"></i>
+            </div>
+
+            <div class="icon-circle">
+                <i class=" icon-nav fa-brands fa-instagram"></i>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

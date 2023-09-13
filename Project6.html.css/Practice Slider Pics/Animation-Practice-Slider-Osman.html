@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slider-main {
+            max-width: 500px;
+            height: 300px;
+            border: 2px solid red;
+            position: relative;
+            margin: 100px auto;
+        }
+
+        .slide1,
+        .slide2,
+        .slide3 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .slide1 {
+            background-image: url(./1.jpg);
+            background-size: cover;
+            animation-name: fade1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            background-repeat: no-repeat;
+            background-position: center center;
+
+        }
+
+        .slide2 {
+            background-image: url(./2.jpg);
+            background-size: cover;
+            animation-name: fade2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            background-repeat: no-repeat;
+            background-position: center center;
+            animation-timing-function: linear;
+        }
+
+        .slide3 {
+            background-image: url(./3.jpg);
+            background-size: cover;
+            animation-name: fade3;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            background-repeat: no-repeat;
+            background-position: center center;
+            animation-timing-function: linear;
+        }
+
+        @keyframes fade1 {
+            0% {
+                opacity: 1;
+            }
+
+            33.33333% {
+                opacity: 0;
+            }
+
+            66.66666% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+
+        @keyframes fade2 {
+            0% {
+                opacity: 0;
+            }
+
+            33.33333% {
+                opacity: 1;
+            }
+
+            66.66666% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes fade3 {
+            0% {
+                opacity: 0;
+            }
+
+            33.33333% {
+                opacity: 0;
+            }
+
+            66.66666% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="slider-main">
+        <div class="slide1"></div>
+        <div class="slide2"></div>
+        <div class="slide3"></div>
+
+    </div>
+
+
+
+</body>
+
+</html>

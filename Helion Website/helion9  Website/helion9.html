@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helion 9</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main1{
+            height: max-content;
+            width: 100%;
+            /* background-color: wheat; */
+            padding-bottom: 50px;
+
+        }
+        .navbar{
+            height: 80px;
+            width: 100%;
+            /* background-color: skyblue; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #logo{
+            height: 25px; 
+        }
+        .ul1{
+            /* border: 1px solid; */
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .li1{
+            list-style: none;
+            cursor: pointer;
+            position: relative;
+        }
+        .li1 a{
+            font-family: HKGrotesk, sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 27px;
+            color: rgb(13, 13, 18);
+            text-decoration: none;
+        }
+        .nav-div{
+            height: 3px;
+            width: 0%;
+            background-color: black;
+            position: absolute;
+            top: 12.5px;
+            left: -5%;
+            transition: .5s;
+        }
+        .li1:hover .nav-div{
+            width: 110%;
+        }
+        .icons{
+            height: 60px;
+            width: 15%;
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #icon1{
+            font-size: 35px;
+            /* margin-left: 30px;
+            margin-top: 10px; */
+            cursor: pointer;
+        }
+        #icon2{
+            display: none;
+            font-size: 22px;
+        }
+        #icon3{
+            font-size: 22px;
+            display: none;
+        }
+        #icon4{
+            font-size: 35px;
+            display: none;
+        }
+        .main1-p1{
+            font-family: LouisGeorgeCafe, sans-serif;
+            font-size: 49px;
+            font-weight: 700;
+            line-height: 49px;
+            color: rgb(13, 13, 18);
+            text-align: center;
+            margin-top: 100px;
+        }
+        .main1-p2{
+            font-family: HKGrotesk, sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 21px;
+            color: rgb(13, 13, 18);
+            text-align: center;
+            margin: 50px 0;
+        }
+        .main2{
+            height: 750vh;
+            width: 100%;
+            /* background-color: skyblue; */
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .main2-text1{
+            height: 750vh;
+            width: 65%;
+            /* background-color: aqua; */
+        }
+        .main2-text2{
+            /* border: 1px solid; */
+            height: 750vh;
+            width: 35%;
+            /* background-color: red; */
+        }
+        .main2-p1{
+            font-family: HKGrotesk, sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+            color: rgb(13, 13, 18);
+            /* text-align: center; */
+            margin: 50px 5%;
+        }
+        .child1 .main2-p1::first-letter{
+            font-size: 60px;
+            color: white;
+            border-radius: 10px;
+            background-color: red;
+            /* vertical-align: bottom; */
+        }
+        h1{
+            line-height: 49px;
+            margin: 50px 5%;
+        }
+        h2{
+            line-height: 39px;
+            margin: 40px 5%;
+        }
+        h3{
+            line-height: 29px;
+            margin: 30px 5%;
+        }
+        h4{
+            line-height: 29px;
+            margin: 20px 5%;
+        }
+        h5{
+            line-height: 19px;
+            margin: 10px 5%;
+        }
+        h6{
+            line-height: 15px;
+            margin: 5px 5%;
+        }
+        .color1{
+            font-weight: 600;
+            color: rgb(52, 50, 50);
+        }
+        .color2{
+            color: orangered;
+        }
+        .color3{
+            color: orangered;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .color4{
+            color: white;
+            background-color: red;
+        }
+        .color5{
+            font-style: italic;
+        }
+        .color6{
+            text-decoration: underline;
+        }
+        .child{
+            height: max-content;
+            width: 90%;
+            /* border: 1px solid; */
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-bottom: 50px;
+        }
+        .child1{
+            height: 40vh;
+            width: 50%;
+            /* background-color: wheat; */
+            /* border: 1px solid; */
+        }
+        .color7{
+            font-size: 50px;
+            vertical-align: text-top;
+        }
+        .main2-clip1{
+            height: 40vh;
+            width: 90%;
+            background-color: orangered;
+            margin: auto;
+            border-radius: 5px;
+            padding: 20px 0;
+        }
+        .main2-p2{
+            font-size: 22px;
+            margin: 50px 5%;
+            color: white;
+        }
+        .child0{
+            height: max-content;
+            width: 90%;
+            /* border: 1px solid; */
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 50px;
+        }
+        .child2{
+            height: 200px;
+            width: 35%;
+            /* background-color: green; */
+            /* border: 1px solid white; */
+            background-image: url(./img-al1-copyright.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .child3{
+            height: 250px;
+            width: 65%;
+            /* background-color: green; */
+            /* border: 1px solid white; */
+        }
+        .main2-p3{
+            margin: 20px 5%;
+        }
+        .main2-p4{
+            margin: 0px 5%;
+        }
+        .child00{
+            height: 250px;
+            width: 90%;
+            /* border: 1px solid; */
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .child5{
+            height: 250px;
+            width: 50%;
+            /* background-color: aqua; */
+            /* border: 1px solid; */
+        }
+        .main2-ul1{
+            /* border: 1px solid; */
+            margin: 30px 5% 
+
+        }
+        .main2-ol1{
+            /* border: 1px solid; */
+            margin: 30px 5% 
+
+        }
+        .main2-li1{
+            margin-top: 10px;
+            font-family: HKGrotesk, sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+            color: rgb(13, 13, 18);
+        }
+        table{
+            border-spacing: 0;
+            margin: 20px 5%;
+        }
+        .tr1{
+            background-color: aliceblue;
+        }
+        th{
+            padding: 15px 30px;
+            background-color: black;
+            color: gray;
+            font-family: HKGrotesk, sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+        }
+        td{
+            font-family: HKGrotesk, sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+            color: rgb(79, 75, 75);
+            padding: 15px 30px;
+            border: 1px solid  rgb(79, 75, 75);
+        }
+        .main2-inp1{
+            height: 50px;
+            width: 40%;
+            border: 1px solid rgb(160, 155, 155);
+            border-radius: 10px;
+            padding-left: 10px;
+            font-size: medium;
+            /* outline: none; */
+            outline-color: darkgray;
+            color: gray;
+            background-color: rgb(255,255,255);
+            margin: 20px 5%;
+        }
+        .inp2{
+            margin: 20px 0;
+        }
+        #main2-inp3{
+            height: 200px;
+            width: 85%;
+            border: 1px solid rgb(160, 155, 155);
+            border-radius: 10px;
+            padding: 15px 15px;
+            font-size: larger;
+            
+            outline-color: darkgray;
+            color: gray;
+            background-color: rgb(255,255,255);
+            margin: 20px 5%;
+
+        }
+        .inputs{
+            height: 10vh;
+            width: 85%;
+            /* border: 1px solid; */
+            margin: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #main2-inp4{
+            border: 1px solid red;
+            display: block;
+            /* margin-left: 5%;
+            margin-top: 5px; */
+            height: 30px;
+            width: 30px;
+            cursor: pointer;
+            transition: .5s;
+        }
+        #main2-inp4:checked ~ .btn1 button{
+background-color: red;
+        }
+        .main2-p5{
+            color: black;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            font-family: sofia-pro, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+            /* margin-left: 10%;
+            margin-top: -20px; */
+            
+        }
+        .btn1{
+            height: 50px;
+            width: 150px;
+            background-color: rgb(39, 37, 37);
+            color: whitesmoke;
+            border: none;
+            border-radius: 5px;
+        }
+        .btn1 button{
+            height: 50px;
+            width: 150px;
+            background-color: rgb(39, 37, 37);
+            color: whitesmoke;
+            font-size: medium;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: .5s;
+        }
+        .btns{
+            height: 200px;
+            width: 50%;
+            /* border: 1px solid; */
+            margin: 20px 5%;
+        }
+        .btns button{
+            height: 60px;
+            width: 180px;
+            border: 2px solid;
+            background-color: white;
+            margin: 20px 5%;
+            border-radius: 5px;
+            font-size: medium;
+            transition: .5s;
+            cursor: pointer;
+            overflow: hidden;
+
+        }
+        .btns-p1{
+            margin-left: 55px;
+            white-space: nowrap;
+            transition: .5s;
+        }
+        #icon5{
+            margin-left: 80px;
+            transition: .5s;
+        }
+        button:hover{
+            background-color: black;
+            border: none;
+        }
+        button:hover .btns-p1{
+            margin-left: 0px;
+            color: white;
+            
+        }
+        button:hover #icon5{
+            margin-left: 40px;
+            color: white;
+
+        }
+        .text2-div1{
+            height: 2px;
+            width: 15%;
+            background-color: orangered;
+            margin: 40px 5%;
+        }
+        .text2-p1{
+            font-family: LouisGeorgeCafe, sans-serif;
+            font-size: 18.954px;
+            font-weight: 500;
+            line-height: 27.735px;
+            color: rgb(13, 13, 18);
+            margin: 30px 5%;
+        }
+        .text2-p2{
+            font-family: HKGrotesk, sans-serif;
+            font-size: 15.954px;
+            font-weight: 500;
+            line-height: 19.735px;
+            color: orangered;
+            margin: 15px 5%;
+            cursor: pointer;
+            position: relative;
+            width: max-content;
+        }
+        .line1{
+            height: 2px;
+            width: 0%;
+            background-color: orangered;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            transition: .5s;
+
+        }
+        .text2-p2:hover .line1{
+            width: 100%;
+        }
+       
+           
+            
+        
+        .color8{
+            color: gray;
+        }
+        .main2-text2 > ul{
+            /* border: 1px solid; */
+            width: max-content;
+            margin: 25px 5%;
+
+
+        }
+        .main2-text2 ul > li{
+            font-family: HKGrotesk, sans-serif;
+            font-size: 17.954px;
+            font-weight: 400;
+            line-height: 27.735px;
+            color: black;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: .5s;
+        }
+        .main2-text2 ul > li::marker{
+            color: orangered;
+        }
+        .main2-text2 ul > li:hover{
+            color: blue;
+        }
+
+
+        .main10{
+        height: max-content;
+        width: 100%;
+        background-color: rgb(26,26,31);
+        padding: 50px;
+    }
+    .child19{
+        height: max-content;
+        width: 90%;
+        margin: auto;
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+    .child20{
+        height: max-content;
+        width: 300px;
+        /* border: 1px solid red; */
+        
+        /* border-bottom: 1px solid gray; */
+        padding: 50px 0;
+    }
+    #image10{
+        height: 25px;
+        cursor: pointer;
+        /* margin-left: 40px; */
+        
+        
+        
+    }
+    .p26{
+        font-family: LouisGeorgeCafe, sans-serif;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 24px;
+        color: white;
+    }
+    .p27{
+        font-family:HKGrotesk, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 31px;
+        color: rgb(174, 174, 174);
+        margin-top: 30px;
+    }
+
+    .p28{
+        font-family:HKGrotesk, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 39px;
+        color: rgb(174, 174, 174);
+        width: max-content;
+        /* background-color: red; */
+        transition: .5s;
+        cursor: pointer;
+        position: relative;
+        margin-top: 20px;
+    }
+    .p28:hover{
+        color: white;
+    }
+
+    .p28_pd1{
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 154px;
+        background-color: rgb(109, 114, 119);
+        cursor: pointer;
+        transition: .5s;
+
+    }
+    .p28:hover .p28_pd1{
+        width: 0px;
+        background-color: white;
+        /* color: white; */
+    }
+    .p29{
+        font-family:HKGrotesk, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 39px;
+        color: white;
+        margin-top: 30px;
+    }
+    .p30{
+        font-family:HKGrotesk, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(174, 174, 174);
+        margin-top: 25px;
+        transition: .5s;
+        cursor: pointer;
+        width: max-content;
+    }
+    .p30:hover{
+        color: orangered;
+        margin-left: 10px;
+
+    }
+    #icon11{
+        font-size: 20px;
+        color: rgb(109, 114, 119);
+        margin-top: 20px;
+        cursor: pointer;
+        margin-left: 20px;
+        transition: .5s;
+    }
+    #icon11:hover{
+        color: orangered;
+    }
+    .color10{
+        color: gray;
+    }
+    .p31{
+        margin-left: 5%;
+        color: white;
+    }
+
+        
+
+        
+
+
+        /* ///////////////////////////////////// Media Queries ///////////////////////////////////// */
+
+        @media screen and (max-width: 1182px) {
+            .icons{
+                width: 15%;
+            }
+        }
+        @media screen and (max-width: 1110px) {
+            .ul1{
+                width: 50%;
+            }
+            .anker1{
+                display: none;
+            }
+            #icon3{
+                display: block;
+            }
+        }
+        @media screen and (max-width:918px) {
+            th{
+                padding: 5px 10px;
+            }
+        }
+        @media screen and (max-width:880px) {
+            .icons{
+                width: 20%;
+            }
+            .anker2{
+                display: none;
+            }
+            #icon3{
+                display: none;
+            }
+            #icon2{
+                display: block;
+            }
+            .ul1{
+                width: 55%;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .ul1{
+                display: none;
+            }
+            .icons{
+                width: 25%;
+            }
+            #icon4{
+                display: block;
+            }
+        }
+        @media screen and (max-width:585px){
+            .icons{
+                width: 30%;
+                font-size: 20px;
+            }
+            #icon1{
+                font-size: 25px;
+            }
+            #icon4{
+                font-size: 25px;
+            }
+        }
+        @media screen and (max-width:425px){
+            .icons{
+                width: 36%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main1">
+        <div class="navbar">
+            <img id="logo1" src="./logo.png" alt="">
+            <ul class="ul1">
+                <li class="li1"><a href=""> Home.</a>
+                    <div class="nav-div"></div>
+                </li>
+                <li class="li1"><a href=""> Pages.</a>
+                    <div class="nav-div"></div>
+                </li>
+                <li class="li1"><a href=""> About Us.</a>
+                    <div class="nav-div"></div>
+                </li>
+                <li class="li1"><a href=""> Blog.</a>
+                    <div class="nav-div"></div>
+                </li>
+                <li class="li1"><a class="anker2" href=""> Store. </a> <i id="icon2" class="fa-solid fa-ellipsis-vertical"></i>
+                    <div class="nav-div"></div>
+                </li>
+                <li class="li1"><a class="anker1" href=""> Contacts.</a><i id="icon3" class="fa-solid fa-ellipsis-vertical"></i>
+                    <div class="nav-div"></div> 
+                </li>
+            </ul>
+            <div class="icons">
+                <i id="icon4" class="fa-solid fa-bars"></i>
+                <i id="icon1" class="fa-solid fa-bag-shopping"></i>
+                <i id="icon1" class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <p class="main1-p1">Typography</p>
+        <p class="main1-p2">Home . Typography</p>
+    </div>
+    <div class="main2">
+        <div class="main2-text1">
+            <p class="main2-p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet, ligula condimentum <br> tincidunt, arcu orci laoreet massa, nec sagittis elit urna in diam. Sed consectetur dolor non <br> nulla porttitor, in scelerisque. quam ultricies. Phasellus et ipsum justo fringilla ferm.</p>
+            <p class="main2-p1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet, ligula condimentum <br> tincidunt, arcu orci laoreet massa, nec sagittis elit urna in diam. Sed consectetur dolor non <br> nulla porttitor. </p>
+            <h1>H1 Heading But I must explain to <br> you how all this mistaken.</h1>
+            <p class="main2-p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet, ligula condimentum <br> tincidunt, arcu orci laoreet massa, nec sagittis elit urna in diam. </p>
+            <h2>H2 Heading But I must explain to you <br> how all this mistaken.</h2>
+            <p class="main2-p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet, ligula condimentum <br> tincidunt, arcu orci laoreet massa, nec sagittis elit urna in diam. </p>
+            <h3>H3 Heading But I must explain to you <br> how all this mistaken.</h3>
+            <p class="main2-p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet, ligula condimentum <br> tincidunt, arcu orci laoreet massa, nec sagittis elit urna in diam. </p>
+            <h4>H4 Heading But I must explain to you <br> how all this mistaken.</h4>
+            <p class="main2-p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet, ligula condimentum <br> tincidunt, arcu orci laoreet massa, nec sagittis elit urna in diam. </p>
+            <h5>H5 Heading But I must explain to you <br> how all this mistaken.</h5>
+            <p class="main2-p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet, ligula condimentum <br> tincidunt, arcu orci laoreet massa, nec sagittis elit urna in diam. </p>
+            <h6>H6 Heading But I must explain to you <br> how all this mistaken.</h6>
+            <p class="main2-p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet, ligula condimentum <br> tincidunt, arcu orci laoreet massa, nec sagittis elit urna in diam. </p>
+            <hr style="height: 2px; width: 90%; background-color: slategray; margin-left: 5%;">
+            <h1>Standard Inline Elements</h1>
+            <p class="main2-p1"><span class="color1">Bold</span>  text I must explain to you how all this <span class="color2">accent color</span>  idea of <a class="color3" href="">hovered accent</a>  pleasure and <br> praising pain <span class="color4">was born and I will give you</span> a complete account of the system.</p>
+            <p class="main2-p1"> <span class="color5">Italic text</span>  one rejects, dislikes, or avoids pleasure itself, <span class="color6">because</span>  it is pleasure, but because <br> those who do not know how to pursue pleasure rationally encounter consequences.</p>
+            <hr style="height: 2px; width: 90%; background-color: slategray; margin-left: 5%;">
+            <h1>Dropcaps</h1>
+            <div class="child">
+                <div class="child1">
+                    <p class="main2-p1">D Donec fringilla congue dolor, <br> porttitor magna cras vel libero <br> hendrerit vel sapien id urna <br> egestas cursus. Interdum et malesuada <br> fames ac ante eget ipsum. Primis in duis <br> imperdiet volutpat faucibus.</p>
+                </div>
+                <div class="child1">
+                    <p class="main2-p1">D Donec fringilla congue dolor, <br> porttitor magna cras vel libero <br> hendrerit vel sapien id urna <br> egestas cursus. Interdum et malesuada <br> fames ac ante eget ipsum. Primis in duis <br> imperdiet volutpat faucibus.</p>
+                </div>
+                
+            </div>
+            <hr style="height: 2px; width: 90%; background-color: slategray; margin-left: 5%;">
+            <h1>Blockquote</h1>
+            <p class="main2-p1">Donec fringilla congue dolor, ac porttitor magna cras vel libero hendrerit vel sapien id urna <br> egestas cursus. Interdum et malesuada fames ac ante eget ipsum. Primis in faucibus duis <br> imperdiet volutpat dolor sit amet finibus.</p>
+            <div class="main2-clip1">
+                <p class="main2-p1 main2-p2">Ignissimos ducimus qui blanditiis praesentium voluptatum <br> deleniti atque corrupti quos dolores. </p>
+                <p class="main2-p1 main2-p2">Robin Smith</p>
+            </div>
+            <hr style="height: 2px; width: 90%; background-color: slategray; margin: 30px auto;">
+            <h1>Image Alignment</h1>
+            <p class="main2-p1">Donec fringilla congue dolor, ac porttitor magna cras vel libero hendrerit vel sapien id urna <br> egestas cursus. Interdum et malesuada fames ac ante eget ipsum. Primis in faucibus duis <br> imperdiet volutpat dolor sit amet finibus.</p>
+            <div class="child0">
+                <div class="child2"></div>
+                <div class="child3">
+                    <p class="main2-p1 main2-p3">Donec fringilla congue dolor, ac porttitor <br> magna cras vel libero hendrerit vel sapien id <br> urna egestas cursus.</p>
+                    <p class="main2-p1 main2-p3">Interdum et malesuada fames ac ante eget <br> ipsum. Primis in faucibus duis imperdiet  <br> volutpat dolor sit amet finibus.</p>
+                    <p class="main2-p1 main2-p3">Donec fringilla congue dolor, ac porttitor </p>
+                </div>
+            </div>
+            <p class="main2-p1 main2-p4"> magna cras vel libero hendrerit vel sapien id urna egestas cursus. Interdum et malesuada <br> fames ac ante eget ipsum. Primis in faucibus duis imperdiet volutpat dolor sit amet finibus.</p>
+            <hr style="height: 2px; width: 90%; background-color: slategray; margin: 30px auto;">
+            <h1>List Styles</h1>
+            <p class="main2-p1">Donec fringilla congue dolor, ac porttitor magna cras vel libero hendrerit vel sapien id urna <br> egestas cursus. Interdum et malesuada fames ac ante eget ipsum. Primis in faucibus duis <br> imperdiet volutpat dolor sit amet finibus.</p>
+            <div class="child00">
+                <div class="child5">
+                    <ul class="main2-ul1">
+                        <li class="main2-li1">Donec fringilla congue dolor porttitor</li>
+                        <li class="main2-li1">Magna cras vel libero hendrerit vel</li>
+                        <li class="main2-li1">Sapien id urna egestas cursus</li>
+                        <li class="main2-li1">Interdum et malesuada fames ante</li>
+                    </ul>
+                </div>
+                <div class="child5">
+                    <ol class="main2-ol1">
+                        <li class="main2-li1">Donec fringilla congue dolor porttitor</li>
+                        <li class="main2-li1">Magna cras vel libero hendrerit vel</li>
+                        <li class="main2-li1">Sapien id urna egestas cursus</li>
+                        <li class="main2-li1">Interdum et malesuada fames ante</li>
+                    </ol> 
+                </div>
+                <hr style="height: 2px; width: 90%; background-color: slategray; margin: 30px auto;">
+            </div>
+            <h1>Table</h1>
+            <p class="main2-p1">Donec fringilla congue dolor, ac porttitor magna cras vel libero hendrerit vel sapien id urna <br> egestas cursus. Interdum et malesuada fames ac ante eget ipsum. Primis in faucibus duis <br> imperdiet volutpat dolor sit amet finibus.</p>
+
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Column 3</th>
+                    <th>Column 4</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Row 1 Cell 1</td>
+                    <td>Row 1 Cell 2</td>
+                    <td>Row 1 Cell 3</td>
+                    <td>Row 1 Cell 4</td>
+                </tr>
+                <tr class="tr1">
+                    <td>2</td>
+                    <td>Row 2 Cell 1</td>
+                    <td>Row 2 Cell 2</td>
+                    <td>Row 2 Cell 3</td>
+                    <td>Row 2 Cell 4</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Row 3 Cell 1</td>
+                    <td>Row 3 Cell 2</td>
+                    <td>Row 3 Cell 3</td>
+                    <td>Row 3 Cell 4</td>
+                </tr>
+            </table>
+            <hr style="height: 2px; width: 90%; background-color: slategray; margin: 30px auto;">
+            <h1>Inputs & Buttons</h1>
+            <input class="main2-inp1" type="text" placeholder="Your Name">
+            <input class="main2-inp1 inp2" type="email" name="" id="" placeholder="Your Email">
+            <textarea name="" id="main2-inp3" cols="30" rows="10" placeholder="Message"></textarea>
+            <div class="inputs">
+                <input type="checkbox" name="" id="main2-inp4">
+                <p class="main2-p5">I agree that my submitted data is being collected and stored.</p>
+                <div class="btn1">
+                    <button>Send Message</button>
+                </div>
+            </div>
+            <div class="btns">
+            
+                    <button class="button1"> <p class="btns-p1">Button 1 <i id="icon5" class="fa-solid fa-arrow-right-long"></i></p> </button>
+                    <button class="button2"><p class="btns-p1">Button 2 <i id="icon5" class="fa-solid fa-arrow-right-long"></i></p></button> <br>
+                    <button class="button3"><p class="btns-p1"> Button 3 <i id="icon5" class="fa-solid fa-arrow-right-long"></i></p></button>
+                    <button class="button4"><p class="btns-p1">Button 4 <i id="icon5" class="fa-solid fa-arrow-right-long"></i></p></button>
+        
+            </div>
+
+        </div>
+        <div class="main2-text2">
+            <div class="text2-div1"></div>
+            <p class="text2-p1">Recent Posts</p>
+            <p class="text2-p1">6. Whenever they respond to a remind the <br> same way everyone solution it</p>
+            <p class="text2-p2"> Best Online Dating Site Free <span class="line1"></span>  <span class="color8">August 17, 2022</span></p>
+            <p class="text2-p1">Primero sobre comenzar con la puesto, has <br> de saber que es un bizcocho borracho real</p>
+            <p class="text2-p2"> AirG visitors  <span class="line1"></span>  <span class="color8">August 17, 2022</span></p>
+            <p class="text2-p1"> Poitrine acides gif dame accordee dates <br> montre moi sensuel transsexuels sensuel <br> matou charnel textes sur exprimer affair </p>
+            <p class="text2-p2"> Amor en Linea visitors <span class="line1"></span>  <span class="color8">August 17, 2022</span></p>
+            <div class="text2-div1"></div>
+            <p class="text2-p1">Categories</p>
+            <ul>
+                <li>30 Matches find out here</li>
+                <li>321chat avis site de rencontre</li>
+                <li>420 Dating stranky pro dospele</li>
+                <li>420-rencontres visitors</li>
+                <li>abdlmatch dating</li>
+                <li>Actualizar Archivos Dll</li>
+                <li>adam4adam review</li>
+                <li>adam4adam visitors</li>
+                <li>Adult Black Dating find out here</li>
+                <li>Adult dating pojedyncze miejsce, lokalizacja</li>
+                <li>Adult Hub visitors</li>
+                <li>AdultFriendFinder visitors</li>
+                <li>AdultSpace visitors</li>
+                <li>adventist singles visitors</li>
+                <li>airg fr review</li>
+                <li>AirG visitors</li>
+                <li>Aisle visitors</li>
+                <li>akron escort</li>
+                <li>Akron+OH+Ohio review</li>
+                <li>allamericandating.com best dating sites</li>
+                <li>alt dating</li>
+                <li>altcom fr review</li>
+                <li>altcom reviews</li>
+                <li>alua pl review</li>
+                <li>amateurmatch reviews</li>
+                <li>American Dating Sites pojedyncze miejsce, lokalizacja</li>
+                <li>Amino visitors</li>
+                <li>AmoLatina visitors</li>
+                <li>Amor en Linea visitors</li>
+                <li>Android Hookup Apps review</li>
+                <li>antichat reviews</li>
+                <li>Artist Dating Sites Websites kostenlos</li>
+                <li>ashley madison fr review</li>
+                <li>Ashley Madison visitors</li>
+                <li>asiame pl review</li>
+                <li>asiame review</li>
+                <li>asian hookup apps reviews</li>
+                <li>AsianDating visitors</li>
+                <li>bbpeoplemeet reviews</li>
+                <li>bbpeoplemeet_NL review</li>
+                <li>BBWDateFinder visitors</li>
+                <li>Beautifulpeople hookup websites</li>
+                <li>beetalk dating</li>
+                <li>Beetalk siti incontri single</li>
+                <li>BeeTalk visitors</li>
+                <li>Belleville+Canada hookup sites</li>
+                <li>BeNaughty visitors</li>
+                <li>Best Dating Website</li>
+                <li>Best Online Dating Site Free</li>
+                <li>best payday loans online</li>
+                <li>Best Rated Dating Site</li>
+                <li>Biggercity siti incontri single</li>
+                <li>biggercity visitors</li>
+                <li>Birmingham+United Kingdom free hookup website</li>
+                <li>Birmingham+United Kingdom reviews</li>
+                <li>Black Singles visitors</li>
+                <li>Blackdatingforfree hookup websites</li>
+                <li>blackpeoplemeet pl review</li>
+                <li>Blendr visitors</li>
+                <li>Blossoms.com find out here</li>
+                <li>BookOfMatches visitors</li>
+                <li>BookOfSex find out here</li>
+                <li>bookofsex reviews</li>
+                <li>bookofsex visitors</li>
+                <li>Brazilcupid hookup websites</li>
+                <li>brazilcupid visitors</li>
+                <li>Bristlr visitors</li>
+                <li>Bronymate visitors</li>
+                <li>Buckleup find out here</li>
+                <li>Buddy Chat Room find out here</li>
+                <li>bumble pl review</li>
+                <li>buziak visitors</li>
+                <li>Caliente find out here</li>
+                <li>cash net usa payday loans</li>
+                <li>cashwell installment loans</li>
+                <li>Cedar Rapids+IA+Iowa free hookup website</li>
+                <li>charmdate review</li>
+                <li>chatango review</li>
+                <li>chatiw_NL reviews</li>
+                <li>Chatki visitors</li>
+                <li>Chatroulette visitors</li>
+                <li>CheatingCougars find out here</li>
+                <li>check n go payday loans</li>
+                <li>Chico+CA+California review</li>
+                <li>chinalovecupid szukaj wedlug nazwy</li>
+                <li>chinalovecupid visitors</li>
+                <li>christiancupid reviews</li>
+                <li>christianmingle visitors</li>
+                <li>citas por video gratuitas</li>
+                <li>clover dating</li>
+                <li>coffee-meets-bagel-inceleme visitors</li>
+                <li>college essay writers</li>
+                <li>colombiancupid-inceleme visitors</li>
+                <li>Compatible Partners find out here</li>
+                <li>connection singles visitors</li>
+                <li>Cougar Dating pojedyncze miejsce, lokalizacja</li>
+                <li>CountryWesternSingles find out here</li>
+                <li>couples seeking men review</li>
+                <li>Cowboys Nearby find out here</li>
+                <li>Creativity</li>
+                <li>Crushontube find out here</li>
+                <li>CUDDLI visitors</li>
+                <li>cupid visitors</li>
+                <li>daddyhunt es review</li>
+                <li>Datehookup visitors</li>
+                <li>datemyage pl review</li>
+                <li>Dating In Your 30s stranky pro dospele</li>
+                <li>datingreviewer.net seeking arrangements app</li>
+                <li>datingstreet.net best dating sites</li>
+                <li>Dayton+OH+Ohio review</li>
+                <li>Design</li>
+                <li>dil mil reviews</li>
+                <li>dutch-brides adult</li>
+                <li>E-chat visitors</li>
+                <li>easysex dating</li>
+                <li>eharmony visitors</li>
+                <li>EquestrianSingles szukaj wedlug nazwy</li>
+                <li>ethiopia-personals-inceleme visitors</li>
+                <li>FabSwingers szukaj wedlug nazwy</li>
+                <li>facebook dating review</li>
+                <li>facebook-dating-inceleme visitors</li>
+                <li>feeld reviews</li>
+                <li>ferzu cs review</li>
+                <li>find a payday loan online</li>
+                <li>fisch-kopf.com besten flirt</li>
+                <li>Fitness Dating stranky pro dospele</li>
+                <li>fitness singles es review</li>
+                <li>flirthwith reviews</li>
+                <li>freesnapmilfs review</li>
+                <li>friendfinder-x visitors</li>
+                <li>friendfinderx-inceleme visitors</li>
+            </ul>
+            
+          
+                
+            
+        </div>
+    </div>
+    <div class="main10">
+        <div class="child19">
+            <div class="child20">
+                <img  id="image10" src="./logo-inverse.png" alt="">
+            </div>
+            <div class="child20">
+                <p class="p26">Office</p>
+                <p class="p27">2700 Fire Mesa StLas <br> Vegas, NV 89128</p>
+                <p class="p28">info@example.com<span class="p28_pd1"></span></p>
+                <p class="p29">+1 800 123 45 67</p>
+            </div>
+            <div class="child20">
+                <p class="p26">Links</p>
+                <p class="p30">Blog</p>
+                <p class="p30">About Us</p>    
+                <p class="p30"> Shop</p>  
+                <p class="p30">Contacts</p> 
+                    
+
+            </div>
+            <div class="child20">
+                <p class="p26">Socials</p>
+                <i id="icon11" class="fa-brands fa-facebook-f"></i>
+                <i id="icon11" class="fa-brands fa-twitter"></i>
+                <i id="icon11" class="fa-brands fa-dribbble"></i>
+                <i id="icon11" class="fa-brands fa-behance"></i>
+
+            </div>
+        </div>
+        <hr style="border: 1px solid; background-color: gray; height: 1px; width: 90%; margin: auto;">
+
+        <p class="p27 p31"><span class="color4"> Axiom Theme </span> © 2022. All Rights Reserved.</p>
+
+    </div>
+    
+
+
+</body>
+</html>
+
+

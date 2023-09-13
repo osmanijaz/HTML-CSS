@@ -1,0 +1,1924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+            box-sizing: border-box;
+
+        }
+
+        /* ===Main Image=== */
+
+        .mainImage {
+            width: 100%;
+            height: 100vh;
+            background-image: url(./Images/bg1.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 1px;
+            box-sizing: border-box;
+        }
+
+
+
+        /* ===Nav Bar=== */
+
+        .navMain {
+
+            width: 100%;
+            height: 81px;
+            /* border: 1px solid yellowgreen; */
+            /* position: sticky;
+            top: 0px; */
+
+
+        }
+
+        .navLogo {
+            width: 150px;
+            height: 40px;
+            /* border: 1px solid red; */
+            margin-top: 25px;
+            margin-left: 35px;
+        }
+
+        .navListMain {
+
+            color: white;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 20px;
+            margin-left: 430px;
+            list-style: none;
+            margin-top: -29px;
+
+
+
+
+        }
+
+
+        .navList {
+            letter-spacing: 2px;
+            display: inline-block;
+            margin-left: 35px;
+        }
+
+
+        /* ===Slider=== */
+
+
+        .titleMainSlider {
+            width: 90vw;
+            /* width: 1170px; */
+            height: 250px;
+            /* border: 2px solid yellowgreen; */
+            margin-left: 4.5vw;
+            margin-top: 160px;
+            color: white;
+        }
+
+
+        .titleMainHeader {
+            text-align: center;
+            font-size: 60px;
+
+        }
+
+
+        .titleMainPara {
+            text-align: center;
+            letter-spacing: 2px;
+            margin-top: 10px;
+        }
+
+
+        .titleButton {
+            position: relative;
+            left: 430px;
+            width: 140px;
+            height: 51px;
+            border: 2px solid white;
+            background: transparent;
+            color: white;
+            font-size: 15px;
+            font-weight: 700;
+            margin-top: 35px;
+            margin-left: 10px;
+        }
+
+        /* ===Welcome 3 Boxes=== */
+
+        .w3bMain {
+            width: 100%;
+            height: 500px;
+            /* border: 1px solid yellowgreen; */
+
+        }
+
+
+        .w3bHeader {
+            text-align: center;
+            margin-top: 75px;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 22px;
+
+        }
+
+        .w3bLine {
+            width: 50px;
+            height: 2px;
+            background-color: black;
+            margin-left: 47vw;
+            margin-top: 20px;
+
+
+        }
+
+        .w3bParent {
+            width: 100%;
+            height: 350px;
+            /* border: 1px solid red; */
+            margin-top: 70px;
+
+
+        }
+
+        .w3bChild {
+            width: 395px;
+            height: 350px;
+            /* border: 1px solid rgb(90, 35, 255); */
+            float: left;
+            margin-left: 18px;
+
+
+        }
+
+        .w3bChildCircle {
+            width: 95px;
+            height: 95px;
+            border-radius: 50px;
+            border: 0.5px solid grey;
+            margin-left: 150px;
+            margin-top: 10px;
+
+        }
+
+        .w3bChildHeader {
+            color: grey;
+            text-align: center;
+            margin-top: 20px;
+
+
+
+
+        }
+
+        .w3bChildLine {
+            width: 50px;
+            height: 2px;
+            background-color: grey;
+            margin-left: 175px;
+            margin-top: 10px;
+
+
+
+
+        }
+
+        .w3bChildPara {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 25px;
+            color: rgb(76, 75, 75);
+            text-align: center;
+            margin-top: 20px;
+
+
+        }
+
+
+        .w3bChildButton {
+            width: 130px;
+            height: 45px;
+            border: 1px solid grey;
+            background-color: transparent;
+            color: grey;
+            font-weight: 700;
+            margin-left: 133px;
+            margin-top: 20px;
+
+
+        }
+
+        /* ===3 Laptop Pic=== */
+
+        .laptopPicture {
+
+            height: 450px;
+            /* border: 1px solid yellowgreen; */
+
+        }
+
+        .laptopImage {
+            margin-left: 85px;
+            margin-top: 40px;
+
+        }
+
+        /* ===Services=== */
+
+        .servicesMain {
+            width: 100%;
+            height: 250px;
+            background-color: #f1f1f1;
+            padding: 1px;
+            box-sizing: border-box;
+            /* border: 2px solid red; */
+
+
+
+
+
+        }
+
+        .servicesHeader {
+            text-align: center;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 22px;
+
+
+        }
+
+        .servicesHeader {
+            margin-top: 90px;
+            ;
+        }
+
+        .serviceLine {
+
+            width: 50px;
+            height: 2px;
+            background-color: black;
+            margin-left: 610px;
+            margin-top: 20px;
+
+        }
+
+        .servicePara {
+            text-align: center;
+            color: gray;
+            margin-top: 20px;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 31.6667px;
+
+        }
+
+
+        .serviceBoxMain {
+            width: 100%;
+            height: 565px;
+            /* border: 1px solid red; */
+            padding: 1px;
+            box-sizing: border-box;
+
+
+        }
+
+
+        .serviceBoxLeft {
+            width: 753px;
+            height: 565px;
+            /* border: 1px solid blue; */
+            float: left;
+
+        }
+
+        .serviceBoxLeftInfo {
+            width: 360px;
+            height: 265px;
+            /* border: 1px solid yellowgreen; */
+            float: left;
+            margin-left: 10px;
+            margin-top: 10px;
+
+        }
+
+
+        .serviceLeftIcon {
+            width: 60px;
+            height: 60px;
+            border: 1px solid black;
+            margin-top: 65px;
+            margin-left: 15px;
+
+        }
+
+        .serviceLeftHeader {
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 21.6667px;
+            margin-left: 100px;
+            margin-top: -65px;
+
+
+        }
+
+        .serviceBoxLine {
+            width: 50px;
+            height: 2px;
+            background-color: grey;
+            margin-left: 100px;
+            margin-top: 10px;
+        }
+
+
+        .serviceLeftPara {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 23px;
+            color: rgb(153, 153, 153);
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+
+        .serviceBoxRight {
+            width: 506px;
+            height: 565px;
+            /* border: 1px solid purple; */
+            float: left;
+
+        }
+
+        .servicePicRight {
+            width: 100%;
+            height: 99.8%;
+        }
+
+        /* ===Design Department=== */
+
+        .ddMain {
+            width: 100%;
+            height: 380px;
+            /* border: 1px solid red; */
+
+
+
+
+        }
+
+
+        .ddHeader {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 22px;
+            text-align: center;
+            margin-top: 90px;
+
+
+        }
+
+        .ddLine {
+            width: 50px;
+            height: 2px;
+            background-color: grey;
+            margin-left: 598px;
+            margin-top: 30px;
+        }
+
+        .ddCircle {
+            width: 150px;
+            height: 150px;
+            border: 5px solid black;
+            float: left;
+            margin-top: 40px;
+            margin-left: 130px;
+            border-radius: 50%;
+
+        }
+
+        .ddCircleText {
+            width: 160px;
+            height: 30px;
+            /* border: 3px solid red; */
+            font-size: 13px;
+            margin-top: 180px;
+            margin-left: -5px;
+            text-align: center;
+            font-weight: 700;
+            line-height: 20px;
+        }
+
+        /* ===WHAT WE ARE DOING=== */
+
+        .doingMain {
+            width: 100%;
+            height: 520px;
+            /* border: 1px solid red; */
+
+
+        }
+
+        .doingLeftBox {
+
+            width: 630px;
+            height: 520px;
+            /* border: 1px solid blue; */
+            float: left;
+            background-image: url(./Images/img2.jpg);
+            background-size: cover;
+            background-size: 115%;
+            background-position: 50%;
+
+
+
+
+        }
+
+        .doingLeftBoxOpacity {
+            width: 410px;
+            height: 360px;
+            /* border: 2px solid blue; */
+            margin-left: 105px;
+            margin-top: 85px;
+            background-color: #424347;
+            opacity: 0.5;
+            padding: 1px;
+            box-sizing: border-box;
+
+
+        }
+
+
+
+        .doingIcon {
+            width: 60px;
+            height: 60px;
+
+            border: 0.5px solid white;
+            margin-left: 180px;
+            margin-top: 40px;
+
+        }
+
+        .doingHeaderOpacity {
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+
+
+
+
+        }
+
+
+
+        .doingParaOpacity {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 25px;
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+
+
+        }
+
+
+        .doingButton {
+            width: 130px;
+            height: 45px;
+            border: 1px solid white;
+            background-color: transparent;
+            color: white;
+            font-weight: 700;
+            margin-left: 133px;
+            margin-top: 20px;
+
+
+        }
+
+        .doingRightBox {
+            width: 620px;
+            height: 520px;
+            margin-left: 7px;
+            /* border: 1px solid yellowgreen; */
+            float: left;
+            padding: 1px;
+            box-sizing: border-box;
+
+        }
+
+        .doingRightHeader {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 22px;
+            margin-top: 60px;
+            margin-left: 45px;
+
+
+
+
+        }
+
+
+        .doingRightLine {
+            width: 50px;
+            height: 2px;
+            background-color: grey;
+            margin-left: 46px;
+            margin-top: 25px;
+        }
+
+
+        .doingRightBoxes {
+            width: 170px;
+            height: 165px;
+            /* border: 1px solid red; */
+            float: left;
+            margin-left: 25px;
+            margin-top: 25px;
+            padding: 1px;
+            box-sizing: border-box;
+
+        }
+
+
+        .doingRightIcon {
+            width: 40px;
+            height: 40px;
+            border: 1px solid black;
+            margin-top: 20px;
+            margin-left: 20px;
+
+
+        }
+
+        .doingRightHeaderBox {
+            font-size: 12px;
+            font-weight: 700;
+            color: grey;
+            margin-left: 20px;
+            margin-top: 20px;
+
+        }
+
+        .doingRightParaBox {
+            font-size: 12px;
+            color: #424347;
+            margin-left: 20px;
+            margin-top: 10px;
+
+
+        }
+
+
+
+        /* ===MORE GRIDGUM FEATURES=== */
+
+        .gridgumMain {
+            width: 100%;
+            height: 900px;
+            /* border: 1px solid red; */
+            /* margin-left: 10px; */
+
+
+        }
+
+        .gridgumHeader {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 22px;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+
+        .gridgumLine {
+            width: 50px;
+            height: 2px;
+            background-color: grey;
+            margin-left: 600px;
+            margin-top: 25px
+        }
+
+        .gridgumPara {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 31.6667px;
+            color: rgb(119, 119, 119);
+            text-align: center;
+            margin-top: 20px;
+
+
+        }
+
+        .gridgumMobMain {
+            width: 100%;
+            height: 650px;
+            /* border: 1px solid yellowgreen; */
+            margin-top: 50px;
+
+        }
+
+        .gridgumBoxChild-A {
+            width: 430px;
+            height: 645px;
+            /* border: 2px solid purple; */
+            float: left;
+
+        }
+
+        .gridgum3boxes {
+            width: 400px;
+            height: 180px;
+            /* border: 1px solid red; */
+            margin-left: 30px;
+            margin-top: 25px;
+
+        }
+
+        .gridgumicon {
+
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+            margin-left: 353px;
+            margin-top: 15px;
+
+
+        }
+
+        .gridgumheaderbox {
+            font-size: 12px;
+            font-weight: 400;
+            list-height: 20px;
+            color: rgb(110, 110, 111);
+            text-align: right;
+            position: relative;
+            right: 15px;
+            top: 20px;
+
+
+
+        }
+
+        .gridgumParaBox {
+            position: relative;
+            right: 15px;
+            top: 30px;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24.7px;
+            color: rgb(153, 153, 153);
+            text-align: right;
+        }
+
+
+
+        .gridgumBoxChild-B {
+            width: 375px;
+            height: 645px;
+            /* border: 2px solid purple; */
+            float: left;
+
+        }
+
+        .gridgumMobilePic-B {
+            margin-left: 15px;
+
+        }
+
+
+
+        .gridgum3boxesA {
+            width: 400px;
+            height: 180px;
+            /* border: 1px solid red; */
+            margin-left: 5px;
+            margin-top: 25px;
+
+        }
+
+        .gridgumiconA {
+
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+            margin-left: 15px;
+            margin-top: 15px;
+
+
+        }
+
+        .gridgumheaderboxA {
+            font-size: 12px;
+            font-weight: 400;
+            list-height: 20px;
+            color: rgb(110, 110, 111);
+            margin-left: 15px;
+            margin-top: 20px;
+
+
+
+
+
+
+        }
+
+        .gridgumParaBoxA {
+            margin-left: 15px;
+            margin-top: 10px;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24.7px;
+            color: rgb(153, 153, 153);
+
+        }
+
+        /* ===Counter=== */
+
+
+        .countingMain {
+            width: 100%;
+            height: 350px;
+            /* border: 2px solid red; */
+            background-image: url(./Images/parallax1.jpg);
+
+
+
+        }
+
+        .countChild {
+            width: 160px;
+            height: 160px;
+            /* border: 1px solid red; */
+            float: left;
+            margin-top: 100px;
+            margin-left: 120px;
+
+
+
+
+        }
+
+        .countIcon {
+            width: 40px;
+            height: 40px;
+            border: 1px solid white;
+            margin-left: 60px;
+            margin-top: 10px;
+
+        }
+
+        .countHead {
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .countPara {
+            color: white;
+            text-align: center;
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 18.3333px;
+            margin-top: 20px;
+
+        }
+
+        /* ===Create Diff=== */
+
+        .createMain {
+            width: 100%;
+            height: 260px;
+            /* border: 2px solid black; */
+        }
+
+        .createHead {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 22px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .createLine {
+            width: 50px;
+            height: 2px;
+            background-color: grey;
+            margin-left: 600px;
+            margin-top: 25px
+        }
+
+        .createPara {
+            text-align: center;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 31.6667px;
+            color: rgb(119, 119, 119);
+            margin-top: 20px;
+        }
+
+        /* ===createPic=== */
+
+        .createPicMain {
+            width: 100%;
+            height: 750px;
+            /* border: 1px solid red; */
+        }
+
+        .createPicStyle {
+            margin-left: 70px;
+            margin-top: 40px;
+
+
+        }
+
+        /* ===Table=== */
+        .tableMain {
+            width: 100%;
+            height: 400px;
+
+
+
+
+        }
+
+        /* ===Table 1=== */
+
+
+        .tableHead {
+            text-align: center;
+            margin-top: 100px;
+
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 22px;
+
+
+        }
+
+        .tableLine {
+            width: 50px;
+            height: 2px;
+            background-color: grey;
+            margin-left: 600px;
+            margin-top: 25px;
+            padding: 1px;
+            box-sizing: border-box;
+
+        }
+
+        .tableLeft,
+        td,
+        th,
+        .abc {
+
+
+            text-align: center;
+            margin-left: 60px;
+            margin-top: 60px;
+            width: 560px;
+            border: .2px solid black;
+            border-collapse: collapse;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22.8571px;
+            color: rgb(153, 153, 153);
+
+
+        }
+
+        th {
+            color: black;
+            font-weight: 700;
+
+
+        }
+
+        .abc {
+            position: relative;
+            text-align: left;
+            left: 5px;
+
+        }
+
+        /* ===Table 2=== */
+        .tableRight,
+        .tableRightData,
+        .tableRightHead {
+
+
+            text-align: center;
+            width: 560px;
+            border: .2px solid black;
+            border-collapse: collapse;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22.8571px;
+            color: rgb(153, 153, 153);
+            margin-left: 650px;
+            margin-top: -118px;
+
+
+        }
+
+        .tableRightDataabc {
+            position: relative;
+            text-align: left;
+            left: 5px;
+
+        }
+
+        .tableRightHead {
+            color: black;
+            font-weight: 700;
+
+
+        }
+
+        /* ===Table End=== */
+
+        /* ===standard, premium, unlimited===  */
+
+        .spuMain {
+            width: 100%;
+            height: 650px;
+            /* border: 2px solid red; */
+            margin-top: -120px;
+
+        }
+
+        .spuBox {
+            width: 360px;
+            height: 550px;
+            border: 0.5px solid grey;
+            float: left;
+            margin-top: 50px;
+            margin-left: 45px;
+
+
+        }
+
+        .spuBoxHeader {
+            font-size: 18px;
+            color: black;
+            font-weight: 400;
+            text-align: center;
+            margin-top: 30px;
+
+        }
+
+        .spuCircle {
+            width: 120px;
+            height: 120px;
+            border: 0.5px solid rgb(200, 200, 200);
+            margin-left: 118px;
+            margin-top: 30px;
+            border-radius: 50%;
+
+        }
+
+        .spuCirclePrice {
+            margin-left: 31px;
+            margin-top: 35px;
+            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .spuDollar {
+            font-size: 24px;
+            color: black;
+
+        }
+
+        .spuCircleTxt {
+            font-size: 13px;
+            text-align: center;
+            margin-top: 5px;
+            color: gray;
+        }
+
+        .spuList {
+            font-size: 14px;
+            color: grey;
+            text-align: center;
+            margin-top: 35px;
+
+
+        }
+
+        .spuButton {
+            width: 200px;
+            height: 50px;
+            border: 1px solid black;
+            background: transparent;
+            margin-left: 80px;
+            margin-top: 50px;
+            font-size: 12px;
+            font-weight: 400;
+
+        }
+
+        /* ===Mock Up=== */
+
+        .mockMain {
+            width: 100%;
+            height: 250px;
+            /* border: 1px solid red; */
+
+        }
+
+        .mockHeader {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 22px;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .mockLine {
+            width: 50px;
+            height: 2px;
+            background-color: grey;
+            margin-left: 600px;
+            margin-top: 25px;
+            padding: 1px;
+            box-sizing: border-box;
+
+        }
+
+        .mockPara {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 31.6667px;
+            text-align: center;
+            margin-top: 30px;
+            color: grey
+        }
+
+        .mockTxtBox {
+            width: 100%;
+            height: 435px;
+            /* border: 1px solid red; */
+            margin-top: -100px;
+
+        }
+
+        .mockbox {
+            width: 315px;
+            height: 215px;
+            /* border: 1px solid red; */
+            float: left;
+
+        }
+
+        .mockImage {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .mockPara1 {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 26.6667px;
+            color: rgb(20, 20, 20);
+            margin-left: 30px;
+            margin-top: 18px;
+
+
+        }
+
+        .mockHead1 {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 33.3333px;
+            color: rgb(20, 20, 20);
+            margin-left: 30px;
+            margin-top: 5px;
+        }
+
+
+        .mockPara2 {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 16.9px;
+            color: rgb(111, 111, 111);
+            margin-left: 30px;
+            margin-top: 7px;
+
+
+        }
+
+        .mockPara3 {
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 20px;
+            color: rgb(111, 111, 111);
+            margin-left: 30px;
+            margin-top: 10px;
+
+
+        }
+
+        /* ===Footer=== */
+
+        .slide {
+            width: 100%;
+            height: 220px;
+            /* border: 1px solid red; */
+
+        }
+
+        .slideIcon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 1px solid black;
+            margin-left: 600px;
+            margin-top: 40px;
+
+        }
+
+        .slideHead {
+            margin-top: 20px;
+            text-align: center;
+            line-height: 22px;
+            color: grey;
+        }
+
+        .footMain {
+            width: 100%;
+            height: 370px;
+            background-color: black;
+            margin-top: -40px;
+
+        }
+
+        .footLogoPic {
+            margin-left: 60px;
+            margin-top: 80px;
+        }
+
+        .foottxt1 {
+            margin-left: 60px;
+            margin-top: 20px;
+            width: 266px;
+            height: 128px;
+            /* border: 1px solid white; */
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 25px;
+            color: rgb(153, 153, 153);
+
+        }
+
+        .footbox1 {
+            position: relative;
+            left: 55px;
+            top: 35px;
+            margin-left: 5px;
+            width: 40px;
+            height: 40px;
+            border: 1px solid white;
+            float: left;
+
+        }
+
+        .footMenu {
+            width: 200px;
+            height: 250px;
+            /* border: 1px solid white; */
+            color: white;
+            list-style: none;
+            margin-left: 390px;
+            margin-top: -190px;
+
+
+        }
+
+        .footLiMain {
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 21.6667px;
+            color: rgb(255, 255, 255);
+            letter-spacing: 4px;
+
+        }
+
+        .footLi {
+            position: relative;
+            top: 40px;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 25px;
+            color: rgb(153, 153, 153);
+        }
+
+
+        .footMenuPOP {
+            width: 250px;
+            height: 250px;
+            /* border: 1px solid white; */
+            color: white;
+            list-style: none;
+            margin-left: 950px;
+            margin-top: -250px;
+
+
+        }
+
+        .footLiMainPOP {
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 21.6667px;
+            color: rgb(255, 255, 255);
+            letter-spacing: 4px;
+
+        }
+
+        .footLiPOP {
+            position: relative;
+            top: 40px;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 25px;
+            color: rgb(153, 153, 153);
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+
+    <!-- ===Main Image=== -->
+    <div class="mainImage">
+
+
+        <!-- ===Nav Bar=== -->
+
+        <div class="navMain">
+            <div class="navLogo">
+                <img data-aos="zoom-out" class="navLogoStyle" src="./Images/logo.png" alt="">
+            </div>
+
+            <ul class="navListMain">
+                <li data-aos="zoom-out" class="navList">HOME</li>
+                <li data-aos="zoom-out" class="navList">ABOUT US</li>
+                <li data-aos="zoom-out" class="navList">SERVICES</li>
+                <li data-aos="zoom-out" class="navList">SECTIONS</li>
+                <li data-aos="zoom-out" class="navList">GALLERY</li>
+                <li data-aos="zoom-out" class="navList">BLOG</li>
+                <li data-aos="zoom-out" class="navList">CONTACTS</li>
+            </ul>
+        </div>
+
+        <!-- ===Slider=== -->
+
+        <div class="titleMainSlider">
+            <h1 data-aos="fade-down" class="titleMainHeader">Trust To Our Experience</h1>
+            <p data-aos="fade-down" class="titleMainPara">YourDomain.com Minimalistic, Beautiful Bootstrap & Wordpress
+                Responsive Templates
+            </p>
+
+            <button data-aos="fade-right" class="titleButton">Learn More</button>
+            <button data-aos="fade-left" class="titleButton">Buy Theme</button>
+
+        </div>
+
+
+
+    </div>
+
+    <!-- ===Welcome 3 Boxes=== -->
+
+    <div class="w3bMain">
+        <h1 data-aos="flip-up" class="w3bHeader">HELLO, WELCOME TO GRIDGUM</h1>
+        <div class="w3bLine"></div>
+
+        <div class="w3bParent">
+            <div data-aos="flip-left" class="w3bChild">
+                <div class="w3bChildCircle"></div>
+                <h5 class="w3bChildHeader">FULLY RESPONSIVE</h5>
+                <div class="w3bChildLine"></div>
+                <p class="w3bChildPara">Lorem ipsum dolor sit amet concateur un ricko La trube traviata non troppo
+                    bootstrap responsive themes. website design website templates.</p>
+                <button class="w3bChildButton">Learn More</button>
+
+
+
+            </div>
+            <div data-aos="flip-up" class="w3bChild">
+                <div class="w3bChildCircle"></div>
+                <h5 class="w3bChildHeader">FRIENDLY SUPPORT</h5>
+                <div class="w3bChildLine"></div>
+                <p class="w3bChildPara">Lorem ipsum dolor sit amet concateur un ricko La trube traviata non troppo
+                    bootstrap responsive themes. website design website templates.</p>
+                <button class="w3bChildButton">Learn More</button>
+            </div>
+            <div data-aos="flip-right" class="w3bChild">
+                <div class="w3bChildCircle"></div>
+                <h5 class="w3bChildHeader">RETINA DISPLAY</h5>
+                <div class="w3bChildLine"></div>
+                <p class="w3bChildPara">Lorem ipsum dolor sit amet concateur un ricko La trube traviata non troppo
+                    bootstrap responsive themes. website design website templates.</p>
+                <button class="w3bChildButton">Learn More</button>
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+    <!-- ===3 Laptop Pic=== -->
+
+    <div class="laptopPicture">
+        <img data-aos="fade-down" class="laptopImage" src="./Images/macs.png" alt="">
+    </div>
+
+    <!-- ===Services=== -->
+    <div class="servicesMain">
+        <h1 data-aos="fade-down" class="servicesHeader">OUR SERVICE</h1>
+        <div data-aos="fade-down" class="serviceLine"></div>
+        <div data-aos="fade-down" class="servicePara">Lorem ipsum dolor sit amet, concateur un prado mio. Alcatra
+            sanseteur un prado</div>
+    </div>
+
+    <div class="serviceBoxMain">
+        <div class="serviceBoxLeft">
+            <div data-aos="flip-left" class="serviceBoxLeftInfo">
+                <div class="serviceLeftIcon"></div>
+                <h1 class="serviceLeftHeader">WEB DESIGN</h1>
+                <div class="serviceBoxLine"></div>
+                <p class="serviceLeftPara">Lorem ipsum dolor sit amet, website<br> bootstrap responsive template,
+                    web<br>
+                    design, graphic design photoshop,<br>illustrator and mock-up.</p>
+
+
+            </div>
+            <div data-aos="flip-right" class="serviceBoxLeftInfo">
+                <div class="serviceLeftIcon"></div>
+                <h1 class="serviceLeftHeader">MOCK-UP DESIGN</h1>
+                <div class="serviceBoxLine"></div>
+                <p class="serviceLeftPara">Lorem ipsum dolor sit amet, website<br> bootstrap responsive template,
+                    web<br>
+                    design, graphic design photoshop,<br>illustrator and mock-up.</p>
+            </div>
+            <div data-aos="flip-left" class="serviceBoxLeftInfo">
+
+                <div class="serviceLeftIcon"></div>
+                <h1 class="serviceLeftHeader">WEB DEVELOPMENT</h1>
+                <div class="serviceBoxLine"></div>
+                <p class="serviceLeftPara">Lorem ipsum dolor sit amet, website<br> bootstrap responsive template,
+                    web<br>
+                    design, graphic design photoshop,<br>illustrator and mock-up.</p>
+
+
+
+
+            </div>
+            <div data-aos="flip-right" class=" serviceBoxLeftInfo">
+                <div class="serviceLeftIcon"></div>
+                <h1 class="serviceLeftHeader">MOBILE APPLICATION</h1>
+                <div class="serviceBoxLine"></div>
+                <p class="serviceLeftPara">Lorem ipsum dolor sit amet, website<br> bootstrap responsive template,
+                    web<br>
+                    design, graphic design photoshop,<br>illustrator and mock-up.</p>
+            </div>
+
+        </div>
+        <div data-aos="flip-left" class="serviceBoxRight">
+            <img class="servicePicRight" src="./Images/img1.jpg" alt="">
+        </div>
+
+    </div>
+
+    <!-- ===Design Department=== -->
+
+    <div class="ddMain">
+        <h1 data-aos="fade-down" class="ddHeader">DESIGN DEPARTMENT</h1>
+        <div class="ddLine"></div>
+        <div data-aos="fade-right" class="ddCircle">
+            <p class="ddCircleText">ADOBE PHOTOSHOP</p>
+
+        </div>
+        <div data-aos="fade-up" class="ddCircle">
+            <p class="ddCircleText">GRAPHIC DESIGN</p>
+        </div>
+        <div data-aos="fade-down" class="ddCircle">
+            <p class="ddCircleText">WEB DEVELOPMENT</p>
+        </div>
+        <div data-aos="fade-left" class="ddCircle">
+            <p class="ddCircleText">SOCIAL NEWORKING</p>
+        </div>
+
+    </div>
+    <!-- ===WHAT WE ARE DOING=== -->
+
+    <div class="doingMain">
+        <div data-aos="flip-right" class="doingLeftBox">
+
+
+
+            <div class="doingLeftBoxOpacity">
+
+                <!-- ===opacity Box=== -->
+                <div class="doingIcon"></div>
+                <h5 class="doingHeaderOpacity">WEB DESIGN</h5>
+
+                <p class="doingParaOpacity">Lorem ipsum dolor sit amet, concateur un<br> troppo lento, Alardo un pio
+                    secondo,
+                    molto<br> brave di taro. Unprive simavare lareo drago<br> aprave mio da la costa. Diego brave
+                    malkutto.
+                </p>
+                <button class="doingButton">Learn More</button>
+            </div>
+
+        </div>
+        <div class="doingRightBox">
+            <h1 data-aos="fade-down" class="doingRightHeader">WHAT WE ARE DOING</h1>
+
+            <div class="doingRightLine"></div>
+            <div data-aos="flip-right" class="doingRightBoxes">
+                <div class="doingRightIcon"></div>
+                <p class="doingRightHeaderBox">APPLICATIONS</p>
+                <p class="doingRightParaBox">Mobile Applications</p>
+
+
+
+            </div>
+            <div data-aos="flip-up" class="doingRightBoxes">
+                <div class="doingRightIcon"></div>
+                <p class="doingRightHeaderBox">WEB DESIGN</p>
+                <p class="doingRightParaBox">Unique Graphic Design</p>
+
+
+            </div>
+            <div data-aos="flip-right" class="doingRightBoxes">
+                <div class="doingRightIcon"></div>
+                <p class="doingRightHeaderBox">DEVELOPMENT</p>
+                <p class="doingRightParaBox">Web Development</p>
+
+
+
+
+            </div>
+            <div data-aos="flip-up" class="doingRightBoxes">
+                <div class="doingRightIcon"></div>
+                <p class="doingRightHeaderBox">PROGRAMMING</p>
+                <p class="doingRightParaBox">Java & PHP Programming</p>
+
+            </div>
+            <div data-aos="flip-down" class="doingRightBoxes">
+                <div class="doingRightIcon"></div>
+                <p class="doingRightHeaderBox">CLOUD HOSTING</p>
+                <p class="doingRightParaBox">Secure Cloud Hosting</p>
+
+
+            </div>
+            <div data-aos="flip-right" class="doingRightBoxes">
+                <div class="doingRightIcon"></div>
+                <p class="doingRightHeaderBox">24/7 SUPPORT</p>
+                <p class="doingRightParaBox">Fast & Friendly Team</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ===MORE GRIDGUM FEATURES=== -->
+
+    <div class="gridgumMain">
+        <h1 data-aos="fade-down" class="gridgumHeader">MORE GRIDGUM FEATURES</h1>
+        <div class="gridgumLine"></div>
+
+        <p data-aos="fade-down" class="gridgumPara">Lorem ipsum dolor sit amet, concateur un prado mio. Alcatra
+            sanseteur un prado</p>
+
+        <div class="gridgumMobMain">
+            <div class="gridgumBoxChild-A">
+                <div data-aos="flip-left" class="gridgum3boxes">
+
+
+                    <div class="gridgumicon"></div>
+                    <p class="gridgumheaderbox">MOBILE APPLICATION</p>
+
+                    <p class="gridgumParaBox">Lorem ipsum dolor sit amet, concateur un<br> prado mio. Alcatra sanseteur
+                        un
+                        prado</p>
+
+                </div>
+                <div data-aos="flip-up" class="gridgum3boxes">
+                    <div class="gridgumicon"></div>
+                    <p class="gridgumheaderbox">UNLIMITED HOSTING</p>
+
+                    <p class="gridgumParaBox">Lorem ipsum dolor sit amet, concateur un<br> prado mio. Alcatra sanseteur
+                        un
+                        prado</p>
+
+
+                </div>
+                <div data-aos="flip-down" class="gridgum3boxes">
+                    <div class="gridgumicon"></div>
+                    <p class="gridgumheaderbox">JOOMLA TEMPLATES</p>
+
+                    <p class="gridgumParaBox">Lorem ipsum dolor sit amet, concateur un<br> prado mio. Alcatra sanseteur
+                        un
+                        prado</p>
+
+
+                </div>
+
+
+
+
+
+            </div>
+            <div class="gridgumBoxChild-B">
+                <img data-aos="zoom-out" class="gridgumMobilePic-B" src="./Images/iphone.png" alt="" srcset="">
+
+            </div>
+
+
+            <div class="gridgumBoxChild-A">
+                <div data-aos="flip-right" class="gridgum3boxesA">
+
+
+                    <div class="gridgumiconA"></div>
+                    <p class="gridgumheaderboxA">WORDPRESS THEMES</p>
+
+                    <p class="gridgumParaBoxA">Lorem ipsum dolor sit amet, concateur un<br> prado mio. Alcatra sanseteur
+                        un
+                        prado</p>
+
+
+
+                </div>
+                <div data-aos="flip-up" class="gridgum3boxesA">
+                    <div class="gridgumiconA"></div>
+                    <p class="gridgumheaderboxA">EASY TO INSTALL</p>
+
+                    <p class="gridgumParaBoxA">Lorem ipsum dolor sit amet, concateur un<br> prado mio. Alcatra sanseteur
+                        un
+                        prado</p>
+
+
+                </div>
+                <div data-aos="flip-down" class="gridgum3boxesA">
+                    <div class="gridgumiconA"></div>
+                    <p class="gridgumheaderboxA">DEDICATED SERVERS</p>
+
+                    <p class="gridgumParaBoxA">Lorem ipsum dolor sit amet, concateur un<br> prado mio. Alcatra sanseteur
+                        un
+                        prado</p>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ===Counter=== -->
+
+
+        <div class="countingMain">
+            <div data-aos="fade-right" class="countChild">
+                <div class="countIcon"></div>
+                <h1 class="countHead">1478</h1>
+                <p class="countPara">PROJECT CREATED</p>
+
+            </div>
+            <div data-aos="fade-up" class="countChild">
+                <div class="countIcon"></div>
+                <h1 class="countHead">1589</h1>
+                <p class="countPara">NEWEST TECHNOLOGY</p>
+
+            </div>
+            <div data-aos="fade-down" class="countChild">
+                <div class="countIcon"></div>
+                <h1 class="countHead">450</h1>
+                <p class="countPara">AWARDS</p>
+            </div>
+            <div data-aos="fade-left" class="countChild">
+                <div class="countIcon"></div>
+                <h1 class="countHead">3521</h1>
+                <p class="countPara">DOWNLOADS</p>
+            </div>
+
+        </div>
+
+        <!-- ===Create Diff=== -->
+        <div class="createMain">
+            <h1 data-aos="fade-down" class="createHead">WE ALWAYS TRY TO CREATE A DIFFERENCE</h1>
+            <div class="createLine"></div>
+            <p data-aos="fade-down" class="createPara">
+                Lorem ipsum dolor sit amet, concateur un prado mio. Alcatra sanseteur un prado, del maro aprave<br>
+                Lorem ipsum dolor sit amet, concateur un prado mio. Alcatra sanseteur un prado trieste<br>
+                san doro poro liprave sutaretto amare.
+            </p>
+
+        </div>
+
+        <!-- ===createPic=== -->
+        <div data-aos="zoom-in" class="createPicMain">
+            <img class="createPicStyle" src="./Images/screen.png" alt="">
+
+
+        </div>
+
+        <!-- ===Table=== -->
+
+        <div class="tableMain">
+
+            <h1 data-aos="fade-down" class="tableHead">PRODUCTS PRICELIST</h1>
+            <div class="tableLine"></div>
+
+            <!-- ===Table 1=== -->
+
+
+            <table data-aos="fade-right" class="tableLeft">
+                <th>#</th>
+                <th>TYPE OF TEMPLATE</th>
+                <th>USD</th>
+                <th>DEVICES</th>
+                <tr>
+                    <td>1.</td>
+                    <td class="abc">HTML5 Template</td>
+                    <td>19</td>
+                    <td>Not Responsive</td>
+                </tr>
+
+                <tr>
+                    <td>2.</td>
+                    <td class="abc">Wordpress Templates</td>
+                    <td>45</td>
+                    <td>Responsive</td>
+                </tr>
+
+                <tr>
+                    <td>3.</td>
+                    <td class="abc">Joomla Template</td>
+                    <td>42</td>
+                    <td>Responsive</td>
+                </tr>
+
+                <tr>
+                    <td>4.</td>
+                    <td class="abc">osCommerce Template</td>
+                    <td>35</td>
+                    <td>Not Responsive</td>
+                </tr>
+
+            </table>
+
+            <!-- ===Table 2=== -->
+            <table data-aos="fade-left" class="tableRight">
+                <th class="tableRightHead">#</th>
+                <th class="tableRightHead">TYPE OF TEMPLATE</th>
+                <th class="tableRightHead">USD</th>
+                <th class="tableRightHead">DEVICES</th>
+                <tr class="tableRightRow">
+
+                    <td class="tableRightData">5.</td>
+                    <td class="tableRightDataabc">OpenCart Template</td>
+                    <td class="tableRightData">55</td>
+                    <td class="tableRightData">Responsive</td>
+                </tr>
+                <tr class="tableRightRow">
+
+                    <td class="tableRightData">6.</td>
+                    <td class="tableRightDataabc">Bootstrap Template</td>
+                    <td class="tableRightData">17</td>
+                    <td class="tableRightData">Responsive</td>
+                </tr>
+
+                <tr class="tableRightRow">
+
+                    <td class="tableRightData">7.</td>
+                    <td class="tableRightDataabc">PowerPoint Template</td>
+                    <td class="tableRightData">12</td>
+                    <td class="tableRightData">Responsive</td>
+                </tr>
+                <tr class="tableRightRow">
+
+                    <td class="tableRightData">8.</td>
+                    <td class="tableRightDataabc">Unique Web Design</td>
+                    <td class="tableRightData">350</td>
+                    <td class="tableRightData">Responsive</td>
+                </tr>
+            </table>
+
+
+        </div>
+        <!-- ===Table End=== -->
+
+        <!-- ===standard, premium, unlimited=== -->
+
+        <div class="spuMain">
+            <div data-aos="flip-left" class="spuBox">
+                <h1 class="spuBoxHeader">STANDARD</h1>
+                <div class="spuCircle">
+                    <h1 class="spuCirclePrice"><span class="spuDollar">$</span>19
+                    </h1>
+                    <p class="spuCircleTxt">Monthly</p>
+
+
+
+                </div>
+                <p class="spuList">1 Domain Allowed</p>
+                <p class="spuList">1000 MB Disk Space</p>
+                <p class="spuList">5 Email Accounts</p>
+                <p class="spuList">20 GB
+                    Bandwidth</p>
+
+                <button class="spuButton">PURCHASE NOW</button>
+
+            </div>
+            <div data-aos="flip-up" class="spuBox">
+                <h1 class="spuBoxHeader">PREMIUM</h1>
+                <div class="spuCircle">
+                    <h1 class="spuCirclePrice"><span class="spuDollar">$</span>39
+                    </h1>
+                    <p class="spuCircleTxt">Monthly</p>
+
+
+
+                </div>
+                <p class="spuList">10 Domain Allowed</p>
+                <p class="spuList">2000 MB Disk Space</p>
+                <p class="spuList">20 Email Accounts</p>
+                <p class="spuList">120 GB
+                    Bandwidth</p>
+
+                <button class="spuButton">PURCHASE NOW</button>
+
+
+
+            </div>
+            <div data-aos="flip-right" class="spuBox">
+                <h1 class="spuBoxHeader">UNLIMITED</h1>
+                <div class="spuCircle">
+                    <h1 class="spuCirclePrice"><span class="spuDollar">$</span>59
+                    </h1>
+                    <p class="spuCircleTxt">Monthly</p>
+
+
+
+                </div>
+                <p class="spuList">Unlimited Domain Allowed</p>
+                <p class="spuList">Unlimited Disk Space</p>
+                <p class="spuList">Unlimited Email Accounts</p>
+                <p class="spuList">150 GB
+                    Bandwidth</p>
+
+                <button class="spuButton">PURCHASE NOW</button>
+
+
+
+            </div>
+        </div>
+
+        <!-- ===Mock Up=== -->
+        <div class="mockMain">
+            <h1 data-aos="flip-down" class="mockHeader">MOCK-UP DESIGN PORTFOLIO</h1>
+            <div class="mockLine"></div>
+            <p data-aos="flip-up" class="mockPara">Lorem ipsum dolor sit amet, concateur un prado mio. Alcatra
+                sanseteur un prado</p>
+
+        </div>
+
+        <div class="mockTxtBox">
+            <div data-aos="flip-left" class="mockbox">
+                <img class="mockImage" src="./Images/gal1.jpg" alt="">
+
+            </div>
+            <div data-aos="flip-right" class="mockbox">
+                <p class="mockPara1">Mock-up Design</p>
+                <h1 class="mockHead1">Lorem Ipsum</h1>
+                <p class="mockPara2">Lacrimosa ter mondi prado. Sanctus benedictus oprave Atlantis mis lorem<br> ipsum
+                    dolor
+                    sit amet amigos mio, oprave criticos imdolus andus specandus.</p>
+                <p class="mockPara3">LEARN MORE</p>
+
+
+            </div>
+            <div data-aos="flip-up" class="mockbox">
+                <img class="mockImage" src="./Images/gal2.jpg" alt="">
+            </div>
+            <div data-aos="flip-left" class="mockbox">
+                <p class="mockPara1">Mock-up Design</p>
+                <h1 class="mockHead1">Lorem Ipsum</h1>
+                <p class="mockPara2">Lacrimosa ter mondi prado. Sanctus benedictus oprave Atlantis mis lorem<br> ipsum
+                    dolor
+                    sit amet amigos mio, oprave criticos imdolus andus specandus.</p>
+                <p class="mockPara3">LEARN MORE</p>
+
+
+            </div>
+            <div data-aos="flip-left" class="mockbox">
+                <p class="mockPara1">Mock-up Design</p>
+                <h1 class="mockHead1">Lorem Ipsum</h1>
+                <p class="mockPara2">Lacrimosa ter mondi prado. Sanctus benedictus oprave Atlantis mis lorem<br> ipsum
+                    dolor
+                    sit amet amigos mio, oprave criticos imdolus andus specandus.</p>
+                <p class="mockPara3">LEARN MORE</p>
+
+            </div>
+            <div data-aos="flip-right" class="mockbox">
+                <img class="mockImage" src="./Images/gal4.jpg" alt="">
+            </div>
+            <div data-aos="flip-up" class="mockbox">
+                <p class="mockPara1">Mock-up Design</p>
+                <h1 class="mockHead1">Lorem Ipsum</h1>
+                <p class="mockPara2">Lacrimosa ter mondi prado. Sanctus benedictus oprave Atlantis mis lorem<br> ipsum
+                    dolor
+                    sit amet amigos mio, oprave criticos imdolus andus specandus.</p>
+                <p class="mockPara3">LEARN MORE</p>
+            </div>
+            <div data-aos="flip-down" class="mockbox">
+                <img class="mockImage" src="./Images/gal3.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="slide">
+            <div data-aos="flip-down" class="slideIcon">
+
+            </div>
+            <p data-aos="flip-down" class="slideHead">Lacrimosa ter mondi prado. Sanctus benedictus oprave Atlantis
+                mis<br> lorem
+                ipsum dolor sit amet amigos mio, oprave criticos imdolus<br> andus specandus.</p>
+        </div>
+
+        <!-- ===Footer=== -->
+        <div class="footMain">
+            <div class="footLogo">
+                <img class="footLogoPic" src="./Images/logo.png" alt="">
+
+            </div>
+            <p class="foottxt1">Lorem ipsum dolor site amet concateur un prado cargo, lorem ipsum dolor site amet
+                concateur un prado cargo. All bravo versache un tiro balensiaga. Bootstrap templates website rresponsive
+                themes.</p>
+            <div class="footbox1"></div>
+            <div class="footbox1"></div>
+            <div class="footbox1"></div>
+            <div class="footbox1"></div>
+            <div class="footbox1"></div>
+
+            <ul class="footMenu">
+                <li class="footLiMain">FOOTER MENU</li>
+                <li class="footLi">Terms & Conditions</li>
+                <li class="footLi">About us</li>
+                <li class="footLi">Online Support</li>
+                <li class="footLi">Our Blog</li>
+                <li class="footLi">Product Gallery</li>
+                <li class="footLi">Contact us</li>
+
+            </ul>
+
+            <ul class="footMenuPOP">
+                <li class="footLiMainPOP">POPULAR PRODUCTS</li>
+                <li class="footLiPOP">Bootstrap responsive themes</li>
+                <li class="footLiPOP">Black label Mock-up</li>
+                <li class="footLiPOP">HTML5 templates</li>
+                <li class="footLiPOP">Wordpress themes</li>
+                <li class="footLiPOP">Joomla responsive templates</li>
+                <li class="footLiPOP">Ecommerce templates</li>
+
+            </ul>
+
+
+        </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+</body>
+
+</html>

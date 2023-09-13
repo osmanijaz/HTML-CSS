@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+
+        }
+
+
+        .pics {
+            width: 49px;
+            height: 49px;
+            /* border: 1px solid grey; */
+            border-radius: 50px;
+            background-image: url(./Images/a.jpg);
+            background-position: center;
+            background-size: cover;
+            display: inline-block;
+        }
+
+        .pic2 {
+            background-image: url(./Images/b.jpg);
+
+        }
+
+        .pic3 {
+            background-image: url(./Images/c.jpg);
+
+        }
+
+        .pic4 {
+            background-image: url(./Images/d.jpg);
+
+        }
+
+        .pic5 {
+            background-image: url(./Images/e.jpg);
+
+        }
+
+
+        .pic6 {
+            background-image: url(./Images/f.jpg);
+
+        }
+
+        .pic7 {
+            background-image: url(./Images/g.jpg);
+
+        }
+
+        .pic8 {
+            background-image: url(./Images/h.jpg);
+
+        }
+
+        .pic9 {
+            background-image: url(./Images/i.jpg);
+
+        }
+
+        .pic10 {
+            background-image: url(./Images/j.jpg);
+
+        }
+
+        .pic11 {
+            background-image: url(./Images/k.jpg);
+
+        }
+
+        .pic12 {
+            background-image: url(./Images/l.jpg);
+
+        }
+
+        .header {
+
+            padding: 5%;
+            font-size: 3vmax;
+            text-align: center;
+
+        }
+
+        .container-parent {
+            width: 100%;
+            height: max-content;
+            background-color: #1B1F25;
+            /* border: 2px solid red; */
+
+
+        }
+
+        .container-child {
+            width: 98%;
+            height: max-content;
+            margin: auto;
+            /* border: 2px solid rgb(9, 212, 66); */
+        }
+
+
+        .box {
+            /* width: 30%; */
+            width: 377px;
+            ***************************
+            /* width: max-content; */
+            /* ***(max content this one for media query)*** */
+            *************************** margin-top: 3%;
+            margin-left: 2%;
+            /* margin-top: 24px; */
+            height: max-content;
+            border: 0.5px solid white;
+            border-radius: 10px;
+            display: inline-block;
+            padding-top: 1.2%;
+            padding-bottom: 1.2%;
+            position: relative;
+            vertical-align: top;
+        }
+
+        .box4 {
+            margin-top: 45px;
+
+        }
+
+
+        .box5 {
+            margin-top: -35px;
+        }
+
+        .box6 {
+            margin-top: -10px;
+        }
+
+        .box7 {
+            margin-top: 20px;
+        }
+
+        .box8 {
+            margin-top: 40px;
+        }
+
+        .box9 {
+            margin-top: -10px;
+        }
+
+        .box10 {
+            margin-top: 40px;
+        }
+
+        .box11 {
+            margin-top: 35px;
+        }
+
+        .box12 {
+            margin-top: -35px;
+        }
+
+        /* ==== box inside info */
+        .pic-text-main {
+            /* width: 70%; */
+            width: 240px;
+
+            height: max-content;
+            /* border: 2px solid red; */
+            margin-left: 3%;
+        }
+
+
+
+        .name-header {
+            /* border: 2px solid greenyellow; */
+            font-size: 16px;
+            color: white;
+            /* width: 70%; */
+            width: 160px;
+            height: max-content;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 4%;
+            line-height: 23px;
+
+
+
+        }
+
+        h4-twit {
+            font-size: 1.2vmax;
+            font-weight: 700;
+
+
+
+
+
+        }
+
+        p-twit {
+            font-size: 1.2vmax;
+            font-weight: lighter;
+        }
+
+        /* ===box info inside info=== */
+
+        /* ====text-words==== */
+        .text-head {
+            /* width: 95%; */
+            width: 355px;
+            margin: auto;
+
+            height: max-content;
+            margin: auto;
+            /* border: 2px solid yellow; */
+            margin-top: 3%;
+
+        }
+
+        .text-head-words {
+            /* font-size: 1.35vmax; */
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 26px;
+            font-color: rgb(188, 195, 205);
+
+        }
+
+        .twit-icon {
+            color: #03A9F4;
+            position: absolute;
+            top: 18px;
+            right: 11px;
+            font-size: 20px;
+
+        }
+
+
+        @media screen and (max-width:1240px) {
+
+
+
+            .container-child {
+                width: 70%;
+                margin: auto;
+                /* border: 2px solid rgb(9, 212, 66); */
+            }
+
+            .box {}
+
+            .box3 {
+                margin-top: 40px;
+            }
+
+            .box4 {
+                margin-top: -40px;
+            }
+
+            .box5 {
+                margin-top: 40px;
+            }
+
+            .box6 {
+                margin-top: -45px;
+            }
+
+            .box7 {
+                margin-top: 40px;
+            }
+
+            .box8 {
+                margin-top: -120px;
+            }
+
+            .box9 {
+                margin-top: 40px;
+            }
+
+            .box10 {
+                margin-top: -140px;
+            }
+
+            .box12 {
+                margin-top: -190px;
+            }
+        }
+
+        @media screen and (max-width:1182px) {
+            .box {
+                height: max-content;
+                padding-right: 15px;
+                width: 100%;
+            }
+
+            .text-head {
+                width: 100%;
+                padding: 3%;
+
+            }
+
+
+
+
+
+            .container-child {
+                padding: 1px;
+                width: 35%;
+                height: max-content;
+                margin: auto;
+                /* border: 2px solid rgb(9, 212, 66); */
+            }
+
+
+
+
+            .box2 {
+                margin-top: 40px;
+            }
+
+
+            .box4 {
+                margin-top: 40px !important;
+            }
+
+
+            .box6 {
+                margin-top: 40px;
+            }
+
+            .box8 {
+                margin-top: 40px;
+            }
+
+            .box10 {
+                margin-top: 40px;
+            }
+
+            .box11 {
+                margin-top: 40px;
+            }
+
+            .box12 {
+                margin-top: 40px;
+            }
+
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-parent">
+        <h1 class="header">What people are saying about Expo</h1>
+
+
+        <!-- ================================================================================= -->
+
+        <div class="container-child">
+
+            <!-- ===box 1 start=== -->
+
+            <div class="box box1">
+
+                <!-- ====box inside info==== -->
+                <div class="pic-text-main">
+                    <div class="pics"></div>
+
+                    <div class="name-header">
+                        <h4 class="h4-twit">Lisa Miller</h4>
+                        <p class="p-twit">@LisaMillerCool</p>
+                    </div>
+                </div>
+
+                <!-- ====text-words==== -->
+                <div class="text-head">
+                    <h2 class="text-head-words">If you are planning to develop an app using react native, it's a
+                        no-brainer to go with Expo.<br><br>
+                        It's like a package of goodies. I don't even understand why it's so awesome. Good job @expo
+                        team. You've made our lives simpler.</h2>
+                </div>
+                <i class="twit-icon fa-brands fa-twitter"></i>
+            </div>
+
+            <!-- ===end box 1=== -->
+
+            <!-- ====box 2 start==== -->
+
+
+            <div class="box box2">
+                <div class="pic-text-main">
+                    <div class="pics pic2"></div>
+
+                    <div class="name-header">
+                        <h4 class="h4-twit">William Candillon</h4>
+                        <p class="p-twit">@wcandillon</p>
+                    </div>
+                </div>
+
+                <!-- ====text-words==== -->
+                <div class="text-head">
+                    <h2 class="text-head-words">The speed at which React Native Web via @expo has evolved in the past 6
+                        months is absolutely wild. My head is spinning.</h2>
+                </div>
+                <i class="twit-icon fa-brands fa-twitter"></i>
+
+            </div>
+
+            <!-- ====box 2 end==== -->
+
+
+            <!-- ====box 3 start==== -->
+
+
+            <div class="box box3">
+                <div class="pic-text-main">
+                    <div class="pics pic3"></div>
+
+                    <div class="name-header">
+                        <h4 class="h4-twit">
+                            Ryan Baldwin</h4>
+                        <p class="p-twit">@bakerofbytes</p>
+                    </div>
+                </div>
+
+                <!-- ====text-words==== -->
+                <div class="text-head">
+                    <h2 class="text-head-words">It’s difficult to make a tool that is powerful, easy to use, and stays
+                        out of the way. @expo has figured it out and it’s one of the most pleasurable dev experiences
+                        I’ve had in my career.</h2>
+                </div>
+                <i class="twit-icon fa-brands fa-twitter"></i>
+
+            </div>
+
+            <!-- ====box 3 end==== -->
+
+            <!-- ====box 4 start==== -->
+
+
+            <div class="box box4">
+                <div class="pic-text-main">
+                    <div class="pics pic4"></div>
+
+                    <div class="name-header">
+                        <h4 class="h4-twit">Wes Johnson</h4>
+                        <p class="p-twit">@WesleyJohnson</p>
+                    </div>
+                </div>
+
+                <!-- ====text-words==== -->
+                <div class="text-head">
+                    <h2 class="text-head-words">It’s difficult to make a tool that is powerful, easy to use, and stays
+                        out of the way. @expo has figured it out and it’s one of the most pleasurable dev experiences
+                        I’ve had in my career.</h2>
+                </div>
+                <i class="twit-icon fa-brands fa-twitter"></i>
+
+            </div>
+
+            <!-- ====box 4 end==== -->
+
+            <!-- ====box 5 start==== -->
+
+            <!-- ====(box5 margin top required)==== -->
+
+            <div class="box box5">
+                <div class="pic-text-main">
+                    <div class="pics pic5"></div>
+
+                    <div class="name-header">
+                        <h4 class="h4-twit">Trevor Hartman</h4>
+                        <p class="p-twit">@devth</p>
+                    </div>
+                </div>
+
+                <!-- ====text-words==== -->
+                <div class="text-head">
+                    <h2 class="text-head-words">Expo recently made it possible to target web, so you can write a single
+                        UI for native and web. I’m continually impressed.<br><br>
+
+                        Otherwise next.js by @zeithq is incredible.<br><Br>
+
+                        Both of these projects have amazing docs, DX, and fast release cycles.</h2>
+                </div>
+                <i class="twit-icon fa-brands fa-twitter"></i>
+
+            </div>
+
+            <!-- ====box 5 end==== -->
+
+            <!-- ====box 6 start==== -->
+
+            <!-- ====(box6 margin top required)==== -->
+
+            <div class="box box6">
+                <div class="pic-text-main">
+                    <div class="pics pic6"></div>
+
+                    <div class="name-header">
+                        <h4 class="h4-twit">Casey Li</h4>
+                        <p class="p-twit">@caseyli23</p>
+                    </div>
+                </div>
+
+                <!-- ====text-words==== -->
+                <div class="text-head">
+                    <h2 class="text-head-words">I love how @expo allows me to build my standalone apps remotely on their
+                        much more powerful servers! Saves time and allows me to continue to use my computer while I wait
+                        for the build!</h2>
+                </div>
+                <i class="twit-icon fa-brands fa-twitter"></i>
+
+            </div>
+
+            <!-- ====box 6 end==== -->
+
+            <!-- ====box 7 start==== -->
+
+            <!-- ====(box7 margin top required)==== -->
+
+            <div class="box box7">
+                <div class="pic-text-main">
+                    <div class="pics pic7"></div>
+
+                    <div class="name-header">
+                        <h4 class="h4-twit">ipey</h4>
+                        <p class="p-twit">@irfan__zainudin</p>
+                    </div>
+                </div>
+
+                <!-- ====text-words==== -->
+                <div class="text-head">
+                    <h2 class="text-head-words">It is so easy to build your own mobile app nowadays. With technologies
+                        like @reactnative and @expo, literally anyone with an idea can rapidly build their dream
+                        app.<br><br>
+
+                        What a time to be alive!</h2>
+                </div>
+                <i class="twit-icon fa-brands fa-twitter"></i>
+
+            </div>
+
+            <!-- ====box 7 end==== -->
+
+            <!-- ====box 8 start==== -->
+
+            <!-- ====(box8 margin top required)==== -->
+
+            <div class="box box8">
+                <div class="pic-text-main">
+                    <div class="pics pic8"></div>
+
+                    <div class="name-header">
+                        <h4 class="h4-twit">
+                            Jamon Holmgren</h4>
+                        <p class="p-twit">@jamonholmgren</p>
+                    </div>
+                </div>
+
+                <!-- ====text-words==== -->
+                <div class="text-head">
+                    <h2 class="text-head-words">So @expo’s over the air update feature just saved us on launch day (yes,
+                        Friday, sorry). We had a crash happening on a critical path (didn’t happen in dev testing) but
+                        narrowed it down and deployed a fix using OTA in about an hour.</h2>
+                </div>
+                <i class="twit-icon fa-brands fa-twitter"></i>
+
+            </div>
+
+            <!-- ====box 8 end==== -->
+
+
+            <!-- ====box 9 start==== -->
+
+            <!-- ====(box9 margin top required)==== -->
+
+            <div class="box box9">
+                <div class="pic-text-main">
+                    <div class="pics pic9"></div>
+
+                    <div class="name-header">
+                        <h4 class="h4-twit">The Big Red Geek</h4>
+                        <p class="p-twit">@thebigredgeek</p>
+                    </div>
+                </div>
+
+                <!-- ====text-words==== -->
+                <div class="text-head">
+                    <h2 class="text-head-words">Arkansas Western District Court uses expo web. I chose @expo because it
+                        was the fastest way for a single developer to achieve our mandate—mobile/desktop/web.</h2>
+                </div>
+                <i class="twit-icon fa-brands fa-twitter"></i>
+
+            </div>
+
+            <!-- ====box 9 end==== -->
+
+            <!-- ====box 10 start==== -->
+
+            <!-- ====(box10 margin top required)==== -->
+
+            <div class="box box10">
+                <div class="pic-text-main">
+                    <div class="pics pic10"></div>
+
+                    <div class="name-header">
+                        <h4 class="h4-twit">Mat Warger</h4>
+                        <p class="p-twit">@mwarger</p>
+                    </div>
+                </div>
+
+                <!-- ====text-words==== -->
+                <div class="text-head">
+                    <h2 class="text-head-words">I don't know who needs to hear this but @expo is the future.</h2>
+                </div>
+                <i class="twit-icon fa-brands fa-twitter"></i>
+
+            </div>
+
+            <!-- ====box 10 end==== -->
+
+            <!-- ====box 11 start==== -->
+
+            <!-- ====(box11 margin top required)==== -->
+
+            <div class="box box11">
+                <div class="pic-text-main">
+                    <div class="pics pic11"></div>
+
+                    <div class="name-header">
+                        <h4 class="h4-twit">Annie Elequin</h4>
+                        <p class="p-twit">@AnnieElequin</p>
+                    </div>
+                </div>
+
+                <!-- ====text-words==== -->
+                <div class="text-head">
+                    <h2 class="text-head-words">@expo made notifications so easy, I almost cried tears of joy 😭 using
+                        expo is just a delightful experience</h2>
+                </div>
+                <i class="twit-icon fa-brands fa-twitter"></i>
+
+            </div>
+
+            <!-- ====box 11 end==== -->
+
+
+            <!-- ====box 12 start==== -->
+
+            <!-- ====(box12 margin top required)==== -->
+
+            <div class="box box12">
+                <div class="pic-text-main">
+                    <div class="pics pic12"></div>
+
+                    <div class="name-header">
+                        <h4 class="h4-twit">Tyler H</h4>
+                        <p class="p-twit">@Ipse_dixt_T</p>
+                    </div>
+                </div>
+
+                <!-- ====text-words==== -->
+                <div class="text-head">
+                    <h2 class="text-head-words">Arkansas Western District Court uses expo web. I chose @expo because it
+                        was the fastest way for a single developer to achieve our mandate mobile/desktop/web.</h2>
+                </div>
+                <i class="twit-icon fa-brands fa-twitter"></i>
+
+            </div>
+
+            <!-- ====box 12 end==== -->
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

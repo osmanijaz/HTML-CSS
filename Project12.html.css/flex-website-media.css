@@ -1,0 +1,14 @@
+@media screen and (max-width:550px) {
+    .nav-ul {
+        display: none;
+    }
+
+
+    .arch-logo {
+        display: none;
+    }
+
+
+
+
+}

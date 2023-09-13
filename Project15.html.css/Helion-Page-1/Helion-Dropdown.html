@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Helion-Page-1.css">
+    <link rel="stylesheet" href="./Helion-Page-1-Media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+
+
+
+
+<style>
+    /* *********dropdown start******* */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* html,
+    body {
+        overflow-x: hidden;
+    } */
+
+    /* ---main page 1--- */
+
+    .main-page {
+        width: 100%;
+        height: 100vh;
+        background-color: #222128;
+    }
+
+    .navbar-main {
+        height: 65px;
+        width: 100%;
+        border: 2px solid limegreen;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+
+
+    }
+
+    .nav-ul {
+        border: 2px solid red;
+        width: 600px;
+        display: flex;
+        justify-content: space-evenly;
+
+
+    }
+
+    .nav-li {
+        position: relative;
+        width: max-content;
+        list-style: none;
+
+
+
+    }
+
+    .nav-li a {
+        text-decoration: none;
+        color: white;
+
+    }
+
+    .text-line {
+        position: absolute;
+        bottom: 10px;
+        left: 0px;
+        height: 2px;
+        width: 100%;
+        background-color: white;
+    }
+
+    .tl {
+        position: absolute;
+        bottom: 10px;
+        left: 0px;
+        height: 2px;
+        width: 0%;
+        background-color: white;
+        transition: all 0.35s;
+    }
+
+    .nav-li:hover .tl {
+        width: 105%;
+    }
+
+    .icon-contain {
+        border: 2px solid white;
+        width: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        margin-right: 2%;
+    }
+
+    .icon-bars-hide {
+        visibility: hidden;
+    }
+
+    #icon-style {
+        color: white;
+        font-size: 22px;
+        font-weight: 100;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .logo {
+        margin-left: 2%;
+    }
+
+    .circle-red {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 50px;
+        background-color: red;
+        bottom: -6px;
+        right: -5px;
+        color: white;
+        font-size: 12px;
+        padding-left: 20%;
+        padding-top: 10%;
+        font-weight: 400;
+
+    }
+
+    /* ---dropdown 1--- */
+
+    .drop-main {
+        position: relative;
+        z-index: 3;
+
+    }
+
+    .drop-list {
+        width: 500px;
+        height: 350px;
+        position: absolute;
+        background-color: white;
+        top: 40px;
+        left: -15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        transition: all 0.34s;
+        border: 1px solid grey;
+    }
+
+    .drop-main:hover .drop-list {
+        top: 30px;
+        visibility: visible;
+    }
+
+    .list-ul-A {
+        /* border: 2px solid red; */
+        width: 45%;
+        height: 98%;
+    }
+
+
+
+    .list-A {
+        list-style: none;
+        margin-top: 13px;
+    }
+
+    .list-A a {
+        color: #222128;
+        font-weight: 500;
+    }
+
+    .list-A a:hover {
+        color: rgb(255, 68, 0);
+        font-weight: 600;
+
+    }
+
+    /* ---dropdown 2 start--- */
+
+    .dropmain2 {
+        position: relative;
+        z-index: 3;
+
+
+    }
+
+    .droplist2 {
+        height: 90px;
+        position: absolute;
+        background-color: white;
+        top: 40px;
+        left: -15px;
+        visibility: hidden;
+        border: 1px solid grey;
+        /* border: 2px solid green; */
+
+
+
+        transition: all 0.34s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+    }
+
+    .list2-ul {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-evenly;
+        /* border: 2px solid red; */
+        height: 70%;
+    }
+
+    .list2-li {
+        list-style: none;
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+        font-size: 16px;
+        padding-left: 3%;
+        padding-right: 3%;
+
+    }
+
+
+    .list2-li a {
+        color: #222128;
+        font-weight: 500;
+        margin: 0px;
+    }
+
+    .list2-li a:hover {
+        color: orangered;
+
+
+    }
+
+    .arrow {
+        /* border: 2px solid lime; */
+        font-size: 17px;
+    }
+
+
+    .container-sub-dropdown {
+        position: absolute;
+        z-index: 3;
+    }
+
+    .list2-sub-li {
+        list-style: none;
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: space-between;
+        padding-right: 2%;
+        padding-left: 3%;
+    }
+
+    .list2-sub-li a:hover {
+        color: orangered;
+        font-weight: 600;
+
+    }
+
+    .list2-sub-ul {
+        position: absolute;
+        background-color: rgb(248, 248, 248);
+        border: 1px solid grey;
+        top: 37px;
+        visibility: hidden;
+        left: 203px;
+        width: 270px;
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+
+    }
+
+    .list5-sub-ul {
+        transition: all 0.34s;
+        top: 8px;
+
+    }
+
+
+
+    .list3-sub-ul {
+        position: absolute;
+        background-color: rgb(248, 248, 248);
+        border: 1px solid grey;
+        top: 98px;
+        /* visibility: hidden; */
+        left: 272px;
+        width: 270px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        transition: all 0.34s;
+
+
+    }
+
+    .list4-sub-ul {
+        position: absolute;
+        background-color: white;
+        border: 1px solid grey;
+        top: 40px;
+        left: 203px;
+        width: 270px;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+
+        /* padding-left: 5%; */
+
+    }
+
+    .dropmain2:hover .droplist2 {
+        visibility: visible;
+        font-weight: 600;
+        top: 30px;
+    }
+
+    .list2-li:hover .list5-sub-ul {
+
+        visibility: visible;
+        font-weight: 600;
+
+    }
+
+    .list2-li:hover .list4-sub-ul {
+
+        visibility: visible;
+        font-weight: 600;
+
+    }
+
+
+    .list2-sub-li:hover .list3-sub-ul {
+        visibility: visible;
+        font-weight: 600;
+    }
+
+    /* ----dropdown 3 start ----- */
+
+    .dropmain-about {
+        position: relative;
+        z-index: 3;
+    }
+
+    .dropmain-about:hover .drop-list-about {
+        visibility: visible;
+        top: 30px;
+
+    }
+
+    .drop-list-about {
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        background-color: white;
+        top: 40px;
+        visibility: hidden;
+        transition: all 0.34s;
+
+    }
+
+
+    .about-ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        /* border: 2px solid red; */
+        height: 90%;
+
+    }
+
+    .about-li a {
+        color: #222128;
+    }
+
+    .about-li {
+        list-style: none;
+        font-weight: 500;
+        padding-left: 3%;
+    }
+
+    .about-li a:hover {
+        color: orangered;
+        font-weight: 600;
+    }
+
+    /* ----dropdown 3 end ----- */
+
+    /* ----dropdown 4 start -----  */
+
+
+    .dropmain-blog {
+        position: relative;
+        z-index: 3;
+
+    }
+
+
+
+
+
+    .drop-list-blog {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        top: 40px;
+        visibility: hidden;
+        transition: all 0.34s;
+    }
+
+    .dropmain-blog:hover .drop-list-blog {
+        visibility: visible;
+        top: 30px;
+
+    }
+
+    .blog-classic-li:hover .blog-A-ul {
+        visibility: visible;
+    }
+
+
+    .blog-ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        /* border: 2px solid red; */
+        height: 90%;
+
+    }
+
+    .blog-li a {
+        color: #222128;
+
+    }
+
+    .blog-li {
+        list-style: none;
+        font-weight: 500;
+        padding-left: 3%;
+        /* border: 2px solid rgb(0, 81, 255); */
+        display: flex;
+        justify-content: space-between;
+        padding-left: 3%;
+        padding-right: 3%;
+
+    }
+
+    .blog1 {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .blog-li a:hover {
+        color: orangered;
+        font-weight: 600;
+    }
+
+    .blog-A-ul {
+        position: absolute;
+        background-color: white;
+        border: 1px solid grey;
+        width: 200px;
+        height: 100px;
+        left: 203px;
+        top: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        visibility: hidden;
+        transition: all 0.34s;
+
+
+
+
+    }
+
+    .blog-A-li a {}
+
+    .blog-A-li {
+        list-style: none;
+        padding-left: 5%;
+        height: 20px;
+        /* border: 2px solid red; */
+    }
+
+
+
+
+    /* --B--- */
+
+    .blog-B-ul {
+        position: absolute;
+        background-color: white;
+        border: 1px solid grey;
+        width: 200px;
+        height: 100px;
+        left: 203px;
+        top: 95px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        visibility: hidden;
+        transition: all 0.34s;
+    }
+
+
+
+    .blog-portfolio-li:hover .blog-B-ul {
+        visibility: visible;
+
+    }
+
+
+    .blog-B-li a {}
+
+    .blog-B-li {
+        list-style: none;
+        padding-left: 5%;
+        height: 20px;
+        /* border: 2px solid red; */
+
+
+
+    }
+
+    /* --C--- */
+
+    .blog-C-ul {
+        position: absolute;
+        background-color: white;
+        border: 1px solid grey;
+        width: 200px;
+        height: 100px;
+        left: 203px;
+        top: 132px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        visibility: hidden;
+        transition: all 0.34s;
+    }
+
+
+
+    .blog-chess-li:hover .blog-C-ul {
+        visibility: visible;
+
+    }
+
+    .blog-C-li a {}
+
+    .blog-C-li {
+        list-style: none;
+        padding-left: 5%;
+        height: 20px;
+        /* border: 2px solid red; */
+
+
+    }
+
+
+
+
+
+    /* ----dropdown 4 end ----- */
+
+
+    /* **********dropdown end*************** */
+
+    /* ****media query start********* */
+
+    @media screen and (max-width:900px) {
+        .nav-ul {
+            display: none;
+        }
+
+        .icon-bars-hide {
+            visibility: visible;
+        }
+    }
+
+    /* ****media query end********* */
+</style>
+
+</head>
+
+<body>
+
+    <!-- *********html dropdown start************* -->
+
+
+    <!-- ---main page pic top container start--- -->
+
+    <div class="main-page">
+
+
+        <!-- navbar main container start  -->
+
+        <div class="navbar-main">
+            <div class="logo">
+                <img src="./Img-Pg-1/logo-inverse.png" alt="" srcset="">
+            </div>
+
+            <!-- ---navbar-mainlist-start--- -->
+
+            <ul class="nav-ul">
+
+
+
+
+
+                <!-- ---dropdown 1--- -->
+
+
+                <li class="nav-li drop-main"><a href="">Home.
+
+                        <div class="drop-list">
+
+                            <!-- ----list 1 start -->
+
+
+                            <ul class="list-ul-A">
+                                <li class="list-A"><a href="">Design Agency</a></li>
+                                <li class="list-A"><a href="">Photographer 2</a></li>
+                                <li class="list-A"><a href="">Personal</a></li>
+                                <li class="list-A"><a href="">Graphic Designer</a></li>
+                                <li class="list-A"><a href="">Concept Artist</a></li>
+                                <li class="list-A"><a href="">Motion Graphics</a></li>
+                                <li class="list-A"><a href="">Musician</a></li>
+
+                                <li class="list-A"><a href="">Copywriter</a></li>
+                                <li class="list-A"><a href="">NFT</a></li>
+                            </ul>
+
+                            <!-- ----list 1 end -->
+
+                            <!-- ----list 1 start -->
+
+                            <ul class="list-ul-A">
+                                <li class="list-A"><a href="">Photographer 1</a></li>
+                                <li class="list-A"><a href="">Photographer 3</a></li>
+                                <li class="list-A"><a href="">3D Artist</a></li>
+                                <li class="list-A"><a href="">Architect</a></li>
+                                <li class="list-A"><a href="">Character Designer</a></li>
+                                <li class="list-A"><a href="">Showcase</a></li>
+                                <li class="list-A"><a href="">Videographer</a></li>
+                                <li class="list-A"><a href="">Brutalism</a></li>
+                                <li class="list-A"><a href="">Home RTL</a></li>
+                            </ul>
+
+
+                            <!-- ----list 1 end -->
+
+                        </div>
+
+                    </a><span class="text-line"></span></li>
+
+                <!-- ---dropdown 1 end--- -->
+
+                <!-- ---dropdown 2 start--- -->
+
+                <li class="nav-li dropmain2"> <a href="">Pages.</a>
+                    <div class="droplist2">
+
+
+                        <ul class="list2-ul">
+
+                            <li class="list2-li"><a href="">Portfolio</a>
+                                <a href=""><i class="arrow fa-solid fa-arrow-right-long"></i></a>
+
+                                <!-- <div class="container-sub-dropdown"></div> -->
+
+                                <ul class="list2-sub-ul list5-sub-ul">
+
+                                    <li class="list2-sub-li"><a href="">List Large – Hover Waves</a></li>
+
+
+                                    <li class="list2-sub-li"><a href="">Fullscreen Hover</a></li>
+
+
+                                    <li class="list2-sub-li"><a href="">Metro Fullwidth – Mouse Info</a></li>
+
+                                    <li class="list2-sub-li">
+                                        <a href="">Single Portfolio</a>
+                                        <a href=""><i class="arrow fa-solid fa-arrow-right-long"></i></a>
+
+
+                                        <ul class="list2-sub-ul list3-sub-ul">
+                                            <li class="list2-sub-li"><a href="">Style 1</a></li>
+                                            <li class="list2-sub-li"><a href="">Style 2</a></li>
+                                            <li class="list2-sub-li"><a href="">Style 3</a></li>
+                                        </ul>
+
+
+
+                                    </li>
+
+                                </ul>
+
+
+                            </li>
+
+
+                            <li class="list2-li"><a href="">Tools</a>
+                                <a href=""><i class="arrow fa-solid fa-arrow-right-long"></i></a>
+
+                                <ul class="list2-sub-ul list4-sub-ul ">
+                                    <li class="list2-sub-li"><a href=""> Typography</a></li>
+                                    <li class="list2-sub-li"><a href=""> Shortcodes</a></li>
+                                    <li class="list2-sub-li"><a href=""> Service Plus</a></li>
+                                    <li class="list2-sub-li"><a href="">Privacy Policy</a></li>
+                                </ul>
+
+
+
+
+
+
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+
+
+                    <span class="text-line tl"></span>
+                </li>
+
+
+
+
+
+
+
+                <!-- ---dropdown 2 end--- -->
+
+                <!-- ----dropdown 3 start ----- -->
+
+                <li class="nav-li dropmain-about"> <a href="">About Us.
+
+                        <div class="drop-list-about">
+
+                            <ul class="about-ul">
+                                <li class="about-li"><a href="">Agency</a></li>
+                                <li class="about-li"><a href="">Personal</a></li>
+
+                            </ul>
+
+
+                        </div>
+
+
+
+                    </a><span class="text-line tl"></span></li>
+
+
+
+
+
+
+                <!-- ----dropdown 3 end ----- -->
+
+
+                <!-- ----dropdown 4 start ----- -->
+
+
+
+                <li class="nav-li dropmain-blog"> <a href="">Blog.
+                        <div class="drop-list-blog">
+
+                            <ul class="blog-ul">
+
+                                <li class="blog-li blog1"><a href="">All Posts</a>
+
+                                </li>
+
+                                <li class="blog-li blog-classic-li"><a href="">Classic Style</a><a href=""><i
+                                            class="arrow fa-solid fa-arrow-right-long"></i></a>
+
+                                    <ul class="blog-A-ul">
+                                        <li class="blog-A-li"><a href="">Column 1</a></li>
+                                        <li class="blog-A-li"><a href="">Column 2</a></li>
+                                    </ul>
+
+
+                                </li>
+
+
+
+                                <li class="blog-li blog-portfolio-li"><a href="">Portfolio Style</a><a href=""><i
+                                            class="arrow fa-solid fa-arrow-right-long"></i></a>
+
+
+                                    <ul class="blog-B-ul">
+                                        <li class="blog-B-li"><a href="">Column 3</a></li>
+                                        <li class="blog-B-li"><a href="">Column 4</a></li>
+                                        <li class="blog-B-li"><a href="">Column 5</a></li>
+                                    </ul>
+
+
+
+
+                                </li>
+
+
+                                <li class="blog-li blog-chess-li"><a href="">Chess Style</a> <a href=""><i
+                                            class="arrow fa-solid fa-arrow-right-long"></i></a>
+                                    <ul class="blog-C-ul">
+                                        <li class="blog-C-li"><a href="">Column 6</a></li>
+                                        <li class="blog-C-li"><a href="">Column 7</a></li>
+                                        <li class="blog-C-li"><a href="">Column 8</a></li>
+                                    </ul>
+
+
+                                </li>
+
+                            </ul>
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+                    </a><span class="text-line tl"></span></li>
+
+
+
+
+
+
+                <!-- ----dropdown 4 end ----- -->
+
+
+
+
+
+                <li class="nav-li"> <a href="">Store.</a><span class="text-line tl"></span></li>
+
+
+
+
+                <li class="nav-li  dropmain-about"> <a href="">Contact.
+
+                        <div class="drop-list-about">
+
+                            <ul class="about-ul">
+                                <li class="about-li"><a href="">Agency</a></li>
+                                <li class="about-li"><a href="">Personal</a></li>
+
+                            </ul>
+
+
+                        </div>
+
+
+
+
+
+                    </a><span class="text-line tl"></span></li>
+            </ul>
+
+            <!-- ---navbar-mainlist-end--- -->
+
+
+            <!-- ---icon container right of navbar start -->
+
+            <div class="icon-contain">
+                <i class="fa-solid fa-bars icon-style icon-bars-hide"></i>
+
+                <i class="fa-solid fa-bag-shopping icon-style">
+                    <div class="circle-red">0</div>
+                </i>
+
+                <i class="fa-solid fa-magnifying-glass icon-style"></i>
+
+            </div>
+            <!-- ---icon container right of navbar end -->
+
+
+
+        </div>
+        <!-- navbar main container end  -->
+    </div>
+
+    <!-- ---main page pic top container end--- -->
+
+    <!-- *********html dropdown end************* -->
+</body>
+
+</html>

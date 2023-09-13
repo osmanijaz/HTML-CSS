@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helion 10</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main1{
+            height: max-content;
+            width: 100%;
+            background-color: wheat;
+            padding-bottom: 50px;
+
+        }
+        .navbar{
+            height: 80px;
+            width: 100%;
+            background-color: skyblue;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #logo{
+            height: 25px; 
+        }
+        .ul1{
+            /* border: 1px solid; */
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .li1{
+            list-style: none;
+            cursor: pointer;
+            position: relative;
+        }
+        .li1 a{
+            font-family: HKGrotesk, sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 27px;
+            color: rgb(13, 13, 18);
+            text-decoration: none;
+        }
+        .nav-div{
+            height: 3px;
+            width: 0%;
+            background-color: black;
+            position: absolute;
+            top: 12.5px;
+            left: -5%;
+            transition: .5s;
+        }
+        .li1:hover .nav-div{
+            width: 110%;
+        }
+        .icons{
+            height: 60px;
+            width: 15%;
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #icon1{
+            font-size: 35px;
+            /* margin-left: 30px;
+            margin-top: 10px; */
+            cursor: pointer;
+        }
+        #icon2{
+            display: none;
+            font-size: 22px;
+        }
+        #icon3{
+            font-size: 22px;
+            display: none;
+        }
+        #icon4{
+            font-size: 35px;
+            display: none;
+        }
+        .main1-p1{
+            font-family: LouisGeorgeCafe, sans-serif;
+            font-size: 49px;
+            font-weight: 700;
+            line-height: 49px;
+            color: rgb(13, 13, 18);
+            text-align: center;
+            margin-top: 100px;
+        }
+        .main1-p2{
+            font-family: HKGrotesk, sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 21px;
+            color: rgb(13, 13, 18);
+            text-align: center;
+            margin: 50px 0;
+        }
+
+
+        /* ////////////////////////////////// Media Queries ////////////////////////////////////// */
+
+
+        @media screen and (max-width: 1182px) {
+            .icons{
+                width: 15%;
+            }
+        }
+        @media screen and (max-width: 1110px) {
+            .ul1{
+                width: 50%;
+            }
+            .anker1{
+                display: none;
+            }
+            #icon3{
+                display: block;
+            }
+        }
+        @media screen and (max-width:918px) {
+            th{
+                padding: 5px 10px;
+            }
+        }
+        @media screen and (max-width:880px) {
+            .icons{
+                width: 20%;
+            }
+            .anker2{
+                display: none;
+            }
+            #icon3{
+                display: none;
+            }
+            #icon2{
+                display: block;
+            }
+            .ul1{
+                width: 55%;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .ul1{
+                display: none;
+            }
+            .icons{
+                width: 25%;
+            }
+            #icon4{
+                display: block;
+            }
+        }
+        @media screen and (max-width:585px){
+            .icons{
+                width: 30%;
+                font-size: 20px;
+            }
+            #icon1{
+                font-size: 25px;
+            }
+            #icon4{
+                font-size: 25px;
+            }
+        }
+        @media screen and (max-width:425px){
+            .icons{
+                width: 36%;
+            }
+        }
+        </style>
+</head>
+<body>
+    <div class="main1">
+        <div class="navbar">
+            <img id="logo1" src="./logo.png" alt="">
+            <ul class="ul1">
+                <li class="li1"><a href=""> Home.</a>
+                    <div class="nav-div"></div>
+                </li>
+                <li class="li1"><a href=""> Pages.</a>
+                    <div class="nav-div"></div>
+                </li>
+                <li class="li1"><a href=""> About Us.</a>
+                    <div class="nav-div"></div>
+                </li>
+                <li class="li1"><a href=""> Blog.</a>
+                    <div class="nav-div"></div>
+                </li>
+                <li class="li1"><a class="anker2" href=""> Store. </a> <i id="icon2" class="fa-solid fa-ellipsis-vertical"></i>
+                    <div class="nav-div"></div>
+                </li>
+                <li class="li1"><a class="anker1" href=""> Contacts.</a><i id="icon3" class="fa-solid fa-ellipsis-vertical"></i>
+                    <div class="nav-div"></div> 
+                </li>
+            </ul>
+            <div class="icons">
+                <i id="icon4" class="fa-solid fa-bars"></i>
+                <i id="icon1" class="fa-solid fa-bag-shopping"></i>
+                <i id="icon1" class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <p class="main1-p1">Typography</p>
+        <p class="main1-p2">Home . Typography</p>
+    </div>
+</body>
+</html>
+
+        
